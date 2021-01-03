@@ -1,7 +1,8 @@
 //import './App.css';
 import React from 'react';
-import Table, { Column, SortOrder} from 'react-base-table'
-import 'react-base-table/styles.css'
+import MUIDataTable from "mui-datatables";
+// import Table, { Column, SortOrder} from 'react-base-table'
+// import 'react-base-table/styles.css'
 
 //import { Chart } from './components'
 //import { Table } from './components'
@@ -27,7 +28,8 @@ class App extends React.Component {
       year: "2015",
       metadata: codes_metadata,
       citations: citations,
-      sortBy: {key: 'citations', order: SortOrder.DESC },
+      options: {'filterType': 'dropdown', 'sortOrder': { 'name': 'citations', 'direction': 'desc' }}
+      //sortBy: {key: 'citations', order: SortOrder.DESC },
     };
   }
 
@@ -52,9 +54,8 @@ class App extends React.Component {
     // return columns
     let cols = columns;
     for (const col of cols) {
-      col['width'] = colWidth;
-      col['dataKey'] = col['key'];
-      col['height'] = 100;
+      col['options'] = { 'filter': true, 'sort': true};
+
     }
     return cols;
   }
@@ -83,17 +84,16 @@ class App extends React.Component {
       <select value={this.state.year} onChange={this.handleChange}>
         <option value="2015">2015</option>
       </select>
-        <Table
-        width={800}
-        height={tableHeight}
+        <MUIDataTable
+        //width={800}
+        //height={tableHeight}
         //fixed
-        rowKey="name"
+        //rowKey="name"
+        title={"QM Code List"}
         columns={this.getColumns()}
         data={this.getData()}
-        sortBy={this.state.sortBy}
-        onColumnSort={this.onColumnSort}
-      >
-        </Table>
+        options={this.state.options}
+      />
       </header>
     </div>
   );

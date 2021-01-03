@@ -1,27 +1,27 @@
 [
     {
-        "key": "name",
-        "title": "Code"
+        "name": "name",
+        "label": "Code"
     },
     {
-        "key": "author_name",
-        "title": "Authors"
+        "name": "author_name",
+        "label": "Authors"
     },
     {
-        "key": "description",
-        "title": "Description"
+        "name": "description",
+        "label": "Description"
     },
     {
-        "key": "license",
-        "title": "License"
+        "name": "license",
+        "label": "License"
     },
 
     {
-        "key": "types",
-        "title": "Types"
+        "name": "types",
+        "label": "Types"
     },
     {
-        "key": "citations",
-        "title": "Citations"
+        "name": "citations",
+        "label": "Citations"
     }
 ]
