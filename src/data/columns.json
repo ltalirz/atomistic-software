@@ -1,0 +1,27 @@
+[
+    {
+        "key": "name",
+        "title": "Code"
+    },
+    {
+        "key": "author_name",
+        "title": "Authors"
+    },
+    {
+        "key": "description",
+        "title": "Description"
+    },
+    {
+        "key": "license",
+        "title": "License"
+    },
+
+    {
+        "key": "types",
+        "title": "Types"
+    },
+    {
+        "key": "citations",
+        "title": "Citations"
+    }
+]
