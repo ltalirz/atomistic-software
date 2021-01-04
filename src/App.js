@@ -1,8 +1,10 @@
 import './App.css';
 import React from 'react';
 import MUIDataTable from "mui-datatables";
+//import RangeSlider from './components/RangeSlider'
 //idea: use search icon for link to google scholar
 //import SearchIcon from '@material-ui/icons/Search'
+
 
 //import { Chart } from './components'
 //import { Table } from './components'
@@ -10,18 +12,27 @@ import citations from './data/citations.json'
 import codes_metadata from './data/codes_metadata.json'
 import columns from './data/columns.json'
 
+function yearToRange(year) {
+  return year.toString() + '-' + year.toString();
+}
+
+function rangeToYear(range) {
+  return range.split('-')[0];
+}
+
 // For whatever reason, one cannot simply use `citations.keys()`
 let years = [];
 for (const citation in citations){
-  years.push(citation);
+  years.push(rangeToYear(citation));
 }
 
 function getData(year) {
-  year = year.toString();
+  let range_key = yearToRange(year);
+  let citations_data = citations[range_key]['citations'];
   let data = codes_metadata; //.slice();
 
   for (const codename in data) {
-    data[codename]['citations'] = citations[year]['citations'][codename];
+    data[codename]['citations'] = citations_data[codename]['citations'];
   }
 
   let dataArray = [];
@@ -35,8 +46,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      year: "2015",
-      data: getData("2015"),
+      year: "2020",
+      data: getData("2020"),
       columns: columns,
       options: { 'filterType': 'dropdown', 
       'sortOrder': { 'name': 'citations', 'direction': 'desc' },
@@ -46,8 +57,7 @@ class App extends React.Component {
   }
 
   handleYearChange(event) {
-    const newYear = event.target.value;
-    this.setState({ year: newYear, data: getData(newYear)});
+    this.setState({ year: event.target.value, data: getData(event.target.value)});
   }
 
   getColumns() {
@@ -80,7 +90,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <select defaultValue={this.state.year} onChange={this.handleYearChange}>
+          <select defaultValue={this.state.year} onChange={(event) => this.handleYearChange(event)}>
             {years.map( x => <option key={x}>{x}</option>)}
           </select>
           <MUIDataTable
@@ -92,7 +102,7 @@ class App extends React.Component {
         </header>
       </div>
     );
-
+    // <RangeSlider/>
     //<Chart />
   }
 }
