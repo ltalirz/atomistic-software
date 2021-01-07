@@ -1,0 +1,1554 @@
+{
+  "ABINIT": {
+    "author_name": "Gonze",
+    "description": "PP, PW, WLT",
+    "family": "Plane-wave basis sets",
+    "homepage": "https://www.abinit.org/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "ABINIT",
+    "query_method": "search term",
+    "query_string": "ABINIT Gonze",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "ACEMD": {
+    "author_name": "Fabritiis",
+    "description": "",
+    "family": "",
+    "homepage": "https://www.acellera.com/products/molecular-dynamics-software-GPU-acemd/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "ACEMD",
+    "query_method": "search term",
+    "query_string": "ACEMD Fabritiis",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "ACES III": {
+    "author_name": "Bartlett",
+    "description": "GTO, PP",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://www.qtp.ufl.edu/ACES/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "ACES III",
+    "query_method": "search term",
+    "query_string": "\"ACES\" Bartlett",
+    "tags": [],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "ADF": {
+    "author_name": "Baerends",
+    "description": "AE, STO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.scm.com/product/adf/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "ADF",
+    "query_method": "search term",
+    "query_string": "ADF Baerends",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "ASE/ASAP": {
+    "author_name": "Jacobsen",
+    "description": "",
+    "family": "",
+    "homepage": "https://wiki.fysik.dtu.dk/ase/index.html",
+    "license": "G(O)",
+    "license_annotation": null,
+    "name": "ASE/ASAP",
+    "query_method": "search term",
+    "query_string": "ASE Jacobsen",
+    "tags": [
+      "nomad_code",
+      "data_representation"
+    ],
+    "types": [
+      "FF"
+    ]
+  },
+  "ASW program package": {
+    "author_name": "K\u00fcbler",
+    "description": "AE, ASW",
+    "family": "Linearized augmented plane waves",
+    "homepage": "https://myweb.rz.uni-augsburg.de/~eyert/aswprog.shtml",
+    "license": "A",
+    "license_annotation": null,
+    "name": "ASW program package",
+    "query_method": "search term",
+    "query_string": "\"ASW program package\" K\u00fcbler",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "Amber": {
+    "author_name": "Kollman",
+    "description": "",
+    "family": "",
+    "homepage": "https://ambermd.org/",
+    "license": "C(O)",
+    "license_annotation": null,
+    "name": "Amber",
+    "query_method": "search term",
+    "query_string": "Amber program Kollman",
+    "tags": [
+      "nomad_code"
+    ],
+    "types": [
+      "FF"
+    ]
+  },
+  "Atomistix ToolKit (ATK)": {
+    "author_name": "QuantumWise",
+    "description": "See VASP, ABINIT, FHI-aims, Quantum ESPRESSO",
+    "family": "",
+    "homepage": "https://quantumwise.com/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "Atomistix ToolKit (ATK)",
+    "query_method": "search term",
+    "query_string": "\"Atomistix ToolKit\"",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "TB",
+      "FF"
+    ]
+  },
+  "BAGEL": {
+    "author_name": "Shiozaki",
+    "description": "PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://www.nubakery.org/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "BAGEL",
+    "query_method": "search term",
+    "query_string": "BAGEL Shiozaki",
+    "tags": [],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "BOSS": {
+    "author_name": "Jorgensen",
+    "description": "",
+    "family": "",
+    "homepage": "http://zarbi.chem.yale.edu/software.html#boss",
+    "license": "C(O)",
+    "license_annotation": null,
+    "name": "BOSS",
+    "query_method": "search term",
+    "query_string": "BOSS program Jorgensen",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "BerkeleyGW": {
+    "author_name": "Louie",
+    "description": "AE, PP, PW, NAO, RS",
+    "family": "<p>Atom-centered basis sets</p> <p>Real-space grids</p>",
+    "homepage": "https://www.berkeleygw.org/",
+    "license": "F(O)",
+    "license_annotation": null,
+    "name": "BerkeleyGW",
+    "query_method": "search term",
+    "query_string": "BerkeleyGW Louie",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "WFM"
+    ]
+  },
+  "BigDFT": {
+    "author_name": "Genovese",
+    "description": "PP, WLT",
+    "family": "Plane-wave basis sets",
+    "homepage": "https://bigdft.org",
+    "license": "G",
+    "license_annotation": null,
+    "name": "BigDFT",
+    "query_method": "search term",
+    "query_string": "BigDFT Genovese",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "CASINO": {
+    "author_name": "Needs and L\u00f3pez R\u00edos",
+    "description": "AE, PP, PW, GTO, STO, NAO",
+    "family": "Quantum Monte Carlo",
+    "homepage": "https://vallico.net/casinoqmc/",
+    "license": "F",
+    "license_annotation": "Commercial for non-academic use",
+    "name": "CASINO",
+    "query_method": "search term",
+    "query_string": "\"CASINO\" \"Needs\" Rios",
+    "tags": [
+      "data_representation"
+    ],
+    "types": [
+      "QMC"
+    ]
+  },
+  "CASTEP": {
+    "author_name": "Payne",
+    "description": "PP, PW, PAW",
+    "family": "Plane-wave basis sets",
+    "homepage": "http://www.castep.org",
+    "license": "C",
+    "license_annotation": "Free for academic use in UK",
+    "name": "CASTEP",
+    "query_method": "search term",
+    "query_string": "CASTEP Payne",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "CFOUR": {
+    "author_name": "Stanton",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://www.cfour.de/",
+    "license": "F",
+    "license_annotation": null,
+    "name": "CFOUR",
+    "query_method": "search term",
+    "query_string": "\"CFOUR\" Stanton",
+    "tags": [],
+    "types": [
+      "WFM"
+    ]
+  },
+  "CHARMM": {
+    "author_name": "Karplus",
+    "description": "",
+    "family": "",
+    "homepage": "https://www.charmm.org/",
+    "license": "C(O)",
+    "license_annotation": null,
+    "name": "CHARMM",
+    "query_method": "search term",
+    "query_string": "CHARMM program Karplus",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "COLUMBUS": {
+    "author_name": "Lischka",
+    "description": "AE, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.univie.ac.at/columbus/",
+    "license": "F",
+    "license_annotation": null,
+    "name": "COLUMBUS",
+    "query_method": "search term",
+    "query_string": "COLUMBUS Lischka",
+    "tags": [],
+    "types": [
+      "WFM"
+    ]
+  },
+  "CONQUEST O(N)": {
+    "author_name": "Bowler and Miyazaki",
+    "description": "AE, PP, NAO, PW",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://www.order-n.org/",
+    "license": "I",
+    "license_annotation": null,
+    "name": "CONQUEST O(N)",
+    "query_method": "search term",
+    "query_string": "\"CONQUEST\" \"Miyazaki\" \"Bowler\"",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "TB"
+    ]
+  },
+  "COSMOS-software": {
+    "author_name": "Sternberg",
+    "description": "",
+    "family": "",
+    "homepage": "http://www.cosmos-software.de/ce_intro.html",
+    "license": "C",
+    "license_annotation": null,
+    "name": "COSMOS-software",
+    "query_method": "search term",
+    "query_string": "COSMOS-software",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "CP2K": {
+    "author_name": "Hutter",
+    "description": "AE, PP, GTO, PW",
+    "family": "<p>Plane-wave basis sets</p> <p>Atom-centered basis sets</p>",
+    "homepage": "https://www.cp2k.org/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "CP2K",
+    "query_method": "search term",
+    "query_string": "\"CP2K\" Hutter",
+    "tags": [
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "CPMD": {
+    "author_name": "Hutter",
+    "description": "PW, PP",
+    "family": "Plane-wave basis sets",
+    "homepage": "https://www.cpmd.org/",
+    "license": "F",
+    "license_annotation": null,
+    "name": "CPMD",
+    "query_method": "search term",
+    "query_string": "CPMD Hutter",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "CRYSTAL": {
+    "author_name": "Dovesi",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.crystal.unito.it/index.php",
+    "license": "C [2,3]",
+    "license_annotation": null,
+    "name": "CRYSTAL",
+    "query_method": "search term",
+    "query_string": "\"CRYSTAL14\" Dovesi + \"CRYSTAL09\" Dovesi + \"CRYSTAL06\" Dovesi + \"CRYSTAL17\" Dovesi",
+    "tags": [
+      "nomad_code",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "DFTB+": {
+    "author_name": "Aradi",
+    "description": "",
+    "family": "",
+    "homepage": "https://www.dftb-plus.info",
+    "license": "F",
+    "license_annotation": "Commercial for non-academic use",
+    "name": "DFTB+",
+    "query_method": "search term",
+    "query_string": "DFTB+",
+    "tags": [
+      "data_representation"
+    ],
+    "types": [
+      "TB"
+    ]
+  },
+  "DIRAC": {
+    "author_name": "Saue",
+    "description": "AE, LAO",
+    "family": "",
+    "homepage": "http://www.diracprogram.org/doku.php",
+    "license": "F(O)",
+    "license_annotation": null,
+    "name": "DIRAC",
+    "query_method": "search term",
+    "query_string": "DIRAC \"Saue\"",
+    "tags": [],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "DL_POLY": {
+    "author_name": "Smith",
+    "description": "",
+    "family": "",
+    "homepage": "https://www.scd.stfc.ac.uk/Pages/DL_POLY.aspx",
+    "license": "F(O)",
+    "license_annotation": "Commercial for non-academic use",
+    "name": "DL_POLY",
+    "query_method": "search term",
+    "query_string": "\"DL_POLY\" Smith",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "DMol3": {
+    "author_name": "Delley",
+    "description": "AE, PP, NAO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.3dsbiovia.com/products/datasheets/dmol3.pdf",
+    "license": "C",
+    "license_annotation": null,
+    "name": "DMol3",
+    "query_method": "search term",
+    "query_string": "DMol3 Delley + \"DMol^3\" Delley \u2013 \"DMol^3\" DMol3 Delley ",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "Dalton": {
+    "author_name": "\u00c5gren",
+    "description": "GTO, PP",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://daltonprogram.org/",
+    "license": "F",
+    "license_annotation": null,
+    "name": "Dalton",
+    "query_method": "search term",
+    "query_string": "Dalton \u00c5gren",
+    "tags": [],
+    "types": [
+      "WFM"
+    ]
+  },
+  "Discovery Studio": {
+    "author_name": "Accelrys",
+    "description": "See CHARMM for FF and DMol<sup>3</sup> for DFT",
+    "family": "",
+    "homepage": "https://en.wikipedia.org/wiki/Discovery_Studio",
+    "license": "C",
+    "license_annotation": null,
+    "name": "Discovery Studio",
+    "query_method": "search term",
+    "query_string": "\"Discovery Studio\" Accelrys",
+    "tags": [],
+    "types": [
+      "FF",
+      "DFT"
+    ]
+  },
+  "ERKALE": {
+    "author_name": "Lehtola",
+    "description": "AE, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://github.com/susilehtola/erkale/wiki/ERKALE",
+    "license": "G",
+    "license_annotation": null,
+    "name": "ERKALE",
+    "query_method": "search term",
+    "query_string": "ERKALE Lehtola",
+    "tags": [],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "ESPResSo and ESPResso++": {
+    "author_name": "Holm",
+    "description": "",
+    "family": "",
+    "homepage": "https://espressomd.org/",
+    "license": "G(O)",
+    "license_annotation": null,
+    "name": "ESPResSo and ESPResso++",
+    "query_method": "search term",
+    "query_string": "espresso Holm",
+    "tags": [
+      "data_representation"
+    ],
+    "types": [
+      "FF"
+    ]
+  },
+  "Elk": {
+    "author_name": "Dewhurst",
+    "description": "AE, LAPW",
+    "family": "Linearized augmented plane waves",
+    "homepage": "http://elk.sourceforge.net/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "Elk",
+    "query_method": "search term",
+    "query_string": "elk.sourceforge.net Dewhurst",
+    "tags": [
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "FEFF": {
+    "author_name": "Rehr",
+    "description": "",
+    "family": "",
+    "homepage": "https://www.feffproject.org/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "FEFF",
+    "query_method": "search term",
+    "query_string": "\"FEFF\" Rehr",
+    "tags": [
+      "data_representation"
+    ],
+    "types": [
+      "Spectroscopy"
+    ]
+  },
+  "FHI-aims": {
+    "author_name": "Blum",
+    "description": "AE, NAO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://www.fhi-berlin.mpg.de/aims/",
+    "license": "C(O)",
+    "license_annotation": null,
+    "name": "FHI-aims",
+    "query_method": "search term",
+    "query_string": "FHI-aims Blum",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "FLEUR": {
+    "author_name": "Bl\u00fcgel",
+    "description": "AE, LAPW",
+    "family": "Linearized augmented plane waves",
+    "homepage": "https://www.flapw.de/pm/",
+    "license": "F(O)",
+    "license_annotation": null,
+    "name": "FLEUR",
+    "query_method": "search term",
+    "query_string": "FLEUR Bl\u00fcgel",
+    "tags": [
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "FPLO": {
+    "author_name": "Koepernik",
+    "description": "AE, NAO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.fplo.de/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "FPLO",
+    "query_method": "search term",
+    "query_string": "FPLO Koepernik",
+    "tags": [
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "FoldX": {
+    "author_name": "Serrano",
+    "description": "",
+    "family": "",
+    "homepage": "http://foldx.crg.es/",
+    "license": "F",
+    "license_annotation": "Commercial for non-academic use",
+    "name": "FoldX",
+    "query_method": "search term",
+    "query_string": "FoldX Serrano",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "GAMESS": {
+    "author_name": "Gordon",
+    "description": "AE, PSP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.msg.chem.iastate.edu/",
+    "license": "F",
+    "license_annotation": null,
+    "name": "GAMESS",
+    "query_method": "search term",
+    "query_string": "GAMESS Gordon",
+    "tags": [
+      "nomad_code"
+    ],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "GPAW": {
+    "author_name": "Mortensen",
+    "description": "PP, PW, PAW, RS, NAO",
+    "family": "<p>Plane-wave basis sets</p> <p>Atom-centered basis sets</p> <p>Real-space grids</p>",
+    "homepage": "https://wiki.fysik.dtu.dk/gpaw/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "GPAW",
+    "query_method": "search term",
+    "query_string": "GPAW Mortensen",
+    "tags": [
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "GPIUTMD": {
+    "author_name": "Ziaei-Rad",
+    "description": "",
+    "family": "",
+    "homepage": "https://gpiutmd.iut.ac.ir/index.php",
+    "license": "I",
+    "license_annotation": null,
+    "name": "GPIUTMD",
+    "query_method": "search term",
+    "query_string": "GPIUTMD Ziaei-Rad",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "GROMOS": {
+    "author_name": "Van Gunsteren",
+    "description": "",
+    "family": "",
+    "homepage": "http://www.gromos.net/",
+    "license": "C(O)",
+    "license_annotation": null,
+    "name": "GROMOS",
+    "query_method": "search term",
+    "query_string": "GROMOS van Gunsteren",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "GULP": {
+    "author_name": "Gale",
+    "description": "",
+    "family": "",
+    "homepage": "https://gulp.curtin.edu.au/gulp/",
+    "license": "F",
+    "license_annotation": "Commercial for non-academic use",
+    "name": "GULP",
+    "query_method": "search term",
+    "query_string": "GULP Gale",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "Gaussian": {
+    "author_name": "Frisch",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.gaussian.com/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "Gaussian",
+    "query_method": "search term",
+    "query_string": "Gaussian package Frisch",
+    "tags": [
+      "nomad_code",
+      "optional_pbc"
+    ],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "Gromacs": {
+    "author_name": "Lindahl",
+    "description": "",
+    "family": "",
+    "homepage": "https://www.gromacs.org/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "Gromacs",
+    "query_method": "search term",
+    "query_string": "GROMACS Lindahl ",
+    "tags": [
+      "nomad_code"
+    ],
+    "types": [
+      "FF"
+    ]
+  },
+  "HOOMD-blue": {
+    "author_name": "Anderson",
+    "description": "",
+    "family": "",
+    "homepage": "https://codeblue.umich.edu/hoomd-blue/index.html",
+    "license": "G",
+    "license_annotation": null,
+    "name": "HOOMD-blue",
+    "query_method": "search term",
+    "query_string": "HOOMD-blue Anderson",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "Jaguar": {
+    "author_name": "Schr\u00f6dinger",
+    "description": "AE, PP, GTO, STO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.schrodinger.com/Jaguar/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "Jaguar",
+    "query_method": "search term",
+    "query_string": "Jaguar Schr\u00f6dinger",
+    "tags": [],
+    "types": [
+      "DFT",
+      "HF"
+    ]
+  },
+  "LAMMPS": {
+    "author_name": "Plimpton",
+    "description": "",
+    "family": "",
+    "homepage": "https://lammps.sandia.gov/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "LAMMPS",
+    "query_method": "search term",
+    "query_string": "LAMMPS Plimpton",
+    "tags": [
+      "nomad_code"
+    ],
+    "types": [
+      "FF"
+    ]
+  },
+  "LibAtoms / QUIP / GAP": {
+    "author_name": "Csanyi",
+    "description": "",
+    "family": "",
+    "homepage": "http://libatoms.github.io/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "LibAtoms / QUIP / GAP",
+    "query_method": "search term",
+    "query_string": "LibAtoms Csanyi",
+    "tags": [],
+    "types": [
+      "FF",
+      "TB"
+    ]
+  },
+  "MADNESS": {
+    "author_name": "Harrison",
+    "description": "AE, WLT",
+    "family": "",
+    "homepage": "https://github.com/m-a-d-n-e-s-s/madness",
+    "license": "G",
+    "license_annotation": null,
+    "name": "MADNESS",
+    "query_method": "publication",
+    "query_string": "R. J. Harrison, G. I. Fann, T. Yanai, Z. Gan, G. Beylkin, J. Chem. Phys. 121, 11587 (2004).",
+    "query_publication_id": 6215247752500065470,
+    "tags": [],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "MCCCS Towhee": {
+    "author_name": "Martin",
+    "description": "",
+    "family": "",
+    "homepage": "http://towhee.sourceforge.net",
+    "license": "G",
+    "license_annotation": null,
+    "name": "MCCCS Towhee",
+    "query_method": "search term",
+    "query_string": "MCCCS Towhee Martin",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "MOE": {
+    "author_name": "Chemical Computing Group",
+    "description": "See Gaussian, ADF, MOPAC, GAMESS for WFM",
+    "family": "",
+    "homepage": "https://www.chemcomp.com/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "MOE",
+    "query_method": "search term",
+    "query_string": "MOE \"Chemical Computing Group\"",
+    "tags": [],
+    "types": [
+      "FF",
+      "WFM"
+    ]
+  },
+  "MOIL": {
+    "author_name": "Elber",
+    "description": "",
+    "family": "",
+    "homepage": "https://clsb.ices.utexas.edu/web/moil.html",
+    "license": "G",
+    "license_annotation": null,
+    "name": "MOIL",
+    "query_method": "search term",
+    "query_string": "\"MOIL\" Elber",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "MOLCAS": {
+    "author_name": "Lindh",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://www.molcas.org/",
+    "license": "C",
+    "license_annotation": "Version 8.2 will have license G",
+    "name": "MOLCAS",
+    "query_method": "search term",
+    "query_string": "MOLCAS Lindh",
+    "tags": [],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "MOPAC": {
+    "author_name": "Stewart",
+    "description": "PP, STO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://openmopac.net/",
+    "license": "F(O)",
+    "license_annotation": "Commercial for non-academic use",
+    "name": "MOPAC",
+    "query_method": "search term",
+    "query_string": "MOPAC Stewart",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "FF",
+      "WFM"
+    ]
+  },
+  "MPQC": {
+    "author_name": "Janssen",
+    "description": "AE, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://mpqc.org/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "MPQC",
+    "query_method": "search term",
+    "query_string": "MPQC Janssen",
+    "tags": [],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "MacroModel": {
+    "author_name": "Schr\u00f6dinger",
+    "description": "",
+    "family": "",
+    "homepage": "https://www.schrodinger.com/MacroModel/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "MacroModel",
+    "query_method": "search term",
+    "query_string": "MacroModel Schr\u00f6dinger",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "Molpro": {
+    "author_name": "Werner",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.molpro.net/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "Molpro",
+    "query_method": "search term",
+    "query_string": "Molpro Werner",
+    "tags": [],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "NAMD": {
+    "author_name": "Schulten",
+    "description": "",
+    "family": "",
+    "homepage": "https://www.ks.uiuc.edu/Research/namd/",
+    "license": "F(O)",
+    "license_annotation": null,
+    "name": "NAMD",
+    "query_method": "search term",
+    "query_string": "\"NAMD\" Schulten",
+    "tags": [
+      "nomad_code"
+    ],
+    "types": [
+      "FF"
+    ]
+  },
+  "NRLMOL": {
+    "author_name": "Pederson",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://quantum.utep.edu/?q=node/3",
+    "license": "F",
+    "license_annotation": null,
+    "name": "NRLMOL",
+    "query_method": "search term",
+    "query_string": "NRLMOL Pederson",
+    "tags": [],
+    "types": [
+      "DFT"
+    ]
+  },
+  "NWChem": {
+    "author_name": "Valiev",
+    "description": "AE, PP, GTO, PW, PAW",
+    "family": "<p>Plane-wave basis sets</p> <p>Atom-centered basis sets</p>",
+    "homepage": "https://www.nwchem-sw.org/",
+    "license": "F(O)",
+    "license_annotation": null,
+    "name": "NWChem",
+    "query_method": "search term",
+    "query_string": "NWChem Valiev",
+    "tags": [
+      "nomad_code",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM",
+      "FF"
+    ]
+  },
+  "ONETEP": {
+    "author_name": "Skylaris",
+    "description": "PP, PW",
+    "family": "Plane-wave basis sets",
+    "homepage": "https://www.onetep.org/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "ONETEP",
+    "query_method": "search term",
+    "query_string": "ONETEP Skylaris",
+    "tags": [
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "ORAC": {
+    "author_name": "Marchi",
+    "description": "",
+    "family": "",
+    "homepage": "http://www.chim.unifi.it/orac/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "ORAC",
+    "query_method": "search term",
+    "query_string": "ORAC Marchi",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "ORCA": {
+    "author_name": "Neese",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://orcaforum.kofo.mpg.de/app.php/portal",
+    "license": "F",
+    "license_annotation": null,
+    "name": "ORCA",
+    "query_method": "search term",
+    "query_string": "ORCA Neese",
+    "tags": [
+      "nomad_code",
+      "data_representation"
+    ],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "OpenMX": {
+    "author_name": "Ozaki",
+    "description": "PP, NAO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://www.openmx-square.org/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "OpenMX",
+    "query_method": "search term",
+    "query_string": "OpenMX Ozaki",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "PARSEC": {
+    "author_name": "Saad",
+    "description": "PP, RS",
+    "family": "Real-space grids",
+    "homepage": "https://parsec.ices.utexas.edu",
+    "license": "G",
+    "license_annotation": null,
+    "name": "PARSEC",
+    "query_method": "search term",
+    "query_string": "PARSEC Saad",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "PLATO": {
+    "author_name": "Horsfield",
+    "description": "AE, PP, NAO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://cpc.cs.qub.ac.uk/summaries/AEFC_v1_0.html",
+    "license": "I",
+    "license_annotation": null,
+    "name": "PLATO",
+    "query_method": "search term",
+    "query_string": "\"PLATO\" Horsfield DFT",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "TB",
+      "DFT"
+    ]
+  },
+  "PWPAW / ATOMPAW": {
+    "author_name": "Holzwarth",
+    "description": "AE, PP, PW, PAW",
+    "family": "Plane-wave basis sets",
+    "homepage": "http://users.wfu.edu/natalie/papers/pwpaw/man.html",
+    "license": "F(O)",
+    "license_annotation": null,
+    "name": "PWPAW / ATOMPAW",
+    "query_method": "search term",
+    "query_string": "ATOMPAW Holzwarth",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "Psi4": {
+    "author_name": "Sherrill",
+    "description": "AE, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.psicode.org/",
+    "license": "F(O)",
+    "license_annotation": null,
+    "name": "Psi4",
+    "query_method": "search term",
+    "query_string": "Psi4 Sherrill",
+    "tags": [],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "Q": {
+    "author_name": "\u00c5qvist",
+    "description": "",
+    "family": "",
+    "homepage": "https://github.com/qusers/Q6",
+    "license": "F(O)",
+    "license_annotation": "Commercial for non-academic use",
+    "name": "Q",
+    "query_method": "publication",
+    "query_string": "J. Marelius, K. Kolmodin, I. Feierberg, J. \u00c5qvist, Journal of Molecular Graphics and Modelling 16, 213 (1998).",
+    "query_publication_id": 4371251031908136771,
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "Q-Chem": {
+    "author_name": "Shao",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.q-chem.com/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "Q-Chem",
+    "query_method": "search term",
+    "query_string": "\"Q-Chem\" Shao",
+    "tags": [],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "Qbox": {
+    "author_name": "Gygi",
+    "description": "PW, PP",
+    "family": "",
+    "homepage": "http://www.qboxcode.org",
+    "license": "G(O)",
+    "license_annotation": null,
+    "name": "Qbox",
+    "query_method": "search term",
+    "query_string": "Qbox Gygi",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "Quantum ESPRESSO": {
+    "author_name": "Giannozzi",
+    "description": "PP, PW",
+    "family": "Plane-wave basis sets",
+    "homepage": "https://www.quantum-espresso.org/",
+    "license": "G(O)",
+    "license_annotation": null,
+    "name": "Quantum ESPRESSO",
+    "query_method": "search term",
+    "query_string": "\"Quantum ESPRESSO\" Giannozzi",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "RMCprofile": {
+    "author_name": "Tucker",
+    "description": "",
+    "family": "",
+    "homepage": "http://www.rmcprofile.org/Main_Page",
+    "license": "F",
+    "license_annotation": null,
+    "name": "RMCprofile",
+    "query_method": "search term",
+    "query_string": "RMCprofile Tucker",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "RedMD": {
+    "author_name": "Trylska",
+    "description": "",
+    "family": "",
+    "homepage": "http://bionano.cent.uw.edu.pl/software/redmd/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "RedMD",
+    "query_method": "search term",
+    "query_string": "RedMD Trylska",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "S / PHI / nX": {
+    "author_name": "Boeck",
+    "description": "PP, PW",
+    "family": "Plane-wave basis sets",
+    "homepage": "https://sxrepo.mpie.de/",
+    "license": "A",
+    "license_annotation": null,
+    "name": "S / PHI / nX",
+    "query_method": "search term",
+    "query_string": "S/PHI/nX Boeck",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "SIESTA": {
+    "author_name": "Soler",
+    "description": "PP, NAO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://departments.icmab.es/leem/siesta/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "SIESTA",
+    "query_method": "search term",
+    "query_string": "SIESTA Soler",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "Smeagol": {
+    "author_name": "Lambert",
+    "description": "PP, NAO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.tcd.ie/Physics/Smeagol/index.html",
+    "license": "F",
+    "license_annotation": null,
+    "name": "Smeagol",
+    "query_method": "search term",
+    "query_string": "Smeagol Lambert",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "TB-LMTO-ASA (Stuttgart)": {
+    "author_name": "Andersen",
+    "description": "AE, LMTO, MTO",
+    "family": "",
+    "homepage": "https://www2.fkf.mpg.de/andersen/LMTODOC/LMTODOC.html",
+    "license": "F",
+    "license_annotation": null,
+    "name": "TB-LMTO-ASA (Stuttgart)",
+    "query_method": "search term",
+    "query_string": "\"TB-LMTO\" Andersen",
+    "tags": [
+      "nomad_code"
+    ],
+    "types": [
+      "DFT",
+      "TB"
+    ]
+  },
+  "TINKER": {
+    "author_name": "Ponder",
+    "description": "",
+    "family": "",
+    "homepage": "https://dasher.wustl.edu/tinker/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "TINKER",
+    "query_method": "search term",
+    "query_string": "TINKER Ponder",
+    "tags": [
+      "nomad_code"
+    ],
+    "types": [
+      "FF"
+    ]
+  },
+  "TREMOLO-X": {
+    "author_name": "Griebel",
+    "description": "",
+    "family": "",
+    "homepage": "http://www.tremolo-x.com",
+    "license": "I",
+    "license_annotation": null,
+    "name": "TREMOLO-X",
+    "query_method": "search term",
+    "query_string": "TREMOLO-X Griebel",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "TURBOMOLE": {
+    "author_name": "Ahlrichs",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://www.turbomole.com/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "TURBOMOLE",
+    "query_method": "search term",
+    "query_string": "TURBOMOLE Ahlrichs",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "TeraChem": {
+    "author_name": "Martinez",
+    "description": "AE, PP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://www.petachem.com/products.html",
+    "license": "C",
+    "license_annotation": null,
+    "name": "TeraChem",
+    "query_method": "search term",
+    "query_string": "\"TeraChem\" Martinez",
+    "tags": [],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "VASP": {
+    "author_name": "Kresse",
+    "description": "PP, PW, PAW",
+    "family": "Plane-wave basis sets",
+    "homepage": "https://www.vasp.at/",
+    "license": "C(O)",
+    "license_annotation": "Free for academic use in Austria",
+    "name": "VASP",
+    "query_method": "search term",
+    "query_string": "VASP Kresse",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "WEST": {
+    "author_name": "Govoni",
+    "description": "PP, PW",
+    "family": "Plane-wave basis sets",
+    "homepage": "http://www.west-code.org/",
+    "license": "G(O)",
+    "license_annotation": null,
+    "name": "WEST",
+    "query_method": "publication",
+    "query_string": "M. Govoni and G. Galli, J. Chem. Theory Comput. 11, 2680 (2015)",
+    "query_publication_id": 10135319195087919820,
+    "tags": [],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "WHAT IF": {
+    "author_name": "Vriend",
+    "description": "",
+    "family": "",
+    "homepage": "https://en.wikipedia.org/wiki/WHAT_IF_software",
+    "license": "C",
+    "license_annotation": null,
+    "name": "WHAT IF",
+    "query_method": "search term",
+    "query_string": "\"WHAT IF\" Vriend",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "WIEN2k": {
+    "author_name": "Blaha",
+    "description": "AE, LAPW",
+    "family": "Linearized augmented plane waves",
+    "homepage": "http://www.wien2k.at/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "WIEN2k",
+    "query_method": "search term",
+    "query_string": "WIEN2k Blaha",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "YASARA": {
+    "author_name": "Krieger",
+    "description": "",
+    "family": "",
+    "homepage": "http://yasara.org/",
+    "license": "C",
+    "license_annotation": null,
+    "name": "YASARA",
+    "query_method": "search term",
+    "query_string": "YASARA Krieger",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "Yambo": {
+    "author_name": "Marini",
+    "description": "PP, PW",
+    "family": "Plane-wave basis sets",
+    "homepage": "http://www.yambo-code.org/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "Yambo",
+    "query_method": "search term",
+    "query_string": "Yambo Marini",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "exciting": {
+    "author_name": "Draxl",
+    "description": "AE, LAPW",
+    "family": "Linearized augmented plane waves",
+    "homepage": "http://exciting-code.org/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "exciting",
+    "query_method": "search term",
+    "query_string": "\"exciting\" code Draxl",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
+  "gSAFT": {
+    "author_name": "PSe",
+    "description": "",
+    "family": "",
+    "homepage": "https://www.psenterprise.com/products/gsaft/overview",
+    "license": "C",
+    "license_annotation": null,
+    "name": "gSAFT",
+    "query_method": "search term",
+    "query_string": "\"gSAFT\" fluid",
+    "tags": [],
+    "types": [
+      "FF"
+    ]
+  },
+  "jDFTx / DFT++": {
+    "author_name": "Sundararaman",
+    "description": "AE, PP, PW",
+    "family": "Plane-wave basis sets",
+    "homepage": "https://jdftx.org/",
+    "license": "G",
+    "license_annotation": null,
+    "name": "jDFTx / DFT++",
+    "query_method": "search term",
+    "query_string": "jDFTx Sundararaman",
+    "tags": [
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ]
+  },
+  "octopus": {
+    "author_name": "Rubio",
+    "description": "PP, RS",
+    "family": "Real-space grids",
+    "homepage": "https://www.tddft.org/programs/octopus/wiki/index.php/Main_Page",
+    "license": "G",
+    "license_annotation": null,
+    "name": "octopus",
+    "query_method": "search term",
+    "query_string": "octopus Rubio",
+    "tags": [
+      "nomad_code",
+      "data_representation",
+      "optional_pbc"
+    ],
+    "types": [
+      "DFT"
+    ]
+  }
+}
