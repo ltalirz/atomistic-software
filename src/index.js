@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 import './index.css';
 //import './App.css';
@@ -10,7 +10,7 @@ import Chart from './components/Chart/chart';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter basename='/'>
     <div>
         <header>
           Atomistic Simulation Engines
@@ -22,10 +22,10 @@ ReactDOM.render(
         </main>
   
         <footer>
-          (c) 2020 Leopold Talirz
+          (c) 2021 Leopold Talirz
         </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
