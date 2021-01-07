@@ -1,12 +1,12 @@
 import citations from '../data/citations.json'
-import codes_metadata from '../data/codes_metadata.json'
+import codes from '../data/codes.json'
 
 function yearToRange(year) {
   return year.toString() + '-' + year.toString();
 }
 
 function rangeToYear(range) {
-  return range.split('-')[0];
+  return parseInt(range.split('-')[0]);
 }
 
 // For whatever reason, one cannot simply use `citations.keys()`
@@ -19,14 +19,14 @@ YEARS.sort();
 
 
 let CODES = [];
-for (const codename in codes_metadata){
+for (const codename in codes){
     CODES.push(codename);
 }
 
 function getData(year) {
   let range_key = yearToRange(year);
   let citations_data = citations[range_key]['citations'];
-  let data = codes_metadata; //.slice();
+  let data = codes; //.slice();
 
   for (const codename in data) {
     data[codename]['citations'] = citations_data[codename]['citations'];
@@ -57,8 +57,6 @@ function getDataChart(){
         }
         lines.push({ 'id': codeName, 'data': line_data});
     }
-
-    console.log(lines);
     return lines;
 }
 

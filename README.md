@@ -12,7 +12,7 @@ Anybody is welcome to contribute simulation engines.
 
 In order to keep the size of the list somewhat manageable, a new code must have had **at least one year with 100 citations or more**.
 
- * Add entry to `src/data/codes_metadata.json`
+ * Add entry to `src/data/codes.json`
  * Add citation information to `src/data/citations.json`
 
 ## Developing the app

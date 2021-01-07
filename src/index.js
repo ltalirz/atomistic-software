@@ -11,11 +11,7 @@ import Chart from './components/Chart/chart';
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter basename='/'>
-    <div>
-        <header>
-          Atomistic Simulation Engines
-        </header>
-  
+    <div>  
         <main>
           <Route exact path="/" component={Table}/>
           <Route exact path="/chart" component={Chart} />
@@ -29,6 +25,10 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+/* <header>
+Atomistic Simulation Engines
+</header> */
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

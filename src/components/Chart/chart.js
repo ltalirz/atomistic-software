@@ -1,5 +1,4 @@
 import React from 'react'
-//import { ResponsiveBar } from '@nivo/bar'
 import { ResponsiveLine } from '@nivo/line'
 
 //import config from './config'

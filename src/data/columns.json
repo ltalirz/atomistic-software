@@ -1,27 +1,33 @@
 [
     {
         "name": "name",
-        "label": "Code"
+        "label": "Code",
+        "options": { "filter": false, "sort": true }
     },
     {
         "name": "author_name",
-        "label": "Authors"
+        "label": "Authors",
+        "options": { "filter": false, "sort": true }
     },
     {
         "name": "description",
-        "label": "Description"
+        "label": "Description",
+        "options": { "filter": false, "sort": true }
     },
     {
         "name": "license",
-        "label": "License"
+        "label": "License",
+        "options": { "filter": true, "sort": true }
     },
 
     {
         "name": "types",
-        "label": "Types"
+        "label": "Types",
+        "options": { "filter": true, "sort": true }
     },
     {
         "name": "citations",
-        "label": "Citations"
+        "label": "Citations",
+        "options": { "filter": false, "sort": true }
     }
 ]
