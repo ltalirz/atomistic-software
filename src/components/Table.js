@@ -1,16 +1,12 @@
-import './App.css';
 import React from 'react';
 import MUIDataTable from "mui-datatables";
 //import RangeSlider from './components/RangeSlider'
 //idea: use search icon for link to google scholar
 //import SearchIcon from '@material-ui/icons/Search'
 
-
-//import { Chart } from './components'
-//import { Table } from './components'
-import citations from './data/citations.json'
-import codes_metadata from './data/codes_metadata.json'
-import columns from './data/columns.json'
+import citations from '../data/citations.json'
+import codes_metadata from '../data/codes_metadata.json'
+import columns from '../data/columns.json'
 
 function yearToRange(year) {
   return year.toString() + '-' + year.toString();
@@ -42,7 +38,7 @@ function getData(year) {
   return dataArray;
 }
 
-class App extends React.Component {
+class Table extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -107,4 +103,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Table;

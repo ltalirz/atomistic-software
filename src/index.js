@@ -1,12 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import './index.css';
+//import './App.css';
+import Table from './components/Table';
+import Chart from './components/Chart/chart';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <div>
+        <header>
+          Atomistic Simulation Engines
+        </header>
+  
+        <main>
+          <Route exact path="/" component={Table}/>
+          <Route exact path="/chart" component={Chart} />
+        </main>
+  
+        <footer>
+          (c) 2020 Leopold Talirz
+        </footer>
+      </div>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
