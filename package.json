@@ -5,19 +5,16 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
-    "@nivo/bar": "^0.67.0",
     "@nivo/core": "^0.67.0",
+    "@nivo/line": "^0.67.0",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "mui-datatables": "^3.7.3",
     "react": "^17.0.1",
-    "react-base-table": "^1.12.0",
     "react-dom": "^17.0.1",
-    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "react-table": "^7.6.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

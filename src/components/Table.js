@@ -4,39 +4,8 @@ import MUIDataTable from "mui-datatables";
 //idea: use search icon for link to google scholar
 //import SearchIcon from '@material-ui/icons/Search'
 
-import citations from '../data/citations.json'
-import codes_metadata from '../data/codes_metadata.json'
 import columns from '../data/columns.json'
-
-function yearToRange(year) {
-  return year.toString() + '-' + year.toString();
-}
-
-function rangeToYear(range) {
-  return range.split('-')[0];
-}
-
-// For whatever reason, one cannot simply use `citations.keys()`
-let years = [];
-for (const citation in citations){
-  years.push(rangeToYear(citation));
-}
-
-function getData(year) {
-  let range_key = yearToRange(year);
-  let citations_data = citations[range_key]['citations'];
-  let data = codes_metadata; //.slice();
-
-  for (const codename in data) {
-    data[codename]['citations'] = citations_data[codename]['citations'];
-  }
-
-  let dataArray = [];
-  for (const codename in data) {
-    dataArray.push(data[codename]);
-  }
-  return dataArray;
-}
+import {YEARS, getData} from './Config';
 
 class Table extends React.Component {
   constructor(props) {
@@ -87,7 +56,7 @@ class Table extends React.Component {
       <div className="App">
         <header className="App-header">
           <select defaultValue={this.state.year} onChange={(event) => this.handleYearChange(event)}>
-            {years.map( x => <option key={x}>{x}</option>)}
+            {YEARS.map( x => <option key={x}>{x}</option>)}
           </select>
           <MUIDataTable
             title={"QM Code List"}
