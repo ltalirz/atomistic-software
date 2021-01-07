@@ -1,0 +1,28 @@
+name: ci
+
+on: [push, pull_request]
+
+jobs:
+
+  check-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v1
+    # link checker ignores json files
+    - name: Copy codes.json
+      run: |
+        grep homepage src/data/codes.json > codes.md
+
+    - name: Link Checker
+      id: lc
+      uses: lycheeverse/lychee-action@v1
+      with:
+        # for excluded URLs, the checker seems to be stricter than Chrome
+        args: >-
+          -v --timeout 40 
+          --exclude "https://www.msg.chem.iastate.edu/" 
+          --exclude "https://www.tcd.ie/Physics/Smeagol/index.html"
+          codes.md
+    - name: Fail if there were link errors
+      run: exit ${{ steps.lc.outputs.exit_code }}

@@ -17,7 +17,7 @@ class Table extends React.Component {
       options: {
         'filterType': 'checkbox',
         'sortOrder': { 'name': 'citations', 'direction': 'desc' },
-        'rowsPerPage': 15,
+        'rowsPerPage': 100,
       }
     };
   }
@@ -38,7 +38,7 @@ class Table extends React.Component {
     // add google scholar link to number of citations
     cols.slice(-1)[0]['options']['customBodyRenderLite'] = (dataIndex) => {
       const row = this.state.data[dataIndex];
-      const searchUrl = 'https://scholar.google.com/scholar?q=' + row['query_string']
+      const searchUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(row['query_string'])
         + '&hl=en&as_sdt=0%2C5&as_ylo=' + this.state.year + '&as_yhi=' + this.state.year;
       return <a href={searchUrl} target='_blank' rel="noreferrer">{row['citations']}</a>;
     }
