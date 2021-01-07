@@ -1094,6 +1094,18 @@
       "ASW program package": {
         "citations": 0,
         "datestamp": "2021-01-04"
+      },
+      "MADNESS": {
+        "citations": 17,
+        "datestamp": "2021-01-07"
+      },
+      "Q": {
+        "citations": 21,
+        "datestamp": "2021-01-07"
+      },
+      "WEST": {
+        "citations": 36,
+        "datestamp": "2021-01-07"
       }
     }
   },
