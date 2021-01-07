@@ -4,7 +4,6 @@ import MUIDataTable from "mui-datatables";
 //idea: use search icon for link to google scholar
 //import SearchIcon from '@material-ui/icons/Search'
 
-import columns from '../data/columns.json'
 import { YEARS, getData } from './Config';
 
 class Table extends React.Component {
@@ -13,7 +12,7 @@ class Table extends React.Component {
     this.state = {
       year: "2020",
       data: getData("2020"),
-      columns: columns,
+      columns: null,
       options: {
         'filterType': 'checkbox',
         'sortOrder': { 'name': 'citations', 'direction': 'desc' },
@@ -27,25 +26,66 @@ class Table extends React.Component {
   }
 
   getColumns() {
-    let cols = this.state.columns;
+    let columns = [
+      {
+        "name": "name",
+        "label": "Code",
+        "options": {
+          "filter": false, "sort": true,
+          // add homepage link to code
+          "customBodyRenderLite": (dataIndex) => {
+            const row = this.state.data[dataIndex];
+            return <a href={row['homepage']} target='_blank' rel="noreferrer">{row['name']}</a>;
+          }
+        }
+      },
+      {
+        "name": "author_name",
+        "label": "Authors",
+        "options": { "filter": false, "sort": true }
+      },
+      {
+        "name": "description",
+        "label": "Notes",
+        "options": { "filter": false, "sort": true }
+      },
+      {
+        "name": "license",
+        "label": "License",
+        "options": { "filter": true, "sort": true }
+      },
 
-    // add homepage link to code
-    cols[0]['options']['customBodyRenderLite'] = (dataIndex) => {
-      const row = this.state.data[dataIndex];
-      return <a href={row['homepage']} target='_blank' rel="noreferrer">{row['name']}</a>;
-    }
-
-    // add google scholar link to number of citations
-    cols.slice(-1)[0]['options']['customBodyRenderLite'] = (dataIndex) => {
-      const row = this.state.data[dataIndex];
-      const searchUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(row['query_string'])
-        + '&hl=en&as_sdt=0%2C5&as_ylo=' + this.state.year + '&as_yhi=' + this.state.year;
-      return <a href={searchUrl} target='_blank' rel="noreferrer">{row['citations']}</a>;
-    }
+      {
+        "name": "types",
+        "label": "Methods",
+        "options": { 
+          "filter": true, 
+          "sort": true,
+          "customBodyRenderLite": (dataIndex) => {
+            return Array.from(this.state.data[dataIndex]['types']).join(', ')
+          }
+        }
+      },
+      {
+        "name": "citations",
+        "label": "Citations",
+        "options": {
+          "filter": false,
+          "sort": true,
+          // add google scholar link to number of citations
+          "customBodyRenderLite": (dataIndex) => {
+            const row = this.state.data[dataIndex];
+            const searchUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(row['query_string'])
+              + '&hl=en&as_sdt=0%2C5&as_ylo=' + this.state.year + '&as_yhi=' + this.state.year;
+            return <a href={searchUrl} target='_blank' rel="noreferrer">{row['citations']}</a>;
+          }
+        }
+      }
+    ]
 
     // add search link to citation
 
-    return cols;
+    return columns;
   }
 
   render() {
