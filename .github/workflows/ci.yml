@@ -19,10 +19,11 @@ jobs:
       uses: lycheeverse/lychee-action@v1
       with:
         # for excluded URLs, the checker seems to be stricter than Chrome
+          #--exclude "https://www.msg.chem.iastate.edu/" 
+          #--exclude "https://www.tcd.ie/Physics/Smeagol/index.html"
         args: >-
           -v --timeout 40 
-          --exclude "https://www.msg.chem.iastate.edu/" 
-          --exclude "https://www.tcd.ie/Physics/Smeagol/index.html"
           codes.md
+
     - name: Fail if there were link errors
       run: exit ${{ steps.lc.outputs.exit_code }}
