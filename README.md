@@ -2,9 +2,7 @@
 
 This is a collaboratively edited list of atomistic simulation codes, together with citation information of the past couple of years.
 
-
-Please visit ... for the live web site.
-
+Please visit [ltalirz.github.io/atsim-trends](https://ltalirz.github.io/atsim-trends/#/) for the live web site.
 
 ## Adding a simulation engine
 
@@ -12,8 +10,8 @@ Anybody is welcome to contribute simulation engines.
 
 In order to keep the size of the list somewhat manageable, a new code must have had **at least one year with 100 citations or more**.
 
- * Add entry to `src/data/codes.json`
- * Add citation information to `src/data/citations.json`
+ * Add code metadata to [`src/data/codes.json`](src/data/codes.json)
+ * Add citation information to [`src/data/citations.json`](src/data/citations.json)
 
 ## Developing the app
 
