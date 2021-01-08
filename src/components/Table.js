@@ -4,8 +4,7 @@
 import React from 'react';
 import MUIDataTable from "mui-datatables";
 //import RangeSlider from './RangeSlider'
-//idea: use search icon for link to google scholar
-//import SearchIcon from '@material-ui/icons/Search'
+
 
 import { YEARS, getData } from './Config';
 import { getColumns } from './Columns';

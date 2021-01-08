@@ -5,6 +5,9 @@ import Tooltip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
 import methods from '../data/methods';
 import licenses from '../data/licenses';
+//idea: use search icon for link to google scholar
+import SearchIcon from '@material-ui/icons/Search';
+import {Link } from "react-router-dom";
 
 function getColumns(data, year) {
     /**
@@ -44,7 +47,7 @@ function getColumns(data, year) {
                 "sort": true,
                 "customBodyRenderLite": (dataIndex) => {
                     const x = data[dataIndex]['license'];
-                    return  <Tooltip title={licenses[x]} placement="top-end" key={x}><Button>{x}</Button></Tooltip>;
+                    return <Tooltip title={licenses[x]} placement="top-end" key={x}><Button>{x}</Button></Tooltip>;
                 }
             }
         },
@@ -72,7 +75,11 @@ function getColumns(data, year) {
                     const row = data[dataIndex];
                     const searchUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(row['query_string'])
                         + '&hl=en&as_sdt=0%2C5&as_ylo=' + year + '&as_yhi=' + year;
-                    return <a href={searchUrl} target='_blank' rel="noreferrer">{row['citations']}</a>;
+                    return (
+                    <div><a href={searchUrl} target='_blank' rel="noreferrer">{row['citations']}</a>
+                        <Link to={`/charts/${row['name']}`} activeClassName="current"><SearchIcon/> </Link>
+
+                    </div>);
                 }
             }
         }
