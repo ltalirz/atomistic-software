@@ -8,6 +8,7 @@ import './index.css';
 import Table from './components/Table';
 import Chart from './components/Chart/chart';
 import SingleChart from './components/Chart/single';
+import Typography from '@material-ui/core/Typography';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,7 +21,7 @@ ReactDOM.render(
         </main>
   
         <footer>
-          (c) 2021 Leopold Talirz
+          <Typography>(c) 2021 Leopold Talirz</Typography>
         </footer>
       </div>
     </HashRouter>

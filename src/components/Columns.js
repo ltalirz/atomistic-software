@@ -75,11 +75,20 @@ function getColumns(data, year) {
                     const row = data[dataIndex];
                     const searchUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(row['query_string'])
                         + '&hl=en&as_sdt=0%2C5&as_ylo=' + year + '&as_yhi=' + year;
-                    return (
-                    <div><a href={searchUrl} target='_blank' rel="noreferrer">{row['citations']}</a>
-                        <Link to={`/charts/${row['name']}`} activeClassName="current"><SearchIcon/> </Link>
-
-                    </div>);
+                    return (<a href={searchUrl} target='_blank' rel="noreferrer">{row['citations']}</a>);
+                }
+            }
+        },
+        {
+            "name": "trend",
+            "label": "Trend",
+            "options": {
+                "filter": false,
+                "sort": true,
+                // add google scholar link to number of citations
+                "customBodyRenderLite": (dataIndex) => {
+                    const row = data[dataIndex];
+                    return <Button href={'#/charts/' + encodeURIComponent(row['name'])} ><SearchIcon/> </Button>;
                 }
             }
         }

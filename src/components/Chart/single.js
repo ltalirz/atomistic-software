@@ -10,7 +10,7 @@ import {
 import Typography from '@material-ui/core/Typography';
 
 function SingleChart() {
-    let codeName = useParams()['code'];
+    let codeName = decodeURIComponent( useParams()['code']);
     const data = getCodeCitations(codeName) ;
 
     const ratio = data.slice(-1)[0]['y'] / data[0]['y'];
