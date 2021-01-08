@@ -1,0 +1,15 @@
+{
+   "G": "GPL open-source family (including LGPL, such as Educational Community License or Apache 2)",
+   "A": "Apache open-source family (including Educational Community License)",
+   "F": "Free (custom license)",
+   "F(A)": "Free (academic use only)",
+   "C": "Commercial",
+   "C(S)": "Commercial (source available)",
+   "C(C)": "Commercial (closed source)",
+   "I":  "Individual-basis license (via contacting the authors)",
+   "[1]":  "Free for academic use in Austria",
+   "[2]": "Free for academic use in UK",
+   "[3]": "Free demo serial version (max 20 atoms/cell)",
+   "[4]":  "Commercial for non-academic use",
+   "[5]": "Version 8.2 will have license G"
+}
