@@ -1,3 +1,6 @@
+/**
+ * Overview table with all codes.
+ */
 import React from 'react';
 import MUIDataTable from "mui-datatables";
 //import RangeSlider from './RangeSlider'
@@ -5,6 +8,7 @@ import MUIDataTable from "mui-datatables";
 //import SearchIcon from '@material-ui/icons/Search'
 
 import { YEARS, getData } from './Config';
+import { getColumns } from './Columns';
 
 class Table extends React.Component {
   constructor(props) {
@@ -25,69 +29,6 @@ class Table extends React.Component {
     this.setState({ year: event.target.value, data: getData(event.target.value) });
   }
 
-  getColumns() {
-    let columns = [
-      {
-        "name": "name",
-        "label": "Code",
-        "options": {
-          "filter": false, "sort": true,
-          // add homepage link to code
-          "customBodyRenderLite": (dataIndex) => {
-            const row = this.state.data[dataIndex];
-            return <a href={row['homepage']} target='_blank' rel="noreferrer">{row['name']}</a>;
-          }
-        }
-      },
-      {
-        "name": "author_name",
-        "label": "Authors",
-        "options": { "filter": false, "sort": true }
-      },
-      {
-        "name": "description",
-        "label": "Notes",
-        "options": { "filter": false, "sort": true }
-      },
-      {
-        "name": "license",
-        "label": "License",
-        "options": { "filter": true, "sort": true }
-      },
-
-      {
-        "name": "types",
-        "label": "Methods",
-        "options": { 
-          "filter": true, 
-          "sort": true,
-          "customBodyRenderLite": (dataIndex) => {
-            return Array.from(this.state.data[dataIndex]['types']).join(', ')
-          }
-        }
-      },
-      {
-        "name": "citations",
-        "label": "Citations",
-        "options": {
-          "filter": false,
-          "sort": true,
-          // add google scholar link to number of citations
-          "customBodyRenderLite": (dataIndex) => {
-            const row = this.state.data[dataIndex];
-            const searchUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(row['query_string'])
-              + '&hl=en&as_sdt=0%2C5&as_ylo=' + this.state.year + '&as_yhi=' + this.state.year;
-            return <a href={searchUrl} target='_blank' rel="noreferrer">{row['citations']}</a>;
-          }
-        }
-      }
-    ]
-
-    // add search link to citation
-
-    return columns;
-  }
-
   render() {
     return (
       <div className="App">
@@ -100,7 +41,7 @@ class Table extends React.Component {
                 </select>
               </h2>
             }
-            columns={this.getColumns()}
+            columns={getColumns(this.state.data, this.state.year)}
             data={this.state.data}
             options={this.state.options}
           />
