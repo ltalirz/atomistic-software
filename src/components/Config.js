@@ -42,22 +42,27 @@ function getData(year) {
 function getDataChart(){
     let lines = [];
     for(const codeName of CODES.slice(0,50)){
-        let line_data = []
-        for (const year of YEARS) {
-            let data = {};
-            let range_key = yearToRange(year);
-
-            data['x'] = parseInt(year);
-            data['y'] = parseInt(citations[range_key]['citations'][codeName]['citations']);
-            if (isNaN(data['y']) || data['y'] <= 0) { 
-                data['y']=0.1;
-            }
-            line_data.push(data);
-        
-        }
-        lines.push({ 'id': codeName, 'data': line_data});
+        lines.push({ 'id': codeName, 'data': getCodeCitations(codeName)});
     }
     return lines;
 }
 
-export {yearToRange, rangeToYear, YEARS, getData, getDataChart};
+function  getCodeCitations(codeName){
+  console.log(codeName);
+  let line_data = [];
+    for (const year of YEARS) {
+        let data = {};
+        let range_key = yearToRange(year);
+
+        data['x'] = parseInt(year);
+        data['y'] = parseInt(citations[range_key]['citations'][codeName]['citations']);
+        if (isNaN(data['y']) || data['y'] <= 0) { 
+            data['y']=0.1;
+        }
+        line_data.push(data);
+    
+    }
+    return line_data;
+}
+
+export {yearToRange, rangeToYear, YEARS, getData, getDataChart, getCodeCitations};

@@ -7,6 +7,7 @@ import './index.css';
 //import './App.css';
 import Table from './components/Table';
 import Chart from './components/Chart/chart';
+import SingleChart from './components/Chart/single';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
         <main>
           <Route exact path="/" component={Table}/>
           <Route exact path="/chart" component={Chart} />
+          <Route exact path="/charts/:code" component={SingleChart} />
         </main>
   
         <footer>
