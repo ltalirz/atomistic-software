@@ -13,11 +13,12 @@ function SingleChart() {
     const data = getCodeCitations(codeName) ;
 
     const ratio = data.slice(-1)[0]['y'] / data[0]['y'];
+    const annualGrowth = (Math.pow(ratio, 1.0/data.length) - 1) * 100;
 
     return (
         <div className="container">
             <h2 id="title" >
-                {codeName} { ratio.toFixed(1) + 'x'}
+                {codeName} { annualGrowth.toFixed(1) + '% annual growth'}
             </h2>
             <div className="chart">
 
