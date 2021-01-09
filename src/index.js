@@ -6,29 +6,32 @@ import { HashRouter, Route } from 'react-router-dom';
 import './index.css';
 //import './App.css';
 import Table from './components/Table';
+//import Home from './components/Home';
 import Chart from './components/Chart/chart';
 import SingleChart from './components/Chart/single';
 import Typography from '@material-ui/core/Typography';
 
+import Container from '@material-ui/core/Container';
+
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter basename='/'>
-    <div>  
+    <Container maxWidth={'lg'} style={{'textAlign': 'center'}}>
         <main>
           <Route exact path="/" component={Table}/>
           <Route exact path="/chart" component={Chart} />
           <Route exact path="/charts/:code" component={SingleChart} />
+         
         </main>
-  
         <footer>
           <Typography>(c) 2021 Leopold Talirz</Typography>
         </footer>
-      </div>
+      </Container>
     </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
+//  <Route exact path="/home" component={Home} /> 
 /* <header>
 Atomistic Simulation Engines
 </header> */

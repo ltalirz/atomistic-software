@@ -48,7 +48,6 @@ function getDataChart(){
 }
 
 function  getCodeCitations(codeName){
-  console.log(codeName);
   let line_data = [];
     for (const year of YEARS) {
         let data = {};
