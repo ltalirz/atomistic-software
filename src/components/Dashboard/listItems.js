@@ -3,19 +3,17 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InfoIcon from '@material-ui/icons/Info';
-import HomeIcon from '@material-ui/icons/Home';
+// import HomeIcon from '@material-ui/icons/Home';
 import TableChartIcon from '@material-ui/icons/TableChart';
-// import LayersIcon from '@material-ui/icons/Layers';
-// import AssignmentIcon from '@material-ui/icons/Assignment';
 
 export const mainListItems = (
   <div>
-      <ListItem button component={"a"} href={'#/'}>
+{/* {      <ListItem button component={"a"} href={'#/'}>
       <ListItemIcon>
         <HomeIcon />
       </ListItemIcon>
       <ListItemText primary="Home" />
-    </ListItem>
+    </ListItem>} */}
     <ListItem button component={"a"} href={'#/table'}>
       <ListItemIcon>
         <TableChartIcon />
@@ -28,12 +26,6 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="About" />
     </ListItem>
-{/* {  <ListItem button>
-    <ListItemIcon>
-      <ShoppingCartIcon />
-    </ListItemIcon>
-    <ListItemText primary="Orders" />
-  </ListItem>} */}
   </div>
 );
 

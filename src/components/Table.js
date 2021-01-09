@@ -34,7 +34,7 @@ class Table extends React.Component {
         <header className="App-header">
           <MUIDataTable
             title={
-              <h2>Atomistic Simulation Engines &nbsp;
+              <h2>Citation Data &nbsp;
               <select defaultValue={this.state.year} onChange={(event) => this.handleYearChange(event)}>
                   {YEARS.map(x => <option key={x}>{x}</option>)}
                 </select>
