@@ -2,7 +2,7 @@ import React from 'react'
 import { ResponsiveLine } from '@nivo/line'
 
 //import config from './config'
-import './chart.css'
+//import './chart.css'
 import {getDataChart} from '../Config'
 
 class Chart extends React.Component {

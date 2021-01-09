@@ -6,7 +6,25 @@ import Button from '@material-ui/core/Button';
 import methods from '../data/methods';
 import licenses from '../data/licenses';
 //idea: use search icon for link to google scholar
-import SearchIcon from '@material-ui/icons/Search';
+import ShowChartIcon from '@material-ui/icons/ShowChart';
+
+import MoneyOffIcon from '@material-ui/icons/MoneyOff';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+import SchoolIcon from '@material-ui/icons/School';
+import LockOpenIcon from '@material-ui/icons/LockOpen';
+
+import NotInterestedIcon from '@material-ui/icons/NotInterested';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+import CopyrightIcon from '@material-ui/icons/Copyright';
+
+function TooltipText(tooltip, text) {
+    /** 
+     * Tooltip with nicely spaced text that doesn't become a cursor.
+     */
+    return <Tooltip title={tooltip} placement="top-end" key={text}><span style={{ 'cursor': 'default', 'marginRight': '0.5em' }}>{text}</span></Tooltip>;
+    //return <Tooltip title={tooltip} placement="top-end" key={text} clickable={true}><span><Button disabled >{text}</Button></span></Tooltip>;
+    //return <Tooltip title={tooltip} placement="top-end" key={text} clickable={true}><span><Paper  >{text}</Paper></span></Tooltip>;
+}
 
 function getColumns(data, year) {
     /**
@@ -31,26 +49,8 @@ function getColumns(data, year) {
         {
             "name": "author_name",
             "label": "Authors",
-            "options": { "filter": false, "sort": true }
+            "options": { "filter": false, "sort": true, 'selected': false }
         },
-        {
-            "name": "description",
-            "label": "Notes",
-            "options": { "filter": false, "sort": true }
-        },
-        {
-            "name": "license",
-            "label": "License",
-            "options": {
-                "filter": true,
-                "sort": true,
-                "customBodyRenderLite": (dataIndex) => {
-                    const x = data[dataIndex]['license'];
-                    return <Tooltip title={licenses[x]} placement="top-end" key={x}><Button>{x}</Button></Tooltip>;
-                }
-            }
-        },
-
         {
             "name": "types",
             "label": "Methods",
@@ -59,10 +59,61 @@ function getColumns(data, year) {
                 "sort": true,
                 "customBodyRenderLite": (dataIndex) => {
                     const types = data[dataIndex]['types'];
-                    return types.map(x => <Tooltip title={methods[x]} placement="top-end" key={x}><Button>{x}</Button></Tooltip>);
+                    return types.map(x => TooltipText(methods[x], x));
                 }
             }
         },
+
+        {
+            "name": "description",
+            "label": "Notes",
+            "options": { "filter": false, "sort": true }
+        },
+        {
+            "name": "license",
+            "label": "Cost",
+            "options": {
+                "filter": true,
+                "sort": true,
+                "customBodyRenderLite": (dataIndex) => {
+                    const x = data[dataIndex]['license'];
+                    if (['C', 'C(S)', 'C(C)'].includes(x)) {
+                        return TooltipText(licenses[x], [<AttachMoneyIcon />]);
+                    } else if (['F(A)'].includes(x)) {
+                        return TooltipText(licenses[x], [<span><MoneyOffIcon /><SchoolIcon /></span>]);
+                    } else if (['I'].includes(x)) {
+                        return TooltipText(licenses[x], [<ContactMailIcon />]);
+                    } else {
+                        return TooltipText(licenses[x], [<MoneyOffIcon />]);
+                    }
+                    //return TooltipText(licenses[x], x);  import ContactMailIcon from '@material-ui/icons/ContactMail';
+                }
+            }
+        },
+        {
+            "name": "license",
+            "label": "Source",
+            "options": {
+                "filter": true,
+                "sort": true,
+                "customBodyRenderLite": (dataIndex) => {
+                    const x = data[dataIndex]['license'];
+                    if (['C', 'C(S)', 'F(A)'].includes(x)) {
+                        return TooltipText(licenses[x], [<CopyrightIcon />]);
+                    } else if (['C(C)'].includes(x)) {
+                        return TooltipText(licenses[x], [<NotInterestedIcon />]);        
+                    } else if (['OS(P)', 'OS(CL)'].includes(x)) {
+                        return TooltipText(licenses[x], [<LockOpenIcon color={'action'} />]);
+                    } else if (['F'].includes(x)) {
+                        return TooltipText(licenses[x], [<span><CopyrightIcon /></span>]);
+                    } else {
+                        return TooltipText(licenses[x], x);
+                    }
+                }
+            }
+        },
+
+
         {
             "name": "citations",
             "label": "Citations",
@@ -87,7 +138,7 @@ function getColumns(data, year) {
                 // add google scholar link to number of citations
                 "customBodyRenderLite": (dataIndex) => {
                     const row = data[dataIndex];
-                    return <Button href={'#/charts/' + encodeURIComponent(row['name'])} ><SearchIcon/> </Button>;
+                    return <Button href={'#/charts/' + encodeURIComponent(row['name'])} ><ShowChartIcon /> </Button>;
                 }
             }
         }
