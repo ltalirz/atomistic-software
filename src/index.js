@@ -3,21 +3,23 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Route } from 'react-router-dom';
 
-import './index.css';
+//import './index.css';
 //import './App.css';
 import Table from './components/Table';
 //import Home from './components/Home';
 import Chart from './components/Chart/chart';
 import SingleChart from './components/Chart/single';
 import Typography from '@material-ui/core/Typography';
+import Dashboard from './components/Dashboard/Dashboard';
 
 import Container from '@material-ui/core/Container';
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter basename='/'>
-    <Container maxWidth={'lg'} style={{'textAlign': 'center'}}>
+   {/* { <Container maxWidth={'lg'} style={{'textAlign': 'center'}}>} */}
         <main>
+          <Route  path="/" component={Dashboard}/>
           <Route exact path="/" component={Table}/>
           <Route exact path="/chart" component={Chart} />
           <Route exact path="/charts/:code" component={SingleChart} />
@@ -26,7 +28,7 @@ ReactDOM.render(
         <footer>
           <Typography>(c) 2021 Leopold Talirz</Typography>
         </footer>
-      </Container>
+     {/* { </Container>} */}
     </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
