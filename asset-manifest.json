@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/atsim-trends/static/css/main.a63a9e21.chunk.css",
-    "main.js": "/atsim-trends/static/js/main.2abe02a3.chunk.js",
-    "main.js.map": "/atsim-trends/static/js/main.2abe02a3.chunk.js.map",
+    "main.js": "/atsim-trends/static/js/main.6cccf198.chunk.js",
+    "main.js.map": "/atsim-trends/static/js/main.6cccf198.chunk.js.map",
     "runtime-main.js": "/atsim-trends/static/js/runtime-main.f2df0742.js",
     "runtime-main.js.map": "/atsim-trends/static/js/runtime-main.f2df0742.js.map",
-    "static/js/2.4901f3ba.chunk.js": "/atsim-trends/static/js/2.4901f3ba.chunk.js",
-    "static/js/2.4901f3ba.chunk.js.map": "/atsim-trends/static/js/2.4901f3ba.chunk.js.map",
+    "static/js/2.dfb8c3da.chunk.js": "/atsim-trends/static/js/2.dfb8c3da.chunk.js",
+    "static/js/2.dfb8c3da.chunk.js.map": "/atsim-trends/static/js/2.dfb8c3da.chunk.js.map",
     "static/js/3.fac1644f.chunk.js": "/atsim-trends/static/js/3.fac1644f.chunk.js",
     "static/js/3.fac1644f.chunk.js.map": "/atsim-trends/static/js/3.fac1644f.chunk.js.map",
     "index.html": "/atsim-trends/index.html",
     "static/css/main.a63a9e21.chunk.css.map": "/atsim-trends/static/css/main.a63a9e21.chunk.css.map",
-    "static/js/2.4901f3ba.chunk.js.LICENSE.txt": "/atsim-trends/static/js/2.4901f3ba.chunk.js.LICENSE.txt"
+    "static/js/2.dfb8c3da.chunk.js.LICENSE.txt": "/atsim-trends/static/js/2.dfb8c3da.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f2df0742.js",
-    "static/js/2.4901f3ba.chunk.js",
+    "static/js/2.dfb8c3da.chunk.js",
     "static/css/main.a63a9e21.chunk.css",
-    "static/js/main.2abe02a3.chunk.js"
+    "static/js/main.6cccf198.chunk.js"
   ]
 }
