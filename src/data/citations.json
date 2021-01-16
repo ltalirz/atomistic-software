@@ -366,6 +366,34 @@
       "MADNESS": {
         "citations": 12,
         "datestamp": "2021-01-07"
+      },
+      "xTB": {
+        "citations": 313,
+        "datestamp": "2021-01-17"
+      },
+      "Firefly": {
+        "citations": 160,
+        "datestamp": "2021-01-17"
+      },
+      "Hyperchem": {
+        "citations": 311,
+        "datestamp": "2021-01-17"
+      },
+      "PySCF": {
+        "citations": 207,
+        "datestamp": "2021-01-17"
+      },
+      "QMCPACK": {
+        "citations": 80,
+        "datestamp": "2021-01-17"
+      },
+      "Desmond": {
+        "citations": 932,
+        "datestamp": "2021-01-17"
+      },
+      "OpenMM": {
+        "citations": 498,
+        "datestamp": "2021-01-17"
       }
     }
   },
@@ -736,6 +764,34 @@
       "MADNESS": {
         "citations": 17,
         "datestamp": "2021-01-07"
+      },
+      "xTB": {
+        "citations": 126,
+        "datestamp": "2021-01-17"
+      },
+      "Firefly": {
+        "citations": 180,
+        "datestamp": "2021-01-17"
+      },
+      "Hyperchem": {
+        "citations": 314,
+        "datestamp": "2021-01-17"
+      },
+      "PySCF": {
+        "citations": 94,
+        "datestamp": "2021-01-17"
+      },
+      "QMCPACK": {
+        "citations": 50,
+        "datestamp": "2021-01-17"
+      },
+      "Desmond": {
+        "citations": 602,
+        "datestamp": "2021-01-17"
+      },
+      "OpenMM": {
+        "citations": 245,
+        "datestamp": "2021-01-17"
       }
     }
   },
@@ -1106,6 +1162,34 @@
       "WEST": {
         "citations": 36,
         "datestamp": "2021-01-07"
+      },
+      "xTB": {
+        "citations": 52,
+        "datestamp": "2021-01-17"
+      },
+      "Firefly": {
+        "citations": 171,
+        "datestamp": "2021-01-17"
+      },
+      "Hyperchem": {
+        "citations": 329,
+        "datestamp": "2021-01-17"
+      },
+      "PySCF": {
+        "citations": 62,
+        "datestamp": "2021-01-17"
+      },
+      "QMCPACK": {
+        "citations": 39,
+        "datestamp": "2021-01-17"
+      },
+      "Desmond": {
+        "citations": 553,
+        "datestamp": "2021-01-17"
+      },
+      "OpenMM": {
+        "citations": 244,
+        "datestamp": "2021-01-17"
       }
     }
   },
@@ -1476,6 +1560,34 @@
       "MADNESS": {
         "citations": 25,
         "datestamp": "2021-01-07"
+      },
+      "xTB": {
+        "citations": 21,
+        "datestamp": "2021-01-17"
+      },
+      "Firefly": {
+        "citations": 217,
+        "datestamp": "2021-01-17"
+      },
+      "Hyperchem": {
+        "citations": 390,
+        "datestamp": "2021-01-17"
+      },
+      "PySCF": {
+        "citations": 30,
+        "datestamp": "2021-01-17"
+      },
+      "QMCPACK": {
+        "citations": 38,
+        "datestamp": "2021-01-17"
+      },
+      "Desmond": {
+        "citations": 441,
+        "datestamp": "2021-01-17"
+      },
+      "OpenMM": {
+        "citations": 145,
+        "datestamp": "2021-01-17"
       }
     }
   },
@@ -1846,6 +1958,34 @@
       "MADNESS": {
         "citations": 15,
         "datestamp": "2021-01-07"
+      },
+      "xTB": {
+        "citations": 6,
+        "datestamp": "2021-01-17"
+      },
+      "Firefly": {
+        "citations": 244,
+        "datestamp": "2021-01-17"
+      },
+      "Hyperchem": {
+        "citations": 463,
+        "datestamp": "2021-01-17"
+      },
+      "PySCF": {
+        "citations": 12,
+        "datestamp": "2021-01-17"
+      },
+      "QMCPACK": {
+        "citations": 23,
+        "datestamp": "2021-01-17"
+      },
+      "Desmond": {
+        "citations": 369,
+        "datestamp": "2021-01-17"
+      },
+      "OpenMM": {
+        "citations": 83,
+        "datestamp": "2021-01-17"
       }
     }
   },
@@ -2216,6 +2356,34 @@
       "MADNESS": {
         "citations": 15,
         "datestamp": "2021-01-07"
+      },
+      "xTB": {
+        "citations": 4,
+        "datestamp": "2021-01-17"
+      },
+      "Firefly": {
+        "citations": 230,
+        "datestamp": "2021-01-17"
+      },
+      "Hyperchem": {
+        "citations": 484,
+        "datestamp": "2021-01-17"
+      },
+      "PySCF": {
+        "citations": 3,
+        "datestamp": "2021-01-17"
+      },
+      "QMCPACK": {
+        "citations": 21,
+        "datestamp": "2021-01-17"
+      },
+      "Desmond": {
+        "citations": 297,
+        "datestamp": "2021-01-17"
+      },
+      "OpenMM": {
+        "citations": 60,
+        "datestamp": "2021-01-17"
       }
     }
   }

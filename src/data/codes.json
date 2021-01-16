@@ -1550,5 +1550,127 @@
     "types": [
       "DFT"
     ]
+  },
+  "xTB": {
+    "author_name": "Grimme",
+    "description": "",
+    "family": "",
+    "homepage": "https://xtb-docs.readthedocs.io/",
+    "license": "OS(CL)",
+    "license_annotation": "LGPL-3.0",
+    "name": "xTB",
+    "query_method": "search term",
+    "query_string": "xtb \"Grimme\"",
+    "tags": [
+    ],
+    "types": [
+      "TB"
+    ]
+  },
+  "Firefly": {
+    "author_name": "Granovsky",
+    "description": "AE, PSP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://classic.chem.msu.su/gran/gamess/index.html",
+    "license": "F",
+    "license_annotation": "Firefly Quantum Chemistry Pacakge License Agreement",
+    "name": "Firefly",
+    "query_method": "search term",
+    "query_string": "firefly \"Granovsky\"",
+    "tags": [
+    ],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "Hyperchem": {
+    "author_name": "Hypercube",
+    "description": "PSP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "http://www.hyper.com/?tabid=360",
+    "license": "C",
+    "license_annotation": "",
+    "name": "Hyperchem",
+    "query_method": "search term",
+    "query_string": "hyperchem hypercube",
+    "tags": [
+    ],
+    "types": [
+      "FF",
+      "WFM",
+      "DFT"
+    ]
+  },
+  "PySCF": {
+    "author_name": "Chan",
+    "description": "PSP, GTO",
+    "family": "Atom-centered basis sets",
+    "homepage": "https://sunqm.github.io/pyscf/",
+    "license": "OS(P)",
+    "license_annotation": "Apache-2.0",
+    "name": "PySCF",
+    "query_method": "search term",
+    "query_string": "pyscf \"chan\"",
+    "tags": [
+    ],
+    "types": [
+      "WFM",
+      "DFT"
+    ]
+  },
+  "QMCPACK": {
+    "author_name": "Kim",
+    "description": "PSP, GTO",
+    "family": [
+      "Atom-centered basis sets",
+      "Plane-wave basis sets",
+      "Real-space spline basis sets"
+    ],
+    "homepage": "https://qmcpack.readthedocs.io/",
+    "license": "OS(P)",
+    "license_annotation": "NCSA",
+    "name": "QMCPACK",
+    "query_method": "search term",
+    "query_string": "qmcpack \"Kim\"",
+    "tags": [
+    ],
+    "types": [
+      "QMC"
+    ]
+  },
+  "Desmond": {
+    "author_name": "Schrödinger",
+    "description": "",
+    "family": [
+    ],
+    "homepage": "https://www.schrodinger.com/products/desmond",
+    "license": "C",
+    "license_annotation": "",
+    "name": "Desmond",
+    "query_method": "search term",
+    "query_string": "desmond schrödinger",
+    "tags": [
+    ],
+    "types": [
+      "FF"
+    ]
+  },
+  "OpenMM": {
+    "author_name": "Eastman",
+    "description": "",
+    "family": [
+    ],
+    "homepage": "http://openmm.org",
+    "license": "OS(P)",
+    "license_annotation": "MIT",
+    "name": "OpenMM",
+    "query_method": "search term",
+    "query_string": "openmm Eastman",
+    "tags": [
+    ],
+    "types": [
+      "FF"
+    ]
   }
 }
