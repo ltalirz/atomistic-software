@@ -658,21 +658,6 @@
       "DFT"
     ]
   },
-  "GPIUTMD": {
-    "author_name": "Ziaei-Rad",
-    "description": "",
-    "family": "",
-    "homepage": "https://gpiutmd.iut.ac.ir/index.php",
-    "license": "I",
-    "license_annotation": null,
-    "name": "GPIUTMD",
-    "query_method": "search term",
-    "query_string": "GPIUTMD Ziaei-Rad",
-    "tags": [],
-    "types": [
-      "FF"
-    ]
-  },
   "GROMOS": {
     "author_name": "Van Gunsteren",
     "description": "",
@@ -1220,21 +1205,6 @@
       "FF"
     ]
   },
-  "RedMD": {
-    "author_name": "Trylska",
-    "description": "",
-    "family": "",
-    "homepage": "http://bionano.cent.uw.edu.pl/software/redmd/",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "RedMD",
-    "query_method": "search term",
-    "query_string": "RedMD Trylska",
-    "tags": [],
-    "types": [
-      "FF"
-    ]
-  },
   "S / PHI / nX": {
     "author_name": "Boeck",
     "description": "PP, PW",
@@ -1322,21 +1292,6 @@
     "tags": [
       "nomad_code"
     ],
-    "types": [
-      "FF"
-    ]
-  },
-  "TREMOLO-X": {
-    "author_name": "Griebel",
-    "description": "",
-    "family": "",
-    "homepage": "http://www.tremolo-x.com",
-    "license": "I",
-    "license_annotation": null,
-    "name": "TREMOLO-X",
-    "query_method": "search term",
-    "query_string": "TREMOLO-X Griebel",
-    "tags": [],
     "types": [
       "FF"
     ]
