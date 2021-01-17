@@ -813,7 +813,7 @@
     "name": "MADNESS",
     "query_method": "publication",
     "query_string": "R. J. Harrison, G. I. Fann, T. Yanai, Z. Gan, G. Beylkin, J. Chem. Phys. 121, 11587 (2004).",
-    "query_publication_id": 6215247752500065470,
+    "query_publication_id": "6215247752500065470",
     "tags": [],
     "types": [
       "DFT",
@@ -1146,7 +1146,7 @@
     "name": "Q",
     "query_method": "publication",
     "query_string": "J. Marelius, K. Kolmodin, I. Feierberg, J. \u00c5qvist, Journal of Molecular Graphics and Modelling 16, 213 (1998).",
-    "query_publication_id": 4371251031908136771,
+    "query_publication_id": "4371251031908136771",
     "tags": [],
     "types": [
       "FF"
@@ -1245,6 +1245,7 @@
     "name": "S / PHI / nX",
     "query_method": "search term",
     "query_string": "S/PHI/nX Boeck",
+    "query_publication_id": "15208849430845989253",
     "tags": [
       "nomad_code",
       "data_representation",
@@ -1406,7 +1407,7 @@
     "name": "WEST",
     "query_method": "publication",
     "query_string": "M. Govoni and G. Galli, J. Chem. Theory Comput. 11, 2680 (2015)",
-    "query_publication_id": 10135319195087919820,
+    "query_publication_id": "10135319195087919820",
     "tags": [],
     "types": [
       "DFT",

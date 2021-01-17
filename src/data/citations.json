@@ -331,10 +331,6 @@
         "citations": 11,
         "datestamp": "2021-01-04"
       },
-      "S / PHI / nX": {
-        "citations": 4,
-        "datestamp": "2021-01-04"
-      },
       "RedMD": {
         "citations": 1,
         "datestamp": "2021-01-04"
@@ -349,10 +345,6 @@
       },
       "GPIUTMD": {
         "citations": 1,
-        "datestamp": "2021-01-04"
-      },
-      "ASW program package": {
-        "citations": 0,
         "datestamp": "2021-01-04"
       },
       "WEST": {
@@ -393,6 +385,14 @@
       },
       "OpenMM": {
         "citations": 498,
+        "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 29,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 8,
         "datestamp": "2021-01-17"
       }
     }
@@ -729,10 +729,6 @@
         "citations": 3,
         "datestamp": "2021-01-04"
       },
-      "S / PHI / nX": {
-        "citations": 4,
-        "datestamp": "2021-01-04"
-      },
       "RedMD": {
         "citations": 3,
         "datestamp": "2021-01-04"
@@ -747,10 +743,6 @@
       },
       "GPIUTMD": {
         "citations": 1,
-        "datestamp": "2021-01-04"
-      },
-      "ASW program package": {
-        "citations": 0,
         "datestamp": "2021-01-04"
       },
       "WEST": {
@@ -791,6 +783,14 @@
       },
       "OpenMM": {
         "citations": 245,
+        "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 18,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 5,
         "datestamp": "2021-01-17"
       }
     }
@@ -1127,10 +1127,6 @@
         "citations": 7,
         "datestamp": "2021-01-04"
       },
-      "S / PHI / nX": {
-        "citations": 4,
-        "datestamp": "2021-01-04"
-      },
       "RedMD": {
         "citations": 1,
         "datestamp": "2021-01-04"
@@ -1144,10 +1140,6 @@
         "datestamp": "2021-01-04"
       },
       "GPIUTMD": {
-        "citations": 0,
-        "datestamp": "2021-01-04"
-      },
-      "ASW program package": {
         "citations": 0,
         "datestamp": "2021-01-04"
       },
@@ -1189,6 +1181,14 @@
       },
       "OpenMM": {
         "citations": 244,
+        "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 22,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 9,
         "datestamp": "2021-01-17"
       }
     }
@@ -1525,10 +1525,6 @@
         "citations": 6,
         "datestamp": "2021-01-07"
       },
-      "S / PHI / nX": {
-        "citations": 9,
-        "datestamp": "2021-01-07"
-      },
       "RedMD": {
         "citations": 1,
         "datestamp": "2021-01-07"
@@ -1542,10 +1538,6 @@
         "datestamp": "2021-01-07"
       },
       "GPIUTMD": {
-        "citations": 0,
-        "datestamp": "2021-01-07"
-      },
-      "ASW program package": {
         "citations": 0,
         "datestamp": "2021-01-07"
       },
@@ -1587,6 +1579,14 @@
       },
       "OpenMM": {
         "citations": 145,
+        "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 19,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 10,
         "datestamp": "2021-01-17"
       }
     }
@@ -1923,10 +1923,6 @@
         "citations": 8,
         "datestamp": "2021-01-07"
       },
-      "S / PHI / nX": {
-        "citations": 4,
-        "datestamp": "2021-01-07"
-      },
       "RedMD": {
         "citations": 4,
         "datestamp": "2021-01-07"
@@ -1940,10 +1936,6 @@
         "datestamp": "2021-01-07"
       },
       "GPIUTMD": {
-        "citations": 1,
-        "datestamp": "2021-01-07"
-      },
-      "ASW program package": {
         "citations": 1,
         "datestamp": "2021-01-07"
       },
@@ -1985,6 +1977,14 @@
       },
       "OpenMM": {
         "citations": 83,
+        "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 22,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 5,
         "datestamp": "2021-01-17"
       }
     }
@@ -2321,10 +2321,6 @@
         "citations": 7,
         "datestamp": "2021-01-07"
       },
-      "S / PHI / nX": {
-        "citations": 4,
-        "datestamp": "2021-01-07"
-      },
       "RedMD": {
         "citations": 1,
         "datestamp": "2021-01-07"
@@ -2339,10 +2335,6 @@
       },
       "GPIUTMD": {
         "citations": 1,
-        "datestamp": "2021-01-07"
-      },
-      "ASW program package": {
-        "citations": 0,
         "datestamp": "2021-01-07"
       },
       "WEST": {
@@ -2384,6 +2376,14 @@
       "OpenMM": {
         "citations": 60,
         "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 23,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 5,
+        "datestamp": "2021-01-17"
       }
     }
   },
@@ -2409,10 +2409,6 @@
       },
       "ASE/ASAP": {
         "citations": 671,
-        "datestamp": "2021-01-17"
-      },
-      "ASW program package": {
-        "citations": 2,
         "datestamp": "2021-01-17"
       },
       "Amber": {
@@ -2683,10 +2679,6 @@
         "citations": 2,
         "datestamp": "2021-01-17"
       },
-      "S / PHI / nX": {
-        "citations": 4,
-        "datestamp": "2021-01-17"
-      },
       "SIESTA": {
         "citations": 864,
         "datestamp": "2021-01-17"
@@ -2782,6 +2774,14 @@
       "OpenMM": {
         "citations": 33,
         "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 36,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 5,
+        "datestamp": "2021-01-17"
       }
     }
   },
@@ -2807,10 +2807,6 @@
       },
       "ASE/ASAP": {
         "citations": 653,
-        "datestamp": "2021-01-17"
-      },
-      "ASW program package": {
-        "citations": 1,
         "datestamp": "2021-01-17"
       },
       "Amber": {
@@ -3081,10 +3077,6 @@
         "citations": 3,
         "datestamp": "2021-01-17"
       },
-      "S / PHI / nX": {
-        "citations": 3,
-        "datestamp": "2021-01-17"
-      },
       "SIESTA": {
         "citations": 761,
         "datestamp": "2021-01-17"
@@ -3180,6 +3172,14 @@
       "OpenMM": {
         "citations": 23,
         "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 39,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 6,
+        "datestamp": "2021-01-17"
       }
     }
   },
@@ -3205,10 +3205,6 @@
       },
       "ASE/ASAP": {
         "citations": 637,
-        "datestamp": "2021-01-17"
-      },
-      "ASW program package": {
-        "citations": 2,
         "datestamp": "2021-01-17"
       },
       "Amber": {
@@ -3479,10 +3475,6 @@
         "citations": 1,
         "datestamp": "2021-01-17"
       },
-      "S / PHI / nX": {
-        "citations": 5,
-        "datestamp": "2021-01-17"
-      },
       "SIESTA": {
         "citations": 781,
         "datestamp": "2021-01-17"
@@ -3578,6 +3570,14 @@
       "OpenMM": {
         "citations": 25,
         "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 44,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 5,
+        "datestamp": "2021-01-17"
       }
     }
   },
@@ -3603,10 +3603,6 @@
       },
       "ASE/ASAP": {
         "citations": 490,
-        "datestamp": "2021-01-17"
-      },
-      "ASW program package": {
-        "citations": 1,
         "datestamp": "2021-01-17"
       },
       "Amber": {
@@ -3877,10 +3873,6 @@
         "citations": 4,
         "datestamp": "2021-01-17"
       },
-      "S / PHI / nX": {
-        "citations": 9,
-        "datestamp": "2021-01-17"
-      },
       "SIESTA": {
         "citations": 766,
         "datestamp": "2021-01-17"
@@ -3975,6 +3967,14 @@
       },
       "OpenMM": {
         "citations": 26,
+        "datestamp": "2021-01-17"
+      },
+      "ASW program package": {
+        "citations": 27,
+        "datestamp": "2021-01-17"
+      },
+      "S / PHI / nX": {
+        "citations": 10,
         "datestamp": "2021-01-17"
       }
     }

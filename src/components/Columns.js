@@ -123,8 +123,14 @@ function getColumns(data, year) {
                 // add google scholar link to number of citations
                 "customBodyRenderLite": (dataIndex) => {
                     const row = data[dataIndex];
-                    const searchUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(row['query_string'])
-                        + '&hl=en&as_sdt=0%2C5&as_ylo=' + year + '&as_yhi=' + year;
+                    let searchUrl = '';
+
+                    if (row['query_method'] === 'publication') {
+                        searchUrl = 'https://scholar.google.com/scholar?cites=' + row['query_publication_id'].toString();
+                    } else {
+                        searchUrl = 'https://scholar.google.com/scholar?q=' + encodeURIComponent(row['query_string']);
+                    }
+                    searchUrl += '&hl=en&as_sdt=0%2C5&as_ylo=' + year + '&as_yhi=' + year;
                     return (<a href={searchUrl} target='_blank' rel="noreferrer">{row['citations']}</a>);
                 }
             }
