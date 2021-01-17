@@ -10,8 +10,16 @@ Anybody is welcome to contribute simulation engines.
 
 In order to keep the size of the list somewhat manageable, a new code must have had **at least one year with 100 citations or more**.
 
- * Add code metadata to [`src/data/codes.json`](src/data/codes.json)
- * Add citation information to [`src/data/citations.json`](src/data/citations.json)
+#### Suggest addition
+
+If you're not familiar with github or don't have time to add the engine yourself, just [add a comment](https://github.com/ltalirz/atsim-trends/issues/21) with your suggestion.
+
+#### Make a pull request
+
+ 1. Add code metadata to [`src/data/codes.json`](src/data/codes.json)
+ 2. (optional) Add citation information to [`src/data/citations.json`](src/data/citations.json)
+
+The second step can also be performed in an automated way by the maintainer of this repo.
 
 ## Developing the app
 
