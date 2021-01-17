@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/atsim-trends/static/css/main.a63a9e21.chunk.css",
-    "main.js": "/atsim-trends/static/js/main.6cccf198.chunk.js",
-    "main.js.map": "/atsim-trends/static/js/main.6cccf198.chunk.js.map",
+    "main.js": "/atsim-trends/static/js/main.2556143a.chunk.js",
+    "main.js.map": "/atsim-trends/static/js/main.2556143a.chunk.js.map",
     "runtime-main.js": "/atsim-trends/static/js/runtime-main.f2df0742.js",
     "runtime-main.js.map": "/atsim-trends/static/js/runtime-main.f2df0742.js.map",
     "static/js/2.dfb8c3da.chunk.js": "/atsim-trends/static/js/2.dfb8c3da.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f2df0742.js",
     "static/js/2.dfb8c3da.chunk.js",
     "static/css/main.a63a9e21.chunk.css",
-    "static/js/main.6cccf198.chunk.js"
+    "static/js/main.2556143a.chunk.js"
   ]
 }
