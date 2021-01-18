@@ -36,7 +36,7 @@ export default function Home() {
                 <Paper className={classes.paper}>
                     <React.Fragment>
                         <Title>About</Title>
-                        <Typography component="p" variant="body1">
+                        <Typography component="div" variant="body1">
                             <ReactMarkdown source={aboutMD} />
                         </Typography>
                     </React.Fragment>
@@ -47,7 +47,7 @@ export default function Home() {
                 <Paper className={classes.paper}>
                     <React.Fragment>
                         <Title>Acknowledgements</Title>
-                        <Typography component="p" variant="body1">
+                        <Typography component="div" variant="body1">
                             <ReactMarkdown source={acknowledgementsMD} />
                         </Typography>
                     </React.Fragment>

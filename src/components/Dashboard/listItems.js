@@ -4,6 +4,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InfoIcon from '@material-ui/icons/Info';
 // import HomeIcon from '@material-ui/icons/Home';
+import EqualizerIcon from '@material-ui/icons/Equalizer';
 import TableChartIcon from '@material-ui/icons/TableChart';
 
 export const mainListItems = (
@@ -19,6 +20,12 @@ export const mainListItems = (
         <TableChartIcon />
       </ListItemIcon>
       <ListItemText primary="Table" />
+    </ListItem>
+    <ListItem button component={"a"} href={'#/stats'}>
+      <ListItemIcon>
+        <EqualizerIcon />
+      </ListItemIcon>
+      <ListItemText primary="Statistics" />
     </ListItem>
     <ListItem button component={"a"} href={'#/about'}>
       <ListItemIcon>

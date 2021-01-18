@@ -752,7 +752,7 @@
     "tags": [],
     "types": [
       "DFT",
-      "HF"
+      "WFM"
     ]
   },
   "LAMMPS": {

@@ -20,6 +20,7 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import useStyles from './components/Dashboard/Styles';
 import Table from './components/Table';
 import About from './components/About';
+import Statistics from './components/Statistics';
 import SingleChart from './components/Chart/single';
 
 function Copyright() {
@@ -97,6 +98,7 @@ export default function Dashboard() {
             <Route exact path="/table" component={Table} />
             <Route exact path="/charts/:code" component={SingleChart} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/stats" component={Statistics} />
             {/* { </Container>} */}
           </Router>
           <Box pt={4}>

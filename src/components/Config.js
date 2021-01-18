@@ -2,10 +2,20 @@ import citations from '../data/citations.json'
 import codes from '../data/codes.json'
 
 function yearToRange(year) {
+  /**
+   * Transform year to year range used in citations.json
+   * 
+   * E.g. 2020 => "2020-2020"
+   */
   return year.toString() + '-' + year.toString();
 }
 
 function rangeToYear(range) {
+  /**
+   * Transform year range used in citations.json to year
+   * 
+   * E.g. "2020-2020" => 2020
+   */
   return parseInt(range.split('-')[0]);
 }
 
@@ -24,6 +34,9 @@ for (const codename in codes){
 }
 
 function getData(year) {
+  /**
+   * Get data for code table for a given year.
+   */
   let range_key = yearToRange(year);
   let citations_data = citations[range_key]['citations'];
   let data = codes; //.slice();
@@ -34,12 +47,15 @@ function getData(year) {
 
   let dataArray = [];
   for (const codename in data) {
-    dataArray.push(data[codename]);
+    dataArray.push(Object.assign({}, data[codename]));
   }
   return dataArray;
 }
 
 function getDataChart(){
+  /**
+   * Get citation data for all codes
+   */
     let lines = [];
     for(const codeName of CODES.slice(0,50)){
         lines.push({ 'id': codeName, 'data': getCodeCitations(codeName)});
@@ -64,4 +80,4 @@ function  getCodeCitations(codeName){
     return line_data;
 }
 
-export {yearToRange, rangeToYear, YEARS, getData, getDataChart, getCodeCitations};
+export {yearToRange, rangeToYear, YEARS, CODES, getData, getDataChart, getCodeCitations};

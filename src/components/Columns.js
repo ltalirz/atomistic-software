@@ -13,9 +13,11 @@ import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import SchoolIcon from '@material-ui/icons/School';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
-import NotInterestedIcon from '@material-ui/icons/NotInterested';
+//import NotInterestedIcon from '@material-ui/icons/NotInterested';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
-import CopyrightIcon from '@material-ui/icons/Copyright';
+//import CopyrightIcon from '@material-ui/icons/Copyright';
+import LockIcon from '@material-ui/icons/Lock';
+import NoEncryptionIcon from '@material-ui/icons/NoEncryption';
 
 function TooltipText(tooltip, text) {
     /** 
@@ -99,13 +101,13 @@ function getColumns(data, year) {
                 "customBodyRenderLite": (dataIndex) => {
                     const x = data[dataIndex]['license'];
                     if (['C', 'C(S)', 'F(A)'].includes(x)) {
-                        return TooltipText(licenses[x], [<CopyrightIcon />]);
-                    } else if (['C(C)'].includes(x)) {
-                        return TooltipText(licenses[x], [<NotInterestedIcon />]);        
-                    } else if (['OS(P)', 'OS(CL)'].includes(x)) {
                         return TooltipText(licenses[x], [<LockOpenIcon color={'action'} />]);
+                    } else if (['C(C)'].includes(x)) {
+                        return TooltipText(licenses[x], [<LockIcon color={'action'} />]);        
+                    } else if (['OS(P)', 'OS(CL)'].includes(x)) {
+                        return TooltipText(licenses[x], [<NoEncryptionIcon color={'action'} />]);
                     } else if (['F'].includes(x)) {
-                        return TooltipText(licenses[x], [<span><CopyrightIcon /></span>]);
+                        return TooltipText(licenses[x], [<span><NoEncryptionIcon color={'action'} /></span>]);
                     } else {
                         return TooltipText(licenses[x], x);
                     }
