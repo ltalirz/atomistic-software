@@ -25,7 +25,7 @@
     "source-map-explorer": "^2.5.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "REACT_APP_GIT_SHA=`git rev-parse --short HEAD` REACT_APP_LAST_UPDATED=`git log -1 --format=%cd --date=short` react-scripts start",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",

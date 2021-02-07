@@ -26,12 +26,9 @@ import SingleChart from './components/Chart/single';
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        atsim-trends
-      </Link>{' '}
+      {'Copyright © atsim-trends '}
       {new Date().getFullYear()}
-      {'.'}
+      {', last updated ' + process.env.REACT_APP_LAST_UPDATED + '.'}
     </Typography>
   );
 }
