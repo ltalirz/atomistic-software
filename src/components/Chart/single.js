@@ -8,23 +8,35 @@ import {
     useParams
 } from "react-router-dom";
 
-function SingleChart() {
-    let codeName = decodeURIComponent( useParams()['code']);
-    const data = getCodeCitations(codeName) ;
 
-    const ratio = data.slice(-1)[0]['y'] / data[0]['y'];
-    const annualGrowth = (Math.pow(ratio, 1.0/data.length) - 1) * 100;
+function SingleChart() {
+    /**
+     * Return chart for single code.
+     * 
+     * Name of code is parsed from URI.
+     */
+    let codeName = decodeURIComponent( useParams()['code']);
+    const citations = getCodeCitations([codeName]);
+
+    const ratio = citations.slice(-1)[0]['y'] / citations[0]['y'];
+    const annualGrowth = (Math.pow(ratio, 1.0/citations.length) - 1) * 100;
+    const title = codeName + " " + annualGrowth.toFixed(1) + '% annual growth';
+
+    return nivoChart([{ 'id': codeName, 'data': getCodeCitations([codeName]) }], title);
+}
+
+function nivoChart(data, title) {
+    /**
+     * Return nivo line-chart with default formatting for given data and title.
+     */
 
     return (
         <div className="container">
-            <h2 id="title" >
-                {codeName} { annualGrowth.toFixed(1) + '% annual growth'}
-            </h2>
+            <h2 id="title" >{title}</h2>
             <div className="chart">
-
                 <ResponsiveLine
-                    title={codeName}
-                    data={[{ 'id': codeName, 'data': getCodeCitations(codeName) }]}
+                    title={title}
+                    data={data}
                     margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
                     xScale={{ type: 'point' }}
                     yScale={{ type: 'linear', min: 0, max: 'auto', stacked: true, reverse: false }}
@@ -90,4 +102,4 @@ function SingleChart() {
 
 }
 
-export default SingleChart;
+export {SingleChart, nivoChart};
