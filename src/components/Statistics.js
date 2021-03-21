@@ -58,11 +58,15 @@ function citationGrowth(year) {
 
 }
 
+function chartLink(codeName) {
+    return <a href={'#/charts/' + encodeURIComponent(codeName)} >{codeName}</a>;
+}
+
 function totalList(data) {
     return (
         <Typography component="div" variant="subtitle1">
         <ol>
-            {data.map(line => <li>{line[0] + ": " + line[1] + "\n"}</li>)}
+            {data.map(line => <li>{chartLink(line[0])}{": " + line[1] + "\n"}</li>)}
         </ol>
         </Typography>
     );     
@@ -72,7 +76,7 @@ function absoluteGrowthList(data) {
     return (
         <Typography component="div" variant="subtitle1">
         <ol>
-            {data.map(line => <li>{line[0] + ": +" + line[1] + "\n"}</li>)}
+            {data.map(line => <li>{chartLink(line[0])}{": +" + line[1] + "\n"}</li>)}
         </ol>
         </Typography>
     );     
@@ -82,7 +86,7 @@ function relativeGrowthList(data) {
     return (
         <Typography component="div" variant="subtitle1">
         <ol>
-            {data.map(line => <li>{line[0] + ": +" + parseInt(line[1] * 100) + "%\n"}</li>)}
+            {data.map(line => <li>{chartLink(line[0])}{": +" + parseInt(line[1] * 100) + "%\n"}</li>)}
         </ol>
         </Typography>
     );     
