@@ -180,6 +180,6 @@ export default function Home() {
                 "In " + CURRENT_YEAR +" with respect to "+ (CURRENT_YEAR-1) + ", considering only codes with >100 citations.",
                  4)}
             {Card("Citations commercial vs free", costGraph(),"'Free' includes codes that are free for academic use only.",11)}
-            {Card("Citations by source code availability", sourceGraph(),"'Source available' includes any commercial and free code for which the source code is available.",11)}
+            {Card("Citations by source code availability", sourceGraph(),"'Source available' includes codes whose source code can be obtained for free or for a fee.",11)}
         </Grid>);
 }

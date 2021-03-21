@@ -39,7 +39,7 @@ function nivoChart(data, title) {
                     data={data}
                     margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
                     xScale={{ type: 'point' }}
-                    yScale={{ type: 'linear', min: 0, max: 'auto', stacked: true, reverse: false }}
+                    yScale={{ type: 'linear', min: 0, max: 'auto', stacked: false, reverse: false }}
                     yFormat=" >-.2f"
                     axisTop={null}
                     axisRight={null}

@@ -11,10 +11,13 @@ import Title from './Dashboard/Title';
 
 
 const aboutMD = `
-*atsim-trends* aims to track the citation trends of all major atomistic simulation engines (see [scope](https://github.com/ltalirz/atsim-trends#scope))
+*atsim-trends* aims to track the citation trends of all major atomistic simulation engines (see [scope](https://github.com/ltalirz/atsim-trends#scope)).
 
 *atsim-trends* is a collaboratively edited list.
-Please visit the [source code repository on GitHub](https://github.com/ltalirz/atsim-trends) for instructions on how to [add new simulation engines](https://github.com/ltalirz/atsim-trends/issues/21) or [report issues](https://github.com/ltalirz/atsim-trends/issues).
+Please visit the [source code repository on GitHub](https://github.com/ltalirz/atsim-trends) for instructions on how to [add new simulation engines](https://github.com/ltalirz/atsim-trends/issues/21).
+
+**Disclaimer**: Owing to the lack of standardization in [today's software citation practices](http://doi.org/10.5281/zenodo.4263762), the citation counts reported here are *approximate*, and their significance should not be overrated.
+Nevertheless, we always welcome [reports](https://github.com/ltalirz/atsim-trends/issues) of mistakes or practical suggestions on how to improve accuracy. 
 `;
 
 const acknowledgementsMD = `
