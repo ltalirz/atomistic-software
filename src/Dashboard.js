@@ -21,7 +21,7 @@ import useStyles from './components/Dashboard/Styles';
 import Table from './components/Table';
 import About from './components/About';
 import Statistics from './components/Statistics';
-import SingleChart from './components/Chart/single';
+import {SingleChart} from './components/Chart/single';
 
 function Copyright() {
   return (

@@ -5,7 +5,8 @@ import Paper from '@material-ui/core/Paper';
 
 import useStyles from './Dashboard/Styles';
 import Title from './Dashboard/Title';
-import { YEARS, getData } from './Config';
+import { YEARS, getData, filterCodeNames, getCodeCitations } from './Config';
+import {nivoChart} from './Chart/single';
 // import { Card } from '@material-ui/core';
 
 function citationGrowth(year) {
@@ -58,7 +59,51 @@ function citationGrowth(year) {
 
 }
 
+function costGraph() {
+    /**
+     * Compute citation growth for given year with respect to previous one.
+     */
+
+    // Careful: it seems the legend coloring does not match the one of the graph automatically
+    let groups = {
+        'Free' : ['F', 'F(A)', 'OS(CL)', 'OS(P)'],
+        'Commercial': ['C', 'C(C)', 'C(S)'],
+    }
+
+    let lines = [];
+    for (const group in groups){
+        const codeNames = filterCodeNames({"license": groups[group]});
+        lines.push({ 'id': group, 'data':  getCodeCitations(codeNames)});
+    }
+    return nivoChart(lines, "");
+}
+
+function sourceGraph() {
+    /**
+     * Compute citation growth for given year with respect to previous one.
+     */
+
+    // Careful: it seems the legend coloring does not match the one of the graph automatically
+    let groups = {
+        'Closed source' : ['C(C)'],
+        'Open-source': ['OS(CL)', 'OS(P)'],
+        'Source available': ['C', 'C(S)', 'F', 'F(A)', 'OS(CL)', 'OS(P)' ]
+    }
+
+    let lines = [];
+    for (const group in groups){
+        const codeNames = filterCodeNames({"license": groups[group]});
+        lines.push({ 'id': group, 'data':  getCodeCitations(codeNames)});
+    }
+    return nivoChart(lines, "");
+}
+
+
+
 function chartLink(codeName) {
+    /**
+     * Return hyperlink to citation chart for given code name.
+     */
     return <a href={'#/charts/' + encodeURIComponent(codeName)} >{codeName}</a>;
 }
 
@@ -134,5 +179,7 @@ export default function Home() {
             {Card("Top relative citation growth", relativeGrowthList(GROWTH['relativeGrowth'].slice(0, 5)),
                 "In " + CURRENT_YEAR +" with respect to "+ (CURRENT_YEAR-1) + ", considering only codes with >100 citations.",
                  4)}
+            {Card("Citations commercial vs free", costGraph(),"'Free' includes codes that are free for academic use only.",11)}
+            {Card("Citations by source code availability", sourceGraph(),"'Source available' includes any commercial and free code for which the source code is available.",11)}
         </Grid>);
 }
