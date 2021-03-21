@@ -63,6 +63,21 @@ function getDataChart(){
     return lines;
 }
 
+
+// function getDataOverview(){
+//   /**
+//    * Get citation data for all codes
+//    */
+//     let lines = [];
+    
+//     for(const codeName of CODES.slice(0,50)){
+//         let codeTotal = getCodeCitations(codeName).reduce( (a,b) => a+b, 0);
+//         if CODES[codeName].type
+//         lines.push({ 'id': codeName, 'data': getCodeCitations(codeName)});
+//     }
+//     return lines;
+// }
+
 function  getCodeCitations(codeName){
   let line_data = [];
     for (const year of YEARS) {
@@ -72,7 +87,7 @@ function  getCodeCitations(codeName){
         data['x'] = parseInt(year);
         data['y'] = parseInt(citations[range_key]['citations'][codeName]['citations']);
         if (isNaN(data['y']) || data['y'] <= 0) { 
-            data['y']=0.1;
+            data['y']=0;
         }
         line_data.push(data);
     

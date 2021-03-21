@@ -51,7 +51,7 @@ function getColumns(data, year) {
         {
             "name": "author_name",
             "label": "Authors",
-            "options": { "filter": false, "sort": true, 'selected': false }
+            "options": { "filter": false, "sort": true, 'selected': false, "display": false}
         },
         {
             "name": "types",
