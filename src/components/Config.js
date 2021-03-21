@@ -63,29 +63,39 @@ function getDataChart(){
     return lines;
 }
 
+function filterCodeNames(filters){
+  /**
+   * Return list of code names after applying filters.
+   * 
+   * E.g. filters = {'type': ['DFT']}
+   */
+    let codeNames = [];
+    for(const codeName in codes){
+      for (const filter in filters) {
+        if (filters[filter].includes(codes[codeName][filter])){
+          codeNames.push(codeName);
+        }
+      }
+    }
+    return codeNames;
+}
 
-// function getDataOverview(){
-//   /**
-//    * Get citation data for all codes
-//    */
-//     let lines = [];
-    
-//     for(const codeName of CODES.slice(0,50)){
-//         let codeTotal = getCodeCitations(codeName).reduce( (a,b) => a+b, 0);
-//         if CODES[codeName].type
-//         lines.push({ 'id': codeName, 'data': getCodeCitations(codeName)});
-//     }
-//     return lines;
-// }
-
-function  getCodeCitations(codeName){
+function  getCodeCitations(codeNames){
+  /** 
+   * Return citations of requested codes vs years.
+   * 
+   * Sums citations of all codes in codeNames.
+   */
   let line_data = [];
     for (const year of YEARS) {
         let data = {};
         let range_key = yearToRange(year);
 
         data['x'] = parseInt(year);
-        data['y'] = parseInt(citations[range_key]['citations'][codeName]['citations']);
+        data['y'] = 0;
+        for (const codeName of codeNames) {
+          data['y'] += parseInt(citations[range_key]['citations'][codeName]['citations']);
+        }
         if (isNaN(data['y']) || data['y'] <= 0) { 
             data['y']=0;
         }
@@ -95,4 +105,4 @@ function  getCodeCitations(codeName){
     return line_data;
 }
 
-export {yearToRange, rangeToYear, YEARS, CODES, getData, getDataChart, getCodeCitations};
+export {yearToRange, rangeToYear, YEARS, CODES, getData, getDataChart, getCodeCitations, filterCodeNames};
