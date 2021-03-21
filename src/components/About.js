@@ -9,6 +9,14 @@ import ReactMarkdown from 'react-markdown';
 import useStyles from './Dashboard/Styles';
 import Title from './Dashboard/Title';
 
+
+const aboutMD = `
+*atsim-trends* aims to track the citation trends of all major atomistic simulation engines (see [scope](https://github.com/ltalirz/atsim-trends#scope))
+
+*atsim-trends* is a collaboratively edited list.
+Please visit the [source code repository on GitHub](https://github.com/ltalirz/atsim-trends) for instructions on how to [add new simulation engines](https://github.com/ltalirz/atsim-trends/issues/21) or [report issues](https://github.com/ltalirz/atsim-trends/issues).
+`;
+
 const acknowledgementsMD = `
 This project was inspired by the ["Major codes in electronic-structure theory, quantum chemistry, and molecular-dynamics"](https://www.nomad-coe.eu/old-pages/externals/codes) collection maintained by the [NOMAD Center of Excellence](https://www.nomad-coe.eu) from 2017-2019.
 Thanks go to Luca Ghiringelli for being supportive of this effort to transform the static list into an interactive app and a collaborative project.
@@ -20,10 +28,9 @@ The project draws upon further great resources, including:
  * SklogWiki's [Materials modelling and computer simulation codes](https://en.wikipedia.org/wiki/Comparison_of_software_for_molecular_mechanics_modeling)
 `;
 
-const aboutMD = `
-This is a collaboratively edited list of atomistic simulation codes, together with citation information of the past couple of years.
 
-Please visit the [source code repository on GitHub](https://github.com/ltalirz/atsim-trends) for instructions on how to fix mistakes, add new simulation engines, and provide feedback.
+const contactMD = `
+This page is maintained by [Leopold Talirz](https://sites.google.com/site/leotalirz/).
 `;
 
 export default function Home() {
@@ -49,6 +56,17 @@ export default function Home() {
                         <Title>Acknowledgements</Title>
                         <Typography component="div" variant="body1">
                             <ReactMarkdown source={acknowledgementsMD} />
+                        </Typography>
+                    </React.Fragment>
+                </Paper>
+            </Grid>
+            {/* Contact */}
+            <Grid item xs={12}>
+                <Paper className={classes.paper}>
+                    <React.Fragment>
+                        <Title>Contact</Title>
+                        <Typography component="div" variant="body1">
+                            <ReactMarkdown source={contactMD} />
                         </Typography>
                     </React.Fragment>
                 </Paper>
