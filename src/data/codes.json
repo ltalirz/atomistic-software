@@ -188,7 +188,7 @@
       "optional_pbc"
     ],
     "types": [
-      "WFM"
+      "Spectroscopy"
     ]
   },
   "BigDFT": {
@@ -1433,7 +1433,7 @@
       "optional_pbc"
     ],
     "types": [
-      "DFT"
+      "Spectroscopy"
     ]
   },
   "exciting": {
