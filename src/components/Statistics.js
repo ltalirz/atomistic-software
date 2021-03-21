@@ -6,7 +6,7 @@ import Paper from '@material-ui/core/Paper';
 import useStyles from './Dashboard/Styles';
 import Title from './Dashboard/Title';
 import { YEARS, getData, filterCodeNames, getCodeCitations } from './Config';
-import {nivoChart} from './Chart/single';
+import {nivoChart, nivoStream} from './Chart/single';
 // import { Card } from '@material-ui/core';
 
 function citationGrowth(year) {
@@ -73,9 +73,10 @@ function costGraph() {
     let lines = [];
     for (const group in groups){
         const codeNames = filterCodeNames({"license": groups[group]});
-        lines.push({ 'id': group, 'data':  getCodeCitations(codeNames)});
+        //lines.push({ 'id': group, 'data':  getCodeCitations(codeNames)});
+        lines.push( getCodeCitations(codeNames));
     }
-    return nivoChart(lines, "");
+    return nivoStream(lines, "");
 }
 
 function sourceGraph() {
