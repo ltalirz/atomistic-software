@@ -13,15 +13,39 @@ import Title from './Dashboard/Title';
 const aboutMD = `
 *atsim-trends* aims to track the citation trends of all major atomistic simulation engines (see [scope](https://github.com/ltalirz/atsim-trends#scope)).
 
-*atsim-trends* is a collaboratively edited list.
+This is a collaboratively edited list.
 Please visit the [source code repository on GitHub](https://github.com/ltalirz/atsim-trends) for instructions on how to [add new simulation engines](https://github.com/ltalirz/atsim-trends/issues/21).
 
-**Disclaimer**: Owing to the lack of standardization in [today's software citation practices](http://doi.org/10.5281/zenodo.4263762), the citation counts reported here are *approximate*, and their significance should not be overrated.
-Nevertheless, we always welcome [reports](https://github.com/ltalirz/atsim-trends/issues) of mistakes or practical suggestions on how to improve accuracy. 
+`;
+
+const methodologyMD = `
+
+**Disclaimer**: Owing to the [lack of standardization in today's software citation practices](http://doi.org/10.5281/zenodo.4263762), the citation counts reported here are *approximate* and their significance should not be overrated.
+This is not an exact science.
+Nevertheless, [reports](https://github.com/ltalirz/atsim-trends/issues) of mistakes or practical suggestions on how to improve accuracy are always welcome. 
+
+Approximate citation counts are obtained from [Google Scholar](https://scholar.google.com/) as follows:
+
+ 1. Search for name of the code and the last name of a representative developer (vast majority of codes)
+ 1. When the name of the code is too common a search term, citations of a major article are counted (minority of codes)
+
+Click on a citation count in order to see the exact Google Scholar query that was used to extract it.
+`;
+
+
+const faqMD = `
+ *  **Q**: The citation count for year XXXX reported here differs somewhat from the same citation count I see on Google Scholar. Why?
+
+    **A**: Citation counts reported by Google Scholar are not static, even for years that lie in the past.
+    Reasons may include new sites being indexed, more text being extracted, different citations being disambiguated, or even the heuristic evolving that predicts the total number of results.
+    In our experience, citation data for the previous year can be subject to significant (upwards) fluctuation, while citation data for years further in the past are quite stable.
+    We record the date of when each data point was collected in the [source code repository](https://github.com/ltalirz/atsim-trends).
+
+    
 `;
 
 const acknowledgementsMD = `
-This project was inspired by the ["Major codes in electronic-structure theory, quantum chemistry, and molecular-dynamics"](https://www.nomad-coe.eu/old-pages/externals/codes) collection maintained by the [NOMAD Center of Excellence](https://www.nomad-coe.eu) from 2017-2019.
+This project was inspired by and built upon the ["Major codes in electronic-structure theory, quantum chemistry, and molecular-dynamics"](https://www.nomad-coe.eu/old-pages/externals/codes) collection maintained by the [NOMAD Center of Excellence](https://www.nomad-coe.eu) from 2017-2019.
 Thanks go to Luca Ghiringelli for being supportive of this effort to transform the static list into an interactive app and a collaborative project.
 
 The project draws upon further great resources, including:
@@ -33,7 +57,7 @@ The project draws upon further great resources, including:
 
 
 const contactMD = `
-This page is maintained by [Leopold Talirz](https://sites.google.com/site/leotalirz/).
+This page is currently maintained by [Leopold Talirz](https://sites.google.com/site/leotalirz/).
 `;
 
 export default function Home() {
@@ -48,6 +72,28 @@ export default function Home() {
                         <Title>About</Title>
                         <Typography component="div" variant="body1">
                             <ReactMarkdown source={aboutMD} />
+                        </Typography>
+                    </React.Fragment>
+                </Paper>
+            </Grid>
+            {/* Methodology */}
+                        <Grid item xs={12}>
+                <Paper className={classes.paper}>
+                    <React.Fragment>
+                        <Title>Methodology</Title>
+                        <Typography component="div" variant="body1">
+                            <ReactMarkdown source={methodologyMD} />
+                        </Typography>
+                    </React.Fragment>
+                </Paper>
+            </Grid>
+            {/* FAQ */}
+                        <Grid item xs={12}>
+                <Paper className={classes.paper}>
+                    <React.Fragment>
+                        <Title>Frequently Asked Questions</Title>
+                        <Typography component="div" variant="body1">
+                            <ReactMarkdown source={faqMD} />
                         </Typography>
                     </React.Fragment>
                 </Paper>
