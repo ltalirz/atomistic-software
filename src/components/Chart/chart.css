@@ -14,3 +14,8 @@
 div.container {
   margin-bottom: 15px;
 }
+
+img.zenodo {
+  vertical-align: middle;
+  margin: 0px 10px;
+}
