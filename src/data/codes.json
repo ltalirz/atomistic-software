@@ -188,7 +188,7 @@
       "optional_pbc"
     ],
     "types": [
-      "Spectroscopy"
+      "S"
     ]
   },
   "BigDFT": {
@@ -547,7 +547,7 @@
       "data_representation"
     ],
     "types": [
-      "Spectroscopy"
+      "S"
     ]
   },
   "FHI-aims": {
@@ -1187,7 +1187,7 @@
     ],
     "types": [
       "DFT",
-      "WFM"
+      "S"
     ]
   },
   "RMCprofile": {
@@ -1433,7 +1433,7 @@
       "optional_pbc"
     ],
     "types": [
-      "Spectroscopy"
+      "S"
     ]
   },
   "exciting": {

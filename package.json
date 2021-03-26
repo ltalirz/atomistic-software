@@ -1,7 +1,15 @@
 {
-  "name": "atsim-trends",
-  "homepage": "https://ltalirz.github.io/atsim-trends",
+  "name": "atomistic-software",
+  "homepage": "https://atomistic.software",
   "version": "0.1.0",
+  "author": {
+    "name": "Leopold Talirz",
+    "url": "https://sites.google.com/site/leotalirz/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ltalirz/atomistic-software"
+  },
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
@@ -26,7 +34,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && echo 'atomistic.software' > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
