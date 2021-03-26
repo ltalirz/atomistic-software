@@ -1,8 +1,8 @@
-# atsim-trends
+# atomistic-software
 
-[*atsim-trends*](https://ltalirz.github.io/atsim-trends/#/) aims to track the citation trends of all major atomistic simulation engines.
+[atomistic.software](https://atomistic.software/#/) aims to track the citation trends of all major atomistic simulation engines.
 
-This is the git source code repository powering the [live website](https://ltalirz.github.io/atsim-trends/#/).
+This is the git source code repository powering the [atomistic.software](https://atomistic.software/#/).
 ### Scope
 
 Working definition of an "atomistic simulation engine": a piece of software that, given two sets of atomic elements and positions, can compute their (relative) internal energies. In almost all cases, codes will also be able to compute the derivative of the energy with respect to the positions, i.e. the forces on the atoms, and thus be able to perform tasks like geometry optimizations or molecular dynamics. This covers the codes in the `DFT`, `WFM`, `QMC`, `TB`, and `FF` categories.
@@ -18,7 +18,7 @@ It is obviously somewhat arbitrary (and is not fulfilled by all historical entri
 
 #### Option 1: Suggest addition
 
-If you're not familiar with github or don't have time to add the engine yourself, just [add a comment](https://github.com/ltalirz/atsim-trends/issues/21) with your suggestion.
+If you're not familiar with github or don't have time to add the engine yourself, just [add a comment](https://github.com/ltalirz/atomistic-software/issues/21) with your suggestion.
 
 #### Option 2: Make a pull request
 

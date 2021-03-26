@@ -8,13 +8,14 @@ import ReactMarkdown from 'react-markdown';
 
 import useStyles from './Dashboard/Styles';
 import Title from './Dashboard/Title';
+import packageJson from '../../package.json';
 
 
 const aboutMD = `
-*atsim-trends* aims to track the citation trends of all major atomistic simulation engines (see [scope](https://github.com/ltalirz/atsim-trends#scope)).
+*${packageJson.name}* aims to track the citation trends of all major atomistic simulation engines (see [scope](${packageJson.repository.url}#scope)).
 
 This is a collaboratively edited list.
-Please visit the [source code repository on GitHub](https://github.com/ltalirz/atsim-trends) for instructions on how to [add new simulation engines](https://github.com/ltalirz/atsim-trends/issues/21).
+Please visit the [source code repository on GitHub](${packageJson.repository.url}) for instructions on how to [add new simulation engines](${packageJson.repository.url}/issues/21).
 
 `;
 
@@ -22,7 +23,7 @@ const methodologyMD = `
 
 **Disclaimer**: Owing to the [lack of standardization in today's software citation practices](http://doi.org/10.5281/zenodo.4263762), the citation counts reported here are *approximate* and their significance should not be overrated.
 This is not an exact science.
-Nevertheless, [reports](https://github.com/ltalirz/atsim-trends/issues) of mistakes or practical suggestions on how to improve accuracy are always welcome. 
+Nevertheless, [reports](${packageJson.repository.url}/issues) of mistakes or practical suggestions on how to improve accuracy are always welcome. 
 
 Approximate citation counts are obtained from [Google Scholar](https://scholar.google.com/) as follows:
 
@@ -39,7 +40,7 @@ const faqMD = `
     **A**: Citation counts reported by Google Scholar are not static, even for years that lie in the past.
     Reasons may include new sites being indexed, more text being extracted, different citations being disambiguated, or even the heuristic evolving that predicts the total number of results.
     In our experience, citation data for the previous year can be subject to significant (upwards) fluctuation, while citation data for years further in the past are quite stable.
-    We record the date of when each data point was collected in the [source code repository](https://github.com/ltalirz/atsim-trends).
+    We record the date of when each data point was collected in the [source code repository](${packageJson.repository.url}).
 
     
 `;
@@ -57,7 +58,7 @@ The project draws upon further great resources, including:
 
 
 const contactMD = `
-This page is currently maintained by [Leopold Talirz](https://sites.google.com/site/leotalirz/).
+This page is currently maintained by [${packageJson.author.name}](${packageJson.author.url}).
 `;
 
 export default function Home() {

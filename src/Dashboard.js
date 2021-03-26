@@ -22,13 +22,14 @@ import Table from './components/Table';
 import About from './components/About';
 import Statistics from './components/Statistics';
 import {SingleChart} from './components/Chart/single';
+import packageJson from '../package.json';
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        atsim-trends
+        {packageJson.author.name}
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
