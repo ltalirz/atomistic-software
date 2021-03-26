@@ -146,7 +146,7 @@ function getColumns(data, year) {
                 // add google scholar link to number of citations
                 "customBodyRenderLite": (dataIndex) => {
                     const row = data[dataIndex];
-                    return <Button href={'#/charts/' + encodeURIComponent(row['name'])} ><ShowChartIcon /> </Button>;
+                    return <Button href={'#/charts/' + encodeURIComponent(row['name'])} color="secondary" ><ShowChartIcon /> </Button>;
                 }
             }
         }
