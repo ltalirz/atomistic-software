@@ -1,22 +1,28 @@
+[![DOI](https://zenodo.org/badge/327603600.svg)](https://zenodo.org/badge/latestdoi/327603600)
+
 # Trends in atomistic simulation engines
 
 [atomistic.software](https://atomistic.software/#/) aims to track the citation trends of all major atomistic simulation engines.
 
-This is the git source code repository powering the [atomistic.software](https://atomistic.software/#/) website.
+This git repository contains the source code of the [atomistic.software](https://atomistic.software/#/) website.
 
 ## How to cite
 
 You are welcome to cite [atomistic.software](https://atomistic.software/#/) in your scientific work in the following ways:
 
-Talirz, L. *Trends in atomistic simulation engines.* [https://atomistic.software](https://atomistic.software/#/) (2021)
+* **Variant 1**: Cite the DOI corresponding to the latest website release by copying the "Cite as" information from [https://doi.org/10.5281/zenodo.4639414](https://doi.org/10.5281/zenodo.4639414)
+* **Variant 2**: Talirz, L. *Trends in atomistic simulation engines.* [https://atomistic.software](https://atomistic.software/#/) (2021)
  
 ## Scope
 
-Working definition of an *atomistic simulation engine*: a piece of software that, given two sets of atomic elements and positions, can compute their (relative) internal energies. 
-In almost all cases, engines will also be able to compute the derivative of the energy with respect to the positions, i.e. the forces on the atoms, and thus be able to perform tasks like geometry optimizations or molecular dynamics.
+[atomistic.software](https://atomistic.software/#/) uses the following working definition of an *atomistic simulation engine*:
+
+> a piece of software that, given two sets of atomic elements and positions, can compute their (relative) internal energies. 
+> In almost all cases, engines will also be able to compute the derivative of the energy with respect to the positions, i.e. the forces on the atoms, and thus be able to perform tasks like geometry optimizations or molecular dynamics.
+
 This covers the `DFT`, `WFM`, `QMC`, `TB`, and `FF` categories.
 
-Softwares in the `Spectroscopy` category are not necessarily simulation engines in the above sense, but are able to compute the response of a given atomic structure to an external excitation (via photons, electrons, ...).
+Softwares in the `Spectroscopy` category are not necessarily simulation engines in the above sense, but compute the response of a given atomic structure to an external excitation (via photons, electrons, ...).
 ## Adding a simulation engine
 
 Contributions of new simulation engines are always welcome!
