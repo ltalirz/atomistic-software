@@ -8,21 +8,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     # link checker ignores json files
-    - name: Copy codes.json
+    - name: Extract links from codes.json
       run: |
         grep homepage src/data/codes.json > codes.md
 
     - name: Link Checker
       id: lc
-      uses: lycheeverse/lychee-action@v1
+      uses: lycheeverse/lychee-action@v1.0.6
       with:
+        # See cli args at https://github.com/lycheeverse/lychee#commandline-parameters
         # for excluded URLs, the checker seems to be stricter than Chrome
           #--exclude "https://www.msg.chem.iastate.edu/" 
           #--exclude "https://www.tcd.ie/Physics/Smeagol/index.html"
         args: >-
-          -v --timeout 40 
+          --verbose --timeout 40 --insecure 
           codes.md
 
     - name: Fail if there were link errors
