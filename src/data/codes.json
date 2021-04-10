@@ -373,7 +373,7 @@
     "license_annotation": null,
     "name": "CRYSTAL",
     "query_method": "search term",
-    "query_string": "\"CRYSTAL14\" Dovesi + \"CRYSTAL09\" Dovesi + \"CRYSTAL06\" Dovesi + \"CRYSTAL17\" Dovesi",
+    "query_string": "\"CRYSTAL code\" OR \"CRYSTAL17\" OR \"CRYSTAL14\" OR \"CRYSTAL09\" OR \"CRYSTAL06\" Dovesi",
     "tags": [
       "nomad_code",
       "optional_pbc"
@@ -440,7 +440,7 @@
     "license_annotation": null,
     "name": "DMol3",
     "query_method": "search term",
-    "query_string": "DMol3 Delley + \"DMol^3\" Delley \u2013 \"DMol^3\" DMol3 Delley ",
+    "query_string": "DMol3 OR \"DMol^3\" Delley",
     "tags": [
       "nomad_code",
       "data_representation",
