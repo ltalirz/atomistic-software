@@ -8,6 +8,32 @@ import {
     useParams
 } from "react-router-dom";
 
+function getTitle(codeName, citations){
+    /**
+     * Return title for chart.
+     */
+     let reverseCitations = [];
+     let yearBegin = 0;
+     const minCitations = 10;
+     // go backwards; stop when hitting 10 citations or lower
+     for(const point of citations.slice().reverse()){
+         if(point['y'] < minCitations) { break; }
+         reverseCitations.push(point['y']);
+         yearBegin = point['x'];
+     }
+ 
+    // Need at least two years with > minCitations
+     if(reverseCitations.length < 2){
+         return codeName;
+     }
+ 
+     const ratio = reverseCitations[0] / reverseCitations.slice(-1)[0];
+     const annualGrowth = (Math.pow(ratio, 1.0/(reverseCitations.length - 1)) - 1) * 100;
+     const title = codeName + " " + annualGrowth.toFixed(1) + '% growth (year-over-year) since ' + yearBegin;
+
+     return title;
+
+}
 
 function SingleChart() {
     /**
@@ -17,12 +43,8 @@ function SingleChart() {
      */
     let codeName = decodeURIComponent( useParams()['code']);
     const citations = getCodeCitations([codeName]);
-
-    const ratio = citations.slice(-1)[0]['y'] / citations[0]['y'];
-    const annualGrowth = (Math.pow(ratio, 1.0/citations.length) - 1) * 100;
-    const title = codeName + " " + annualGrowth.toFixed(1) + '% annual growth';
-
-    return nivoChart([{ 'id': codeName, 'data': getCodeCitations([codeName]) }], title);
+    const title = getTitle(codeName, citations);
+    return nivoChart([{ 'id': codeName, 'data': citations }], title);
 }
 
 function nivoChart(data, title) {

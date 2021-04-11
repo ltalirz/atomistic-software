@@ -176,11 +176,13 @@ export default function Home() {
             {Card("Top cited in " + CURRENT_YEAR, totalList(GROWTH['total'].slice(0, 10)), 
             "", 4)}
             {Card("Top citation growth "+ CURRENT_YEAR, absoluteGrowthList(GROWTH['absoluteGrowth'].slice(0, 10)), 
-            "In " + CURRENT_YEAR +" with respect to "+ (CURRENT_YEAR-1) + ".", 4)}
+            "With respect to "+ (CURRENT_YEAR-1) + ".", 4)}
             {Card("Top relative citation growth", relativeGrowthList(GROWTH['relativeGrowth'].slice(0, 10)),
-                "In " + CURRENT_YEAR +" with respect to "+ (CURRENT_YEAR-1) + ", considering only engines with >100 citations.",
+                "With respect to "+ (CURRENT_YEAR-1) + ", considering only engines with >100 citations.",
                  4)}
             {Card("Citations commercial vs free", costGraph(),"'Free' includes engines that are free for academic use only.",11)}
-            {Card("Citations by source code availability", sourceGraph(),"'Source available' includes engines whose source code can be obtained for free or for a fee.",11)}
+            {Card("Citations by source code availability", sourceGraph(),
+            "'Source available' includes engines whose source code can be obtained for free or for a fee. " +
+            "'Open-source' includes only OSI-approved licenses.",11)}
         </Grid>);
 }
