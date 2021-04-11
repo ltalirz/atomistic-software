@@ -1,7 +1,6 @@
 {
   "ABINIT": {
     "author_name": "Gonze",
-    "family": "Plane-wave basis sets",
     "homepage": "https://www.abinit.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -25,7 +24,6 @@
   },
   "ACEMD": {
     "author_name": "Fabritiis",
-    "family": "",
     "homepage": "https://www.acellera.com/products/molecular-dynamics-software-GPU-acemd/",
     "license": "C(C)",
     "license_annotation": "Free community edition for running on 1 GPU.",
@@ -40,7 +38,6 @@
   },
   "ACES III": {
     "author_name": "Bartlett",
-    "family": "Atom-centered basis sets",
     "homepage": "http://www.qtp.ufl.edu/ACES/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -59,7 +56,6 @@
   },
   "ADF": {
     "author_name": "Baerends",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.scm.com/product/adf/",
     "license": "C(S)",
     "license_annotation": null,
@@ -79,7 +75,6 @@
   },
   "ASE/ASAP": {
     "author_name": "Jacobsen",
-    "family": "",
     "homepage": "https://wiki.fysik.dtu.dk/ase/index.html",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -97,7 +92,6 @@
   },
   "ASW program package": {
     "author_name": "K\u00fcbler",
-    "family": "Linearized augmented plane waves",
     "homepage": "https://myweb.rz.uni-augsburg.de/~eyert/aswprog.shtml",
     "license": "OS(P)",
     "license_annotation": null,
@@ -107,7 +101,8 @@
     "tags": [
       "PBC",
       "AE",
-      "ASW"
+      "ASW",
+      "LAPW"
     ],
     "types": [
       "DFT"
@@ -116,7 +111,6 @@
   },
   "Amber": {
     "author_name": "Kollman",
-    "family": "",
     "homepage": "https://ambermd.org/",
     "license": "C(S)",
     "license_annotation": null,
@@ -133,7 +127,6 @@
   },
   "Atomistix ToolKit (ATK)": {
     "author_name": "QuantumWise",
-    "family": "",
     "homepage": "https://quantumwise.com/",
     "license": "C(C)",
     "license_annotation": null,
@@ -156,7 +149,6 @@
   },
   "BAGEL": {
     "author_name": "Shiozaki",
-    "family": "Atom-centered basis sets",
     "homepage": "http://www.nubakery.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -175,7 +167,6 @@
   },
   "BOSS": {
     "author_name": "Jorgensen",
-    "family": "",
     "homepage": "http://zarbi.chem.yale.edu/software.html#boss",
     "license": "F(A)",
     "license_annotation": null,
@@ -190,7 +181,6 @@
   },
   "BerkeleyGW": {
     "author_name": "Louie",
-    "family": "<p>Atom-centered basis sets</p> <p>Real-space grids</p>",
     "homepage": "https://www.berkeleygw.org/",
     "license": "OS(P)",
     "license_annotation": "BSD-3-Clause-LBNL",
@@ -215,7 +205,6 @@
   },
   "BigDFT": {
     "author_name": "Genovese",
-    "family": "Plane-wave basis sets",
     "homepage": "https://bigdft.org",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -235,7 +224,6 @@
   },
   "CASINO": {
     "author_name": "Needs and L\u00f3pez R\u00edos",
-    "family": "Quantum Monte Carlo",
     "homepage": "https://vallico.net/casinoqmc/",
     "license": "F",
     "license_annotation": "Commercial for non-academic use",
@@ -259,7 +247,6 @@
   },
   "CASTEP": {
     "author_name": "Payne",
-    "family": "Plane-wave basis sets",
     "homepage": "http://www.castep.org",
     "license": "F(A)",
     "license_annotation": "Free for academic use in UK",
@@ -283,7 +270,6 @@
   },
   "CFOUR": {
     "author_name": "Stanton",
-    "family": "Atom-centered basis sets",
     "homepage": "http://www.cfour.de/",
     "license": "F",
     "license_annotation": null,
@@ -302,7 +288,6 @@
   },
   "CHARMM": {
     "author_name": "Karplus",
-    "family": "",
     "homepage": "https://www.charmm.org/",
     "license": "C(S)",
     "license_annotation": null,
@@ -317,7 +302,6 @@
   },
   "COLUMBUS": {
     "author_name": "Lischka",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.univie.ac.at/columbus/",
     "license": "F",
     "license_annotation": null,
@@ -335,7 +319,6 @@
   },
   "CONQUEST O(N)": {
     "author_name": "Bowler and Miyazaki",
-    "family": "Atom-centered basis sets",
     "homepage": "http://www.order-n.org/",
     "license": "OS(P)",
     "license_annotation": "MIT",
@@ -360,7 +343,6 @@
   },
   "COSMOS-software": {
     "author_name": "Sternberg",
-    "family": "",
     "homepage": "http://www.cosmos-software.de/ce_intro.html",
     "license": "C(C)",
     "license_annotation": null,
@@ -375,7 +357,6 @@
   },
   "CP2K": {
     "author_name": "Hutter",
-    "family": "<p>Plane-wave basis sets</p> <p>Atom-centered basis sets</p>",
     "homepage": "https://www.cp2k.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -399,7 +380,6 @@
   },
   "CPMD": {
     "author_name": "Hutter",
-    "family": "Plane-wave basis sets",
     "homepage": "https://www.cpmd.org/",
     "license": "F",
     "license_annotation": null,
@@ -421,7 +401,6 @@
   },
   "CRYSTAL": {
     "author_name": "Dovesi",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.crystal.unito.it/index.php",
     "license": "C(C)",
     "license_annotation": "Free demo limited to 10 atoms per primitive cell.",
@@ -444,7 +423,6 @@
   },
   "DFTB+": {
     "author_name": "Aradi",
-    "family": "",
     "homepage": "https://www.dftb-plus.info",
     "license": "F",
     "license_annotation": "Commercial for non-academic use",
@@ -461,7 +439,6 @@
   },
   "DIRAC": {
     "author_name": "Saue",
-    "family": "",
     "homepage": "http://www.diracprogram.org/doku.php",
     "license": "F",
     "license_annotation": "DIRAC17 Personal Licence to Use Agreement",
@@ -480,7 +457,6 @@
   },
   "DL_POLY": {
     "author_name": "Smith",
-    "family": "",
     "homepage": "https://www.scd.stfc.ac.uk/Pages/DL_POLY.aspx",
     "license": "F(A)",
     "license_annotation": "DL_POLY_4 licence agreement",
@@ -495,7 +471,6 @@
   },
   "DMol3": {
     "author_name": "Delley",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.3dsbiovia.com/products/datasheets/dmol3.pdf",
     "license": "C(C)",
     "license_annotation": null,
@@ -518,7 +493,6 @@
   },
   "Dalton": {
     "author_name": "\u00c5gren",
-    "family": "Atom-centered basis sets",
     "homepage": "https://daltonprogram.org/",
     "license": "F",
     "license_annotation": null,
@@ -536,7 +510,6 @@
   },
   "Discovery Studio": {
     "author_name": "Accelrys",
-    "family": "",
     "homepage": "https://en.wikipedia.org/wiki/Discovery_Studio",
     "license": "C(C)",
     "license_annotation": null,
@@ -553,7 +526,6 @@
   },
   "ERKALE": {
     "author_name": "Lehtola",
-    "family": "Atom-centered basis sets",
     "homepage": "https://github.com/susilehtola/erkale/wiki/ERKALE",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -572,7 +544,6 @@
   },
   "ESPResSo and ESPResso++": {
     "author_name": "Holm",
-    "family": "",
     "homepage": "https://espressomd.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -589,7 +560,6 @@
   },
   "Elk": {
     "author_name": "Dewhurst",
-    "family": "Linearized augmented plane waves",
     "homepage": "http://elk.sourceforge.net/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -611,7 +581,6 @@
   },
   "FEFF": {
     "author_name": "Rehr",
-    "family": "",
     "homepage": "https://github.com/times-software/feff10",
     "license": "F",
     "license_annotation": "FEFF10 license",
@@ -628,7 +597,6 @@
   },
   "FHI-aims": {
     "author_name": "Blum",
-    "family": "Atom-centered basis sets",
     "homepage": "http://www.fhi-berlin.mpg.de/aims/",
     "license": "C(S)",
     "license_annotation": null,
@@ -651,7 +619,6 @@
   },
   "FLEUR": {
     "author_name": "Bl\u00fcgel",
-    "family": "Linearized augmented plane waves",
     "homepage": "https://www.flapw.de/pm/",
     "license": "OS(P)",
     "license_annotation": null,
@@ -673,7 +640,6 @@
   },
   "FPLO": {
     "author_name": "Koepernik",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.fplo.de/",
     "license": "C(S)",
     "license_annotation": null,
@@ -694,7 +660,6 @@
   },
   "FoldX": {
     "author_name": "Serrano",
-    "family": "",
     "homepage": "http://foldx.crg.es/",
     "license": "F",
     "license_annotation": "Commercial for non-academic use",
@@ -709,7 +674,6 @@
   },
   "GAMESS": {
     "author_name": "Gordon",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.msg.chem.iastate.edu/",
     "license": "F",
     "license_annotation": null,
@@ -731,7 +695,6 @@
   },
   "GPAW": {
     "author_name": "Mortensen",
-    "family": "<p>Plane-wave basis sets</p> <p>Atom-centered basis sets</p> <p>Real-space grids</p>",
     "homepage": "https://wiki.fysik.dtu.dk/gpaw/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -755,7 +718,6 @@
   },
   "GROMOS": {
     "author_name": "Van Gunsteren",
-    "family": "",
     "homepage": "http://www.gromos.net/",
     "license": "C(S)",
     "license_annotation": null,
@@ -770,7 +732,6 @@
   },
   "GULP": {
     "author_name": "Gale",
-    "family": "",
     "homepage": "https://gulp.curtin.edu.au/gulp/",
     "license": "F(A)",
     "license_annotation": null,
@@ -785,7 +746,6 @@
   },
   "Gaussian": {
     "author_name": "Frisch",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.gaussian.com/",
     "license": "C(S)",
     "license_annotation": null,
@@ -808,7 +768,6 @@
   },
   "Gromacs": {
     "author_name": "Lindahl",
-    "family": "",
     "homepage": "https://www.gromacs.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -825,7 +784,6 @@
   },
   "HOOMD-blue": {
     "author_name": "Anderson",
-    "family": "",
     "homepage": "https://codeblue.umich.edu/hoomd-blue/index.html",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -840,7 +798,6 @@
   },
   "Jaguar": {
     "author_name": "Schr\u00f6dinger",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.schrodinger.com/Jaguar/",
     "license": "C(C)",
     "license_annotation": null,
@@ -861,7 +818,6 @@
   },
   "LAMMPS": {
     "author_name": "Plimpton",
-    "family": "",
     "homepage": "https://lammps.sandia.gov/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -878,7 +834,6 @@
   },
   "LibAtoms / QUIP / GAP": {
     "author_name": "Csanyi",
-    "family": "",
     "homepage": "http://libatoms.github.io/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -894,7 +849,6 @@
   },
   "MADNESS": {
     "author_name": "Harrison",
-    "family": "",
     "homepage": "https://github.com/m-a-d-n-e-s-s/madness",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -914,7 +868,6 @@
   },
   "MCCCS Towhee": {
     "author_name": "Martin",
-    "family": "",
     "homepage": "http://towhee.sourceforge.net",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -929,7 +882,6 @@
   },
   "MOE": {
     "author_name": "Chemical Computing Group",
-    "family": "",
     "homepage": "https://www.chemcomp.com/",
     "license": "C(C)",
     "license_annotation": null,
@@ -946,7 +898,6 @@
   },
   "MOIL": {
     "author_name": "Elber",
-    "family": "",
     "homepage": "https://clsb.ices.utexas.edu/web/moil.html",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -961,7 +912,6 @@
   },
   "MOLCAS": {
     "author_name": "Lindh",
-    "family": "Atom-centered basis sets",
     "homepage": "http://www.molcas.org/",
     "license": "C(S)",
     "license_annotation": null,
@@ -982,7 +932,6 @@
   },
   "OpenMolcas": {
     "author_name": "Lindh",
-    "family": "Atom-centered basis sets",
     "homepage": "https://molcas.gitlab.io/OpenMolcas/sphinx/",
     "license": "OS(CL)",
     "license_annotation": "LGPL-2.1",
@@ -1002,7 +951,6 @@
   },
   "MOPAC": {
     "author_name": "Stewart",
-    "family": "Atom-centered basis sets",
     "homepage": "http://openmopac.net/",
     "license": "F(A)",
     "license_annotation": "",
@@ -1022,7 +970,6 @@
   },
   "MPQC": {
     "author_name": "Janssen",
-    "family": "Atom-centered basis sets",
     "homepage": "https://mpqc.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1041,7 +988,6 @@
   },
   "MacroModel": {
     "author_name": "Schr\u00f6dinger",
-    "family": "",
     "homepage": "https://www.schrodinger.com/MacroModel/",
     "license": "C(C)",
     "license_annotation": null,
@@ -1056,7 +1002,6 @@
   },
   "Molpro": {
     "author_name": "Werner",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.molpro.net/",
     "license": "C(S)",
     "license_annotation": null,
@@ -1076,7 +1021,6 @@
   },
   "NAMD": {
     "author_name": "Schulten",
-    "family": "",
     "homepage": "https://www.ks.uiuc.edu/Research/namd/",
     "license": "F(A)",
     "license_annotation": null,
@@ -1093,7 +1037,6 @@
   },
   "NRLMOL": {
     "author_name": "Pederson",
-    "family": "Atom-centered basis sets",
     "homepage": "https://quantum.utep.edu/?q=node/3",
     "license": "F",
     "license_annotation": null,
@@ -1112,7 +1055,6 @@
   },
   "NWChem": {
     "author_name": "Valiev",
-    "family": "<p>Plane-wave basis sets</p> <p>Atom-centered basis sets</p>",
     "homepage": "https://www.nwchem-sw.org/",
     "license": "OS(P)",
     "license_annotation": null,
@@ -1138,7 +1080,6 @@
   },
   "ONETEP": {
     "author_name": "Skylaris",
-    "family": "Plane-wave basis sets",
     "homepage": "https://www.onetep.org/",
     "license": "C(S)",
     "license_annotation": "Free for members of CCP9 collaboration.",
@@ -1159,7 +1100,6 @@
   },
   "ORAC": {
     "author_name": "Marchi",
-    "family": "",
     "homepage": "http://www.chim.unifi.it/orac/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1174,7 +1114,6 @@
   },
   "ORCA": {
     "author_name": "Neese",
-    "family": "Atom-centered basis sets",
     "homepage": "https://orcaforum.kofo.mpg.de/app.php/portal",
     "license": "F(A)",
     "license_annotation": null,
@@ -1197,7 +1136,6 @@
   },
   "OpenMX": {
     "author_name": "Ozaki",
-    "family": "Atom-centered basis sets",
     "homepage": "http://www.openmx-square.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1216,7 +1154,6 @@
   },
   "PARSEC": {
     "author_name": "Saad",
-    "family": "Real-space grids",
     "homepage": "https://parsec.ices.utexas.edu",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1235,7 +1172,6 @@
   },
   "PLATO": {
     "author_name": "Horsfield",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.imperial.ac.uk/people/a.horsfield/research.html",
     "license": "F(A)",
     "license_annotation": "CPC program library license",
@@ -1256,7 +1192,6 @@
   },
   "PWPAW / ATOMPAW": {
     "author_name": "Holzwarth",
-    "family": "Plane-wave basis sets",
     "homepage": "http://users.wfu.edu/natalie/papers/pwpaw/man.html",
     "license": "OS(CL)",
     "license_annotation": "GPL-3.0",
@@ -1277,7 +1212,6 @@
   },
   "Psi4": {
     "author_name": "Sherrill",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.psicode.org/",
     "license": "OS(CL)",
     "license_annotation": "LGPL-3.0-only",
@@ -1296,7 +1230,6 @@
   },
   "Q": {
     "author_name": "\u00c5qvist",
-    "family": "",
     "homepage": "https://github.com/qusers/Q6",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -1312,7 +1245,6 @@
   },
   "Q-Chem": {
     "author_name": "Shao",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.q-chem.com/",
     "license": "C(S)",
     "license_annotation": null,
@@ -1332,7 +1264,6 @@
   },
   "Qbox": {
     "author_name": "Gygi",
-    "family": "",
     "homepage": "http://www.qboxcode.org",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1351,7 +1282,6 @@
   },
   "Quantum ESPRESSO": {
     "author_name": "Giannozzi",
-    "family": "Plane-wave basis sets",
     "homepage": "https://www.quantum-espresso.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1374,7 +1304,6 @@
   },
   "RMCprofile": {
     "author_name": "Tucker",
-    "family": "",
     "homepage": "http://www.rmcprofile.org/Main_Page",
     "license": "F",
     "license_annotation": null,
@@ -1389,7 +1318,6 @@
   },
   "S / PHI / nX": {
     "author_name": "Boeck",
-    "family": "Plane-wave basis sets",
     "homepage": "https://sxrepo.mpie.de/",
     "license": "OS(P)",
     "license_annotation": null,
@@ -1412,7 +1340,6 @@
   },
   "SIESTA": {
     "author_name": "Soler",
-    "family": "Atom-centered basis sets",
     "homepage": "https://departments.icmab.es/leem/siesta/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1434,7 +1361,6 @@
   },
   "Smeagol": {
     "author_name": "Lambert",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.tcd.ie/Physics/Smeagol/index.html",
     "license": "F",
     "license_annotation": null,
@@ -1453,7 +1379,6 @@
   },
   "TB-LMTO-ASA (Stuttgart)": {
     "author_name": "Andersen",
-    "family": "",
     "homepage": "https://www2.fkf.mpg.de/andersen/LMTODOC/LMTODOC.html",
     "license": "F",
     "license_annotation": null,
@@ -1474,7 +1399,6 @@
   },
   "TINKER": {
     "author_name": "Ponder",
-    "family": "",
     "homepage": "https://dasher.wustl.edu/tinker/",
     "license": "F(A)",
     "license_annotation": null,
@@ -1491,7 +1415,6 @@
   },
   "TURBOMOLE": {
     "author_name": "Ahlrichs",
-    "family": "Atom-centered basis sets",
     "homepage": "https://www.turbomole.com/",
     "license": "C(S)",
     "license_annotation": null,
@@ -1515,7 +1438,6 @@
   },
   "TeraChem": {
     "author_name": "Martinez",
-    "family": "Atom-centered basis sets",
     "homepage": "http://www.petachem.com/products.html",
     "license": "C(C)",
     "license_annotation": null,
@@ -1535,7 +1457,6 @@
   },
   "VASP": {
     "author_name": "Kresse",
-    "family": "Plane-wave basis sets",
     "homepage": "https://www.vasp.at/",
     "license": "C(S)",
     "license_annotation": "Free for academic use in Austria",
@@ -1559,7 +1480,6 @@
   },
   "WEST": {
     "author_name": "Govoni",
-    "family": "Plane-wave basis sets",
     "homepage": "http://www.west-code.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1569,7 +1489,8 @@
     "query_publication_id": "10135319195087919820",
     "tags": [
       "PP",
-      "PW"
+      "PW",
+      "PBC"
     ],
     "types": [
       "DFT",
@@ -1579,7 +1500,6 @@
   },
   "WHAT IF": {
     "author_name": "Vriend",
-    "family": "",
     "homepage": "https://swift.cmbi.umcn.nl/whatif/",
     "license": "C(C)",
     "license_annotation": "Discontinued.",
@@ -1594,7 +1514,6 @@
   },
   "WIEN2k": {
     "author_name": "Blaha",
-    "family": "Linearized augmented plane waves",
     "homepage": "http://www.wien2k.at/",
     "license": "C(S)",
     "license_annotation": null,
@@ -1617,7 +1536,6 @@
   },
   "YASARA": {
     "author_name": "Krieger",
-    "family": "",
     "homepage": "http://yasara.org/",
     "license": "C(C)",
     "license_annotation": null,
@@ -1632,7 +1550,6 @@
   },
   "Yambo": {
     "author_name": "Marini",
-    "family": "Plane-wave basis sets",
     "homepage": "http://www.yambo-code.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1651,7 +1568,6 @@
   },
   "exciting": {
     "author_name": "Draxl",
-    "family": "Linearized augmented plane waves",
     "homepage": "http://exciting-code.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1673,7 +1589,6 @@
   },
   "gSAFT": {
     "author_name": "PSe",
-    "family": "",
     "homepage": "https://www.psenterprise.com/products/gproms/gsaft",
     "license": "C(C)",
     "license_annotation": null,
@@ -1688,7 +1603,6 @@
   },
   "jDFTx / DFT++": {
     "author_name": "Sundararaman",
-    "family": "Plane-wave basis sets",
     "homepage": "https://jdftx.org/",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1709,7 +1623,6 @@
   },
   "octopus": {
     "author_name": "Rubio",
-    "family": "Real-space grids",
     "homepage": "https://www.tddft.org/programs/octopus/wiki/index.php/Main_Page",
     "license": "OS(CL)",
     "license_annotation": null,
@@ -1731,7 +1644,6 @@
   },
   "xTB": {
     "author_name": "Grimme",
-    "family": "",
     "homepage": "https://xtb-docs.readthedocs.io/",
     "license": "OS(CL)",
     "license_annotation": "LGPL-3.0",
@@ -1746,7 +1658,6 @@
   },
   "Firefly": {
     "author_name": "Granovsky",
-    "family": "Atom-centered basis sets",
     "homepage": "http://classic.chem.msu.su/gran/gamess/index.html",
     "license": "F",
     "license_annotation": "Firefly Quantum Chemistry Pacakge License Agreement",
@@ -1766,7 +1677,6 @@
   },
   "Hyperchem": {
     "author_name": "Hypercube",
-    "family": "Atom-centered basis sets",
     "homepage": "http://www.hyper.com/?tabid=360",
     "license": "C(C)",
     "license_annotation": "",
@@ -1786,7 +1696,6 @@
   },
   "PySCF": {
     "author_name": "Chan",
-    "family": "Atom-centered basis sets",
     "homepage": "https://sunqm.github.io/pyscf/",
     "license": "OS(P)",
     "license_annotation": "Apache-2.0",
@@ -1805,11 +1714,6 @@
   },
   "QMCPACK": {
     "author_name": "Kim",
-    "family": [
-      "Atom-centered basis sets",
-      "Plane-wave basis sets",
-      "Real-space spline basis sets"
-    ],
     "homepage": "https://qmcpack.readthedocs.io/",
     "license": "OS(P)",
     "license_annotation": "NCSA",
@@ -1818,7 +1722,11 @@
     "query_string": "qmcpack \"Kim\"",
     "tags": [
       "GTO",
-      "PP"
+      "STO",
+      "PW",
+      "RS",
+      "PP",
+      "AE"
     ],
     "types": [
       "QMC"
@@ -1827,7 +1735,6 @@
   },
   "Desmond": {
     "author_name": "Schr\u00f6dinger",
-    "family": [],
     "homepage": "https://www.schrodinger.com/products/desmond",
     "license": "F(A)",
     "license_annotation": "",
@@ -1842,7 +1749,6 @@
   },
   "OpenMM": {
     "author_name": "Eastman",
-    "family": [],
     "homepage": "http://openmm.org",
     "license": "OS(P)",
     "license_annotation": "MIT",
