@@ -20,10 +20,10 @@ jobs:
       with:
         # See cli args at https://github.com/lycheeverse/lychee#commandline-parameters
         # for excluded URLs, the checker seems to be stricter than Chrome
-          #--exclude "https://www.msg.chem.iastate.edu/" 
-          #--exclude "https://www.tcd.ie/Physics/Smeagol/index.html"
         args: >-
           --verbose --timeout 40 --insecure 
+          --exclude "https://www.msg.chem.iastate.edu/" 
+          --exclude "https://openmopac.net/"
           codes.md
 
     - name: Fail if there were link errors
