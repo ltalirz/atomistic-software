@@ -33,7 +33,7 @@ function Copyright() {
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
-      <Link href="https://zenodo.org/badge/latestdoi/327603600"><img class="zenodo" src="https://zenodo.org/badge/327603600.svg" alt="DOI"/></Link>
+      <Link href="https://zenodo.org/badge/latestdoi/327603600"><img className="zenodo" src="https://zenodo.org/badge/327603600.svg" alt="DOI"/></Link>
     </Typography>
   );
 }

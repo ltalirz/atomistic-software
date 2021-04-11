@@ -24,7 +24,7 @@ function TooltipText(tooltip, text) {
     /** 
      * Tooltip with nicely spaced text that doesn't become a cursor.
      */
-    return <Tooltip title={tooltip} placement="top-end" key={text}><span style={{ 'cursor': 'default', 'marginRight': '0.5em' }}>{text}</span></Tooltip>;
+    return <Tooltip title={tooltip} placement="top-end" key={tooltip}><span style={{ 'cursor': 'default', 'marginRight': '0.5em' }}>{text}</span></Tooltip>;
     //return <Tooltip title={tooltip} placement="top-end" key={text} clickable={true}><span><Button disabled >{text}</Button></span></Tooltip>;
     //return <Tooltip title={tooltip} placement="top-end" key={text} clickable={true}><span><Paper  >{text}</Paper></span></Tooltip>;
 }
@@ -91,13 +91,13 @@ function getColumns(data, year) {
                 "customBodyRenderLite": (dataIndex) => {
                     const x = data[dataIndex]['license'];
                     if (['C(S)', 'C(C)'].includes(x)) {
-                        return TooltipText(licenses[x], [<AttachMoneyIcon />]);
+                        return TooltipText(licenses[x], <AttachMoneyIcon />);
                     } else if (['F(A)'].includes(x)) {
-                        return TooltipText(licenses[x], [<span><MoneyOffIcon /><SchoolIcon /></span>]);
+                        return TooltipText(licenses[x], <span><MoneyOffIcon /><SchoolIcon /></span>);
                     } else if (['I'].includes(x)) {
-                        return TooltipText(licenses[x], [<ContactMailIcon />]);
+                        return TooltipText(licenses[x], <ContactMailIcon />);
                     } else {
-                        return TooltipText(licenses[x], [<MoneyOffIcon />]);
+                        return TooltipText(licenses[x], <MoneyOffIcon />);
                     }
                     //return TooltipText(licenses[x], x);  import ContactMailIcon from '@material-ui/icons/ContactMail';
                 }
@@ -112,13 +112,13 @@ function getColumns(data, year) {
                 "customBodyRenderLite": (dataIndex) => {
                     const x = data[dataIndex]['license'];
                     if (['C(S)', 'F(A)'].includes(x)) {
-                        return TooltipText(licenses[x], [<LockOpenIcon color={'action'} />]);
+                        return TooltipText(licenses[x], <LockOpenIcon color={'action'} />);
                     } else if (['C(C)'].includes(x)) {
-                        return TooltipText(licenses[x], [<LockIcon color={'action'} />]);        
+                        return TooltipText(licenses[x], <LockIcon color={'action'} />);        
                     } else if (['OS(P)', 'OS(CL)'].includes(x)) {
-                        return TooltipText(licenses[x], [<NoEncryptionIcon color={'action'} />]);
+                        return TooltipText(licenses[x], <NoEncryptionIcon color={'action'} />);
                     } else if (['F'].includes(x)) {
-                        return TooltipText(licenses[x], [<span><NoEncryptionIcon color={'action'} /></span>]);
+                        return TooltipText(licenses[x], <span><NoEncryptionIcon color={'action'} /></span>);
                     } else {
                         return TooltipText(licenses[x], x);
                     }
