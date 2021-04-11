@@ -1,7 +1,6 @@
 {
   "ABINIT": {
     "author_name": "Gonze",
-    "description": "PP, PW, WLT",
     "family": "Plane-wave basis sets",
     "homepage": "https://www.abinit.org/",
     "license": "OS(CL)",
@@ -10,18 +9,22 @@
     "query_method": "search term",
     "query_string": "ABINIT Gonze",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "PW",
+      "WLT"
     ],
     "types": [
       "DFT",
       "WFM"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "ACEMD": {
     "author_name": "Fabritiis",
-    "description": "",
     "family": "",
     "homepage": "https://www.acellera.com/products/molecular-dynamics-software-GPU-acemd/",
     "license": "C(C)",
@@ -32,11 +35,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "ACES III": {
     "author_name": "Bartlett",
-    "description": "GTO, PP",
     "family": "Atom-centered basis sets",
     "homepage": "http://www.qtp.ufl.edu/ACES/",
     "license": "OS(CL)",
@@ -44,15 +47,18 @@
     "name": "ACES III",
     "query_method": "search term",
     "query_string": "\"ACES\" Bartlett",
-    "tags": [],
+    "tags": [
+      "GTO",
+      "PP"
+    ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "ADF": {
     "author_name": "Baerends",
-    "description": "AE, STO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.scm.com/product/adf/",
     "license": "C(S)",
@@ -61,16 +67,18 @@
     "query_method": "search term",
     "query_string": "ADF Baerends",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "STO"
     ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "ASE/ASAP": {
     "author_name": "Jacobsen",
-    "description": "",
     "family": "",
     "homepage": "https://wiki.fysik.dtu.dk/ase/index.html",
     "license": "OS(CL)",
@@ -78,17 +86,17 @@
     "name": "ASE/ASAP",
     "query_method": "search term",
     "query_string": "ASE Jacobsen",
-    "tags": [
-      "nomad_code",
-      "data_representation"
-    ],
+    "tags": [],
     "types": [
       "FF"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "ASW program package": {
     "author_name": "K\u00fcbler",
-    "description": "AE, ASW",
     "family": "Linearized augmented plane waves",
     "homepage": "https://myweb.rz.uni-augsburg.de/~eyert/aswprog.shtml",
     "license": "OS(P)",
@@ -97,15 +105,17 @@
     "query_method": "search term",
     "query_string": "\"ASW program package\" K\u00fcbler",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "ASW"
     ],
     "types": [
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Amber": {
     "author_name": "Kollman",
-    "description": "",
     "family": "",
     "homepage": "https://ambermd.org/",
     "license": "C(S)",
@@ -113,16 +123,16 @@
     "name": "Amber",
     "query_method": "search term",
     "query_string": "Amber program Kollman",
-    "tags": [
-      "nomad_code"
-    ],
+    "tags": [],
     "types": [
       "FF"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "Atomistix ToolKit (ATK)": {
     "author_name": "QuantumWise",
-    "description": "See VASP, ABINIT, FHI-aims, Quantum ESPRESSO",
     "family": "",
     "homepage": "https://quantumwise.com/",
     "license": "C(C)",
@@ -131,19 +141,21 @@
     "query_method": "search term",
     "query_string": "\"Atomistix ToolKit\"",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC"
     ],
     "types": [
       "DFT",
       "TB",
       "FF"
+    ],
+    "notes": "See VASP, ABINIT, FHI-aims, Quantum ESPRESSO",
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "BAGEL": {
     "author_name": "Shiozaki",
-    "description": "PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "http://www.nubakery.org/",
     "license": "OS(CL)",
@@ -151,15 +163,18 @@
     "name": "BAGEL",
     "query_method": "search term",
     "query_string": "BAGEL Shiozaki",
-    "tags": [],
+    "tags": [
+      "GTO",
+      "PP"
+    ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "BOSS": {
     "author_name": "Jorgensen",
-    "description": "",
     "family": "",
     "homepage": "http://zarbi.chem.yale.edu/software.html#boss",
     "license": "F(A)",
@@ -170,11 +185,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "BerkeleyGW": {
     "author_name": "Louie",
-    "description": "AE, PP, PW, NAO, RS",
     "family": "<p>Atom-centered basis sets</p> <p>Real-space grids</p>",
     "homepage": "https://www.berkeleygw.org/",
     "license": "OS(P)",
@@ -183,17 +198,23 @@
     "query_method": "search term",
     "query_string": "BerkeleyGW Louie",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "NAO",
+      "PP",
+      "PW",
+      "RS"
     ],
     "types": [
       "S"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "BigDFT": {
     "author_name": "Genovese",
-    "description": "PP, WLT",
     "family": "Plane-wave basis sets",
     "homepage": "https://bigdft.org",
     "license": "OS(CL)",
@@ -202,16 +223,18 @@
     "query_method": "search term",
     "query_string": "BigDFT Genovese",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "WLT"
     ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "CASINO": {
     "author_name": "Needs and L\u00f3pez R\u00edos",
-    "description": "AE, PP, PW, GTO, STO, NAO",
     "family": "Quantum Monte Carlo",
     "homepage": "https://vallico.net/casinoqmc/",
     "license": "F",
@@ -220,15 +243,22 @@
     "query_method": "search term",
     "query_string": "\"CASINO\" \"Needs\" Rios",
     "tags": [
-      "data_representation"
+      "AE",
+      "GTO",
+      "NAO",
+      "PP",
+      "PW",
+      "STO"
     ],
     "types": [
       "QMC"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "CASTEP": {
     "author_name": "Payne",
-    "description": "PP, PW, PAW",
     "family": "Plane-wave basis sets",
     "homepage": "http://www.castep.org",
     "license": "F(A)",
@@ -237,18 +267,22 @@
     "query_method": "search term",
     "query_string": "CASTEP Payne",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "PAW",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT",
       "WFM"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "CFOUR": {
     "author_name": "Stanton",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "http://www.cfour.de/",
     "license": "F",
@@ -256,14 +290,18 @@
     "name": "CFOUR",
     "query_method": "search term",
     "query_string": "\"CFOUR\" Stanton",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO",
+      "PP"
+    ],
     "types": [
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "CHARMM": {
     "author_name": "Karplus",
-    "description": "",
     "family": "",
     "homepage": "https://www.charmm.org/",
     "license": "C(S)",
@@ -274,11 +312,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "COLUMBUS": {
     "author_name": "Lischka",
-    "description": "AE, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.univie.ac.at/columbus/",
     "license": "F",
@@ -286,14 +324,17 @@
     "name": "COLUMBUS",
     "query_method": "search term",
     "query_string": "COLUMBUS Lischka",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO"
+    ],
     "types": [
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "CONQUEST O(N)": {
     "author_name": "Bowler and Miyazaki",
-    "description": "AE, PP, NAO, PW",
     "family": "Atom-centered basis sets",
     "homepage": "http://www.order-n.org/",
     "license": "OS(P)",
@@ -302,18 +343,23 @@
     "query_method": "search term",
     "query_string": "\"CONQUEST\" \"Miyazaki\" \"Bowler\"",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "NAO",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT",
       "TB"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "COSMOS-software": {
     "author_name": "Sternberg",
-    "description": "",
     "family": "",
     "homepage": "http://www.cosmos-software.de/ce_intro.html",
     "license": "C(C)",
@@ -324,11 +370,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "CP2K": {
     "author_name": "Hutter",
-    "description": "AE, PP, GTO, PW",
     "family": "<p>Plane-wave basis sets</p> <p>Atom-centered basis sets</p>",
     "homepage": "https://www.cp2k.org/",
     "license": "OS(CL)",
@@ -337,17 +383,22 @@
     "query_method": "search term",
     "query_string": "\"CP2K\" Hutter",
     "tags": [
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "GTO",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT",
       "WFM"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "CPMD": {
     "author_name": "Hutter",
-    "description": "PW, PP",
     "family": "Plane-wave basis sets",
     "homepage": "https://www.cpmd.org/",
     "license": "F",
@@ -356,17 +407,20 @@
     "query_method": "search term",
     "query_string": "CPMD Hutter",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "CRYSTAL": {
     "author_name": "Dovesi",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.crystal.unito.it/index.php",
     "license": "C(C)",
@@ -375,17 +429,21 @@
     "query_method": "search term",
     "query_string": "\"CRYSTAL code\" OR \"CRYSTAL17\" OR \"CRYSTAL14\" OR \"CRYSTAL09\" OR \"CRYSTAL06\" Dovesi",
     "tags": [
-      "nomad_code",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "GTO",
+      "PP"
     ],
     "types": [
       "DFT",
       "WFM"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "DFTB+": {
     "author_name": "Aradi",
-    "description": "",
     "family": "",
     "homepage": "https://www.dftb-plus.info",
     "license": "F",
@@ -393,16 +451,16 @@
     "name": "DFTB+",
     "query_method": "search term",
     "query_string": "DFTB+",
-    "tags": [
-      "data_representation"
-    ],
+    "tags": [],
     "types": [
       "TB"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "DIRAC": {
     "author_name": "Saue",
-    "description": "AE, LAO",
     "family": "",
     "homepage": "http://www.diracprogram.org/doku.php",
     "license": "F",
@@ -410,15 +468,18 @@
     "name": "DIRAC",
     "query_method": "search term",
     "query_string": "DIRAC \"Saue\"",
-    "tags": [],
+    "tags": [
+      "AE",
+      "LAO"
+    ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "DL_POLY": {
     "author_name": "Smith",
-    "description": "",
     "family": "",
     "homepage": "https://www.scd.stfc.ac.uk/Pages/DL_POLY.aspx",
     "license": "F(A)",
@@ -429,11 +490,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "DMol3": {
     "author_name": "Delley",
-    "description": "AE, PP, NAO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.3dsbiovia.com/products/datasheets/dmol3.pdf",
     "license": "C(C)",
@@ -442,17 +503,21 @@
     "query_method": "search term",
     "query_string": "DMol3 OR \"DMol^3\" Delley",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "NAO",
+      "PP"
     ],
     "types": [
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "Dalton": {
     "author_name": "\u00c5gren",
-    "description": "GTO, PP",
     "family": "Atom-centered basis sets",
     "homepage": "https://daltonprogram.org/",
     "license": "F",
@@ -460,14 +525,17 @@
     "name": "Dalton",
     "query_method": "search term",
     "query_string": "Dalton \u00c5gren",
-    "tags": [],
+    "tags": [
+      "GTO",
+      "PP"
+    ],
     "types": [
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Discovery Studio": {
     "author_name": "Accelrys",
-    "description": "See CHARMM for FF and DMol<sup>3</sup> for DFT",
     "family": "",
     "homepage": "https://en.wikipedia.org/wiki/Discovery_Studio",
     "license": "C(C)",
@@ -479,11 +547,12 @@
     "types": [
       "FF",
       "DFT"
-    ]
+    ],
+    "notes": "See CHARMM for FF and DMol<sup>3</sup> for DFT",
+    "nomad_tags": []
   },
   "ERKALE": {
     "author_name": "Lehtola",
-    "description": "AE, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://github.com/susilehtola/erkale/wiki/ERKALE",
     "license": "OS(CL)",
@@ -491,15 +560,18 @@
     "name": "ERKALE",
     "query_method": "search term",
     "query_string": "ERKALE Lehtola",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO"
+    ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "ESPResSo and ESPResso++": {
     "author_name": "Holm",
-    "description": "",
     "family": "",
     "homepage": "https://espressomd.org/",
     "license": "OS(CL)",
@@ -507,16 +579,16 @@
     "name": "ESPResSo and ESPResso++",
     "query_method": "search term",
     "query_string": "espresso Holm",
-    "tags": [
-      "data_representation"
-    ],
+    "tags": [],
     "types": [
       "FF"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "Elk": {
     "author_name": "Dewhurst",
-    "description": "AE, LAPW",
     "family": "Linearized augmented plane waves",
     "homepage": "http://elk.sourceforge.net/",
     "license": "OS(CL)",
@@ -525,17 +597,20 @@
     "query_method": "search term",
     "query_string": "elk.sourceforge.net Dewhurst",
     "tags": [
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "LAPW"
     ],
     "types": [
       "DFT",
       "WFM"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "FEFF": {
     "author_name": "Rehr",
-    "description": "",
     "family": "",
     "homepage": "https://github.com/times-software/feff10",
     "license": "F",
@@ -543,16 +618,16 @@
     "name": "FEFF",
     "query_method": "search term",
     "query_string": "\"FEFF\" Rehr",
-    "tags": [
-      "data_representation"
-    ],
+    "tags": [],
     "types": [
       "S"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "FHI-aims": {
     "author_name": "Blum",
-    "description": "AE, NAO",
     "family": "Atom-centered basis sets",
     "homepage": "http://www.fhi-berlin.mpg.de/aims/",
     "license": "C(S)",
@@ -561,18 +636,21 @@
     "query_method": "search term",
     "query_string": "FHI-aims Blum",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "NAO"
     ],
     "types": [
       "DFT",
       "WFM"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "FLEUR": {
     "author_name": "Bl\u00fcgel",
-    "description": "AE, LAPW",
     "family": "Linearized augmented plane waves",
     "homepage": "https://www.flapw.de/pm/",
     "license": "OS(P)",
@@ -581,17 +659,20 @@
     "query_method": "search term",
     "query_string": "FLEUR Bl\u00fcgel",
     "tags": [
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "LAPW"
     ],
     "types": [
       "DFT",
       "WFM"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "FPLO": {
     "author_name": "Koepernik",
-    "description": "AE, NAO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.fplo.de/",
     "license": "C(S)",
@@ -600,16 +681,19 @@
     "query_method": "search term",
     "query_string": "FPLO Koepernik",
     "tags": [
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "NAO"
     ],
     "types": [
       "DFT"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "FoldX": {
     "author_name": "Serrano",
-    "description": "",
     "family": "",
     "homepage": "http://foldx.crg.es/",
     "license": "F",
@@ -620,11 +704,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "GAMESS": {
     "author_name": "Gordon",
-    "description": "AE, PSP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.msg.chem.iastate.edu/",
     "license": "F",
@@ -633,16 +717,20 @@
     "query_method": "search term",
     "query_string": "GAMESS Gordon",
     "tags": [
-      "nomad_code"
+      "AE",
+      "GTO",
+      "PP"
     ],
     "types": [
       "WFM",
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "GPAW": {
     "author_name": "Mortensen",
-    "description": "PP, PW, PAW, RS, NAO",
     "family": "<p>Plane-wave basis sets</p> <p>Atom-centered basis sets</p> <p>Real-space grids</p>",
     "homepage": "https://wiki.fysik.dtu.dk/gpaw/",
     "license": "OS(CL)",
@@ -651,16 +739,22 @@
     "query_method": "search term",
     "query_string": "GPAW Mortensen",
     "tags": [
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "NAO",
+      "PAW",
+      "PP",
+      "PW",
+      "RS"
     ],
     "types": [
       "DFT"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "GROMOS": {
     "author_name": "Van Gunsteren",
-    "description": "",
     "family": "",
     "homepage": "http://www.gromos.net/",
     "license": "C(S)",
@@ -671,11 +765,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "GULP": {
     "author_name": "Gale",
-    "description": "",
     "family": "",
     "homepage": "https://gulp.curtin.edu.au/gulp/",
     "license": "F(A)",
@@ -686,11 +780,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Gaussian": {
     "author_name": "Frisch",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.gaussian.com/",
     "license": "C(S)",
@@ -699,17 +793,21 @@
     "query_method": "search term",
     "query_string": "Gaussian package Frisch",
     "tags": [
-      "nomad_code",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "GTO",
+      "PP"
     ],
     "types": [
       "WFM",
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "Gromacs": {
     "author_name": "Lindahl",
-    "description": "",
     "family": "",
     "homepage": "https://www.gromacs.org/",
     "license": "OS(CL)",
@@ -717,16 +815,16 @@
     "name": "Gromacs",
     "query_method": "search term",
     "query_string": "GROMACS Lindahl ",
-    "tags": [
-      "nomad_code"
-    ],
+    "tags": [],
     "types": [
       "FF"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "HOOMD-blue": {
     "author_name": "Anderson",
-    "description": "",
     "family": "",
     "homepage": "https://codeblue.umich.edu/hoomd-blue/index.html",
     "license": "OS(CL)",
@@ -737,11 +835,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Jaguar": {
     "author_name": "Schr\u00f6dinger",
-    "description": "AE, PP, GTO, STO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.schrodinger.com/Jaguar/",
     "license": "C(C)",
@@ -749,15 +847,20 @@
     "name": "Jaguar",
     "query_method": "search term",
     "query_string": "Jaguar Schr\u00f6dinger",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO",
+      "PP",
+      "STO"
+    ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "LAMMPS": {
     "author_name": "Plimpton",
-    "description": "",
     "family": "",
     "homepage": "https://lammps.sandia.gov/",
     "license": "OS(CL)",
@@ -765,16 +868,16 @@
     "name": "LAMMPS",
     "query_method": "search term",
     "query_string": "LAMMPS Plimpton",
-    "tags": [
-      "nomad_code"
-    ],
+    "tags": [],
     "types": [
       "FF"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "LibAtoms / QUIP / GAP": {
     "author_name": "Csanyi",
-    "description": "",
     "family": "",
     "homepage": "http://libatoms.github.io/",
     "license": "OS(CL)",
@@ -786,11 +889,11 @@
     "types": [
       "FF",
       "TB"
-    ]
+    ],
+    "nomad_tags": []
   },
   "MADNESS": {
     "author_name": "Harrison",
-    "description": "AE, WLT",
     "family": "",
     "homepage": "https://github.com/m-a-d-n-e-s-s/madness",
     "license": "OS(CL)",
@@ -799,15 +902,18 @@
     "query_method": "publication",
     "query_string": "R. J. Harrison, G. I. Fann, T. Yanai, Z. Gan, G. Beylkin, J. Chem. Phys. 121, 11587 (2004).",
     "query_publication_id": "6215247752500065470",
-    "tags": [],
+    "tags": [
+      "AE",
+      "WLT"
+    ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "MCCCS Towhee": {
     "author_name": "Martin",
-    "description": "",
     "family": "",
     "homepage": "http://towhee.sourceforge.net",
     "license": "OS(CL)",
@@ -818,11 +924,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "MOE": {
     "author_name": "Chemical Computing Group",
-    "description": "See Gaussian, ADF, MOPAC, GAMESS for WFM",
     "family": "",
     "homepage": "https://www.chemcomp.com/",
     "license": "C(C)",
@@ -834,11 +940,12 @@
     "types": [
       "FF",
       "WFM"
-    ]
+    ],
+    "notes": "See Gaussian, ADF, MOPAC, GAMESS for WFM",
+    "nomad_tags": []
   },
   "MOIL": {
     "author_name": "Elber",
-    "description": "",
     "family": "",
     "homepage": "https://clsb.ices.utexas.edu/web/moil.html",
     "license": "OS(CL)",
@@ -849,27 +956,32 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "MOLCAS": {
     "author_name": "Lindh",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "http://www.molcas.org/",
     "license": "C(S)",
-    "license_annotation": "Version 8.2 will have license G",
+    "license_annotation": null,
     "name": "MOLCAS",
+    "notes": "See OpenMolcas for open-source core.",
     "query_method": "search term",
     "query_string": "MOLCAS Lindh",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO",
+      "PP"
+    ],
     "types": [
       "WFM",
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "OpenMolcas": {
     "author_name": "Lindh",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://molcas.gitlab.io/OpenMolcas/sphinx/",
     "license": "OS(CL)",
@@ -877,15 +989,19 @@
     "name": "OpenMolcas",
     "query_method": "search term",
     "query_string": "\"Openmolcas\" Lindh",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO",
+      "PP"
+    ],
     "types": [
       "WFM",
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "MOPAC": {
     "author_name": "Stewart",
-    "description": "PP, STO",
     "family": "Atom-centered basis sets",
     "homepage": "http://openmopac.net/",
     "license": "F(A)",
@@ -894,16 +1010,18 @@
     "query_method": "search term",
     "query_string": "MOPAC Stewart",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "STO"
     ],
     "types": [
       "FF",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "MPQC": {
     "author_name": "Janssen",
-    "description": "AE, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://mpqc.org/",
     "license": "OS(CL)",
@@ -911,15 +1029,18 @@
     "name": "MPQC",
     "query_method": "search term",
     "query_string": "MPQC Janssen",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO"
+    ],
     "types": [
       "WFM",
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "MacroModel": {
     "author_name": "Schr\u00f6dinger",
-    "description": "",
     "family": "",
     "homepage": "https://www.schrodinger.com/MacroModel/",
     "license": "C(C)",
@@ -930,11 +1051,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Molpro": {
     "author_name": "Werner",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.molpro.net/",
     "license": "C(S)",
@@ -942,15 +1063,19 @@
     "name": "Molpro",
     "query_method": "search term",
     "query_string": "Molpro Werner",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO",
+      "PP"
+    ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "NAMD": {
     "author_name": "Schulten",
-    "description": "",
     "family": "",
     "homepage": "https://www.ks.uiuc.edu/Research/namd/",
     "license": "F(A)",
@@ -958,16 +1083,16 @@
     "name": "NAMD",
     "query_method": "search term",
     "query_string": "\"NAMD\" Schulten",
-    "tags": [
-      "nomad_code"
-    ],
+    "tags": [],
     "types": [
       "FF"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "NRLMOL": {
     "author_name": "Pederson",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://quantum.utep.edu/?q=node/3",
     "license": "F",
@@ -975,14 +1100,18 @@
     "name": "NRLMOL",
     "query_method": "search term",
     "query_string": "NRLMOL Pederson",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO",
+      "PP"
+    ],
     "types": [
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "NWChem": {
     "author_name": "Valiev",
-    "description": "AE, PP, GTO, PW, PAW",
     "family": "<p>Plane-wave basis sets</p> <p>Atom-centered basis sets</p>",
     "homepage": "https://www.nwchem-sw.org/",
     "license": "OS(P)",
@@ -991,18 +1120,24 @@
     "query_method": "search term",
     "query_string": "NWChem Valiev",
     "tags": [
-      "nomad_code",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "GTO",
+      "PAW",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT",
       "WFM",
       "FF"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "ONETEP": {
     "author_name": "Skylaris",
-    "description": "PP, PW",
     "family": "Plane-wave basis sets",
     "homepage": "https://www.onetep.org/",
     "license": "C(S)",
@@ -1011,16 +1146,19 @@
     "query_method": "search term",
     "query_string": "ONETEP Skylaris",
     "tags": [
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
     ]
   },
   "ORAC": {
     "author_name": "Marchi",
-    "description": "",
     "family": "",
     "homepage": "http://www.chim.unifi.it/orac/",
     "license": "OS(CL)",
@@ -1031,11 +1169,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "ORCA": {
     "author_name": "Neese",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://orcaforum.kofo.mpg.de/app.php/portal",
     "license": "F(A)",
@@ -1044,17 +1182,21 @@
     "query_method": "search term",
     "query_string": "ORCA Neese",
     "tags": [
-      "nomad_code",
-      "data_representation"
+      "AE",
+      "GTO",
+      "PP"
     ],
     "types": [
       "WFM",
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "OpenMX": {
     "author_name": "Ozaki",
-    "description": "PP, NAO",
     "family": "Atom-centered basis sets",
     "homepage": "http://www.openmx-square.org/",
     "license": "OS(CL)",
@@ -1063,15 +1205,17 @@
     "query_method": "search term",
     "query_string": "OpenMX Ozaki",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "NAO",
+      "PP"
     ],
     "types": [
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "PARSEC": {
     "author_name": "Saad",
-    "description": "PP, RS",
     "family": "Real-space grids",
     "homepage": "https://parsec.ices.utexas.edu",
     "license": "OS(CL)",
@@ -1080,15 +1224,17 @@
     "query_method": "search term",
     "query_string": "PARSEC Saad",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "RS"
     ],
     "types": [
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "PLATO": {
     "author_name": "Horsfield",
-    "description": "AE, PP, NAO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.imperial.ac.uk/people/a.horsfield/research.html",
     "license": "F(A)",
@@ -1097,16 +1243,19 @@
     "query_method": "search term",
     "query_string": "\"PLATO\" Horsfield DFT",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "NAO",
+      "PP"
     ],
     "types": [
       "TB",
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "PWPAW / ATOMPAW": {
     "author_name": "Holzwarth",
-    "description": "AE, PP, PW, PAW",
     "family": "Plane-wave basis sets",
     "homepage": "http://users.wfu.edu/natalie/papers/pwpaw/man.html",
     "license": "OS(CL)",
@@ -1115,15 +1264,19 @@
     "query_method": "search term",
     "query_string": "ATOMPAW Holzwarth",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "PAW",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Psi4": {
     "author_name": "Sherrill",
-    "description": "AE, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.psicode.org/",
     "license": "OS(CL)",
@@ -1131,15 +1284,18 @@
     "name": "Psi4",
     "query_method": "search term",
     "query_string": "Psi4 Sherrill",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO"
+    ],
     "types": [
       "WFM",
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Q": {
     "author_name": "\u00c5qvist",
-    "description": "",
     "family": "",
     "homepage": "https://github.com/qusers/Q6",
     "license": "OS(CL)",
@@ -1151,11 +1307,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Q-Chem": {
     "author_name": "Shao",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.q-chem.com/",
     "license": "C(S)",
@@ -1163,15 +1319,19 @@
     "name": "Q-Chem",
     "query_method": "search term",
     "query_string": "\"Q-Chem\" Shao",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO",
+      "PP"
+    ],
     "types": [
       "WFM",
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Qbox": {
     "author_name": "Gygi",
-    "description": "PW, PP",
     "family": "",
     "homepage": "http://www.qboxcode.org",
     "license": "OS(CL)",
@@ -1180,15 +1340,17 @@
     "query_method": "search term",
     "query_string": "Qbox Gygi",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Quantum ESPRESSO": {
     "author_name": "Giannozzi",
-    "description": "PP, PW",
     "family": "Plane-wave basis sets",
     "homepage": "https://www.quantum-espresso.org/",
     "license": "OS(CL)",
@@ -1197,18 +1359,21 @@
     "query_method": "search term",
     "query_string": "\"Quantum ESPRESSO\" Giannozzi",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT",
       "S"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "RMCprofile": {
     "author_name": "Tucker",
-    "description": "",
     "family": "",
     "homepage": "http://www.rmcprofile.org/Main_Page",
     "license": "F",
@@ -1219,11 +1384,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "S / PHI / nX": {
     "author_name": "Boeck",
-    "description": "PP, PW",
     "family": "Plane-wave basis sets",
     "homepage": "https://sxrepo.mpie.de/",
     "license": "OS(P)",
@@ -1233,17 +1398,20 @@
     "query_string": "S/PHI/nX Boeck",
     "query_publication_id": "15208849430845989253",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "SIESTA": {
     "author_name": "Soler",
-    "description": "PP, NAO",
     "family": "Atom-centered basis sets",
     "homepage": "https://departments.icmab.es/leem/siesta/",
     "license": "OS(CL)",
@@ -1252,17 +1420,20 @@
     "query_method": "search term",
     "query_string": "SIESTA Soler",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "NAO",
+      "PP"
     ],
     "types": [
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "Smeagol": {
     "author_name": "Lambert",
-    "description": "PP, NAO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.tcd.ie/Physics/Smeagol/index.html",
     "license": "F",
@@ -1271,15 +1442,17 @@
     "query_method": "search term",
     "query_string": "Smeagol Lambert",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "NAO",
+      "PP"
     ],
     "types": [
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "TB-LMTO-ASA (Stuttgart)": {
     "author_name": "Andersen",
-    "description": "AE, LMTO, MTO",
     "family": "",
     "homepage": "https://www2.fkf.mpg.de/andersen/LMTODOC/LMTODOC.html",
     "license": "F",
@@ -1288,16 +1461,19 @@
     "query_method": "search term",
     "query_string": "\"TB-LMTO\" Andersen",
     "tags": [
-      "nomad_code"
+      "AE",
+      "(L)MTO"
     ],
     "types": [
       "DFT",
       "TB"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "TINKER": {
     "author_name": "Ponder",
-    "description": "",
     "family": "",
     "homepage": "https://dasher.wustl.edu/tinker/",
     "license": "F(A)",
@@ -1305,16 +1481,16 @@
     "name": "TINKER",
     "query_method": "search term",
     "query_string": "TINKER Ponder",
-    "tags": [
-      "nomad_code"
-    ],
+    "tags": [],
     "types": [
       "FF"
+    ],
+    "nomad_tags": [
+      "PI_member"
     ]
   },
   "TURBOMOLE": {
     "author_name": "Ahlrichs",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://www.turbomole.com/",
     "license": "C(S)",
@@ -1323,18 +1499,22 @@
     "query_method": "search term",
     "query_string": "TURBOMOLE Ahlrichs",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "GTO",
+      "PP"
     ],
     "types": [
       "WFM",
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "TeraChem": {
     "author_name": "Martinez",
-    "description": "AE, PP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "http://www.petachem.com/products.html",
     "license": "C(C)",
@@ -1342,15 +1522,19 @@
     "name": "TeraChem",
     "query_method": "search term",
     "query_string": "\"TeraChem\" Martinez",
-    "tags": [],
+    "tags": [
+      "AE",
+      "GTO",
+      "PP"
+    ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "VASP": {
     "author_name": "Kresse",
-    "description": "PP, PW, PAW",
     "family": "Plane-wave basis sets",
     "homepage": "https://www.vasp.at/",
     "license": "C(S)",
@@ -1359,18 +1543,22 @@
     "query_method": "search term",
     "query_string": "VASP Kresse",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "PAW",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT",
       "WFM"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "WEST": {
     "author_name": "Govoni",
-    "description": "PP, PW",
     "family": "Plane-wave basis sets",
     "homepage": "http://www.west-code.org/",
     "license": "OS(CL)",
@@ -1379,15 +1567,18 @@
     "query_method": "publication",
     "query_string": "M. Govoni and G. Galli, J. Chem. Theory Comput. 11, 2680 (2015)",
     "query_publication_id": "10135319195087919820",
-    "tags": [],
+    "tags": [
+      "PP",
+      "PW"
+    ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "WHAT IF": {
     "author_name": "Vriend",
-    "description": "",
     "family": "",
     "homepage": "https://swift.cmbi.umcn.nl/whatif/",
     "license": "C(C)",
@@ -1398,11 +1589,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "WIEN2k": {
     "author_name": "Blaha",
-    "description": "AE, LAPW",
     "family": "Linearized augmented plane waves",
     "homepage": "http://www.wien2k.at/",
     "license": "C(S)",
@@ -1411,18 +1602,21 @@
     "query_method": "search term",
     "query_string": "WIEN2k Blaha",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "LAPW"
     ],
     "types": [
       "DFT",
       "WFM"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "YASARA": {
     "author_name": "Krieger",
-    "description": "",
     "family": "",
     "homepage": "http://yasara.org/",
     "license": "C(C)",
@@ -1433,11 +1627,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Yambo": {
     "author_name": "Marini",
-    "description": "PP, PW",
     "family": "Plane-wave basis sets",
     "homepage": "http://www.yambo-code.org/",
     "license": "OS(CL)",
@@ -1446,15 +1640,17 @@
     "query_method": "search term",
     "query_string": "Yambo Marini",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "PW"
     ],
     "types": [
       "S"
-    ]
+    ],
+    "nomad_tags": []
   },
   "exciting": {
     "author_name": "Draxl",
-    "description": "AE, LAPW",
     "family": "Linearized augmented plane waves",
     "homepage": "http://exciting-code.org/",
     "license": "OS(CL)",
@@ -1463,17 +1659,20 @@
     "query_method": "search term",
     "query_string": "\"exciting\" code Draxl",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "LAPW"
     ],
     "types": [
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "gSAFT": {
     "author_name": "PSe",
-    "description": "",
     "family": "",
     "homepage": "https://www.psenterprise.com/products/gproms/gsaft",
     "license": "C(C)",
@@ -1484,11 +1683,11 @@
     "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "jDFTx / DFT++": {
     "author_name": "Sundararaman",
-    "description": "AE, PP, PW",
     "family": "Plane-wave basis sets",
     "homepage": "https://jdftx.org/",
     "license": "OS(CL)",
@@ -1497,16 +1696,19 @@
     "query_method": "search term",
     "query_string": "jDFTx Sundararaman",
     "tags": [
-      "optional_pbc"
+      "PBC",
+      "AE",
+      "PP",
+      "PW"
     ],
     "types": [
       "DFT",
       "WFM"
-    ]
+    ],
+    "nomad_tags": []
   },
   "octopus": {
     "author_name": "Rubio",
-    "description": "PP, RS",
     "family": "Real-space grids",
     "homepage": "https://www.tddft.org/programs/octopus/wiki/index.php/Main_Page",
     "license": "OS(CL)",
@@ -1515,17 +1717,20 @@
     "query_method": "search term",
     "query_string": "octopus Rubio",
     "tags": [
-      "nomad_code",
-      "data_representation",
-      "optional_pbc"
+      "PBC",
+      "PP",
+      "RS"
     ],
     "types": [
       "DFT"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
     ]
   },
   "xTB": {
     "author_name": "Grimme",
-    "description": "",
     "family": "",
     "homepage": "https://xtb-docs.readthedocs.io/",
     "license": "OS(CL)",
@@ -1533,15 +1738,14 @@
     "name": "xTB",
     "query_method": "search term",
     "query_string": "xtb \"Grimme\"",
-    "tags": [
-    ],
+    "tags": [],
     "types": [
       "TB"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Firefly": {
     "author_name": "Granovsky",
-    "description": "AE, PSP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "http://classic.chem.msu.su/gran/gamess/index.html",
     "license": "F",
@@ -1550,15 +1754,18 @@
     "query_method": "search term",
     "query_string": "firefly \"Granovsky\"",
     "tags": [
+      "AE",
+      "GTO",
+      "PP"
     ],
     "types": [
       "WFM",
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Hyperchem": {
     "author_name": "Hypercube",
-    "description": "PSP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "http://www.hyper.com/?tabid=360",
     "license": "C(C)",
@@ -1567,16 +1774,18 @@
     "query_method": "search term",
     "query_string": "hyperchem hypercube",
     "tags": [
+      "GTO",
+      "PP"
     ],
     "types": [
       "FF",
       "WFM",
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "PySCF": {
     "author_name": "Chan",
-    "description": "PSP, GTO",
     "family": "Atom-centered basis sets",
     "homepage": "https://sunqm.github.io/pyscf/",
     "license": "OS(P)",
@@ -1585,15 +1794,17 @@
     "query_method": "search term",
     "query_string": "pyscf \"chan\"",
     "tags": [
+      "GTO",
+      "PP"
     ],
     "types": [
       "WFM",
       "DFT"
-    ]
+    ],
+    "nomad_tags": []
   },
   "QMCPACK": {
     "author_name": "Kim",
-    "description": "PSP, GTO",
     "family": [
       "Atom-centered basis sets",
       "Plane-wave basis sets",
@@ -1606,43 +1817,42 @@
     "query_method": "search term",
     "query_string": "qmcpack \"Kim\"",
     "tags": [
+      "GTO",
+      "PP"
     ],
     "types": [
       "QMC"
-    ]
+    ],
+    "nomad_tags": []
   },
   "Desmond": {
-    "author_name": "Schrödinger",
-    "description": "",
-    "family": [
-    ],
+    "author_name": "Schr\u00f6dinger",
+    "family": [],
     "homepage": "https://www.schrodinger.com/products/desmond",
     "license": "F(A)",
     "license_annotation": "",
     "name": "Desmond",
     "query_method": "search term",
-    "query_string": "desmond schrödinger",
-    "tags": [
-    ],
+    "query_string": "desmond schr\u00f6dinger",
+    "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   },
   "OpenMM": {
     "author_name": "Eastman",
-    "description": "",
-    "family": [
-    ],
+    "family": [],
     "homepage": "http://openmm.org",
     "license": "OS(P)",
     "license_annotation": "MIT",
     "name": "OpenMM",
     "query_method": "search term",
     "query_string": "openmm Eastman",
-    "tags": [
-    ],
+    "tags": [],
     "types": [
       "FF"
-    ]
+    ],
+    "nomad_tags": []
   }
 }

@@ -1,0 +1,16 @@
+{
+  "AE": "All Electron",
+  "ASW": "Augmented spherical wave",
+  "GTO": "Gaussian-type orbitals",
+  "LAO": "London atomic orbitals",
+  "LAPW": "Linearized augmented plane waves",
+  "(L)MTO": "(Linear) muffin-tin orbitals",
+  "NAO": "Numeric atom-centered orbitals",
+  "PAW": "Projector-augmented wave",
+  "PBC": "Periodic boundary conditions supported",
+  "PP": "Pseudopotentials",
+  "PW": "Plane-wave basis",
+  "RS": "Real-space basis",
+  "STO": "Slater-type orbitals",
+  "WLT": "Wavelet basis"
+}
