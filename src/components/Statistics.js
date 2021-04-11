@@ -137,15 +137,15 @@ function relativeGrowthList(data) {
     );     
 }
 
-function typeList(data) {
-    return (
-        <Typography component="div" variant="subtitle1">
-        <ul>
-        {Object.entries(data).map(( [k,v]) => <li>{k + ": " + v + "\n"}</li>)}
-        </ul>
-        </Typography>
-    );     
-}
+// function typeList(data) {
+//     return (
+//         <Typography component="div" variant="subtitle1">
+//         <ul>
+//         {Object.entries(data).map(( [k,v]) => <li>{k + ": " + v + "\n"}</li>)}
+//         </ul>
+//         </Typography>
+//     );     
+// }
 
 function Card(title, message, footnote="", size) {
     const classes = useStyles();

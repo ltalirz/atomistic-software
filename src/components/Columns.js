@@ -4,6 +4,7 @@
 import Tooltip from '@material-ui/core/Tooltip';
 import Button from '@material-ui/core/Button';
 import methods from '../data/methods';
+import tags from '../data/abbreviations';
 import licenses from '../data/licenses';
 //idea: use search icon for link to google scholar
 import ShowChartIcon from '@material-ui/icons/ShowChart';
@@ -54,6 +55,11 @@ function getColumns(data, year) {
             "options": { "filter": false, "sort": true, 'selected': false, "display": false}
         },
         {
+            "name": "notes",
+            "label": "Notes",
+            "options": { "filter": false, "sort": true, 'selected': false, "display": false}
+        },
+        {
             "name": "types",
             "label": "Methods",
             "options": {
@@ -67,9 +73,14 @@ function getColumns(data, year) {
         },
 
         {
-            "name": "description",
-            "label": "Notes",
-            "options": { "filter": false, "sort": true }
+            "name": "tags",
+            "label": "Tags",
+            "options": { "filter": true, "sort": true,
+            "customBodyRenderLite": (dataIndex) => {
+                const types = data[dataIndex]['tags'];
+                return types.map(x => TooltipText(tags[x], x));
+            }
+        }
         },
         {
             "name": "license",
@@ -96,7 +107,7 @@ function getColumns(data, year) {
             "name": "license",
             "label": "Source",
             "options": {
-                "filter": true,
+                "filter": false,
                 "sort": true,
                 "customBodyRenderLite": (dataIndex) => {
                     const x = data[dataIndex]['license'];
@@ -114,7 +125,11 @@ function getColumns(data, year) {
                 }
             }
         },
-
+        {
+            "name": "license_annotation",
+            "label": "License Note",
+            "options": { "filter": false, "sort": true, 'selected': false, "display": false}
+        },
 
         {
             "name": "citations",
