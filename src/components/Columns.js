@@ -79,7 +79,7 @@ function getColumns(data, year) {
                 "sort": true,
                 "customBodyRenderLite": (dataIndex) => {
                     const x = data[dataIndex]['license'];
-                    if (['C', 'C(S)', 'C(C)'].includes(x)) {
+                    if (['C(S)', 'C(C)'].includes(x)) {
                         return TooltipText(licenses[x], [<AttachMoneyIcon />]);
                     } else if (['F(A)'].includes(x)) {
                         return TooltipText(licenses[x], [<span><MoneyOffIcon /><SchoolIcon /></span>]);
@@ -100,7 +100,7 @@ function getColumns(data, year) {
                 "sort": true,
                 "customBodyRenderLite": (dataIndex) => {
                     const x = data[dataIndex]['license'];
-                    if (['C', 'C(S)', 'F(A)'].includes(x)) {
+                    if (['C(S)', 'F(A)'].includes(x)) {
                         return TooltipText(licenses[x], [<LockOpenIcon color={'action'} />]);
                     } else if (['C(C)'].includes(x)) {
                         return TooltipText(licenses[x], [<LockIcon color={'action'} />]);        

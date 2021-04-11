@@ -382,6 +382,10 @@
       "Gaussian": {
         "citations": 9210,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 104,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -780,6 +784,10 @@
       "DMol3": {
         "citations": 530,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 59,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -1178,6 +1186,10 @@
       "DMol3": {
         "citations": 536,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 15,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -1576,6 +1588,10 @@
       "DMol3": {
         "citations": 526,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 2,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -1974,6 +1990,10 @@
       "DMol3": {
         "citations": 523,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 0,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -2372,6 +2392,10 @@
       "DMol3": {
         "citations": 561,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 0,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -2770,6 +2794,10 @@
       "DMol3": {
         "citations": 526,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 0,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -3168,6 +3196,10 @@
       "DMol3": {
         "citations": 533,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 0,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -3566,6 +3598,10 @@
       "DMol3": {
         "citations": 459,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 0,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -3964,6 +4000,10 @@
       "DMol3": {
         "citations": 442,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 0,
+        "datestamp": "2021-04-11"
       }
     }
   },
@@ -4350,6 +4390,10 @@
       "OpenMM": {
         "citations": 18,
         "datestamp": "2021-04-10"
+      },
+      "OpenMolcas": {
+        "citations": 0,
+        "datestamp": "2021-04-11"
       }
     }
   }

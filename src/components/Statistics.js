@@ -67,7 +67,7 @@ function costGraph() {
     // Careful: it seems the legend coloring does not match the one of the graph automatically
     let groups = {
         'Free' : ['F', 'F(A)', 'OS(CL)', 'OS(P)'],
-        'Commercial': ['C', 'C(C)', 'C(S)'],
+        'Commercial': ['C(C)', 'C(S)'],
     }
 
     let lines = [];
@@ -87,7 +87,7 @@ function sourceGraph() {
     let groups = {
         'Closed source' : ['C(C)'],
         'Open-source': ['OS(CL)', 'OS(P)'],
-        'Source available': ['C', 'C(S)', 'F', 'F(A)', 'OS(CL)', 'OS(P)' ]
+        'Source available': ['C(S)', 'F', 'F(A)', 'OS(CL)', 'OS(P)' ]
     }
 
     let lines = [];
@@ -169,17 +169,18 @@ let CURRENT_YEAR = YEARS.slice(-1)[0];
 let GROWTH = citationGrowth(CURRENT_YEAR);
 
 export default function Home() {
+    // {Card("Simulation engines", typeList(GROWTH['typeCounts']), "Number of simulation engines per method.", 4)}
     return (
         <Grid container spacing={3}>
-            {Card("Simulation engines", typeList(GROWTH['typeCounts']), "Number of simulation engines per method.", 4)}
-            {Card("Top cited", totalList(GROWTH['total'].slice(0, 5)), 
-            "In " + CURRENT_YEAR +".", 4)}
-            {Card("Top citation growth", absoluteGrowthList(GROWTH['absoluteGrowth'].slice(0, 5)), 
+            
+            {Card("Top cited in " + CURRENT_YEAR, totalList(GROWTH['total'].slice(0, 10)), 
+            "", 4)}
+            {Card("Top citation growth "+ CURRENT_YEAR, absoluteGrowthList(GROWTH['absoluteGrowth'].slice(0, 10)), 
             "In " + CURRENT_YEAR +" with respect to "+ (CURRENT_YEAR-1) + ".", 4)}
-            {Card("Top relative citation growth", relativeGrowthList(GROWTH['relativeGrowth'].slice(0, 5)),
-                "In " + CURRENT_YEAR +" with respect to "+ (CURRENT_YEAR-1) + ", considering only codes with >100 citations.",
+            {Card("Top relative citation growth", relativeGrowthList(GROWTH['relativeGrowth'].slice(0, 10)),
+                "In " + CURRENT_YEAR +" with respect to "+ (CURRENT_YEAR-1) + ", considering only engines with >100 citations.",
                  4)}
-            {Card("Citations commercial vs free", costGraph(),"'Free' includes codes that are free for academic use only.",11)}
-            {Card("Citations by source code availability", sourceGraph(),"'Source available' includes codes whose source code can be obtained for free or for a fee.",11)}
+            {Card("Citations commercial vs free", costGraph(),"'Free' includes engines that are free for academic use only.",11)}
+            {Card("Citations by source code availability", sourceGraph(),"'Source available' includes engines whose source code can be obtained for free or for a fee.",11)}
         </Grid>);
 }
