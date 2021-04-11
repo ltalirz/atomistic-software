@@ -1,12 +1,8 @@
 import React from 'react'
 import { ResponsiveLine } from '@nivo/line'
 
-//import config from './config'
-import './chart.css'
 import { getCodeCitations } from '../Config'
-import {
-    useParams
-} from "react-router-dom";
+import { useParams } from "react-router-dom"
 
 function getTitle(codeName, citations){
     /**

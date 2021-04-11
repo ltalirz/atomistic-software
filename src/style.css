@@ -11,11 +11,18 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+/* Placement of cards */
 div.container {
   margin-bottom: 15px;
 }
 
+/* DOI badge placement */
 img.zenodo {
   vertical-align: middle;
   margin: 0px 10px;
+}
+
+/* Get rid of double scroll bar for table */
+main.makeStyles-content-12 {
+  height: 100%;
 }
