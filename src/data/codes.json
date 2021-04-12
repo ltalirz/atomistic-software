@@ -1760,5 +1760,22 @@
       "FF"
     ],
     "nomad_tags": []
+  },
+  "Wannier90": {
+    "author_name": "Marzari",
+    "homepage": "http://www.wannier.org/",
+    "license": "OS(CL)",
+    "license_annotation": "GPL-2.0",
+    "name": "Wannier90",
+    "query_method": "search term",
+    "query_string": "\"Wannier90\" Marzari",
+    "tags": [
+      "PP",
+      "PW",
+      "PBC"
+    ],
+    "types": [
+      "S"
+    ]
   }
 }
