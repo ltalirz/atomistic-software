@@ -1772,7 +1772,10 @@
     "tags": [
       "PP",
       "PW",
-      "PBC"
+      "PBC",
+      "GTO",
+      "AE",
+      "PAW"
     ],
     "types": [
       "S"
