@@ -386,6 +386,10 @@
       "OpenMolcas": {
         "citations": 104,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 467,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -788,6 +792,10 @@
       "OpenMolcas": {
         "citations": 59,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 361,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -1190,6 +1198,10 @@
       "OpenMolcas": {
         "citations": 15,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 301,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -1592,6 +1604,10 @@
       "OpenMolcas": {
         "citations": 2,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 244,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -1994,6 +2010,10 @@
       "OpenMolcas": {
         "citations": 0,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 188,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -2396,6 +2416,10 @@
       "OpenMolcas": {
         "citations": 0,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 134,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -2798,6 +2822,10 @@
       "OpenMolcas": {
         "citations": 0,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 88,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -3200,6 +3228,10 @@
       "OpenMolcas": {
         "citations": 0,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 77,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -3602,6 +3634,10 @@
       "OpenMolcas": {
         "citations": 0,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 56,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -4004,6 +4040,10 @@
       "OpenMolcas": {
         "citations": 0,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 42,
+        "datestamp": "2021-04-12"
       }
     }
   },
@@ -4176,7 +4216,7 @@
         "datestamp": "2021-04-10"
       },
       "Gromacs": {
-        "citations": 1050,
+        "citations": 0,
         "datestamp": "2021-04-10"
       },
       "HOOMD-blue": {
@@ -4394,6 +4434,10 @@
       "OpenMolcas": {
         "citations": 0,
         "datestamp": "2021-04-11"
+      },
+      "Wannier90": {
+        "citations": 25,
+        "datestamp": "2021-04-12"
       }
     }
   }
