@@ -61,7 +61,7 @@ function citationGrowth(year) {
 
 function costGraph() {
     /**
-     * Compute citation growth for given year with respect to previous one.
+     * Citation trend by price (free/commercial).
      */
 
     // Careful: it seems the legend coloring does not match the one of the graph automatically
@@ -80,7 +80,7 @@ function costGraph() {
 
 function sourceGraph() {
     /**
-     * Compute citation growth for given year with respect to previous one.
+     * Citation trend by source code handling.
      */
 
     // Careful: it seems the legend coloring does not match the one of the graph automatically
