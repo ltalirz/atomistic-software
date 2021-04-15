@@ -390,6 +390,10 @@
       "Wannier90": {
         "citations": 467,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 149,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -796,6 +800,10 @@
       "Wannier90": {
         "citations": 361,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 96,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -1202,6 +1210,10 @@
       "Wannier90": {
         "citations": 301,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 81,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -1608,6 +1620,10 @@
       "Wannier90": {
         "citations": 244,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 47,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -2014,6 +2030,10 @@
       "Wannier90": {
         "citations": 188,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 21,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -2420,6 +2440,10 @@
       "Wannier90": {
         "citations": 134,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 15,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -2826,6 +2850,10 @@
       "Wannier90": {
         "citations": 88,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 6,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -3232,6 +3260,10 @@
       "Wannier90": {
         "citations": 77,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 10,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -3638,6 +3670,10 @@
       "Wannier90": {
         "citations": 56,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 6,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -4044,6 +4080,10 @@
       "Wannier90": {
         "citations": 42,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 4,
+        "datestamp": "2021-04-15"
       }
     }
   },
@@ -4438,6 +4478,10 @@
       "Wannier90": {
         "citations": 25,
         "datestamp": "2021-04-12"
+      },
+      "EPW": {
+        "citations": 4,
+        "datestamp": "2021-04-15"
       }
     }
   }

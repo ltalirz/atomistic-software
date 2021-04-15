@@ -524,6 +524,27 @@
     "notes": "See CHARMM for FF and DMol<sup>3</sup> for DFT",
     "nomad_tags": []
   },
+  "EPW": {
+    "author_name": "Giustino",
+    "homepage": "https://epw-code.org",
+    "license": "OS(CL)",
+    "license_annotation": null,
+    "name": "EPW",
+    "query_method": "search term",
+    "query_string": "\"EPW\" Giustino",
+    "tags": [
+      "PBC",
+      "PP",
+      "PW"
+    ],
+    "types": [
+      "S"
+    ],
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
+    ]
+  },
   "ERKALE": {
     "author_name": "Lehtola",
     "homepage": "https://github.com/susilehtola/erkale/wiki/ERKALE",
