@@ -28,11 +28,12 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
+      <Link color="inherit" href="https://sites.google.com/site/leotalirz" target="_blank">
         {packageJson.author.name}
       </Link>{' '}
       {new Date().getFullYear()}
-      {'.'}
+      {'. '}
+      <Link href="https://github.com/ltalirz/atomistic-software/commits/master" target="_blank">Changelog</Link>
       <Link href="https://zenodo.org/badge/latestdoi/327603600"><img className="zenodo" src="https://zenodo.org/badge/327603600.svg" alt="DOI"/></Link>
     </Typography>
   );
