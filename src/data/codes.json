@@ -22,20 +22,6 @@
       "data_collaboration"
     ]
   },
-  "ACEMD": {
-    "author_name": "Fabritiis",
-    "homepage": "https://www.acellera.com/products/molecular-dynamics-software-GPU-acemd/",
-    "license": "C(C)",
-    "license_annotation": "Free community edition for running on 1 GPU.",
-    "name": "ACEMD",
-    "query_method": "search term",
-    "query_string": "ACEMD Fabritiis",
-    "tags": [],
-    "types": [
-      "FF"
-    ],
-    "nomad_tags": []
-  },
   "ACES III": {
     "author_name": "Bartlett",
     "homepage": "http://www.qtp.ufl.edu/ACES/",
@@ -90,25 +76,6 @@
       "data_collaboration"
     ]
   },
-  "ASW program package": {
-    "author_name": "K\u00fcbler",
-    "homepage": "https://myweb.rz.uni-augsburg.de/~eyert/aswprog.shtml",
-    "license": "OS(P)",
-    "license_annotation": null,
-    "name": "ASW program package",
-    "query_method": "search term",
-    "query_string": "\"ASW program package\" K\u00fcbler",
-    "tags": [
-      "PBC",
-      "AE",
-      "ASW",
-      "LAPW"
-    ],
-    "types": [
-      "DFT"
-    ],
-    "nomad_tags": []
-  },
   "Amber": {
     "author_name": "Kollman",
     "homepage": "https://ambermd.org/",
@@ -147,24 +114,6 @@
       "data_collaboration"
     ]
   },
-  "BAGEL": {
-    "author_name": "Shiozaki",
-    "homepage": "http://www.nubakery.org/",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "BAGEL",
-    "query_method": "search term",
-    "query_string": "BAGEL Shiozaki",
-    "tags": [
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ],
-    "nomad_tags": []
-  },
   "BOSS": {
     "author_name": "Jorgensen",
     "homepage": "http://zarbi.chem.yale.edu/software.html#boss",
@@ -176,49 +125,6 @@
     "tags": [],
     "types": [
       "FF"
-    ],
-    "nomad_tags": []
-  },
-  "BerkeleyGW": {
-    "author_name": "Louie",
-    "homepage": "https://www.berkeleygw.org/",
-    "license": "OS(P)",
-    "license_annotation": "BSD-3-Clause-LBNL",
-    "name": "BerkeleyGW",
-    "query_method": "search term",
-    "query_string": "BerkeleyGW Louie",
-    "tags": [
-      "PBC",
-      "AE",
-      "NAO",
-      "PP",
-      "PW",
-      "RS"
-    ],
-    "types": [
-      "S"
-    ],
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ]
-  },
-  "BigDFT": {
-    "author_name": "Genovese",
-    "homepage": "https://bigdft.org",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "BigDFT",
-    "query_method": "search term",
-    "query_string": "BigDFT Genovese",
-    "tags": [
-      "PBC",
-      "PP",
-      "WLT"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
     ],
     "nomad_tags": []
   },
@@ -300,61 +206,6 @@
     ],
     "nomad_tags": []
   },
-  "COLUMBUS": {
-    "author_name": "Lischka",
-    "homepage": "https://www.univie.ac.at/columbus/",
-    "license": "F",
-    "license_annotation": null,
-    "name": "COLUMBUS",
-    "query_method": "search term",
-    "query_string": "COLUMBUS Lischka",
-    "tags": [
-      "AE",
-      "GTO"
-    ],
-    "types": [
-      "WFM"
-    ],
-    "nomad_tags": []
-  },
-  "CONQUEST O(N)": {
-    "author_name": "Bowler and Miyazaki",
-    "homepage": "http://www.order-n.org/",
-    "license": "OS(P)",
-    "license_annotation": "MIT",
-    "name": "CONQUEST O(N)",
-    "query_method": "search term",
-    "query_string": "\"CONQUEST\" \"Miyazaki\" \"Bowler\"",
-    "tags": [
-      "PBC",
-      "AE",
-      "NAO",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT",
-      "TB"
-    ],
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ]
-  },
-  "COSMOS-software": {
-    "author_name": "Sternberg",
-    "homepage": "http://www.cosmos-software.de/ce_intro.html",
-    "license": "C(C)",
-    "license_annotation": null,
-    "name": "COSMOS-software",
-    "query_method": "search term",
-    "query_string": "COSMOS-software",
-    "tags": [],
-    "types": [
-      "FF"
-    ],
-    "nomad_tags": []
-  },
   "CP2K": {
     "author_name": "Hutter",
     "homepage": "https://www.cp2k.org/",
@@ -419,22 +270,6 @@
     ],
     "nomad_tags": [
       "PI_member"
-    ]
-  },
-  "DFTB+": {
-    "author_name": "Aradi",
-    "homepage": "https://www.dftb-plus.info",
-    "license": "F",
-    "license_annotation": "Commercial for non-academic use",
-    "name": "DFTB+",
-    "query_method": "search term",
-    "query_string": "DFTB+",
-    "tags": [],
-    "types": [
-      "TB"
-    ],
-    "nomad_tags": [
-      "data_collaboration"
     ]
   },
   "DIRAC": {
@@ -545,24 +380,6 @@
       "data_collaboration"
     ]
   },
-  "ERKALE": {
-    "author_name": "Lehtola",
-    "homepage": "https://github.com/susilehtola/erkale/wiki/ERKALE",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "ERKALE",
-    "query_method": "search term",
-    "query_string": "ERKALE Lehtola",
-    "tags": [
-      "AE",
-      "GTO"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ],
-    "nomad_tags": []
-  },
   "ESPResSo and ESPResso++": {
     "author_name": "Holm",
     "homepage": "https://espressomd.org/",
@@ -574,27 +391,6 @@
     "tags": [],
     "types": [
       "FF"
-    ],
-    "nomad_tags": [
-      "data_collaboration"
-    ]
-  },
-  "Elk": {
-    "author_name": "Dewhurst",
-    "homepage": "http://elk.sourceforge.net/",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "Elk",
-    "query_method": "search term",
-    "query_string": "elk.sourceforge.net Dewhurst",
-    "tags": [
-      "PBC",
-      "AE",
-      "LAPW"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
     ],
     "nomad_tags": [
       "data_collaboration"
@@ -635,27 +431,6 @@
     ],
     "nomad_tags": [
       "PI_member",
-      "data_collaboration"
-    ]
-  },
-  "FLEUR": {
-    "author_name": "Bl\u00fcgel",
-    "homepage": "https://www.flapw.de/pm/",
-    "license": "OS(P)",
-    "license_annotation": null,
-    "name": "FLEUR",
-    "query_method": "search term",
-    "query_string": "FLEUR Bl\u00fcgel",
-    "tags": [
-      "PBC",
-      "AE",
-      "LAPW"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ],
-    "nomad_tags": [
       "data_collaboration"
     ]
   },
@@ -853,54 +628,6 @@
       "PI_member"
     ]
   },
-  "LibAtoms / QUIP / GAP": {
-    "author_name": "Csanyi",
-    "homepage": "http://libatoms.github.io/",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "LibAtoms / QUIP / GAP",
-    "query_method": "search term",
-    "query_string": "LibAtoms Csanyi",
-    "tags": [],
-    "types": [
-      "FF",
-      "TB"
-    ],
-    "nomad_tags": []
-  },
-  "MADNESS": {
-    "author_name": "Harrison",
-    "homepage": "https://github.com/m-a-d-n-e-s-s/madness",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "MADNESS",
-    "query_method": "publication",
-    "query_string": "R. J. Harrison, G. I. Fann, T. Yanai, Z. Gan, G. Beylkin, J. Chem. Phys. 121, 11587 (2004).",
-    "query_publication_id": "6215247752500065470",
-    "tags": [
-      "AE",
-      "WLT"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ],
-    "nomad_tags": []
-  },
-  "MCCCS Towhee": {
-    "author_name": "Martin",
-    "homepage": "http://towhee.sourceforge.net",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "MCCCS Towhee",
-    "query_method": "search term",
-    "query_string": "MCCCS Towhee Martin",
-    "tags": [],
-    "types": [
-      "FF"
-    ],
-    "nomad_tags": []
-  },
   "MOE": {
     "author_name": "Chemical Computing Group",
     "homepage": "https://www.chemcomp.com/",
@@ -915,20 +642,6 @@
       "WFM"
     ],
     "notes": "See Gaussian, ADF, MOPAC, GAMESS for WFM",
-    "nomad_tags": []
-  },
-  "MOIL": {
-    "author_name": "Elber",
-    "homepage": "https://clsb.ices.utexas.edu/web/moil.html",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "MOIL",
-    "query_method": "search term",
-    "query_string": "\"MOIL\" Elber",
-    "tags": [],
-    "types": [
-      "FF"
-    ],
     "nomad_tags": []
   },
   "MOLCAS": {
@@ -989,24 +702,6 @@
     ],
     "nomad_tags": []
   },
-  "MPQC": {
-    "author_name": "Janssen",
-    "homepage": "https://mpqc.org/",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "MPQC",
-    "query_method": "search term",
-    "query_string": "MPQC Janssen",
-    "tags": [
-      "AE",
-      "GTO"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ],
-    "nomad_tags": []
-  },
   "MacroModel": {
     "author_name": "Schr\u00f6dinger",
     "homepage": "https://www.schrodinger.com/MacroModel/",
@@ -1056,24 +751,6 @@
       "PI_member"
     ]
   },
-  "NRLMOL": {
-    "author_name": "Pederson",
-    "homepage": "https://quantum.utep.edu/?q=node/3",
-    "license": "F",
-    "license_annotation": null,
-    "name": "NRLMOL",
-    "query_method": "search term",
-    "query_string": "NRLMOL Pederson",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "DFT"
-    ],
-    "nomad_tags": []
-  },
   "NWChem": {
     "author_name": "Valiev",
     "homepage": "https://www.nwchem-sw.org/",
@@ -1097,26 +774,6 @@
     ],
     "nomad_tags": [
       "PI_member"
-    ]
-  },
-  "ONETEP": {
-    "author_name": "Skylaris",
-    "homepage": "https://www.onetep.org/",
-    "license": "C(S)",
-    "license_annotation": "Free for members of CCP9 collaboration.",
-    "name": "ONETEP",
-    "query_method": "search term",
-    "query_string": "ONETEP Skylaris",
-    "tags": [
-      "PBC",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT"
-    ],
-    "nomad_tags": [
-      "data_collaboration"
     ]
   },
   "ORAC": {
@@ -1173,64 +830,6 @@
     ],
     "nomad_tags": []
   },
-  "PARSEC": {
-    "author_name": "Saad",
-    "homepage": "https://parsec.ices.utexas.edu",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "PARSEC",
-    "query_method": "search term",
-    "query_string": "PARSEC Saad",
-    "tags": [
-      "PBC",
-      "PP",
-      "RS"
-    ],
-    "types": [
-      "DFT"
-    ],
-    "nomad_tags": []
-  },
-  "PLATO": {
-    "author_name": "Horsfield",
-    "homepage": "https://www.imperial.ac.uk/people/a.horsfield/research.html",
-    "license": "F(A)",
-    "license_annotation": "CPC program library license",
-    "name": "PLATO",
-    "query_method": "search term",
-    "query_string": "\"PLATO\" Horsfield DFT",
-    "tags": [
-      "PBC",
-      "AE",
-      "NAO",
-      "PP"
-    ],
-    "types": [
-      "TB",
-      "DFT"
-    ],
-    "nomad_tags": []
-  },
-  "PWPAW / ATOMPAW": {
-    "author_name": "Holzwarth",
-    "homepage": "http://users.wfu.edu/natalie/papers/pwpaw/man.html",
-    "license": "OS(CL)",
-    "license_annotation": "GPL-3.0",
-    "name": "PWPAW / ATOMPAW",
-    "query_method": "search term",
-    "query_string": "ATOMPAW Holzwarth",
-    "tags": [
-      "PBC",
-      "AE",
-      "PAW",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT"
-    ],
-    "nomad_tags": []
-  },
   "Psi4": {
     "author_name": "Sherrill",
     "homepage": "https://www.psicode.org/",
@@ -1249,21 +848,6 @@
     ],
     "nomad_tags": []
   },
-  "Q": {
-    "author_name": "\u00c5qvist",
-    "homepage": "https://github.com/qusers/Q6",
-    "license": "OS(CL)",
-    "license_annotation": "GPL-2.0",
-    "name": "Q",
-    "query_method": "publication",
-    "query_string": "J. Marelius, K. Kolmodin, I. Feierberg, J. \u00c5qvist, Journal of Molecular Graphics and Modelling 16, 213 (1998).",
-    "query_publication_id": "4371251031908136771",
-    "tags": [],
-    "types": [
-      "FF"
-    ],
-    "nomad_tags": []
-  },
   "Q-Chem": {
     "author_name": "Shao",
     "homepage": "https://www.q-chem.com/",
@@ -1279,24 +863,6 @@
     ],
     "types": [
       "WFM",
-      "DFT"
-    ],
-    "nomad_tags": []
-  },
-  "Qbox": {
-    "author_name": "Gygi",
-    "homepage": "http://www.qboxcode.org",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "Qbox",
-    "query_method": "search term",
-    "query_string": "Qbox Gygi",
-    "tags": [
-      "PBC",
-      "PP",
-      "PW"
-    ],
-    "types": [
       "DFT"
     ],
     "nomad_tags": []
@@ -1323,42 +889,6 @@
       "data_collaboration"
     ]
   },
-  "RMCprofile": {
-    "author_name": "Tucker",
-    "homepage": "http://www.rmcprofile.org/Main_Page",
-    "license": "F",
-    "license_annotation": null,
-    "name": "RMCprofile",
-    "query_method": "search term",
-    "query_string": "RMCprofile Tucker",
-    "tags": [],
-    "types": [
-      "FF"
-    ],
-    "nomad_tags": []
-  },
-  "S / PHI / nX": {
-    "author_name": "Boeck",
-    "homepage": "https://sxrepo.mpie.de/",
-    "license": "OS(P)",
-    "license_annotation": null,
-    "name": "S / PHI / nX",
-    "query_method": "search term",
-    "query_string": "S/PHI/nX Boeck",
-    "query_publication_id": "15208849430845989253",
-    "tags": [
-      "PBC",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT"
-    ],
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ]
-  },
   "SIESTA": {
     "author_name": "Soler",
     "homepage": "https://departments.icmab.es/leem/siesta/",
@@ -1379,24 +909,6 @@
       "PI_member",
       "data_collaboration"
     ]
-  },
-  "Smeagol": {
-    "author_name": "Lambert",
-    "homepage": "https://www.tcd.ie/Physics/Smeagol/index.html",
-    "license": "F",
-    "license_annotation": null,
-    "name": "Smeagol",
-    "query_method": "search term",
-    "query_string": "Smeagol Lambert",
-    "tags": [
-      "PBC",
-      "NAO",
-      "PP"
-    ],
-    "types": [
-      "DFT"
-    ],
-    "nomad_tags": []
   },
   "TB-LMTO-ASA (Stuttgart)": {
     "author_name": "Andersen",
@@ -1457,25 +969,6 @@
       "data_collaboration"
     ]
   },
-  "TeraChem": {
-    "author_name": "Martinez",
-    "homepage": "http://www.petachem.com/products.html",
-    "license": "C(C)",
-    "license_annotation": null,
-    "name": "TeraChem",
-    "query_method": "search term",
-    "query_string": "\"TeraChem\" Martinez",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ],
-    "nomad_tags": []
-  },
   "VASP": {
     "author_name": "Kresse",
     "homepage": "https://www.vasp.at/",
@@ -1498,26 +991,6 @@
       "PI_member",
       "data_collaboration"
     ]
-  },
-  "WEST": {
-    "author_name": "Govoni",
-    "homepage": "http://www.west-code.org/",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "WEST",
-    "query_method": "publication",
-    "query_string": "M. Govoni and G. Galli, J. Chem. Theory Comput. 11, 2680 (2015)",
-    "query_publication_id": "10135319195087919820",
-    "tags": [
-      "PP",
-      "PW",
-      "PBC"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ],
-    "nomad_tags": []
   },
   "WHAT IF": {
     "author_name": "Vriend",
@@ -1608,40 +1081,6 @@
       "data_collaboration"
     ]
   },
-  "gSAFT": {
-    "author_name": "PSe",
-    "homepage": "https://www.psenterprise.com/products/gproms/gsaft",
-    "license": "C(C)",
-    "license_annotation": null,
-    "name": "gSAFT",
-    "query_method": "search term",
-    "query_string": "\"gSAFT\" fluid",
-    "tags": [],
-    "types": [
-      "FF"
-    ],
-    "nomad_tags": []
-  },
-  "jDFTx / DFT++": {
-    "author_name": "Sundararaman",
-    "homepage": "https://jdftx.org/",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "jDFTx / DFT++",
-    "query_method": "search term",
-    "query_string": "jDFTx Sundararaman",
-    "tags": [
-      "PBC",
-      "AE",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ],
-    "nomad_tags": []
-  },
   "octopus": {
     "author_name": "Rubio",
     "homepage": "https://www.tddft.org/programs/octopus/wiki/index.php/Main_Page",
@@ -1730,27 +1169,6 @@
     "types": [
       "WFM",
       "DFT"
-    ],
-    "nomad_tags": []
-  },
-  "QMCPACK": {
-    "author_name": "Kim",
-    "homepage": "https://qmcpack.readthedocs.io/",
-    "license": "OS(P)",
-    "license_annotation": "NCSA",
-    "name": "QMCPACK",
-    "query_method": "search term",
-    "query_string": "qmcpack \"Kim\"",
-    "tags": [
-      "GTO",
-      "STO",
-      "PW",
-      "RS",
-      "PP",
-      "AE"
-    ],
-    "types": [
-      "QMC"
     ],
     "nomad_tags": []
   },
