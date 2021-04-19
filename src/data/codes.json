@@ -359,6 +359,27 @@
     "notes": "See CHARMM for FF and DMol<sup>3</sup> for DFT",
     "nomad_tags": []
   },
+  "Elk": {
+    "author_name": "Dewhurst",
+    "homepage": "http://elk.sourceforge.net/",
+    "license": "OS(CL)",
+    "license_annotation": null,
+    "name": "Elk",
+    "query_method": "search term",
+    "query_string": "\"elk.sourceforge.net\"",
+    "tags": [
+      "PBC",
+      "AE",
+      "LAPW"
+    ],
+    "types": [
+      "DFT",
+      "WFM"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
+    ]
+  },
   "EPW": {
     "author_name": "Giustino",
     "homepage": "https://epw-code.org",

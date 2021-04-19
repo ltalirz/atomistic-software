@@ -115,10 +115,6 @@
         "citations": 259,
         "datestamp": "2021-04-10"
       },
-      "Elk": {
-        "citations": 45,
-        "datestamp": "2021-04-10"
-      },
       "FEFF": {
         "citations": 335,
         "datestamp": "2021-04-10"
@@ -394,6 +390,10 @@
       "EPW": {
         "citations": 149,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 120,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -665,10 +665,6 @@
         "citations": 32,
         "datestamp": "2021-01-04"
       },
-      "Elk": {
-        "citations": 30,
-        "datestamp": "2021-01-04"
-      },
       "Qbox": {
         "citations": 32,
         "datestamp": "2021-01-04"
@@ -804,6 +800,10 @@
       "EPW": {
         "citations": 96,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 86,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -1075,10 +1075,6 @@
         "citations": 26,
         "datestamp": "2021-01-04"
       },
-      "Elk": {
-        "citations": 32,
-        "datestamp": "2021-01-04"
-      },
       "Qbox": {
         "citations": 36,
         "datestamp": "2021-01-04"
@@ -1214,6 +1210,10 @@
       "EPW": {
         "citations": 81,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 88,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -1485,10 +1485,6 @@
         "citations": 29,
         "datestamp": "2021-01-07"
       },
-      "Elk": {
-        "citations": 24,
-        "datestamp": "2021-01-07"
-      },
       "Qbox": {
         "citations": 31,
         "datestamp": "2021-01-07"
@@ -1624,6 +1620,10 @@
       "EPW": {
         "citations": 47,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 86,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -1895,10 +1895,6 @@
         "citations": 36,
         "datestamp": "2021-01-07"
       },
-      "Elk": {
-        "citations": 25,
-        "datestamp": "2021-01-07"
-      },
       "Qbox": {
         "citations": 21,
         "datestamp": "2021-01-07"
@@ -2034,6 +2030,10 @@
       "EPW": {
         "citations": 21,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 109,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -2305,10 +2305,6 @@
         "citations": 24,
         "datestamp": "2021-01-07"
       },
-      "Elk": {
-        "citations": 32,
-        "datestamp": "2021-01-07"
-      },
       "Qbox": {
         "citations": 27,
         "datestamp": "2021-01-07"
@@ -2444,6 +2440,10 @@
       "EPW": {
         "citations": 15,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 104,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -2557,10 +2557,6 @@
       },
       "ESPResSo and ESPResso++": {
         "citations": 371,
-        "datestamp": "2021-01-17"
-      },
-      "Elk": {
-        "citations": 17,
         "datestamp": "2021-01-17"
       },
       "FEFF": {
@@ -2854,6 +2850,10 @@
       "EPW": {
         "citations": 6,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 89,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -2967,10 +2967,6 @@
       },
       "ESPResSo and ESPResso++": {
         "citations": 396,
-        "datestamp": "2021-01-17"
-      },
-      "Elk": {
-        "citations": 24,
         "datestamp": "2021-01-17"
       },
       "FEFF": {
@@ -3264,6 +3260,10 @@
       "EPW": {
         "citations": 10,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 78,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -3377,10 +3377,6 @@
       },
       "ESPResSo and ESPResso++": {
         "citations": 376,
-        "datestamp": "2021-01-17"
-      },
-      "Elk": {
-        "citations": 15,
         "datestamp": "2021-01-17"
       },
       "FEFF": {
@@ -3674,6 +3670,10 @@
       "EPW": {
         "citations": 6,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 57,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -3787,10 +3787,6 @@
       },
       "ESPResSo and ESPResso++": {
         "citations": 293,
-        "datestamp": "2021-01-17"
-      },
-      "Elk": {
-        "citations": 14,
         "datestamp": "2021-01-17"
       },
       "FEFF": {
@@ -4084,6 +4080,10 @@
       "EPW": {
         "citations": 4,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 46,
+        "datestamp": "2021-04-19"
       }
     }
   },
@@ -4209,10 +4209,6 @@
       },
       "ESPResSo and ESPResso++": {
         "citations": 255,
-        "datestamp": "2021-04-10"
-      },
-      "Elk": {
-        "citations": 8,
         "datestamp": "2021-04-10"
       },
       "FEFF": {
@@ -4482,6 +4478,10 @@
       "EPW": {
         "citations": 4,
         "datestamp": "2021-04-15"
+      },
+      "Elk": {
+        "citations": 20,
+        "datestamp": "2021-04-19"
       }
     }
   }
