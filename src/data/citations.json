@@ -147,10 +147,6 @@
         "citations": 270,
         "datestamp": "2021-04-10"
       },
-      "Gromacs": {
-        "citations": 3160,
-        "datestamp": "2021-04-10"
-      },
       "HOOMD-blue": {
         "citations": 142,
         "datestamp": "2021-04-10"
@@ -394,6 +390,10 @@
       "DFTB+": {
         "citations": 187,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 3160,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -411,10 +411,6 @@
       },
       "LAMMPS": {
         "citations": 3230,
-        "datestamp": "2021-01-04"
-      },
-      "Gromacs": {
-        "citations": 2690,
         "datestamp": "2021-01-04"
       },
       "Quantum ESPRESSO": {
@@ -804,6 +800,10 @@
       "DFTB+": {
         "citations": 212,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 2560,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -821,10 +821,6 @@
       },
       "LAMMPS": {
         "citations": 2990,
-        "datestamp": "2021-01-04"
-      },
-      "Gromacs": {
-        "citations": 2610,
         "datestamp": "2021-01-04"
       },
       "Quantum ESPRESSO": {
@@ -1214,6 +1210,10 @@
       "DFTB+": {
         "citations": 197,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 2590,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -1231,10 +1231,6 @@
       },
       "LAMMPS": {
         "citations": 2490,
-        "datestamp": "2021-01-07"
-      },
-      "Gromacs": {
-        "citations": 2230,
         "datestamp": "2021-01-07"
       },
       "Quantum ESPRESSO": {
@@ -1624,6 +1620,10 @@
       "DFTB+": {
         "citations": 153,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 2230,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -1641,10 +1641,6 @@
       },
       "LAMMPS": {
         "citations": 2310,
-        "datestamp": "2021-01-07"
-      },
-      "Gromacs": {
-        "citations": 2220,
         "datestamp": "2021-01-07"
       },
       "Quantum ESPRESSO": {
@@ -2034,6 +2030,10 @@
       "DFTB+": {
         "citations": 144,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 2220,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -2051,10 +2051,6 @@
       },
       "LAMMPS": {
         "citations": 2040,
-        "datestamp": "2021-01-07"
-      },
-      "Gromacs": {
-        "citations": 2110,
         "datestamp": "2021-01-07"
       },
       "Quantum ESPRESSO": {
@@ -2444,6 +2440,10 @@
       "DFTB+": {
         "citations": 125,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 2080,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -2597,10 +2597,6 @@
       },
       "Gaussian": {
         "citations": 6550,
-        "datestamp": "2021-01-17"
-      },
-      "Gromacs": {
-        "citations": 1990,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -2854,6 +2850,10 @@
       "DFTB+": {
         "citations": 104,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 1950,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -3007,10 +3007,6 @@
       },
       "Gaussian": {
         "citations": 6200,
-        "datestamp": "2021-01-17"
-      },
-      "Gromacs": {
-        "citations": 1750,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -3264,6 +3260,10 @@
       "DFTB+": {
         "citations": 99,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 1730,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -3417,10 +3417,6 @@
       },
       "Gaussian": {
         "citations": 5510,
-        "datestamp": "2021-01-17"
-      },
-      "Gromacs": {
-        "citations": 1490,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -3674,6 +3670,10 @@
       "DFTB+": {
         "citations": 75,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 1460,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -3827,10 +3827,6 @@
       },
       "Gaussian": {
         "citations": 5080,
-        "datestamp": "2021-01-17"
-      },
-      "Gromacs": {
-        "citations": 1300,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -4084,6 +4080,10 @@
       "DFTB+": {
         "citations": 51,
         "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 1300,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -4245,10 +4245,6 @@
       },
       "Gaussian": {
         "citations": 4370,
-        "datestamp": "2021-04-10"
-      },
-      "Gromacs": {
-        "citations": 0,
         "datestamp": "2021-04-10"
       },
       "HOOMD-blue": {
@@ -4481,6 +4477,10 @@
       },
       "DFTB+": {
         "citations": 38,
+        "datestamp": "2021-04-20"
+      },
+      "Gromacs": {
+        "citations": 1050,
         "datestamp": "2021-04-20"
       }
     }
