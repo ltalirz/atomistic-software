@@ -87,10 +87,6 @@
         "citations": 116,
         "datestamp": "2021-04-10"
       },
-      "DFTB+": {
-        "citations": 17,
-        "datestamp": "2021-04-10"
-      },
       "DIRAC": {
         "citations": 197,
         "datestamp": "2021-04-10"
@@ -394,6 +390,10 @@
       "Elk": {
         "citations": 120,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 187,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -701,10 +701,6 @@
         "citations": 13,
         "datestamp": "2021-01-04"
       },
-      "DFTB+": {
-        "citations": 9,
-        "datestamp": "2021-01-04"
-      },
       "BAGEL": {
         "citations": 25,
         "datestamp": "2021-01-04"
@@ -804,6 +800,10 @@
       "Elk": {
         "citations": 86,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 212,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -1111,10 +1111,6 @@
         "citations": 12,
         "datestamp": "2021-01-04"
       },
-      "DFTB+": {
-        "citations": 18,
-        "datestamp": "2021-01-04"
-      },
       "BAGEL": {
         "citations": 15,
         "datestamp": "2021-01-04"
@@ -1214,6 +1210,10 @@
       "Elk": {
         "citations": 88,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 197,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -1521,10 +1521,6 @@
         "citations": 13,
         "datestamp": "2021-01-07"
       },
-      "DFTB+": {
-        "citations": 12,
-        "datestamp": "2021-01-07"
-      },
       "BAGEL": {
         "citations": 6,
         "datestamp": "2021-01-07"
@@ -1624,6 +1620,10 @@
       "Elk": {
         "citations": 86,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 153,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -1931,10 +1931,6 @@
         "citations": 10,
         "datestamp": "2021-01-07"
       },
-      "DFTB+": {
-        "citations": 7,
-        "datestamp": "2021-01-07"
-      },
       "BAGEL": {
         "citations": 7,
         "datestamp": "2021-01-07"
@@ -2034,6 +2030,10 @@
       "Elk": {
         "citations": 109,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 144,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -2341,10 +2341,6 @@
         "citations": 10,
         "datestamp": "2021-01-07"
       },
-      "DFTB+": {
-        "citations": 14,
-        "datestamp": "2021-01-07"
-      },
       "BAGEL": {
         "citations": 6,
         "datestamp": "2021-01-07"
@@ -2444,6 +2440,10 @@
       "Elk": {
         "citations": 104,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 125,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -2529,10 +2529,6 @@
       },
       "CPMD": {
         "citations": 168,
-        "datestamp": "2021-01-17"
-      },
-      "DFTB+": {
-        "citations": 8,
         "datestamp": "2021-01-17"
       },
       "DIRAC": {
@@ -2854,6 +2850,10 @@
       "Elk": {
         "citations": 89,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 104,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -2939,10 +2939,6 @@
       },
       "CPMD": {
         "citations": 190,
-        "datestamp": "2021-01-17"
-      },
-      "DFTB+": {
-        "citations": 5,
         "datestamp": "2021-01-17"
       },
       "DIRAC": {
@@ -3264,6 +3260,10 @@
       "Elk": {
         "citations": 78,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 99,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -3349,10 +3349,6 @@
       },
       "CPMD": {
         "citations": 198,
-        "datestamp": "2021-01-17"
-      },
-      "DFTB+": {
-        "citations": 7,
         "datestamp": "2021-01-17"
       },
       "DIRAC": {
@@ -3674,6 +3670,10 @@
       "Elk": {
         "citations": 57,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 75,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -3759,10 +3759,6 @@
       },
       "CPMD": {
         "citations": 195,
-        "datestamp": "2021-01-17"
-      },
-      "DFTB+": {
-        "citations": 7,
         "datestamp": "2021-01-17"
       },
       "DIRAC": {
@@ -4084,6 +4080,10 @@
       "Elk": {
         "citations": 46,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 51,
+        "datestamp": "2021-04-20"
       }
     }
   },
@@ -4177,10 +4177,6 @@
       },
       "CRYSTAL": {
         "citations": 216,
-        "datestamp": "2021-04-10"
-      },
-      "DFTB+": {
-        "citations": 5,
         "datestamp": "2021-04-10"
       },
       "DIRAC": {
@@ -4482,6 +4478,10 @@
       "Elk": {
         "citations": 20,
         "datestamp": "2021-04-19"
+      },
+      "DFTB+": {
+        "citations": 38,
+        "datestamp": "2021-04-20"
       }
     }
   }

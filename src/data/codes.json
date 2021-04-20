@@ -272,6 +272,23 @@
       "PI_member"
     ]
   },
+  "DFTB+": {
+    "author_name": "Aradi",
+    "homepage": "https://www.dftb-plus.info",
+    "license": "OS(CL)",
+    "license_annotation": "LGPL-3.0-or-later",
+    "name": "DFTB+",
+    "query_method": "publication",
+    "query_string": "B. Aradi, B. Hourahine, and Th. Frauenheim. JPC A 2007 111 (26), 5678-5684",
+    "query_publication_id": "11397957054615082073",
+    "tags": [],
+    "types": [
+      "TB"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
+    ]
+  },
   "DIRAC": {
     "author_name": "Saue",
     "homepage": "http://www.diracprogram.org/doku.php",
