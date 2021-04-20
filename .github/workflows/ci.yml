@@ -22,9 +22,8 @@ jobs:
         # for excluded URLs, the checker seems to be stricter than Chrome
         args: >-
           --verbose --timeout 40 --insecure 
-          --exclude "https://www.msg.chem.iastate.edu/" 
-          --exclude "https://openmopac.net/"
-          codes.md
+          --exclude "https://www.msg.chem.iastate.edu/" "https://openmopac.net/"
+          -- codes.md
 
     - name: Fail if there were link errors
       run: exit ${{ steps.lc.outputs.exit_code }}
