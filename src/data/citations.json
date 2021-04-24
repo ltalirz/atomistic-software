@@ -394,6 +394,10 @@
       "Gromacs": {
         "citations": 3160,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 172,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -804,6 +808,10 @@
       "Gromacs": {
         "citations": 2560,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 147,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -1214,6 +1222,10 @@
       "Gromacs": {
         "citations": 2590,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 120,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -1624,6 +1636,10 @@
       "Gromacs": {
         "citations": 2230,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 81,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -2034,6 +2050,10 @@
       "Gromacs": {
         "citations": 2220,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 55,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -2444,6 +2464,10 @@
       "Gromacs": {
         "citations": 2080,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 43,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -2854,6 +2878,10 @@
       "Gromacs": {
         "citations": 1950,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 30,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -3264,6 +3292,10 @@
       "Gromacs": {
         "citations": 1730,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 20,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -3674,6 +3706,10 @@
       "Gromacs": {
         "citations": 1460,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 0,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -4084,6 +4120,10 @@
       "Gromacs": {
         "citations": 1300,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 0,
+        "datestamp": "2021-04-24"
       }
     }
   },
@@ -4482,6 +4522,10 @@
       "Gromacs": {
         "citations": 1050,
         "datestamp": "2021-04-20"
+      },
+      "RASPA": {
+        "citations": 0,
+        "datestamp": "2021-04-24"
       }
     }
   }
