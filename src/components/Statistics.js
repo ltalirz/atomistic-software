@@ -5,7 +5,7 @@ import Paper from '@material-ui/core/Paper';
 
 import useStyles from './Dashboard/Styles';
 import Title from './Dashboard/Title';
-import { YEARS, getData, filterCodeNames, getCodeCitations } from './Config';
+import {CUTOFF, YEARS, getData, filterCodeNames, getCodeCitations } from './Config';
 import {nivoChart} from './Chart/single';
 // import { Card } from '@material-ui/core';
 
@@ -27,7 +27,7 @@ function citationGrowth(year) {
         data['absoluteGrowth'].push([codeName, delta]);
         data['total'].push([codeName, dNew['citations']]);
 
-        if (dataNew[index]['citations'] < 100) {
+        if (dataNew[index]['citations'] < CUTOFF) {
             // We require at least 100 citations for analyzing growth
             data['relativeGrowth'].push([codeName, 0]);
         } else {
@@ -177,8 +177,8 @@ export default function Home() {
             "", 4)}
             {Card("Top citation growth "+ CURRENT_YEAR, absoluteGrowthList(GROWTH['absoluteGrowth'].slice(0, 10)), 
             "With respect to "+ (CURRENT_YEAR-1) + ".", 4)}
-            {Card("Top relative citation growth", relativeGrowthList(GROWTH['relativeGrowth'].slice(0, 10)),
-                "With respect to "+ (CURRENT_YEAR-1) + ", considering only engines with >100 citations.",
+            {Card("Top relative citation growth "+ CURRENT_YEAR, relativeGrowthList(GROWTH['relativeGrowth'].slice(0, 10)),
+                "With respect to "+ (CURRENT_YEAR-1) + ".",
                  4)}
             {Card("Citations commercial vs free", costGraph(),"'Free' includes engines that are free for academic use only.",11)}
             {Card("Citations by source code availability", sourceGraph(),

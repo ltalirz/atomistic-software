@@ -12,10 +12,10 @@ import packageJson from '../../package.json';
 
 
 const aboutMD = `
-*${packageJson.name}* aims to track the citation trends of all major atomistic simulation engines (see [scope](${packageJson.repository.url}#scope)).
+*${packageJson.name}* aims to track the citation trends of all major atomistic simulation engines (see [scope](${packageJson.repository.url}#scope) and [relevance criterion](${packageJson.repository.url}#relevance)).
 
 This is a collaboratively edited list.
-Please visit the [source code repository on GitHub](${packageJson.repository.url}) for instructions on how to [add new simulation engines](${packageJson.repository.url}/issues/21).
+Please visit the [source code repository on GitHub](${packageJson.repository.url}) for instructions on how to [add new simulation engines](${packageJson.repository.url}#adding-a-simulation-engine).
 
 `;
 
@@ -42,6 +42,11 @@ const faqMD = `
     In our experience, citation data for the previous year can be subject to significant (upwards) fluctuation, while citation data for years further in the past are quite stable.
     We record the date of when each data point was collected in the [source code repository](${packageJson.repository.url}).
 
+*  **Q**: Why impose a criterion that engines on the list need to have at least one year with 100 citations?
+
+    **A**: atomistic.software aims to be a comprehensive list of all major atomistic simulation engines.
+    As new engines are created all the time, this goal is almost impossible to achieve without introducing a "relevance cutoff".
+    The value of 100 is not set in stone and could be re-evaluated in the future, once the list has had some time to consolidate.
     
 `;
 
