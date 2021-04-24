@@ -434,6 +434,22 @@
       "data_collaboration"
     ]
   },
+  "FEASST": {
+    "author_name": "Hatch",
+    "homepage": "https://pages.nist.gov/feasst/",
+    "license": "US(PD)",
+    "license_annotation": "NIST Public Domain Disclaimer",
+    "name": "FEASST",
+    "query_method": "search term",
+    "query_string": "\"FEASST\" Hatch",
+    "tags": [],
+    "types": [
+      "FF"
+    ],
+    "nomad_tags": [
+      "data_collaboration"
+    ]
+  },  
   "FEFF": {
     "author_name": "Rehr",
     "homepage": "https://github.com/times-software/feff10",
