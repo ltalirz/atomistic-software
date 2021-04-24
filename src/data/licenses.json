@@ -5,5 +5,6 @@
    "F(A)": "Free for academic use, custom license",
    "C(S)": "Commercial, source available",
    "C(C)": "Commercial, closed source",
-   "I":  "Individual-basis license via contacting the authors"
+   "I":  "Individual-basis license via contacting the authors",
+   "US(PD)": "USA Federal Government Public Domain"
 }
