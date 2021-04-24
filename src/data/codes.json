@@ -927,6 +927,22 @@
       "data_collaboration"
     ]
   },
+  "RASPA": {
+    "author_name": "Dubbeldam",
+    "homepage": "https://github.com/iRASPA/RASPA2",
+    "license": "OS(P)",
+    "license_annotation": "MIT",
+    "name": "RASPA",
+    "query_method": "search term",
+    "query_string": "\"RASPA\" OR \"RASPA2\" Dubbeldam",
+    "tags": [
+    ],
+    "types": [
+      "FF"
+    ],
+    "nomad_tags": [
+    ]
+  },
   "SIESTA": {
     "author_name": "Soler",
     "homepage": "https://departments.icmab.es/leem/siesta/",
