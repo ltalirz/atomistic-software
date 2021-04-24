@@ -1,6 +1,9 @@
 import citations from '../data/citations.json'
 import codes from '../data/codes.json'
 
+// Citation cutoff
+const CUTOFF = 100;
+
 function yearToRange(year) {
   /**
    * Transform year to year range used in citations.json
@@ -105,4 +108,4 @@ function  getCodeCitations(codeNames){
     return line_data;
 }
 
-export {yearToRange, rangeToYear, YEARS, CODES, getData, getDataChart, getCodeCitations, filterCodeNames};
+export {yearToRange, rangeToYear, YEARS, CODES, getData, getDataChart, getCodeCitations, filterCodeNames, CUTOFF};

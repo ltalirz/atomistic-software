@@ -23,13 +23,15 @@ You are welcome to cite [atomistic.software](https://atomistic.software/#/) in y
 This covers the `DFT`, `WFM`, `QMC`, `TB`, and `FF` categories.
 
 Softwares in the `Spectroscopy` category are not necessarily simulation engines in the above sense, but compute the response of a given atomic structure to an external excitation (via photons, electrons, ...).
+
+## Relevance criterion
+
+In order to keep the length of the list manageable, atomistic simulation engines need to have had at least **one year with 100 citations** or more in order to be added to the list.
 ## Adding a simulation engine
 
 Contributions of new simulation engines are always welcome!
-
-In order to keep the length of the list manageable, new atomistic simulation engines need to have had at least **one year with 100 citations** or more. 
-It is obviously somewhat arbitrary (and is not fulfilled by all historical entries on the list), and may be relaxed over time.
-
+Please check that your engine fits the [scope](#scope) and meets the [relevance criterion](#relevance-criterion).
+Then pick one of the following two options:
 #### Option 1: Suggest addition
 
 If you're not familiar with GitHub or don't have time to add the engine yourself, just [add a comment](https://github.com/ltalirz/atomistic-software/issues/21) with your suggestion.
