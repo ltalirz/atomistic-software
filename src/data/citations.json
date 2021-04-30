@@ -367,10 +367,6 @@
         "citations": 610,
         "datestamp": "2021-04-10"
       },
-      "Gaussian": {
-        "citations": 9210,
-        "datestamp": "2021-04-10"
-      },
       "OpenMolcas": {
         "citations": 104,
         "datestamp": "2021-04-11"
@@ -398,6 +394,10 @@
       "RASPA": {
         "citations": 172,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 14200,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -405,10 +405,6 @@
     "year_low": 2019,
     "year_high": 2019,
     "citations": {
-      "Gaussian": {
-        "citations": 7880,
-        "datestamp": "2021-01-04"
-      },
       "VASP": {
         "citations": 8660,
         "datestamp": "2021-01-04"
@@ -812,6 +808,10 @@
       "RASPA": {
         "citations": 147,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 12600,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -819,10 +819,6 @@
     "year_low": 2018,
     "year_high": 2018,
     "citations": {
-      "Gaussian": {
-        "citations": 7630,
-        "datestamp": "2021-01-04"
-      },
       "VASP": {
         "citations": 7630,
         "datestamp": "2021-01-04"
@@ -1226,6 +1222,10 @@
       "RASPA": {
         "citations": 120,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 12300,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -1233,10 +1233,6 @@
     "year_low": 2017,
     "year_high": 2017,
     "citations": {
-      "Gaussian": {
-        "citations": 7510,
-        "datestamp": "2021-01-07"
-      },
       "VASP": {
         "citations": 6980,
         "datestamp": "2021-01-07"
@@ -1640,6 +1636,10 @@
       "RASPA": {
         "citations": 81,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 11000,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -1647,10 +1647,6 @@
     "year_low": 2016,
     "year_high": 2016,
     "citations": {
-      "Gaussian": {
-        "citations": 7070,
-        "datestamp": "2021-01-07"
-      },
       "VASP": {
         "citations": 6360,
         "datestamp": "2021-01-07"
@@ -2054,6 +2050,10 @@
       "RASPA": {
         "citations": 55,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 11700,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -2061,10 +2061,6 @@
     "year_low": 2015,
     "year_high": 2015,
     "citations": {
-      "Gaussian": {
-        "citations": 7140,
-        "datestamp": "2021-01-07"
-      },
       "VASP": {
         "citations": 5560,
         "datestamp": "2021-01-07"
@@ -2468,6 +2464,10 @@
       "RASPA": {
         "citations": 43,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 11800,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -2617,10 +2617,6 @@
       },
       "GULP": {
         "citations": 431,
-        "datestamp": "2021-01-17"
-      },
-      "Gaussian": {
-        "citations": 6550,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -2882,6 +2878,10 @@
       "RASPA": {
         "citations": 30,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 11000,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -3031,10 +3031,6 @@
       },
       "GULP": {
         "citations": 453,
-        "datestamp": "2021-01-17"
-      },
-      "Gaussian": {
-        "citations": 6200,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -3296,6 +3292,10 @@
       "RASPA": {
         "citations": 20,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 10500,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -3445,10 +3445,6 @@
       },
       "GULP": {
         "citations": 421,
-        "datestamp": "2021-01-17"
-      },
-      "Gaussian": {
-        "citations": 5510,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -3710,6 +3706,10 @@
       "RASPA": {
         "citations": 0,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 9310,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -3859,10 +3859,6 @@
       },
       "GULP": {
         "citations": 449,
-        "datestamp": "2021-01-17"
-      },
-      "Gaussian": {
-        "citations": 5080,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -4124,6 +4120,10 @@
       "RASPA": {
         "citations": 0,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 8650,
+        "datestamp": "2021-04-30"
       }
     }
   },
@@ -4281,10 +4281,6 @@
       },
       "GULP": {
         "citations": 398,
-        "datestamp": "2021-04-10"
-      },
-      "Gaussian": {
-        "citations": 4370,
         "datestamp": "2021-04-10"
       },
       "HOOMD-blue": {
@@ -4526,6 +4522,10 @@
       "RASPA": {
         "citations": 0,
         "datestamp": "2021-04-24"
+      },
+      "Gaussian": {
+        "citations": 7720,
+        "datestamp": "2021-04-30"
       }
     }
   }
