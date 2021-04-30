@@ -585,7 +585,7 @@
     "license_annotation": null,
     "name": "Gaussian",
     "query_method": "search term",
-    "query_string": "Gaussian package Frisch",
+    "query_string": "Frisch \"Gaussian 70\" OR \"Gaussian 76\" OR \"Gaussian 80\" OR \"Gaussian 82\" OR \"Gaussian 86\" OR \"Gaussian 88\" OR \"Gaussian 90\" OR \"Gaussian 92\" OR \"Gaussian 94\" OR \"Gaussian 98\" OR \"Gaussian 03\" OR \"Gaussian 09\" OR \"Gaussian 16\"",
     "tags": [
       "PBC",
       "AE",
