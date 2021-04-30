@@ -1210,7 +1210,7 @@
   },
   "PySCF": {
     "author_name": "Chan",
-    "homepage": "https://sunqm.github.io/pyscf/",
+    "homepage": "https://pyscf.org/",
     "license": "OS(P)",
     "license_annotation": "Apache-2.0",
     "name": "PySCF",
