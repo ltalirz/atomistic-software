@@ -173,11 +173,11 @@ export default function Home() {
     return (
         <Grid container spacing={3}>
             
-            {Card("Top cited in " + CURRENT_YEAR, totalList(GROWTH['total'].slice(0, 10)), 
+            {Card("Highly cited in " + CURRENT_YEAR, totalList(GROWTH['total'].slice(0, 10)), 
             "", 4)}
-            {Card("Top citation growth "+ CURRENT_YEAR, absoluteGrowthList(GROWTH['absoluteGrowth'].slice(0, 10)), 
+            {Card("High citation growth "+ CURRENT_YEAR, absoluteGrowthList(GROWTH['absoluteGrowth'].slice(0, 10)), 
             "With respect to "+ (CURRENT_YEAR-1) + ".", 4)}
-            {Card("Top relative citation growth "+ CURRENT_YEAR, relativeGrowthList(GROWTH['relativeGrowth'].slice(0, 10)),
+            {Card("High relative citation growth "+ CURRENT_YEAR, relativeGrowthList(GROWTH['relativeGrowth'].slice(0, 10)),
                 "With respect to "+ (CURRENT_YEAR-1) + ".",
                  4)}
             {Card("Citations commercial vs free", costGraph(),"'Free' includes engines that are free for academic use only.",11)}
