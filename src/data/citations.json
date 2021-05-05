@@ -271,10 +271,6 @@
         "citations": 19,
         "datestamp": "2021-04-10"
       },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 91,
-        "datestamp": "2021-04-10"
-      },
       "TINKER": {
         "citations": 427,
         "datestamp": "2021-04-10"
@@ -397,6 +393,10 @@
       },
       "ACES": {
         "citations": 25,
+        "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 84,
         "datestamp": "2021-05-06"
       }
     }
@@ -579,10 +579,6 @@
       },
       "CPMD": {
         "citations": 114,
-        "datestamp": "2021-01-04"
-      },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 102,
         "datestamp": "2021-01-04"
       },
       "OpenMX": {
@@ -812,6 +808,10 @@
       "ACES": {
         "citations": 23,
         "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 84,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -993,10 +993,6 @@
       },
       "CPMD": {
         "citations": 137,
-        "datestamp": "2021-01-04"
-      },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 99,
         "datestamp": "2021-01-04"
       },
       "OpenMX": {
@@ -1226,6 +1222,10 @@
       "ACES": {
         "citations": 28,
         "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 88,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -1407,10 +1407,6 @@
       },
       "CPMD": {
         "citations": 127,
-        "datestamp": "2021-01-07"
-      },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 102,
         "datestamp": "2021-01-07"
       },
       "OpenMX": {
@@ -1640,6 +1636,10 @@
       "ACES": {
         "citations": 36,
         "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 88,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -1821,10 +1821,6 @@
       },
       "CPMD": {
         "citations": 117,
-        "datestamp": "2021-01-07"
-      },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 123,
         "datestamp": "2021-01-07"
       },
       "OpenMX": {
@@ -2054,6 +2050,10 @@
       "ACES": {
         "citations": 35,
         "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 112,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -2235,10 +2235,6 @@
       },
       "CPMD": {
         "citations": 138,
-        "datestamp": "2021-01-07"
-      },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 163,
         "datestamp": "2021-01-07"
       },
       "OpenMX": {
@@ -2467,6 +2463,10 @@
       },
       "ACES": {
         "citations": 34,
+        "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 141,
         "datestamp": "2021-05-06"
       }
     }
@@ -2743,10 +2743,6 @@
         "citations": 45,
         "datestamp": "2021-01-17"
       },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 133,
-        "datestamp": "2021-01-17"
-      },
       "TINKER": {
         "citations": 521,
         "datestamp": "2021-01-17"
@@ -2881,6 +2877,10 @@
       },
       "ACES": {
         "citations": 50,
+        "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 120,
         "datestamp": "2021-05-06"
       }
     }
@@ -3157,10 +3157,6 @@
         "citations": 35,
         "datestamp": "2021-01-17"
       },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 186,
-        "datestamp": "2021-01-17"
-      },
       "TINKER": {
         "citations": 494,
         "datestamp": "2021-01-17"
@@ -3295,6 +3291,10 @@
       },
       "ACES": {
         "citations": 40,
+        "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 173,
         "datestamp": "2021-05-06"
       }
     }
@@ -3571,10 +3571,6 @@
         "citations": 36,
         "datestamp": "2021-01-17"
       },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 172,
-        "datestamp": "2021-01-17"
-      },
       "TINKER": {
         "citations": 457,
         "datestamp": "2021-01-17"
@@ -3709,6 +3705,10 @@
       },
       "ACES": {
         "citations": 37,
+        "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 154,
         "datestamp": "2021-05-06"
       }
     }
@@ -3985,10 +3985,6 @@
         "citations": 32,
         "datestamp": "2021-01-17"
       },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 150,
-        "datestamp": "2021-01-17"
-      },
       "TINKER": {
         "citations": 524,
         "datestamp": "2021-01-17"
@@ -4123,6 +4119,10 @@
       },
       "ACES": {
         "citations": 53,
+        "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 134,
         "datestamp": "2021-05-06"
       }
     }
@@ -4407,10 +4407,6 @@
         "citations": 29,
         "datestamp": "2021-04-10"
       },
-      "TB-LMTO-ASA (Stuttgart)": {
-        "citations": 123,
-        "datestamp": "2021-04-10"
-      },
       "TINKER": {
         "citations": 502,
         "datestamp": "2021-04-10"
@@ -4525,6 +4521,10 @@
       },
       "ACES": {
         "citations": 74,
+        "datestamp": "2021-05-06"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 108,
         "datestamp": "2021-05-06"
       }
     }
