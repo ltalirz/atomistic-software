@@ -22,14 +22,14 @@
       "data_collaboration"
     ]
   },
-  "ACES III": {
+  "ACES": {
     "author_name": "Bartlett",
     "homepage": "http://www.qtp.ufl.edu/ACES/",
     "license": "OS(CL)",
     "license_annotation": null,
-    "name": "ACES III",
+    "name": "ACES",
     "query_method": "search term",
-    "query_string": "\"ACES\" Bartlett",
+    "query_string": "Bartlett \"ACES III\" OR \"ACES II\" OR \"ACES4\"",
     "tags": [
       "GTO",
       "PP"
