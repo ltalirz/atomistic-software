@@ -11,10 +11,6 @@
         "citations": 66,
         "datestamp": "2021-04-10"
       },
-      "ACES III": {
-        "citations": 384,
-        "datestamp": "2021-04-10"
-      },
       "ADF": {
         "citations": 674,
         "datestamp": "2021-04-10"
@@ -398,6 +394,10 @@
       "Gaussian": {
         "citations": 14200,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 25,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -527,10 +527,6 @@
       },
       "Atomistix ToolKit (ATK)": {
         "citations": 315,
-        "datestamp": "2021-01-04"
-      },
-      "ACES III": {
-        "citations": 422,
         "datestamp": "2021-01-04"
       },
       "Jaguar": {
@@ -812,6 +808,10 @@
       "Gaussian": {
         "citations": 12600,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 23,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -941,10 +941,6 @@
       },
       "Atomistix ToolKit (ATK)": {
         "citations": 373,
-        "datestamp": "2021-01-04"
-      },
-      "ACES III": {
-        "citations": 281,
         "datestamp": "2021-01-04"
       },
       "Jaguar": {
@@ -1226,6 +1222,10 @@
       "Gaussian": {
         "citations": 12300,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 28,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -1355,10 +1355,6 @@
       },
       "Atomistix ToolKit (ATK)": {
         "citations": 358,
-        "datestamp": "2021-01-07"
-      },
-      "ACES III": {
-        "citations": 267,
         "datestamp": "2021-01-07"
       },
       "Jaguar": {
@@ -1640,6 +1636,10 @@
       "Gaussian": {
         "citations": 11000,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 36,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -1769,10 +1769,6 @@
       },
       "Atomistix ToolKit (ATK)": {
         "citations": 269,
-        "datestamp": "2021-01-07"
-      },
-      "ACES III": {
-        "citations": 259,
         "datestamp": "2021-01-07"
       },
       "Jaguar": {
@@ -2054,6 +2050,10 @@
       "Gaussian": {
         "citations": 11700,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 35,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -2183,10 +2183,6 @@
       },
       "Atomistix ToolKit (ATK)": {
         "citations": 202,
-        "datestamp": "2021-01-07"
-      },
-      "ACES III": {
-        "citations": 252,
         "datestamp": "2021-01-07"
       },
       "Jaguar": {
@@ -2468,6 +2464,10 @@
       "Gaussian": {
         "citations": 11800,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 34,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -2481,10 +2481,6 @@
       },
       "ACEMD": {
         "citations": 33,
-        "datestamp": "2021-01-17"
-      },
-      "ACES III": {
-        "citations": 256,
         "datestamp": "2021-01-17"
       },
       "ADF": {
@@ -2882,6 +2878,10 @@
       "Gaussian": {
         "citations": 11000,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 50,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -2895,10 +2895,6 @@
       },
       "ACEMD": {
         "citations": 29,
-        "datestamp": "2021-01-17"
-      },
-      "ACES III": {
-        "citations": 238,
         "datestamp": "2021-01-17"
       },
       "ADF": {
@@ -3296,6 +3292,10 @@
       "Gaussian": {
         "citations": 10500,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 40,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -3309,10 +3309,6 @@
       },
       "ACEMD": {
         "citations": 32,
-        "datestamp": "2021-01-17"
-      },
-      "ACES III": {
-        "citations": 196,
         "datestamp": "2021-01-17"
       },
       "ADF": {
@@ -3710,6 +3706,10 @@
       "Gaussian": {
         "citations": 9310,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 37,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -3723,10 +3723,6 @@
       },
       "ACEMD": {
         "citations": 34,
-        "datestamp": "2021-01-17"
-      },
-      "ACES III": {
-        "citations": 196,
         "datestamp": "2021-01-17"
       },
       "ADF": {
@@ -4124,6 +4120,10 @@
       "Gaussian": {
         "citations": 8650,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 53,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -4137,10 +4137,6 @@
       },
       "ACEMD": {
         "citations": 15,
-        "datestamp": "2021-04-10"
-      },
-      "ACES III": {
-        "citations": 183,
         "datestamp": "2021-04-10"
       },
       "ADF": {
@@ -4526,6 +4522,10 @@
       "Gaussian": {
         "citations": 7720,
         "datestamp": "2021-04-30"
+      },
+      "ACES": {
+        "citations": 74,
+        "datestamp": "2021-05-06"
       }
     }
   }
