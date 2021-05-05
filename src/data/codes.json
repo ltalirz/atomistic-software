@@ -22,24 +22,6 @@
       "data_collaboration"
     ]
   },
-  "ACES": {
-    "author_name": "Bartlett",
-    "homepage": "http://www.qtp.ufl.edu/ACES/",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "ACES",
-    "query_method": "search term",
-    "query_string": "Bartlett \"ACES III\" OR \"ACES II\" OR \"ACES4\"",
-    "tags": [
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ],
-    "nomad_tags": []
-  },
   "ADF": {
     "author_name": "Baerends",
     "homepage": "https://www.scm.com/product/adf/",
