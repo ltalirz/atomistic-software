@@ -195,7 +195,7 @@
     "license_annotation": null,
     "name": "CP2K",
     "query_method": "search term",
-    "query_string": "\"CP2K\" Hutter",
+    "query_string": "\"CP2K\" \"Hutter\" OR \"www.cp2k.org\"",
     "tags": [
       "PBC",
       "AE",
