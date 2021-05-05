@@ -75,10 +75,6 @@
         "citations": 28,
         "datestamp": "2021-04-10"
       },
-      "CP2K": {
-        "citations": 789,
-        "datestamp": "2021-04-10"
-      },
       "CPMD": {
         "citations": 116,
         "datestamp": "2021-04-10"
@@ -398,6 +394,10 @@
       "TB-LMTO-ASA": {
         "citations": 84,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 805,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -487,10 +487,6 @@
       },
       "MacroModel": {
         "citations": 441,
-        "datestamp": "2021-01-04"
-      },
-      "CP2K": {
-        "citations": 573,
         "datestamp": "2021-01-04"
       },
       "Dalton": {
@@ -812,6 +808,10 @@
       "TB-LMTO-ASA": {
         "citations": 84,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 587,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -901,10 +901,6 @@
       },
       "MacroModel": {
         "citations": 494,
-        "datestamp": "2021-01-04"
-      },
-      "CP2K": {
-        "citations": 522,
         "datestamp": "2021-01-04"
       },
       "Dalton": {
@@ -1226,6 +1222,10 @@
       "TB-LMTO-ASA": {
         "citations": 88,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 548,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -1315,10 +1315,6 @@
       },
       "MacroModel": {
         "citations": 468,
-        "datestamp": "2021-01-07"
-      },
-      "CP2K": {
-        "citations": 465,
         "datestamp": "2021-01-07"
       },
       "Dalton": {
@@ -1640,6 +1636,10 @@
       "TB-LMTO-ASA": {
         "citations": 88,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 489,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -1729,10 +1729,6 @@
       },
       "MacroModel": {
         "citations": 419,
-        "datestamp": "2021-01-07"
-      },
-      "CP2K": {
-        "citations": 403,
         "datestamp": "2021-01-07"
       },
       "Dalton": {
@@ -2054,6 +2050,10 @@
       "TB-LMTO-ASA": {
         "citations": 112,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 424,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -2143,10 +2143,6 @@
       },
       "MacroModel": {
         "citations": 404,
-        "datestamp": "2021-01-07"
-      },
-      "CP2K": {
-        "citations": 335,
         "datestamp": "2021-01-07"
       },
       "Dalton": {
@@ -2468,6 +2464,10 @@
       "TB-LMTO-ASA": {
         "citations": 141,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 361,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -2541,10 +2541,6 @@
       },
       "COSMOS-software": {
         "citations": 45,
-        "datestamp": "2021-01-17"
-      },
-      "CP2K": {
-        "citations": 320,
         "datestamp": "2021-01-17"
       },
       "CPMD": {
@@ -2882,6 +2878,10 @@
       "TB-LMTO-ASA": {
         "citations": 120,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 339,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -2955,10 +2955,6 @@
       },
       "COSMOS-software": {
         "citations": 37,
-        "datestamp": "2021-01-17"
-      },
-      "CP2K": {
-        "citations": 221,
         "datestamp": "2021-01-17"
       },
       "CPMD": {
@@ -3296,6 +3292,10 @@
       "TB-LMTO-ASA": {
         "citations": 173,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 228,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -3369,10 +3369,6 @@
       },
       "COSMOS-software": {
         "citations": 54,
-        "datestamp": "2021-01-17"
-      },
-      "CP2K": {
-        "citations": 164,
         "datestamp": "2021-01-17"
       },
       "CPMD": {
@@ -3710,6 +3706,10 @@
       "TB-LMTO-ASA": {
         "citations": 154,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 174,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -3783,10 +3783,6 @@
       },
       "COSMOS-software": {
         "citations": 49,
-        "datestamp": "2021-01-17"
-      },
-      "CP2K": {
-        "citations": 122,
         "datestamp": "2021-01-17"
       },
       "CPMD": {
@@ -4124,6 +4120,10 @@
       "TB-LMTO-ASA": {
         "citations": 134,
         "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 121,
+        "datestamp": "2021-05-06"
       }
     }
   },
@@ -4201,10 +4201,6 @@
       },
       "COSMOS-software": {
         "citations": 39,
-        "datestamp": "2021-04-10"
-      },
-      "CP2K": {
-        "citations": 112,
         "datestamp": "2021-04-10"
       },
       "CPMD": {
@@ -4525,6 +4521,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 108,
+        "datestamp": "2021-05-06"
+      },
+      "CP2K": {
+        "citations": 114,
         "datestamp": "2021-05-06"
       }
     }
