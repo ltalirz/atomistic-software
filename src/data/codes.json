@@ -946,14 +946,14 @@
       "data_collaboration"
     ]
   },
-  "TB-LMTO-ASA (Stuttgart)": {
+  "TB-LMTO-ASA": {
     "author_name": "Andersen",
     "homepage": "https://www2.fkf.mpg.de/andersen/LMTODOC/LMTODOC.html",
     "license": "F",
     "license_annotation": null,
-    "name": "TB-LMTO-ASA (Stuttgart)",
+    "name": "TB-LMTO-ASA",
     "query_method": "search term",
-    "query_string": "\"TB-LMTO\" Andersen",
+    "query_string": "\"TB-LMTO\" \"Andersen\"",
     "tags": [
       "AE",
       "(L)MTO"
