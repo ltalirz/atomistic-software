@@ -773,7 +773,7 @@
   },
   "NWChem": {
     "author_name": "Valiev",
-    "homepage": "https://www.nwchem-sw.org/",
+    "homepage": "https://nwchemgit.github.io/",
     "license": "OS(P)",
     "license_annotation": null,
     "name": "NWChem",
