@@ -26,3 +26,7 @@ img.zenodo {
 main.makeStyles-content-12 {
   height: 100%;
 }
+
+img.source-logo {
+  height: 25px;
+}

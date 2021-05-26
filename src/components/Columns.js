@@ -12,13 +12,15 @@ import ShowChartIcon from '@material-ui/icons/ShowChart';
 import MoneyOffIcon from '@material-ui/icons/MoneyOff';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import SchoolIcon from '@material-ui/icons/School';
-import LockOpenIcon from '@material-ui/icons/LockOpen';
+import OsiLogo from '../assets/osi_logo.png'
+//import LockOpenIcon from '@material-ui/icons/LockOpen';
+import DescriptionIcon from '@material-ui/icons/Description';
 
 //import NotInterestedIcon from '@material-ui/icons/NotInterested';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 //import CopyrightIcon from '@material-ui/icons/Copyright';
 import LockIcon from '@material-ui/icons/Lock';
-import NoEncryptionIcon from '@material-ui/icons/NoEncryption';
+//import NoEncryptionIcon from '@material-ui/icons/NoEncryption';
 
 function TooltipText(tooltip, text) {
     /** 
@@ -111,14 +113,12 @@ function getColumns(data, year) {
                 "sort": true,
                 "customBodyRenderLite": (dataIndex) => {
                     const x = data[dataIndex]['license'];
-                    if (['C(S)', 'F(A)'].includes(x)) {
-                        return TooltipText(licenses[x], <LockOpenIcon color={'action'} />);
+                    if (['C(S)', 'F(A)','F'].includes(x)) {
+                        return TooltipText(licenses[x], <DescriptionIcon color={'action'} />);
                     } else if (['C(C)'].includes(x)) {
                         return TooltipText(licenses[x], <LockIcon color={'action'} />);        
                     } else if (['OS(P)', 'OS(CL)'].includes(x)) {
-                        return TooltipText(licenses[x], <NoEncryptionIcon color={'action'} />);
-                    } else if (['F'].includes(x)) {
-                        return TooltipText(licenses[x], <span><NoEncryptionIcon color={'action'} /></span>);
+                        return TooltipText(licenses[x], <img class={'source-logo'} src={OsiLogo} alt={'abc'} />);
                     } else {
                         return TooltipText(licenses[x], x);
                     }
