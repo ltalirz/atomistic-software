@@ -27,10 +27,6 @@
         "citations": 2260,
         "datestamp": "2021-04-10"
       },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 309,
-        "datestamp": "2021-04-10"
-      },
       "BAGEL": {
         "citations": 34,
         "datestamp": "2021-04-10"
@@ -398,6 +394,10 @@
       "ESPResSo": {
         "citations": 87,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 492,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -519,10 +519,6 @@
       },
       "YASARA": {
         "citations": 379,
-        "datestamp": "2021-01-04"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 315,
         "datestamp": "2021-01-04"
       },
       "Jaguar": {
@@ -812,6 +808,10 @@
       "ESPResSo": {
         "citations": 96,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 390,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -933,10 +933,6 @@
       },
       "YASARA": {
         "citations": 350,
-        "datestamp": "2021-01-04"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 373,
         "datestamp": "2021-01-04"
       },
       "Jaguar": {
@@ -1226,6 +1222,10 @@
       "ESPResSo": {
         "citations": 107,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 385,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -1347,10 +1347,6 @@
       },
       "YASARA": {
         "citations": 288,
-        "datestamp": "2021-01-07"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 358,
         "datestamp": "2021-01-07"
       },
       "Jaguar": {
@@ -1640,6 +1636,10 @@
       "ESPResSo": {
         "citations": 81,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 355,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -1761,10 +1761,6 @@
       },
       "YASARA": {
         "citations": 298,
-        "datestamp": "2021-01-07"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 269,
         "datestamp": "2021-01-07"
       },
       "Jaguar": {
@@ -2054,6 +2050,10 @@
       "ESPResSo": {
         "citations": 86,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 267,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -2175,10 +2175,6 @@
       },
       "YASARA": {
         "citations": 278,
-        "datestamp": "2021-01-07"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 202,
         "datestamp": "2021-01-07"
       },
       "Jaguar": {
@@ -2468,6 +2464,10 @@
       "ESPResSo": {
         "citations": 99,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 203,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -2493,10 +2493,6 @@
       },
       "Amber": {
         "citations": 1450,
-        "datestamp": "2021-01-17"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 216,
         "datestamp": "2021-01-17"
       },
       "BAGEL": {
@@ -2882,6 +2878,10 @@
       "ESPResSo": {
         "citations": 63,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 218,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -2907,10 +2907,6 @@
       },
       "Amber": {
         "citations": 1420,
-        "datestamp": "2021-01-17"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 147,
         "datestamp": "2021-01-17"
       },
       "BAGEL": {
@@ -3296,6 +3292,10 @@
       "ESPResSo": {
         "citations": 77,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 148,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -3321,10 +3321,6 @@
       },
       "Amber": {
         "citations": 1300,
-        "datestamp": "2021-01-17"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 147,
         "datestamp": "2021-01-17"
       },
       "BAGEL": {
@@ -3710,6 +3706,10 @@
       "ESPResSo": {
         "citations": 56,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 149,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -3735,10 +3735,6 @@
       },
       "Amber": {
         "citations": 1230,
-        "datestamp": "2021-01-17"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 112,
         "datestamp": "2021-01-17"
       },
       "BAGEL": {
@@ -4124,6 +4120,10 @@
       "ESPResSo": {
         "citations": 38,
         "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 112,
+        "datestamp": "2021-06-16"
       }
     }
   },
@@ -4153,10 +4153,6 @@
       },
       "Amber": {
         "citations": 1110,
-        "datestamp": "2021-04-10"
-      },
-      "Atomistix ToolKit (ATK)": {
-        "citations": 69,
         "datestamp": "2021-04-10"
       },
       "BAGEL": {
@@ -4525,6 +4521,10 @@
       },
       "ESPResSo": {
         "citations": 47,
+        "datestamp": "2021-06-16"
+      },
+      "ATK/QuantumATK": {
+        "citations": 69,
         "datestamp": "2021-06-16"
       }
     }

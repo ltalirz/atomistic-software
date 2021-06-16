@@ -74,14 +74,14 @@
       "PI_member"
     ]
   },
-  "Atomistix ToolKit (ATK)": {
+  "ATK/QuantumATK": {
     "author_name": "QuantumWise",
     "homepage": "https://quantumwise.com/",
     "license": "C(C)",
     "license_annotation": null,
-    "name": "Atomistix ToolKit (ATK)",
+    "name": "ATK/QuantumATK",
     "query_method": "search term",
-    "query_string": "\"Atomistix ToolKit\"",
+    "query_string": "\"Atomistix ToolKit\" OR QuantumATK",
     "tags": [
       "PBC"
     ],
