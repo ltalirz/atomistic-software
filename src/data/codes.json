@@ -400,14 +400,14 @@
       "data_collaboration"
     ]
   },
-  "ESPResSo and ESPResso++": {
+  "ESPResSo": {
     "author_name": "Holm",
     "homepage": "https://espressomd.org/",
     "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "ESPResSo and ESPResso++",
+    "license_annotation": "GPL-3.0",
+    "name": "ESPResSo",
     "query_method": "search term",
-    "query_string": "espresso Holm",
+    "query_string": "\"molecular dynamics\" OR \"soft matter\" espresso holm",
     "tags": [],
     "types": [
       "FF"
