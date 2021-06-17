@@ -41,23 +41,6 @@
     ],
     "nomad_tags": []
   },
-  "ASE/ASAP": {
-    "author_name": "Jacobsen",
-    "homepage": "https://wiki.fysik.dtu.dk/ase/index.html",
-    "license": "OS(CL)",
-    "license_annotation": null,
-    "name": "ASE/ASAP",
-    "query_method": "search term",
-    "query_string": "ASE Jacobsen",
-    "tags": [],
-    "types": [
-      "FF"
-    ],
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ]
-  },
   "Amber": {
     "author_name": "Kollman",
     "homepage": "https://ambermd.org/",
