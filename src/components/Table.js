@@ -16,6 +16,7 @@ class Table extends React.Component {
       data: getData("2020"),
       columns: null,
       options: {
+        print: false,
         filterType: "checkbox",
         sortOrder: { name: "citations", direction: "desc" },
         rowsPerPage: 100,
