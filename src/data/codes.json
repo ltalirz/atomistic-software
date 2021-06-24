@@ -338,7 +338,7 @@
       "FF",
       "DFT"
     ],
-    "notes": "See CHARMM for FF and DMol<sup>3</sup> for DFT",
+    "notes": "See CHARMM for FF and DMol3 for DFT",
     "nomad_tags": []
   },
   "Elk": {
