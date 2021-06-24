@@ -27,3 +27,15 @@ jobs:
 
     - name: Fail if there were link errors
       run: exit ${{ steps.lc.outputs.exit_code }}
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: 14.x
+      - name: Install dependencies
+        run: npm install --include=dev
+      - name: Run ESLint
+        run: npx eslint 'src/**/*js'
