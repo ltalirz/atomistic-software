@@ -4758,5 +4758,279 @@
         "datestamp": "2021-06-24"
       }
     }
+  },
+  "2008-2008": {
+    "year_low": 2008,
+    "year_high": 2008,
+    "citations": {
+      "ABINIT": {
+        "citations": 288,
+        "datestamp": "2021-06-24"
+      },
+      "ADF": {
+        "citations": 436,
+        "datestamp": "2021-06-24"
+      },
+      "Amber": {
+        "citations": 936,
+        "datestamp": "2021-06-24"
+      },
+      "ATK/QuantumATK": {
+        "citations": 46,
+        "datestamp": "2021-06-24"
+      },
+      "BOSS": {
+        "citations": 235,
+        "datestamp": "2021-06-24"
+      },
+      "CASINO": {
+        "citations": 86,
+        "datestamp": "2021-06-24"
+      },
+      "CASTEP": {
+        "citations": 481,
+        "datestamp": "2021-06-24"
+      },
+      "CFOUR": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "CHARMM": {
+        "citations": 710,
+        "datestamp": "2021-06-24"
+      },
+      "CP2K": {
+        "citations": 72,
+        "datestamp": "2021-06-24"
+      },
+      "CPMD": {
+        "citations": 196,
+        "datestamp": "2021-06-24"
+      },
+      "CRYSTAL": {
+        "citations": 148,
+        "datestamp": "2021-06-24"
+      },
+      "DFTB+": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "DIRAC": {
+        "citations": 80,
+        "datestamp": "2021-06-24"
+      },
+      "DL_POLY": {
+        "citations": 172,
+        "datestamp": "2021-06-24"
+      },
+      "DMol3": {
+        "citations": 379,
+        "datestamp": "2021-06-24"
+      },
+      "Dalton": {
+        "citations": 141,
+        "datestamp": "2021-06-24"
+      },
+      "Discovery Studio": {
+        "citations": 193,
+        "datestamp": "2021-06-24"
+      },
+      "Elk": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "EPW": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "ESPResSo": {
+        "citations": 38,
+        "datestamp": "2021-06-24"
+      },
+      "FEFF": {
+        "citations": 336,
+        "datestamp": "2021-06-24"
+      },
+      "FHI-aims": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "FPLO": {
+        "citations": 92,
+        "datestamp": "2021-06-24"
+      },
+      "FoldX": {
+        "citations": 45,
+        "datestamp": "2021-06-24"
+      },
+      "GAMESS": {
+        "citations": 772,
+        "datestamp": "2021-06-24"
+      },
+      "GPAW": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "GROMOS": {
+        "citations": 643,
+        "datestamp": "2021-06-24"
+      },
+      "GULP": {
+        "citations": 299,
+        "datestamp": "2021-06-24"
+      },
+      "Gaussian": {
+        "citations": 7000,
+        "datestamp": "2021-06-24"
+      },
+      "Gromacs": {
+        "citations": 791,
+        "datestamp": "2021-06-24"
+      },
+      "HOOMD-blue": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "Jaguar": {
+        "citations": 325,
+        "datestamp": "2021-06-24"
+      },
+      "LAMMPS": {
+        "citations": 217,
+        "datestamp": "2021-06-24"
+      },
+      "MOE": {
+        "citations": 414,
+        "datestamp": "2021-06-24"
+      },
+      "MOLCAS": {
+        "citations": 140,
+        "datestamp": "2021-06-24"
+      },
+      "OpenMolcas": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "MOPAC": {
+        "citations": 354,
+        "datestamp": "2021-06-24"
+      },
+      "MacroModel": {
+        "citations": 260,
+        "datestamp": "2021-06-24"
+      },
+      "Molpro": {
+        "citations": 610,
+        "datestamp": "2021-06-24"
+      },
+      "NAMD": {
+        "citations": 346,
+        "datestamp": "2021-06-24"
+      },
+      "NWChem": {
+        "citations": 104,
+        "datestamp": "2021-06-24"
+      },
+      "ORAC": {
+        "citations": 53,
+        "datestamp": "2021-06-24"
+      },
+      "ORCA": {
+        "citations": 113,
+        "datestamp": "2021-06-24"
+      },
+      "OpenMX": {
+        "citations": 31,
+        "datestamp": "2021-06-24"
+      },
+      "Psi4": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "Q-Chem": {
+        "citations": 140,
+        "datestamp": "2021-06-24"
+      },
+      "Quantum ESPRESSO": {
+        "citations": 199,
+        "datestamp": "2021-06-24"
+      },
+      "RASPA": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "SIESTA": {
+        "citations": 623,
+        "datestamp": "2021-06-24"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 142,
+        "datestamp": "2021-06-24"
+      },
+      "TINKER": {
+        "citations": 439,
+        "datestamp": "2021-06-24"
+      },
+      "TURBOMOLE": {
+        "citations": 515,
+        "datestamp": "2021-06-24"
+      },
+      "VASP": {
+        "citations": 2120,
+        "datestamp": "2021-06-24"
+      },
+      "WHAT IF": {
+        "citations": 214,
+        "datestamp": "2021-06-24"
+      },
+      "WIEN2k": {
+        "citations": 741,
+        "datestamp": "2021-06-24"
+      },
+      "YASARA": {
+        "citations": 53,
+        "datestamp": "2021-06-24"
+      },
+      "Yambo": {
+        "citations": 15,
+        "datestamp": "2021-06-24"
+      },
+      "exciting": {
+        "citations": 21,
+        "datestamp": "2021-06-24"
+      },
+      "octopus": {
+        "citations": 104,
+        "datestamp": "2021-06-24"
+      },
+      "xTB": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "Firefly": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "Hyperchem": {
+        "citations": 619,
+        "datestamp": "2021-06-24"
+      },
+      "PySCF": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "Desmond": {
+        "citations": 105,
+        "datestamp": "2021-06-24"
+      },
+      "OpenMM": {
+        "citations": 0,
+        "datestamp": "2021-06-24"
+      },
+      "Wannier90": {
+        "citations": 13,
+        "datestamp": "2021-06-24"
+      }
+    }
   }
 }
