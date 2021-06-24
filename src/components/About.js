@@ -1,15 +1,14 @@
 // import Chart from './Dashboard/Chart';
 // import Deposits from './Dashboard/Deposits';
-import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import ReactMarkdown from 'react-markdown';
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import ReactMarkdown from "react-markdown";
 
-import useStyles from './Dashboard/Styles';
-import Title from './Dashboard/Title';
-import packageJson from '../../package.json';
-
+import useStyles from "./Dashboard/Styles";
+import Title from "./Dashboard/Title";
+import packageJson from "../../package.json";
 
 const aboutMD = `
 *${packageJson.name}* aims to track the citation trends of all major atomistic simulation engines (see [scope](${packageJson.repository.url}#scope) and [relevance criterion](${packageJson.repository.url}#relevance)).
@@ -32,7 +31,6 @@ Approximate citation counts are obtained from [Google Scholar](https://scholar.g
 
 Click on a citation count in order to see the exact Google Scholar query that was used to extract it.
 `;
-
 
 const faqMD = `
  *  **Q**: The citation count for year XXXX reported here differs somewhat from the same citation count I see on Google Scholar. Why?
@@ -61,72 +59,72 @@ The project draws upon further great resources, including:
  * SklogWiki's [Materials modelling and computer simulation codes](https://en.wikipedia.org/wiki/Comparison_of_software_for_molecular_mechanics_modeling)
 `;
 
-
 const contactMD = `
 This page is currently maintained by [${packageJson.author.name}](${packageJson.author.url}).
 `;
 
 export default function Home() {
-    const classes = useStyles();
-    return (
-        <Grid container spacing={3}>
-            {}
-            {/* About */}
-            <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                    <React.Fragment>
-                        <Title>About</Title>
-                        <Typography component="div" variant="body1">
-                            <ReactMarkdown source={aboutMD} />
-                        </Typography>
-                    </React.Fragment>
-                </Paper>
-            </Grid>
-            {/* Methodology */}
-                        <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                    <React.Fragment>
-                        <Title>Methodology</Title>
-                        <Typography component="div" variant="body1">
-                            <ReactMarkdown source={methodologyMD} />
-                        </Typography>
-                    </React.Fragment>
-                </Paper>
-            </Grid>
-            {/* FAQ */}
-                        <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                    <React.Fragment>
-                        <Title>Frequently Asked Questions</Title>
-                        <Typography component="div" variant="body1">
-                            <ReactMarkdown source={faqMD} />
-                        </Typography>
-                    </React.Fragment>
-                </Paper>
-            </Grid>
-            {/* Acknowledgements */}
-            <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                    <React.Fragment>
-                        <Title>Acknowledgements</Title>
-                        <Typography component="div" variant="body1">
-                            <ReactMarkdown source={acknowledgementsMD} />
-                        </Typography>
-                    </React.Fragment>
-                </Paper>
-            </Grid>
-            {/* Contact */}
-            <Grid item xs={12}>
-                <Paper className={classes.paper}>
-                    <React.Fragment>
-                        <Title>Contact</Title>
-                        <Typography component="div" variant="body1">
-                            <ReactMarkdown source={contactMD} />
-                        </Typography>
-                    </React.Fragment>
-                </Paper>
-            </Grid>
-        </Grid>);
+  const classes = useStyles();
+  return (
+    <Grid container spacing={3}>
+      {}
+      {/* About */}
+      <Grid item xs={12}>
+        <Paper className={classes.paper}>
+          <React.Fragment>
+            <Title>About</Title>
+            <Typography component="div" variant="body1">
+              <ReactMarkdown source={aboutMD} />
+            </Typography>
+          </React.Fragment>
+        </Paper>
+      </Grid>
+      {/* Methodology */}
+      <Grid item xs={12}>
+        <Paper className={classes.paper}>
+          <React.Fragment>
+            <Title>Methodology</Title>
+            <Typography component="div" variant="body1">
+              <ReactMarkdown source={methodologyMD} />
+            </Typography>
+          </React.Fragment>
+        </Paper>
+      </Grid>
+      {/* FAQ */}
+      <Grid item xs={12}>
+        <Paper className={classes.paper}>
+          <React.Fragment>
+            <Title>Frequently Asked Questions</Title>
+            <Typography component="div" variant="body1">
+              <ReactMarkdown source={faqMD} />
+            </Typography>
+          </React.Fragment>
+        </Paper>
+      </Grid>
+      {/* Acknowledgements */}
+      <Grid item xs={12}>
+        <Paper className={classes.paper}>
+          <React.Fragment>
+            <Title>Acknowledgements</Title>
+            <Typography component="div" variant="body1">
+              <ReactMarkdown source={acknowledgementsMD} />
+            </Typography>
+          </React.Fragment>
+        </Paper>
+      </Grid>
+      {/* Contact */}
+      <Grid item xs={12}>
+        <Paper className={classes.paper}>
+          <React.Fragment>
+            <Title>Contact</Title>
+            <Typography component="div" variant="body1">
+              <ReactMarkdown source={contactMD} />
+            </Typography>
+          </React.Fragment>
+        </Paper>
+      </Grid>
+    </Grid>
+  );
 }
 
 // {/* Chart */}

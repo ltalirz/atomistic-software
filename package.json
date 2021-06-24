@@ -16,6 +16,7 @@
     "@nivo/core": "^0.70.0",
     "@nivo/line": "^0.70.0",
     "mui-datatables": "^3.7.7",
+    "prettier": "^2.3.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-markdown": "^5.0.3",
@@ -27,9 +28,11 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "eslint": "^7.29.0",
-    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.24.0",
     "gh-pages": "^3.1.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "react-scripts": "^4.0.3",
     "source-map-explorer": "^2.5.1"
   },
@@ -39,7 +42,8 @@
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -58,5 +62,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }

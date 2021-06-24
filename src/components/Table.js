@@ -1,13 +1,12 @@
 /**
  * Overview table with all codes.
  */
-import React from 'react';
+import React from "react";
 import MUIDataTable from "mui-datatables";
 //import RangeSlider from './RangeSlider'
 
-
-import { YEARS, getData } from './Config';
-import { getColumns } from './Columns';
+import { YEARS, getData } from "./Config";
+import { getColumns } from "./Columns";
 
 class Table extends React.Component {
   constructor(props) {
@@ -17,15 +16,18 @@ class Table extends React.Component {
       data: getData("2020"),
       columns: null,
       options: {
-        'filterType': 'checkbox',
-        'sortOrder': { 'name': 'citations', 'direction': 'desc' },
-        'rowsPerPage': 100,
-      }
+        filterType: "checkbox",
+        sortOrder: { name: "citations", direction: "desc" },
+        rowsPerPage: 100,
+      },
     };
   }
 
   handleYearChange(event) {
-    this.setState({ year: event.target.value, data: getData(event.target.value) });
+    this.setState({
+      year: event.target.value,
+      data: getData(event.target.value),
+    });
   }
 
   render() {
@@ -34,9 +36,15 @@ class Table extends React.Component {
         <header className="App-header">
           <MUIDataTable
             title={
-              <h2>Citation Data &nbsp;
-              <select defaultValue={this.state.year} onChange={(event) => this.handleYearChange(event)}>
-                  {YEARS.map(x => <option key={x}>{x}</option>)}
+              <h2>
+                Citation Data &nbsp;
+                <select
+                  defaultValue={this.state.year}
+                  onChange={(event) => this.handleYearChange(event)}
+                >
+                  {YEARS.map((x) => (
+                    <option key={x}>{x}</option>
+                  ))}
                 </select>
               </h2>
             }

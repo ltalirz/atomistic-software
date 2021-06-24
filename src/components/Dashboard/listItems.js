@@ -1,33 +1,33 @@
-import React from 'react';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InfoIcon from '@material-ui/icons/Info';
+import React from "react";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import InfoIcon from "@material-ui/icons/Info";
 // import HomeIcon from '@material-ui/icons/Home';
-import EqualizerIcon from '@material-ui/icons/Equalizer';
-import TableChartIcon from '@material-ui/icons/TableChart';
+import EqualizerIcon from "@material-ui/icons/Equalizer";
+import TableChartIcon from "@material-ui/icons/TableChart";
 
 export const mainListItems = (
   <div>
-{/* {      <ListItem button component={"a"} href={'#/'}>
+    {/* {      <ListItem button component={"a"} href={'#/'}>
       <ListItemIcon>
         <HomeIcon />
       </ListItemIcon>
       <ListItemText primary="Home" />
     </ListItem>} */}
-    <ListItem button component={"a"} href={'#/table'}>
+    <ListItem button component={"a"} href={"#/table"}>
       <ListItemIcon>
         <TableChartIcon />
       </ListItemIcon>
       <ListItemText primary="Table" />
     </ListItem>
-    <ListItem button component={"a"} href={'#/stats'}>
+    <ListItem button component={"a"} href={"#/stats"}>
       <ListItemIcon>
         <EqualizerIcon />
       </ListItemIcon>
       <ListItemText primary="Statistics" />
     </ListItem>
-    <ListItem button component={"a"} href={'#/about'}>
+    <ListItem button component={"a"} href={"#/about"}>
       <ListItemIcon>
         <InfoIcon />
       </ListItemIcon>
