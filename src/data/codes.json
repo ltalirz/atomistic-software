@@ -922,7 +922,7 @@
     "license_annotation": null,
     "name": "TB-LMTO-ASA",
     "query_method": "search term",
-    "query_string": "\"TB-LMTO\" \"Andersen\"",
+    "query_string": "\"TB-LMTO-ASA\"",
     "tags": [
       "AE",
       "(L)MTO"

@@ -375,10 +375,6 @@
         "citations": 25,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 84,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 805,
         "datestamp": "2021-05-06"
@@ -390,6 +386,10 @@
       "ATK/QuantumATK": {
         "citations": 492,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 84,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -781,10 +781,6 @@
         "citations": 23,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 84,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 587,
         "datestamp": "2021-05-06"
@@ -796,6 +792,10 @@
       "ATK/QuantumATK": {
         "citations": 390,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 81,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -1187,10 +1187,6 @@
         "citations": 28,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 88,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 548,
         "datestamp": "2021-05-06"
@@ -1202,6 +1198,10 @@
       "ATK/QuantumATK": {
         "citations": 385,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 88,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -1593,10 +1593,6 @@
         "citations": 36,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 88,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 489,
         "datestamp": "2021-05-06"
@@ -1608,6 +1604,10 @@
       "ATK/QuantumATK": {
         "citations": 355,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 96,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -1999,10 +1999,6 @@
         "citations": 35,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 112,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 424,
         "datestamp": "2021-05-06"
@@ -2014,6 +2010,10 @@
       "ATK/QuantumATK": {
         "citations": 267,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 118,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -2405,10 +2405,6 @@
         "citations": 34,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 141,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 361,
         "datestamp": "2021-05-06"
@@ -2420,6 +2416,10 @@
       "ATK/QuantumATK": {
         "citations": 203,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 131,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -2811,10 +2811,6 @@
         "citations": 50,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 120,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 339,
         "datestamp": "2021-05-06"
@@ -2826,6 +2822,10 @@
       "ATK/QuantumATK": {
         "citations": 218,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 126,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -3217,10 +3217,6 @@
         "citations": 40,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 173,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 228,
         "datestamp": "2021-05-06"
@@ -3232,6 +3228,10 @@
       "ATK/QuantumATK": {
         "citations": 148,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 134,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -3623,10 +3623,6 @@
         "citations": 37,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 154,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 174,
         "datestamp": "2021-05-06"
@@ -3638,6 +3634,10 @@
       "ATK/QuantumATK": {
         "citations": 149,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 122,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -4029,10 +4029,6 @@
         "citations": 53,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 134,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 121,
         "datestamp": "2021-05-06"
@@ -4044,6 +4040,10 @@
       "ATK/QuantumATK": {
         "citations": 112,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 112,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -4423,10 +4423,6 @@
         "citations": 74,
         "datestamp": "2021-05-06"
       },
-      "TB-LMTO-ASA": {
-        "citations": 108,
-        "datestamp": "2021-05-06"
-      },
       "CP2K": {
         "citations": 114,
         "datestamp": "2021-05-06"
@@ -4438,6 +4434,10 @@
       "ATK/QuantumATK": {
         "citations": 69,
         "datestamp": "2021-06-16"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 112,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -4641,10 +4641,6 @@
         "citations": 604,
         "datestamp": "2021-06-24"
       },
-      "TB-LMTO-ASA": {
-        "citations": 115,
-        "datestamp": "2021-06-24"
-      },
       "TINKER": {
         "citations": 433,
         "datestamp": "2021-06-24"
@@ -4708,6 +4704,10 @@
       "Wannier90": {
         "citations": 14,
         "datestamp": "2021-06-24"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 94,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -4911,10 +4911,6 @@
         "citations": 623,
         "datestamp": "2021-06-24"
       },
-      "TB-LMTO-ASA": {
-        "citations": 142,
-        "datestamp": "2021-06-24"
-      },
       "TINKER": {
         "citations": 439,
         "datestamp": "2021-06-24"
@@ -4978,6 +4974,10 @@
       "Wannier90": {
         "citations": 13,
         "datestamp": "2021-06-24"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 116,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -5181,10 +5181,6 @@
         "citations": 483,
         "datestamp": "2021-06-24"
       },
-      "TB-LMTO-ASA": {
-        "citations": 159,
-        "datestamp": "2021-06-24"
-      },
       "TINKER": {
         "citations": 404,
         "datestamp": "2021-06-24"
@@ -5248,6 +5244,10 @@
       "Wannier90": {
         "citations": 0,
         "datestamp": "2021-06-24"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 117,
+        "datestamp": "2021-06-27"
       }
     }
   }
