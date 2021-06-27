@@ -195,10 +195,6 @@
         "citations": 88,
         "datestamp": "2021-04-10"
       },
-      "ORAC": {
-        "citations": 112,
-        "datestamp": "2021-04-10"
-      },
       "ORCA": {
         "citations": 1640,
         "datestamp": "2021-04-10"
@@ -637,10 +633,6 @@
         "citations": 32,
         "datestamp": "2021-01-04"
       },
-      "ORAC": {
-        "citations": 121,
-        "datestamp": "2021-01-04"
-      },
       "Smeagol": {
         "citations": 17,
         "datestamp": "2021-01-04"
@@ -1045,10 +1037,6 @@
       },
       "Qbox": {
         "citations": 36,
-        "datestamp": "2021-01-04"
-      },
-      "ORAC": {
-        "citations": 107,
         "datestamp": "2021-01-04"
       },
       "Smeagol": {
@@ -1457,10 +1445,6 @@
         "citations": 31,
         "datestamp": "2021-01-07"
       },
-      "ORAC": {
-        "citations": 101,
-        "datestamp": "2021-01-07"
-      },
       "Smeagol": {
         "citations": 24,
         "datestamp": "2021-01-07"
@@ -1865,10 +1849,6 @@
       },
       "Qbox": {
         "citations": 21,
-        "datestamp": "2021-01-07"
-      },
-      "ORAC": {
-        "citations": 95,
         "datestamp": "2021-01-07"
       },
       "Smeagol": {
@@ -2277,10 +2257,6 @@
         "citations": 27,
         "datestamp": "2021-01-07"
       },
-      "ORAC": {
-        "citations": 103,
-        "datestamp": "2021-01-07"
-      },
       "Smeagol": {
         "citations": 35,
         "datestamp": "2021-01-07"
@@ -2641,10 +2617,6 @@
       },
       "ONETEP": {
         "citations": 44,
-        "datestamp": "2021-01-17"
-      },
-      "ORAC": {
-        "citations": 85,
         "datestamp": "2021-01-17"
       },
       "ORCA": {
@@ -3053,10 +3025,6 @@
         "citations": 46,
         "datestamp": "2021-01-17"
       },
-      "ORAC": {
-        "citations": 81,
-        "datestamp": "2021-01-17"
-      },
       "ORCA": {
         "citations": 467,
         "datestamp": "2021-01-17"
@@ -3463,10 +3431,6 @@
         "citations": 39,
         "datestamp": "2021-01-17"
       },
-      "ORAC": {
-        "citations": 97,
-        "datestamp": "2021-01-17"
-      },
       "ORCA": {
         "citations": 404,
         "datestamp": "2021-01-17"
@@ -3871,10 +3835,6 @@
       },
       "ONETEP": {
         "citations": 36,
-        "datestamp": "2021-01-17"
-      },
-      "ORAC": {
-        "citations": 63,
         "datestamp": "2021-01-17"
       },
       "ORCA": {
@@ -4291,10 +4251,6 @@
         "citations": 30,
         "datestamp": "2021-04-10"
       },
-      "ORAC": {
-        "citations": 75,
-        "datestamp": "2021-04-10"
-      },
       "ORCA": {
         "citations": 192,
         "datestamp": "2021-04-10"
@@ -4657,10 +4613,6 @@
         "citations": 110,
         "datestamp": "2021-06-24"
       },
-      "ORAC": {
-        "citations": 54,
-        "datestamp": "2021-06-24"
-      },
       "ORCA": {
         "citations": 171,
         "datestamp": "2021-06-24"
@@ -4931,10 +4883,6 @@
         "citations": 104,
         "datestamp": "2021-06-24"
       },
-      "ORAC": {
-        "citations": 53,
-        "datestamp": "2021-06-24"
-      },
       "ORCA": {
         "citations": 113,
         "datestamp": "2021-06-24"
@@ -5203,10 +5151,6 @@
       },
       "NWChem": {
         "citations": 107,
-        "datestamp": "2021-06-24"
-      },
-      "ORAC": {
-        "citations": 52,
         "datestamp": "2021-06-24"
       },
       "ORCA": {

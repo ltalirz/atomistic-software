@@ -779,20 +779,6 @@
       "PI_member"
     ]
   },
-  "ORAC": {
-    "author_name": "Marchi",
-    "homepage": "http://www.chim.unifi.it/orac/",
-    "license": "OS(CL)",
-    "license_annotation": "GPL",
-    "name": "ORAC",
-    "query_method": "search term",
-    "query_string": "ORAC Marchi",
-    "tags": [],
-    "types": [
-      "FF"
-    ],
-    "nomad_tags": []
-  },
   "ORCA": {
     "author_name": "Neese",
     "homepage": "https://orcaforum.kofo.mpg.de/app.php/portal",
