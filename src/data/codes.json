@@ -572,7 +572,7 @@
     "license_annotation": "LGPL-2.1-or-later",
     "name": "Gromacs",
     "query_method": "search term",
-    "query_string": "GROMACS Lindahl ",
+    "query_string": "\"GROMACS\" Lindahl OR Berendsen",
     "tags": [],
     "types": [
       "FF"

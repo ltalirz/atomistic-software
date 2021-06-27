@@ -359,10 +359,6 @@
         "citations": 187,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 3160,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 172,
         "datestamp": "2021-04-24"
@@ -389,6 +385,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 84,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 4630,
         "datestamp": "2021-06-27"
       }
     }
@@ -765,10 +765,6 @@
         "citations": 212,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 2560,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 147,
         "datestamp": "2021-04-24"
@@ -795,6 +791,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 81,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 3770,
         "datestamp": "2021-06-27"
       }
     }
@@ -1171,10 +1171,6 @@
         "citations": 197,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 2590,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 120,
         "datestamp": "2021-04-24"
@@ -1201,6 +1197,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 88,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 3660,
         "datestamp": "2021-06-27"
       }
     }
@@ -1577,10 +1577,6 @@
         "citations": 153,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 2230,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 81,
         "datestamp": "2021-04-24"
@@ -1607,6 +1603,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 96,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 3180,
         "datestamp": "2021-06-27"
       }
     }
@@ -1983,10 +1983,6 @@
         "citations": 144,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 2220,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 55,
         "datestamp": "2021-04-24"
@@ -2013,6 +2009,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 118,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 3000,
         "datestamp": "2021-06-27"
       }
     }
@@ -2389,10 +2389,6 @@
         "citations": 125,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 2080,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 43,
         "datestamp": "2021-04-24"
@@ -2419,6 +2415,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 131,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 2680,
         "datestamp": "2021-06-27"
       }
     }
@@ -2795,10 +2795,6 @@
         "citations": 104,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 1950,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 30,
         "datestamp": "2021-04-24"
@@ -2825,6 +2821,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 126,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 2540,
         "datestamp": "2021-06-27"
       }
     }
@@ -3201,10 +3201,6 @@
         "citations": 99,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 1730,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 20,
         "datestamp": "2021-04-24"
@@ -3231,6 +3227,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 134,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 2220,
         "datestamp": "2021-06-27"
       }
     }
@@ -3607,10 +3607,6 @@
         "citations": 75,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 1460,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 0,
         "datestamp": "2021-04-24"
@@ -3637,6 +3633,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 122,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 1820,
         "datestamp": "2021-06-27"
       }
     }
@@ -4013,10 +4013,6 @@
         "citations": 51,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 1300,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 0,
         "datestamp": "2021-04-24"
@@ -4043,6 +4039,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 112,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 1590,
         "datestamp": "2021-06-27"
       }
     }
@@ -4407,10 +4407,6 @@
         "citations": 38,
         "datestamp": "2021-04-20"
       },
-      "Gromacs": {
-        "citations": 1050,
-        "datestamp": "2021-04-20"
-      },
       "RASPA": {
         "citations": 0,
         "datestamp": "2021-04-24"
@@ -4437,6 +4433,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 112,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 1300,
         "datestamp": "2021-06-27"
       }
     }
@@ -4563,10 +4563,6 @@
       },
       "Gaussian": {
         "citations": 7640,
-        "datestamp": "2021-06-24"
-      },
-      "Gromacs": {
-        "citations": 882,
         "datestamp": "2021-06-24"
       },
       "HOOMD-blue": {
@@ -4708,6 +4704,10 @@
       "TB-LMTO-ASA": {
         "citations": 94,
         "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 1120,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -4833,10 +4833,6 @@
       },
       "Gaussian": {
         "citations": 7000,
-        "datestamp": "2021-06-24"
-      },
-      "Gromacs": {
-        "citations": 791,
         "datestamp": "2021-06-24"
       },
       "HOOMD-blue": {
@@ -4978,6 +4974,10 @@
       "TB-LMTO-ASA": {
         "citations": 116,
         "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 1030,
+        "datestamp": "2021-06-27"
       }
     }
   },
@@ -5103,10 +5103,6 @@
       },
       "Gaussian": {
         "citations": 6460,
-        "datestamp": "2021-06-24"
-      },
-      "Gromacs": {
-        "citations": 572,
         "datestamp": "2021-06-24"
       },
       "HOOMD-blue": {
@@ -5247,6 +5243,10 @@
       },
       "TB-LMTO-ASA": {
         "citations": 117,
+        "datestamp": "2021-06-27"
+      },
+      "Gromacs": {
+        "citations": 738,
         "datestamp": "2021-06-27"
       }
     }
