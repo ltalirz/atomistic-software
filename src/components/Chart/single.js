@@ -116,11 +116,11 @@ function nivoChart(data, title, legend=true) {
   return (
     <React.Fragment>
         <Title>{title}</Title>
-        <div className="chart">
+        <div className="chart" >
         <ResponsiveLine
           title={title}
           data={data}
-          margin={{ top: 50, right: margin_right, bottom: 50, left: 70 }}
+          margin={{ top: 20, right: margin_right, bottom: 50, left: 70 }}
           xScale={{ type: "point" }}
           yScale={{
             type: "linear",
