@@ -43,6 +43,12 @@ If you're not familiar with GitHub or don't have time to add the engine yourself
 
 The second step can also be performed in an automated way by the maintainer of this repository.
 
+## License
+
+The web application is licensed under the [Affero General Public License version 3 (AGPL-3.0-only)](./LICENSE).
+
+The data set in [src/data](./src/data) is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International license (CC-BY-SA-4.0)](http://creativecommons.org/licenses/by-sa/4.0/).
+
 ## Developing the app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
