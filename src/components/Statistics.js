@@ -176,10 +176,22 @@ function relativeGrowthList(data) {
 //     );
 // }
 
-function Card(title, message, footnote = "", size) {
+function Card(title, message, footnote = "", widthSmall, widthLarge= null) {
+  /**
+   * Returns Grid component wrapped in Paper.
+   * 
+   * @param title - Title of card
+   * @param message - Content of the card
+   * @param footnote - Display below content
+   * @param widthSmall - Width of card when viewpoint is small
+   * @param widthLarge - Width of card when viewpoint is large
+   */
   const classes = useStyles();
+  if (! widthSmall) {
+    widthSmall = widthLarge;
+  }
   return [
-    <Grid item xs={size}>
+    <Grid item sm={widthSmall} md={widthLarge}>
       <Paper className={classes.paper}>
         <React.Fragment>
           <Title>{title}</Title>
@@ -204,32 +216,32 @@ export default function Home() {
         "Highly cited in " + CURRENT_YEAR,
         totalList(GROWTH["total"].slice(0, 10)),
         "",
-        4
+        12, 4
       )}
       {Card(
         "High citation growth " + CURRENT_YEAR,
         absoluteGrowthList(GROWTH["absoluteGrowth"].slice(0, 10)),
         "With respect to " + (CURRENT_YEAR - 1) + ".",
-        4
+        12,4
       )}
       {Card(
         "High relative citation growth " + CURRENT_YEAR,
         relativeGrowthList(GROWTH["relativeGrowth"].slice(0, 10)),
         "With respect to " + (CURRENT_YEAR - 1) + ".",
-        4
+        12,4
       )}
       {Card(
         "Citations commercial vs free",
         costGraph(),
         "'Free' includes engines that are free for academic use only.",
-        11
+        12
       )}
       {Card(
         "Citations by source code availability",
         sourceGraph(),
         "'Source available' includes engines whose source code can be obtained for free or for a fee. " +
           "'Open-source' includes only OSI-approved licenses.",
-        11
+        12
       )}
     </Grid>
   );

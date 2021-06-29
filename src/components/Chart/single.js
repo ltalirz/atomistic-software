@@ -1,5 +1,11 @@
 import React from "react";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import Title from "../Dashboard/Title";
+import useStyles from "../Dashboard/Styles";
+
 import { ResponsiveLine } from "@nivo/line";
+
 
 import { getCodeCitations } from "../Config";
 import { useParams } from "react-router-dom";
@@ -55,10 +61,19 @@ function SingleChart() {
    *
    * Name of code is parsed from URI.
    */
+
   let codeName = decodeURIComponent(useParams()["code"]);
   const citations = getCodeCitations([codeName]);
   const title = getTitle(codeName, citations);
-  return nivoChart([{ id: codeName, data: citations }], title, false);
+  const classes = useStyles();
+
+  const data = { id: codeName, data: citations };
+
+  return (
+    <Paper className={classes.paper}>
+      {nivoChart([data], title, false)}
+    </Paper>
+  );
 }
 
 function nivoChart(data, title, legend=true) {
@@ -95,12 +110,13 @@ function nivoChart(data, title, legend=true) {
       },
     ];
     margin_right = 130;
-  }
+  };
+
 
   return (
-    <div className="container">
-      <h2 id="title">{title}</h2>
-      <div className="chart">
+    <React.Fragment>
+        <Title>{title}</Title>
+        <div className="chart">
         <ResponsiveLine
           title={title}
           data={data}
@@ -138,8 +154,8 @@ function nivoChart(data, title, legend=true) {
           animate={false}
           theme={THEME}
         />
-      </div>
-    </div>
+        </div>
+      </React.Fragment>
   );
 }
 
