@@ -20,6 +20,7 @@ class Table extends React.Component {
         filterType: "checkbox",
         sortOrder: { name: "citations", direction: "desc" },
         rowsPerPage: 100,
+        selectableRows: false,
       },
     };
   }
