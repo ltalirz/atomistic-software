@@ -43,10 +43,6 @@
         "citations": 128,
         "datestamp": "2021-04-10"
       },
-      "CASTEP": {
-        "citations": 1250,
-        "datestamp": "2021-04-10"
-      },
       "CFOUR": {
         "citations": 205,
         "datestamp": "2021-04-10"
@@ -390,6 +386,10 @@
       "Gromacs": {
         "citations": 4630,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 1830,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -423,10 +423,6 @@
       },
       "WIEN2k": {
         "citations": 1300,
-        "datestamp": "2021-01-04"
-      },
-      "CASTEP": {
-        "citations": 1100,
         "datestamp": "2021-01-04"
       },
       "NAMD": {
@@ -796,6 +792,10 @@
       "Gromacs": {
         "citations": 3770,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 1690,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -829,10 +829,6 @@
       },
       "WIEN2k": {
         "citations": 1210,
-        "datestamp": "2021-01-04"
-      },
-      "CASTEP": {
-        "citations": 1110,
         "datestamp": "2021-01-04"
       },
       "NAMD": {
@@ -1202,6 +1198,10 @@
       "Gromacs": {
         "citations": 3660,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 1600,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -1235,10 +1235,6 @@
       },
       "WIEN2k": {
         "citations": 1150,
-        "datestamp": "2021-01-07"
-      },
-      "CASTEP": {
-        "citations": 1010,
         "datestamp": "2021-01-07"
       },
       "NAMD": {
@@ -1608,6 +1604,10 @@
       "Gromacs": {
         "citations": 3180,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 1590,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -1641,10 +1641,6 @@
       },
       "WIEN2k": {
         "citations": 1200,
-        "datestamp": "2021-01-07"
-      },
-      "CASTEP": {
-        "citations": 1070,
         "datestamp": "2021-01-07"
       },
       "NAMD": {
@@ -2014,6 +2010,10 @@
       "Gromacs": {
         "citations": 3000,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 1370,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -2047,10 +2047,6 @@
       },
       "WIEN2k": {
         "citations": 1150,
-        "datestamp": "2021-01-07"
-      },
-      "CASTEP": {
-        "citations": 998,
         "datestamp": "2021-01-07"
       },
       "NAMD": {
@@ -2420,6 +2416,10 @@
       "Gromacs": {
         "citations": 2680,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 1300,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -2461,10 +2461,6 @@
       },
       "CASINO": {
         "citations": 143,
-        "datestamp": "2021-01-17"
-      },
-      "CASTEP": {
-        "citations": 1020,
         "datestamp": "2021-01-17"
       },
       "CFOUR": {
@@ -2826,6 +2822,10 @@
       "Gromacs": {
         "citations": 2540,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 1190,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -2867,10 +2867,6 @@
       },
       "CASINO": {
         "citations": 124,
-        "datestamp": "2021-01-17"
-      },
-      "CASTEP": {
-        "citations": 882,
         "datestamp": "2021-01-17"
       },
       "CFOUR": {
@@ -3232,6 +3228,10 @@
       "Gromacs": {
         "citations": 2220,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 1040,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -3273,10 +3273,6 @@
       },
       "CASINO": {
         "citations": 98,
-        "datestamp": "2021-01-17"
-      },
-      "CASTEP": {
-        "citations": 815,
         "datestamp": "2021-01-17"
       },
       "CFOUR": {
@@ -3638,6 +3634,10 @@
       "Gromacs": {
         "citations": 1820,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 950,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -3679,10 +3679,6 @@
       },
       "CASINO": {
         "citations": 117,
-        "datestamp": "2021-01-17"
-      },
-      "CASTEP": {
-        "citations": 732,
         "datestamp": "2021-01-17"
       },
       "CFOUR": {
@@ -4044,6 +4040,10 @@
       "Gromacs": {
         "citations": 1590,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 837,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -4089,10 +4089,6 @@
       },
       "CASINO": {
         "citations": 105,
-        "datestamp": "2021-04-10"
-      },
-      "CASTEP": {
-        "citations": 653,
         "datestamp": "2021-04-10"
       },
       "CFOUR": {
@@ -4438,6 +4434,10 @@
       "Gromacs": {
         "citations": 1300,
         "datestamp": "2021-06-27"
+      },
+      "CASTEP": {
+        "citations": 745,
+        "datestamp": "2021-06-30"
       }
     }
   }

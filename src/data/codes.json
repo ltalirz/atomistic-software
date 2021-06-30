@@ -123,7 +123,7 @@
     "license_annotation": "Free for academic use in UK",
     "name": "CASTEP",
     "query_method": "search term",
-    "query_string": "CASTEP Payne",
+    "query_string": "\"CASTEP\" \"Payne\" OR \"Materials Studio\" OR \"Material Studio\"",
     "tags": [
       "PBC",
       "PAW",
