@@ -84,6 +84,7 @@ function costGraph() {
   let groups = {
     "Free (general)": ["F", "OS(CL)", "OS(P)"],
     "Free (academic)": [ "F(A)"],
+    "Free (sum)": ["F", "F(A)", "OS(CL)", "OS(P)"],
     Commercial: ["C(C)", "C(S)"],
   };
 

@@ -1004,7 +1004,7 @@
     "license_annotation": "Discontinued.",
     "name": "WHAT IF",
     "query_method": "search term",
-    "query_string": "\"WHAT IF\" Vriend",
+    "query_string": "\"WHAT IF\" \"Vriend\" molecular",
     "tags": [],
     "types": [
       "FF"

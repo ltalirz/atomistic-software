@@ -267,10 +267,6 @@
         "citations": 44,
         "datestamp": "2021-04-10"
       },
-      "WHAT IF": {
-        "citations": 179,
-        "datestamp": "2021-04-10"
-      },
       "WIEN2k": {
         "citations": 1340,
         "datestamp": "2021-04-10"
@@ -389,6 +385,10 @@
       },
       "CASTEP": {
         "citations": 1830,
+        "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 128,
         "datestamp": "2021-06-30"
       }
     }
@@ -519,10 +519,6 @@
       },
       "octopus": {
         "citations": 248,
-        "datestamp": "2021-01-04"
-      },
-      "WHAT IF": {
-        "citations": 150,
         "datestamp": "2021-01-04"
       },
       "GPAW": {
@@ -796,6 +792,10 @@
       "CASTEP": {
         "citations": 1690,
         "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 97,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -925,10 +925,6 @@
       },
       "octopus": {
         "citations": 236,
-        "datestamp": "2021-01-04"
-      },
-      "WHAT IF": {
-        "citations": 170,
         "datestamp": "2021-01-04"
       },
       "GPAW": {
@@ -1202,6 +1198,10 @@
       "CASTEP": {
         "citations": 1600,
         "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 108,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -1331,10 +1331,6 @@
       },
       "octopus": {
         "citations": 214,
-        "datestamp": "2021-01-07"
-      },
-      "WHAT IF": {
-        "citations": 147,
         "datestamp": "2021-01-07"
       },
       "GPAW": {
@@ -1608,6 +1604,10 @@
       "CASTEP": {
         "citations": 1590,
         "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 116,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -1737,10 +1737,6 @@
       },
       "octopus": {
         "citations": 178,
-        "datestamp": "2021-01-07"
-      },
-      "WHAT IF": {
-        "citations": 185,
         "datestamp": "2021-01-07"
       },
       "GPAW": {
@@ -2014,6 +2010,10 @@
       "CASTEP": {
         "citations": 1370,
         "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 145,
+        "datestamp": "2021-06-30"
       }
     }
   },
@@ -2143,10 +2143,6 @@
       },
       "octopus": {
         "citations": 200,
-        "datestamp": "2021-01-07"
-      },
-      "WHAT IF": {
-        "citations": 216,
         "datestamp": "2021-01-07"
       },
       "GPAW": {
@@ -2419,6 +2415,10 @@
       },
       "CASTEP": {
         "citations": 1300,
+        "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 159,
         "datestamp": "2021-06-30"
       }
     }
@@ -2695,10 +2695,6 @@
         "citations": 0,
         "datestamp": "2021-01-17"
       },
-      "WHAT IF": {
-        "citations": 172,
-        "datestamp": "2021-01-17"
-      },
       "WIEN2k": {
         "citations": 1080,
         "datestamp": "2021-01-17"
@@ -2825,6 +2821,10 @@
       },
       "CASTEP": {
         "citations": 1190,
+        "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 141,
         "datestamp": "2021-06-30"
       }
     }
@@ -3101,10 +3101,6 @@
         "citations": 0,
         "datestamp": "2021-01-17"
       },
-      "WHAT IF": {
-        "citations": 236,
-        "datestamp": "2021-01-17"
-      },
       "WIEN2k": {
         "citations": 1060,
         "datestamp": "2021-01-17"
@@ -3231,6 +3227,10 @@
       },
       "CASTEP": {
         "citations": 1040,
+        "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 170,
         "datestamp": "2021-06-30"
       }
     }
@@ -3507,10 +3507,6 @@
         "citations": 0,
         "datestamp": "2021-01-17"
       },
-      "WHAT IF": {
-        "citations": 241,
-        "datestamp": "2021-01-17"
-      },
       "WIEN2k": {
         "citations": 990,
         "datestamp": "2021-01-17"
@@ -3637,6 +3633,10 @@
       },
       "CASTEP": {
         "citations": 950,
+        "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 200,
         "datestamp": "2021-06-30"
       }
     }
@@ -3913,10 +3913,6 @@
         "citations": 0,
         "datestamp": "2021-01-17"
       },
-      "WHAT IF": {
-        "citations": 215,
-        "datestamp": "2021-01-17"
-      },
       "WIEN2k": {
         "citations": 823,
         "datestamp": "2021-01-17"
@@ -4043,6 +4039,10 @@
       },
       "CASTEP": {
         "citations": 837,
+        "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 171,
         "datestamp": "2021-06-30"
       }
     }
@@ -4323,10 +4323,6 @@
         "citations": 0,
         "datestamp": "2021-04-10"
       },
-      "WHAT IF": {
-        "citations": 191,
-        "datestamp": "2021-04-10"
-      },
       "WIEN2k": {
         "citations": 816,
         "datestamp": "2021-04-10"
@@ -4437,6 +4433,10 @@
       },
       "CASTEP": {
         "citations": 745,
+        "datestamp": "2021-06-30"
+      },
+      "WHAT IF": {
+        "citations": 162,
         "datestamp": "2021-06-30"
       }
     }
