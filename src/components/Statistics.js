@@ -82,7 +82,8 @@ function costGraph() {
 
   // Careful: it seems the legend coloring does not match the one of the graph automatically
   let groups = {
-    Free: ["F", "F(A)", "OS(CL)", "OS(P)"],
+    "Free (general)": ["F", "OS(CL)", "OS(P)"],
+    "Free (academic)": [ "F(A)"],
     Commercial: ["C(C)", "C(S)"],
   };
 
@@ -233,14 +234,14 @@ export default function Home() {
       {Card(
         "Citations commercial vs free",
         costGraph(),
-        "'Free' includes engines that are free for academic use only.",
+        "",
         12
       )}
       {Card(
         "Citations by source code availability",
         sourceGraph(),
-        "'Source available' includes engines whose source code can be obtained for free or for a fee. " +
-          "'Open-source' includes only OSI-approved licenses.",
+        "\"Source available\" includes engines whose source code can be obtained for free or for a fee. " +
+          "\"Open-source\" engines are the subset of source-available engines with OSI-approved licenses.",
         12
       )}
     </Grid>
