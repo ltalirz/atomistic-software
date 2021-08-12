@@ -50,7 +50,7 @@ const faqMD = `
 
 const acknowledgementsMD = `
 This project was inspired by and built upon the ["Major codes in electronic-structure theory, quantum chemistry, and molecular-dynamics"](https://www.nomad-coe.eu/old-pages/externals/codes) collection maintained by the [NOMAD Center of Excellence](https://www.nomad-coe.eu) from 2017-2019.
-Thanks go to Luca Ghiringelli for being supportive of this effort to transform the static list into an interactive app and a collaborative project.
+Thanks go to Luca Ghiringhelli for being supportive of this effort to transform the static list into an interactive app and a collaborative project.
 
 The project draws upon further great resources, including:
  * The [Google Scholar](https://scholar.google.com/) search engine for citation counts
