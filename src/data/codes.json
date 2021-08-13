@@ -50,7 +50,7 @@
     "benchmarks": [
       "Δ-value"
     ],
-    "homepage": "https://quantumwise.com/",
+    "homepage": "https://www.synopsys.com/silicon/quantumatk.html",
     "license": "C(C)",
     "license_annotation": null,
     "name": "ATK/QuantumATK",
@@ -310,7 +310,7 @@
   "DMol3": {
     "author_name": "Delley",
     "benchmarks": [],
-    "homepage": "https://www.3dsbiovia.com/products/datasheets/dmol3.pdf",
+    "homepage": "https://www.3ds.com/fileadmin/PRODUCTS-SERVICES/BIOVIA/PDF/biovia-material-studio-dmol3.pdf",
     "license": "C(C)",
     "license_annotation": null,
     "name": "DMol3",
@@ -679,7 +679,7 @@
   "Hyperchem": {
     "author_name": "Hypercube",
     "benchmarks": [],
-    "homepage": "http://www.hyper.com/?tabid=360",
+    "homepage": "http://www.hypercubeusa.com/",
     "license": "C(C)",
     "license_annotation": "",
     "name": "Hyperchem",
