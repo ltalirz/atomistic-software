@@ -80,7 +80,20 @@ function getColumns(data, year) {
         },
       },
     },
+    {
+      name: "benchmarks",
+      label: "Benchmarks",
+      options: {
+        filter: true,
+        sort: true,
+        selected: false,
+        customBodyRenderLite: (dataIndex) => {
+          const types = data[dataIndex]["benchmarks"];
+          return types.map((x) => <a href={'https://molmod.ugent.be/deltacodesdft'} target="_blank" rel="noreferrer">{x}</a>);
+        },
+      },
 
+    },
     {
       name: "tags",
       label: "Tags",
