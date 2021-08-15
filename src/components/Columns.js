@@ -59,14 +59,9 @@ function getColumns(data, year) {
       },
     },
     {
-      name: "author_name",
-      label: "Authors",
-      options: { filter: false, sort: true, selected: false, display: false },
-    },
-    {
       name: "notes",
       label: "Notes",
-      options: { filter: false, sort: true, selected: false, display: false },
+      options: { filter: false, sort: true, display: false },
     },
     {
       name: "types",
@@ -86,7 +81,7 @@ function getColumns(data, year) {
       options: {
         filter: true,
         sort: true,
-        selected: false,
+        display: false,
         customBodyRenderLite: (dataIndex) => {
           const types = data[dataIndex]["benchmarks"];
           return types.map((x) => <a href={'https://molmod.ugent.be/deltacodesdft'} target="_blank" rel="noreferrer">{x}</a>);
@@ -166,7 +161,7 @@ function getColumns(data, year) {
     {
       name: "license_annotation",
       label: "License Note",
-      options: { filter: false, sort: true, selected: false, display: false },
+      options: { filter: false, sort: true, display: false },
     },
 
     {
