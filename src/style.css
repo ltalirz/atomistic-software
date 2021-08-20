@@ -27,3 +27,7 @@ img.zenodo {
 main.makeStyles-content-12 {
   height: 100%;
 }
+
+div.markdown h1, h2, h3, h4, h5, h6{
+  font-size: 1.2em;
+}
