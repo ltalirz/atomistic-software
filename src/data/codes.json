@@ -1,9 +1,15 @@
 {
   "ABINIT": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Gonze",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": "H..Lu",
     "homepage": "https://www.abinit.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-3.0",
@@ -12,7 +18,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "ABINIT Gonze",
     "tags": [
       "PBC",
@@ -26,14 +34,20 @@
     ]
   },
   "ADF": {
+    "acceleration": [
+      "MPI"
+    ],
     "author_name": "Baerends",
     "benchmarks": [],
+    "element_coverage": "H..Lu",
     "homepage": "https://www.scm.com/product/adf/",
     "license": "C(S)",
     "license_annotation": null,
     "name": "ADF",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "ADF Baerends",
     "tags": [
       "PBC",
@@ -46,10 +60,14 @@
     ]
   },
   "ATK/QuantumATK": {
+    "acceleration": [
+      "MPI"
+    ],
     "author_name": "QuantumWise",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": null,
     "homepage": "https://www.synopsys.com/silicon/quantumatk.html",
     "license": "C(C)",
     "license_annotation": null,
@@ -60,6 +78,7 @@
     ],
     "notes": "See VASP, ABINIT, FHI-aims, Quantum ESPRESSO",
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"Atomistix ToolKit\" OR QuantumATK",
     "tags": [
       "PBC"
@@ -71,8 +90,10 @@
     ]
   },
   "Amber": {
+    "acceleration": null,
     "author_name": "Kollman",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://ambermd.org/",
     "license": "C(S)",
     "license_annotation": null,
@@ -80,7 +101,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "Amber program Kollman",
     "tags": [],
     "types": [
@@ -88,14 +111,18 @@
     ]
   },
   "BOSS": {
+    "acceleration": null,
     "author_name": "Jorgensen",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://zarbi.chem.yale.edu/software.html#boss",
     "license": "F(A)",
     "license_annotation": null,
     "name": "BOSS",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "BOSS program Jorgensen",
     "tags": [],
     "types": [
@@ -103,8 +130,12 @@
     ]
   },
   "CASINO": {
-    "author_name": "Needs and L\u00f3pez R\u00edos",
+    "acceleration": [
+      "MPI"
+    ],
+    "author_name": "Needs and López Ríos",
     "benchmarks": [],
+    "element_coverage": "H..Hg",
     "homepage": "https://vallico.net/casinoqmc/",
     "license": "F(A)",
     "license_annotation": null,
@@ -112,7 +143,9 @@
     "nomad_tags": [
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"CASINO\" \"Needs\" Rios",
     "tags": [
       "AE",
@@ -127,10 +160,15 @@
     ]
   },
   "CASTEP": {
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "author_name": "Payne",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": null,
     "homepage": "http://www.castep.org",
     "license": "F(A)",
     "license_annotation": "Free for academic use in UK",
@@ -139,7 +177,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"CASTEP\" \"Payne\" OR \"Materials Studio\" OR \"Material Studio\"",
     "tags": [
       "PBC",
@@ -153,14 +193,18 @@
     ]
   },
   "CFOUR": {
+    "acceleration": null,
     "author_name": "Stanton",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://www.cfour.de/",
     "license": "F(A)",
     "license_annotation": "Custom license agreement",
     "name": "CFOUR",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"CFOUR\" Stanton",
     "tags": [
       "AE",
@@ -172,14 +216,22 @@
     ]
   },
   "CHARMM": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Karplus",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.charmm.org/",
     "license": "C(S)",
     "license_annotation": null,
     "name": "CHARMM",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "CHARMM program Karplus",
     "tags": [],
     "types": [
@@ -187,8 +239,10 @@
     ]
   },
   "CP2K": {
+    "acceleration": null,
     "author_name": "Hutter",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.cp2k.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -196,7 +250,9 @@
     "nomad_tags": [
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"CP2K\" \"Hutter\" OR \"www.cp2k.org\"",
     "tags": [
       "PBC",
@@ -211,8 +267,10 @@
     ]
   },
   "CPMD": {
+    "acceleration": null,
     "author_name": "Hutter",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.cpmd.org/",
     "license": "F(A)",
     "license_annotation": "Early Release Software Program License Agreement For CPMD",
@@ -221,7 +279,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "CPMD Hutter",
     "tags": [
       "PBC",
@@ -233,8 +293,10 @@
     ]
   },
   "CRYSTAL": {
+    "acceleration": null,
     "author_name": "Dovesi",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.crystal.unito.it/index.php",
     "license": "C(C)",
     "license_annotation": "Free demo limited to 10 atoms per primitive cell.",
@@ -242,7 +304,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"CRYSTAL code\" OR \"CRYSTAL17\" OR \"CRYSTAL14\" OR \"CRYSTAL09\" OR \"CRYSTAL06\" Dovesi",
     "tags": [
       "PBC",
@@ -256,8 +320,10 @@
     ]
   },
   "DFTB+": {
+    "acceleration": null,
     "author_name": "Aradi",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.dftb-plus.info",
     "license": "OS(CL)",
     "license_annotation": "LGPL-3.0-or-later",
@@ -265,6 +331,7 @@
     "nomad_tags": [
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "publication",
     "query_publication_id": "11397957054615082073",
     "query_string": "B. Aradi, B. Hourahine, and Th. Frauenheim. JPC A 2007 111 (26), 5678-5684",
@@ -274,14 +341,18 @@
     ]
   },
   "DIRAC": {
+    "acceleration": null,
     "author_name": "Saue",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://www.diracprogram.org/doku.php",
     "license": "F",
     "license_annotation": "Custom license",
     "name": "DIRAC",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "DIRAC \"Saue\"",
     "tags": [
       "AE",
@@ -293,14 +364,22 @@
     ]
   },
   "DL_POLY": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Smith",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.scd.stfc.ac.uk/Pages/DL_POLY.aspx",
     "license": "F(A)",
     "license_annotation": "DL_POLY_4 licence agreement",
     "name": "DL_POLY",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"DL_POLY\" Smith",
     "tags": [],
     "types": [
@@ -308,8 +387,10 @@
     ]
   },
   "DMol3": {
+    "acceleration": null,
     "author_name": "Delley",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.3ds.com/fileadmin/PRODUCTS-SERVICES/BIOVIA/PDF/biovia-material-studio-dmol3.pdf",
     "license": "C(C)",
     "license_annotation": null,
@@ -318,7 +399,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "DMol3 OR \"DMol^3\" Delley",
     "tags": [
       "PBC",
@@ -331,15 +414,21 @@
     ]
   },
   "Dalton": {
-    "author_name": "\u00c5gren",
+    "acceleration": [
+      "MPI"
+    ],
+    "author_name": "Ågren",
     "benchmarks": [],
+    "element_coverage": "H..Og",
     "homepage": "https://daltonprogram.org/",
     "license": "OS(CL)",
     "license_annotation": "LGPL-2.1",
     "name": "Dalton",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
-    "query_string": "Dalton \u00c5gren",
+    "query_publication_id": null,
+    "query_string": "Dalton Ågren",
     "tags": [
       "GTO",
       "PP"
@@ -349,23 +438,29 @@
     ]
   },
   "Desmond": {
-    "author_name": "Schr\u00f6dinger",
+    "acceleration": null,
+    "author_name": "Schrödinger",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.schrodinger.com/products/desmond",
     "license": "F(A)",
     "license_annotation": "",
     "name": "Desmond",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
-    "query_string": "desmond schr\u00f6dinger",
+    "query_publication_id": null,
+    "query_string": "desmond schrödinger",
     "tags": [],
     "types": [
       "FF"
     ]
   },
   "Discovery Studio": {
+    "acceleration": null,
     "author_name": "Accelrys",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://en.wikipedia.org/wiki/Discovery_Studio",
     "license": "C(C)",
     "license_annotation": null,
@@ -373,6 +468,7 @@
     "nomad_tags": [],
     "notes": "See CHARMM for FF and DMol3 for DFT",
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"Discovery Studio\" Accelrys",
     "tags": [],
     "types": [
@@ -381,8 +477,10 @@
     ]
   },
   "EPW": {
+    "acceleration": null,
     "author_name": "Giustino",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://epw-code.org",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -391,7 +489,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"EPW\" Giustino",
     "tags": [
       "PBC",
@@ -403,8 +503,10 @@
     ]
   },
   "ESPResSo": {
+    "acceleration": null,
     "author_name": "Holm",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://espressomd.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-3.0",
@@ -412,7 +514,9 @@
     "nomad_tags": [
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"molecular dynamics\" OR \"soft matter\" espresso holm",
     "tags": [],
     "types": [
@@ -420,10 +524,12 @@
     ]
   },
   "Elk": {
+    "acceleration": null,
     "author_name": "Dewhurst",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": null,
     "homepage": "http://elk.sourceforge.net/",
     "license": "OS(CL)",
     "license_annotation": "GPL-3.0-or-later",
@@ -431,7 +537,9 @@
     "nomad_tags": [
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"elk.sourceforge.net\"",
     "tags": [
       "PBC",
@@ -444,8 +552,10 @@
     ]
   },
   "FEFF": {
+    "acceleration": null,
     "author_name": "Rehr",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://github.com/times-software/feff10",
     "license": "F",
     "license_annotation": "FEFF10 license",
@@ -453,7 +563,9 @@
     "nomad_tags": [
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"FEFF\" Rehr",
     "tags": [],
     "types": [
@@ -461,10 +573,16 @@
     ]
   },
   "FHI-aims": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Blum",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": "H..Md",
     "homepage": "http://www.fhi-berlin.mpg.de/aims/",
     "license": "C(S)",
     "license_annotation": null,
@@ -473,7 +591,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "FHI-aims Blum",
     "tags": [
       "PBC",
@@ -486,10 +606,12 @@
     ]
   },
   "FPLO": {
+    "acceleration": null,
     "author_name": "Koepernik",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": null,
     "homepage": "https://www.fplo.de/",
     "license": "C(S)",
     "license_annotation": null,
@@ -497,7 +619,9 @@
     "nomad_tags": [
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "FPLO Koepernik",
     "tags": [
       "PBC",
@@ -509,14 +633,18 @@
     ]
   },
   "Firefly": {
+    "acceleration": null,
     "author_name": "Granovsky",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://classic.chem.msu.su/gran/gamess/index.html",
     "license": "F",
     "license_annotation": "Firefly Quantum Chemistry Package License Agreement",
     "name": "Firefly",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "firefly \"Granovsky\"",
     "tags": [
       "AE",
@@ -529,14 +657,18 @@
     ]
   },
   "FoldX": {
+    "acceleration": null,
     "author_name": "Serrano",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://foldx.crg.es/",
     "license": "F(A)",
     "license_annotation": "2-week evaluation license also available",
     "name": "FoldX",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "FoldX Serrano",
     "tags": [],
     "types": [
@@ -544,8 +676,14 @@
     ]
   },
   "GAMESS": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Gordon",
     "benchmarks": [],
+    "element_coverage": "H..Rn",
     "homepage": "https://www.msg.chem.iastate.edu/",
     "license": "F",
     "license_annotation": "Registration required for academic and industrial users.",
@@ -553,7 +691,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "GAMESS Gordon",
     "tags": [
       "AE",
@@ -566,10 +706,12 @@
     ]
   },
   "GPAW": {
+    "acceleration": null,
     "author_name": "Mortensen",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": null,
     "homepage": "https://wiki.fysik.dtu.dk/gpaw/",
     "license": "OS(CL)",
     "license_annotation": "GPL-3.0",
@@ -577,7 +719,9 @@
     "nomad_tags": [
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "GPAW Mortensen",
     "tags": [
       "PBC",
@@ -592,14 +736,18 @@
     ]
   },
   "GROMOS": {
+    "acceleration": null,
     "author_name": "Van Gunsteren",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://www.gromos.net/",
     "license": "C(S)",
     "license_annotation": null,
     "name": "GROMOS",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "GROMOS van Gunsteren",
     "tags": [],
     "types": [
@@ -607,14 +755,18 @@
     ]
   },
   "GULP": {
+    "acceleration": null,
     "author_name": "Gale",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://gulp.curtin.edu.au/gulp/",
     "license": "F(A)",
     "license_annotation": null,
     "name": "GULP",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "GULP Gale",
     "tags": [],
     "types": [
@@ -622,8 +774,14 @@
     ]
   },
   "Gaussian": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Frisch",
     "benchmarks": [],
+    "element_coverage": "H..Rf",
     "homepage": "https://www.gaussian.com/",
     "license": "C(S)",
     "license_annotation": null,
@@ -631,7 +789,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "Frisch \"Gaussian 70\" OR \"Gaussian 76\" OR \"Gaussian 80\" OR \"Gaussian 82\" OR \"Gaussian 86\" OR \"Gaussian 88\" OR \"Gaussian 90\" OR \"Gaussian 92\" OR \"Gaussian 94\" OR \"Gaussian 98\" OR \"Gaussian 03\" OR \"Gaussian 09\" OR \"Gaussian 16\"",
     "tags": [
       "PBC",
@@ -645,8 +805,14 @@
     ]
   },
   "Gromacs": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "OpenCL"
+    ],
     "author_name": "Lindahl",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.gromacs.org/",
     "license": "OS(CL)",
     "license_annotation": "LGPL-2.1-or-later",
@@ -654,7 +820,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"GROMACS\" Lindahl OR Berendsen",
     "tags": [],
     "types": [
@@ -662,14 +830,22 @@
     ]
   },
   "HOOMD-blue": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Anderson",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://codeblue.umich.edu/hoomd-blue/index.html",
     "license": "OS(CL)",
     "license_annotation": "BSD-3-Clause",
     "name": "HOOMD-blue",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "HOOMD-blue Anderson",
     "tags": [],
     "types": [
@@ -677,14 +853,18 @@
     ]
   },
   "Hyperchem": {
+    "acceleration": null,
     "author_name": "Hypercube",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://www.hypercubeusa.com/",
     "license": "C(C)",
     "license_annotation": "",
     "name": "Hyperchem",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "hyperchem hypercube",
     "tags": [
       "GTO",
@@ -697,15 +877,22 @@
     ]
   },
   "Jaguar": {
-    "author_name": "Schr\u00f6dinger",
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
+    "author_name": "Schrödinger",
     "benchmarks": [],
+    "element_coverage": "H..Pu",
     "homepage": "https://www.schrodinger.com/Jaguar/",
     "license": "C(C)",
     "license_annotation": null,
     "name": "Jaguar",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
-    "query_string": "Jaguar Schr\u00f6dinger",
+    "query_publication_id": null,
+    "query_string": "Jaguar Schrödinger",
     "tags": [
       "AE",
       "GTO",
@@ -718,8 +905,15 @@
     ]
   },
   "LAMMPS": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda",
+      "HIP"
+    ],
     "author_name": "Plimpton",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://lammps.sandia.gov/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -727,7 +921,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "LAMMPS Plimpton",
     "tags": [],
     "types": [
@@ -735,8 +931,10 @@
     ]
   },
   "MOE": {
+    "acceleration": null,
     "author_name": "Chemical Computing Group",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.chemcomp.com/",
     "license": "C(C)",
     "license_annotation": null,
@@ -744,6 +942,7 @@
     "nomad_tags": [],
     "notes": "See Gaussian, ADF, MOPAC, GAMESS for WFM",
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "MOE \"Chemical Computing Group\"",
     "tags": [],
     "types": [
@@ -752,8 +951,12 @@
     ]
   },
   "MOLCAS": {
+    "acceleration": [
+      "MPI"
+    ],
     "author_name": "Lindh",
     "benchmarks": [],
+    "element_coverage": "H..Cm",
     "homepage": "http://www.molcas.org/",
     "license": "C(S)",
     "license_annotation": null,
@@ -761,6 +964,7 @@
     "nomad_tags": [],
     "notes": "See OpenMolcas for open-source core.",
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "MOLCAS Lindh",
     "tags": [
       "AE",
@@ -773,14 +977,21 @@
     ]
   },
   "MOPAC": {
+    "acceleration": [
+      "MPI",
+      "Cuda"
+    ],
     "author_name": "Stewart",
     "benchmarks": [],
+    "element_coverage": "H..Bi",
     "homepage": "http://openmopac.net/",
     "license": "F(A)",
     "license_annotation": "",
     "name": "MOPAC",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "MOPAC Stewart",
     "tags": [
       "PBC",
@@ -793,29 +1004,40 @@
     ]
   },
   "MacroModel": {
-    "author_name": "Schr\u00f6dinger",
+    "acceleration": null,
+    "author_name": "Schrödinger",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.schrodinger.com/MacroModel/",
     "license": "C(C)",
     "license_annotation": null,
     "name": "MacroModel",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
-    "query_string": "MacroModel Schr\u00f6dinger",
+    "query_publication_id": null,
+    "query_string": "MacroModel Schrödinger",
     "tags": [],
     "types": [
       "FF"
     ]
   },
   "Molpro": {
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "author_name": "Werner",
     "benchmarks": [],
+    "element_coverage": "H..Lr",
     "homepage": "https://www.molpro.net/",
     "license": "C(S)",
     "license_annotation": null,
     "name": "Molpro",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "Molpro Werner",
     "tags": [
       "AE",
@@ -828,8 +1050,14 @@
     ]
   },
   "NAMD": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Schulten",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www.ks.uiuc.edu/Research/namd/",
     "license": "F(A)",
     "license_annotation": null,
@@ -837,7 +1065,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"NAMD\" Schulten",
     "tags": [],
     "types": [
@@ -845,8 +1075,14 @@
     ]
   },
   "NWChem": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Valiev",
     "benchmarks": [],
+    "element_coverage": "H..Lr",
     "homepage": "https://nwchemgit.github.io/",
     "license": "OS(P)",
     "license_annotation": "ECL-2.0",
@@ -854,7 +1090,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "NWChem Valiev",
     "tags": [
       "PBC",
@@ -871,8 +1109,12 @@
     ]
   },
   "ORCA": {
+    "acceleration": [
+      "MPI"
+    ],
     "author_name": "Neese",
     "benchmarks": [],
+    "element_coverage": "H..Lr",
     "homepage": "https://orcaforum.kofo.mpg.de/app.php/portal",
     "license": "F(A)",
     "license_annotation": null,
@@ -881,7 +1123,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "ORCA Neese",
     "tags": [
       "AE",
@@ -893,15 +1137,56 @@
       "DFT"
     ]
   },
+  "Octopus": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "OpenCL"
+    ],
+    "author_name": "Rubio",
+    "benchmarks": [
+      "Δ-value"
+    ],
+    "element_coverage": "H..Lr",
+    "homepage": "https://www.tddft.org/programs/octopus/wiki/index.php/Main_Page",
+    "license": "OS(CL)",
+    "license_annotation": "GPL-2.0",
+    "name": "Octopus",
+    "nomad_tags": [
+      "PI_member",
+      "data_collaboration"
+    ],
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "octopus Rubio",
+    "tags": [
+      "PBC",
+      "PP",
+      "RS"
+    ],
+    "types": [
+      "DFT"
+    ]
+  },
   "OpenMM": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda",
+      "OpenCL"
+    ],
     "author_name": "Eastman",
     "benchmarks": [],
+    "element_coverage": "H..Rn",
     "homepage": "http://openmm.org",
     "license": "OS(P)",
     "license_annotation": "MIT",
     "name": "OpenMM",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "openmm Eastman",
     "tags": [],
     "types": [
@@ -909,16 +1194,23 @@
     ]
   },
   "OpenMX": {
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "author_name": "Ozaki",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": "H..Rn",
     "homepage": "http://www.openmx-square.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-3.0",
     "name": "OpenMX",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "OpenMX Ozaki",
     "tags": [
       "PBC",
@@ -930,14 +1222,20 @@
     ]
   },
   "OpenMolcas": {
+    "acceleration": [
+      "MPI"
+    ],
     "author_name": "Lindh",
     "benchmarks": [],
+    "element_coverage": "H..Cm",
     "homepage": "https://molcas.gitlab.io/OpenMolcas/sphinx/",
     "license": "OS(CL)",
     "license_annotation": "LGPL-2.1",
     "name": "OpenMolcas",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"Openmolcas\" Lindh",
     "tags": [
       "AE",
@@ -950,14 +1248,20 @@
     ]
   },
   "Psi4": {
+    "acceleration": [
+      "MPI"
+    ],
     "author_name": "Sherrill",
     "benchmarks": [],
+    "element_coverage": "H..Cs",
     "homepage": "https://www.psicode.org/",
     "license": "OS(CL)",
     "license_annotation": "LGPL-3.0-only",
     "name": "Psi4",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "Psi4 Sherrill",
     "tags": [
       "AE",
@@ -969,14 +1273,18 @@
     ]
   },
   "PySCF": {
+    "acceleration": null,
     "author_name": "Chan",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://pyscf.org/",
     "license": "OS(P)",
     "license_annotation": "Apache-2.0",
     "name": "PySCF",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "pyscf \"chan\"",
     "tags": [
       "GTO",
@@ -988,14 +1296,22 @@
     ]
   },
   "Q-Chem": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Shao",
     "benchmarks": [],
+    "element_coverage": "H..Og",
     "homepage": "https://www.q-chem.com/",
     "license": "C(S)",
     "license_annotation": null,
     "name": "Q-Chem",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"Q-Chem\" Shao",
     "tags": [
       "AE",
@@ -1008,10 +1324,16 @@
     ]
   },
   "Quantum ESPRESSO": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "author_name": "Giannozzi",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": null,
     "homepage": "https://www.quantum-espresso.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -1020,7 +1342,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"Quantum ESPRESSO\" Giannozzi",
     "tags": [
       "PBC",
@@ -1033,14 +1357,18 @@
     ]
   },
   "RASPA": {
+    "acceleration": null,
     "author_name": "Dubbeldam",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://github.com/iRASPA/RASPA2",
     "license": "OS(P)",
     "license_annotation": "MIT",
     "name": "RASPA",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"RASPA\" OR \"RASPA2\" Dubbeldam",
     "tags": [],
     "types": [
@@ -1048,8 +1376,10 @@
     ]
   },
   "SIESTA": {
+    "acceleration": null,
     "author_name": "Soler",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://departments.icmab.es/leem/siesta/",
     "license": "OS(CL)",
     "license_annotation": "GPL-3.0",
@@ -1058,7 +1388,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "SIESTA Soler",
     "tags": [
       "PBC",
@@ -1070,8 +1402,10 @@
     ]
   },
   "TB-LMTO-ASA": {
+    "acceleration": null,
     "author_name": "Andersen",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://www2.fkf.mpg.de/andersen/LMTODOC/LMTODOC.html",
     "license": "F(A)",
     "license_annotation": null,
@@ -1079,7 +1413,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"TB-LMTO-ASA\"",
     "tags": [
       "AE",
@@ -1091,8 +1427,15 @@
     ]
   },
   "TINKER": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda",
+      "OpenACC"
+    ],
     "author_name": "Ponder",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://dasher.wustl.edu/tinker/",
     "license": "F(A)",
     "license_annotation": null,
@@ -1100,7 +1443,9 @@
     "nomad_tags": [
       "PI_member"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "TINKER Ponder",
     "tags": [],
     "types": [
@@ -1108,8 +1453,13 @@
     ]
   },
   "TURBOMOLE": {
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "author_name": "Ahlrichs",
     "benchmarks": [],
+    "element_coverage": "H..Rn",
     "homepage": "https://www.turbomole.com/",
     "license": "C(S)",
     "license_annotation": null,
@@ -1118,7 +1468,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "TURBOMOLE Ahlrichs",
     "tags": [
       "PBC",
@@ -1132,10 +1484,16 @@
     ]
   },
   "VASP": {
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "OpenACC"
+    ],
     "author_name": "Kresse",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": "H..Pu",
     "homepage": "https://www.vasp.at/",
     "license": "C(S)",
     "license_annotation": "Free for academic use in Austria",
@@ -1144,7 +1502,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "VASP Kresse",
     "tags": [
       "PBC",
@@ -1158,14 +1518,18 @@
     ]
   },
   "WHAT IF": {
+    "acceleration": null,
     "author_name": "Vriend",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://swift.cmbi.umcn.nl/whatif/",
     "license": "C(C)",
     "license_annotation": "Discontinued.",
     "name": "WHAT IF",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"WHAT IF\" \"Vriend\" molecular",
     "tags": [],
     "types": [
@@ -1173,10 +1537,12 @@
     ]
   },
   "WIEN2k": {
+    "acceleration": null,
     "author_name": "Blaha",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": null,
     "homepage": "http://www.wien2k.at/",
     "license": "C(S)",
     "license_annotation": null,
@@ -1185,7 +1551,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "WIEN2k Blaha",
     "tags": [
       "PBC",
@@ -1198,13 +1566,18 @@
     ]
   },
   "Wannier90": {
+    "acceleration": null,
     "author_name": "Marzari",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://www.wannier.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
     "name": "Wannier90",
+    "nomad_tags": null,
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"Wannier90\" Marzari",
     "tags": [
       "PP",
@@ -1219,14 +1592,18 @@
     ]
   },
   "YASARA": {
+    "acceleration": null,
     "author_name": "Krieger",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://yasara.org/",
     "license": "C(C)",
     "license_annotation": null,
     "name": "YASARA",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "YASARA Krieger",
     "tags": [],
     "types": [
@@ -1234,14 +1611,18 @@
     ]
   },
   "Yambo": {
+    "acceleration": null,
     "author_name": "Marini",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "http://www.yambo-code.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
     "name": "Yambo",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "Yambo Marini",
     "tags": [
       "PBC",
@@ -1253,10 +1634,12 @@
     ]
   },
   "exciting": {
+    "acceleration": null,
     "author_name": "Draxl",
     "benchmarks": [
       "Δ-value"
     ],
+    "element_coverage": null,
     "homepage": "http://exciting-code.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0-or-later",
@@ -1265,7 +1648,9 @@
       "PI_member",
       "data_collaboration"
     ],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "\"exciting\" code Draxl",
     "tags": [
       "PBC",
@@ -1276,39 +1661,19 @@
       "DFT"
     ]
   },
-  "Octopus": {
-    "author_name": "Rubio",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "homepage": "https://www.tddft.org/programs/octopus/wiki/index.php/Main_Page",
-    "license": "OS(CL)",
-    "license_annotation": "GPL-2.0",
-    "name": "Octopus",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
-    "query_method": "search term",
-    "query_string": "octopus Rubio",
-    "tags": [
-      "PBC",
-      "PP",
-      "RS"
-    ],
-    "types": [
-      "DFT"
-    ]
-  },
   "xTB": {
+    "acceleration": null,
     "author_name": "Grimme",
     "benchmarks": [],
+    "element_coverage": null,
     "homepage": "https://xtb-docs.readthedocs.io/",
     "license": "OS(CL)",
     "license_annotation": "LGPL-3.0",
     "name": "xTB",
     "nomad_tags": [],
+    "notes": null,
     "query_method": "search term",
+    "query_publication_id": null,
     "query_string": "xtb \"Grimme\"",
     "tags": [],
     "types": [

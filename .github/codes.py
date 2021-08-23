@@ -36,12 +36,23 @@ class Code:  # pylint: disable=too-many-instance-attributes
     query_publication_id: int = None
     notes: str = None
     license_annotation: str = None
+    element_coverage: str = None
+    acceleration: list = None
 
 def read_codes_json(path: Path = DATA_DIR / 'codes.json') -> Dict[str, Code]:
     """Read codes.json file and return dictionary."""
 
     with open(path) as handle:
         return json.from_json(Dict[str, Code], handle.read())
+
+def write_codes_json(path: Path = DATA_DIR / 'codes.json', codes: Dict[str, Code] = read_codes_json()) -> None:
+    """Write codes.json file.
+    
+    May use if switch to json format is made.
+    """
+
+    with open(path, 'w') as handle:
+        handle.write(json.to_json(codes, indent=2, sort_keys=True, ensure_ascii=False))
 
 def write_codes_yaml(path: Path = DATA_DIR / 'codes.yaml', codes: Dict[str, Code] = read_codes_json()) -> None:
     """Write codes.yaml file.
@@ -62,3 +73,4 @@ def read_codes_yaml(path: Path = DATA_DIR / 'codes.yaml') -> Dict[str, Code]:
         return yaml.from_yaml(Dict[str, Code], handle.read())
 
 print(read_codes_json())
+write_codes_json()
