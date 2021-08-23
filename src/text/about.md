@@ -4,9 +4,9 @@
 
 Practitioners and software developers in the field of atomistic simulations may find it useful for:
 
- * getting an overview of major simulation engines with specific features, licensing conditions, ...
+ * getting an [overview of major simulation engines](#/table) with specific features, licensing conditions, ...
  * monitoring how the use of individual simulation engines has evolved over time
- * analyzing trends at the ecosystem level (licensing, ...)
+ * analyzing [trends at the ecosystem level](#/statistics) (licensing, ...)
 
 Citation data are updated annually, while [corrections and additions](${this.packageJson.repository.url}#adding-a-simulation-engine) are welcome throughout the year.
 
