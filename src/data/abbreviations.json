@@ -1,16 +1,46 @@
 {
-  "AE": "All Electron",
-  "ASW": "Augmented spherical wave",
-  "GTO": "Gaussian-type orbitals",
-  "LAO": "London atomic orbitals",
-  "LAPW": "Linearized augmented plane waves",
-  "(L)MTO": "(Linear) muffin-tin orbitals",
-  "NAO": "Numeric atom-centered orbitals",
-  "PAW": "Projector-augmented wave",
-  "PBC": "Periodic boundary conditions supported",
-  "PP": "Pseudopotentials",
-  "PW": "Plane-wave basis",
-  "RS": "Real-space basis",
-  "STO": "Slater-type orbitals",
-  "WLT": "Wavelet basis"
+  "tags": {
+    "AE": "All Electron",
+    "ASW": "Augmented spherical wave",
+    "GTO": "Gaussian-type orbitals",
+    "LAO": "London atomic orbitals",
+    "LAPW": "Linearized augmented plane waves",
+    "(L)MTO": "(Linear) muffin-tin orbitals",
+    "NAO": "Numeric atom-centered orbitals",
+    "PAW": "Projector-augmented wave",
+    "PBC": "Periodic boundary conditions supported",
+    "PP": "Pseudopotentials",
+    "PW": "Plane-wave basis",
+    "RS": "Real-space basis",
+    "STO": "Slater-type orbitals",
+    "WLT": "Wavelet basis"
+  },
+  "licenses": {
+    "OS(CL)": "Free, copyleft open-source license (GPL, LGPL, ...)",
+    "OS(P)": "Free, permissive open-source license (MIT, BSD, Apache, ECL, ...)",
+    "F": "Free, custom license",
+    "F(A)": "Free for academic use, custom license",
+    "C(S)": "Commercial, source available",
+    "C(C)": "Commercial, closed source",
+    "I":  "Individual-basis license via contacting the authors"
+  },
+  "acceleration": {
+    "MPI": "Distributed memory parallelization on CPUs",
+    "OpenMP": "Shared memory parallelization on CPUs",
+    "HIP": "Supports AMD and NVidia GPUs",
+    "Cuda": "Supports Nvidia GPUs",
+    "OpenACC": "Standard by Cray, CAPS, Nvidia and PGI",
+    "OpenCL": "Open Computing Language, supporting GPUs, DSPs, FPGAs, ..."
+  },
+  "methods": {
+    "DFT":  "Density-functional theory",
+    "FF": "Force field and semi-empirical methods, e.g. PM6, AM1, MNDO, ...",
+    "QMC": "Quantum Monte Carlo",
+    "TB": "Tight binding and DFTB",
+    "WFM":"Wave-function methods (post Hartree-Fock)",
+    "S":"Spectroscopy (e.g. many-body perturbation theory)"
+  },
+  "apis": {
+    "QCSchema": "API and schema for Quantum Chemistry calculations"
+  }
 }

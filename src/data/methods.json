@@ -1,8 +1,0 @@
-{
-   "DFT":  "Density-functional theory",
-   "FF": "Force field and semi-empirical methods, e.g. PM6, AM1, MNDO, ...",
-   "QMC": "Quantum Monte Carlo",
-   "TB": "Tight binding and DFTB",
-   "WFM":"Wave-function methods (post Hartree-Fock)",
-   "S":"Spectroscopy (e.g. many-body perturbation theory)"
-}

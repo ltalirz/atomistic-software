@@ -1,9 +1,0 @@
-{
-   "OS(CL)": "Free, copyleft open-source license (GPL, LGPL, ...)",
-   "OS(P)": "Free, permissive open-source license (MIT, BSD, Apache, ECL, ...)",
-   "F": "Free, custom license",
-   "F(A)": "Free for academic use, custom license",
-   "C(S)": "Commercial, source available",
-   "C(C)": "Commercial, closed source",
-   "I":  "Individual-basis license via contacting the authors"
-}

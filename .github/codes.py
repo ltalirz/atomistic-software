@@ -32,6 +32,7 @@ class Code:  # pylint: disable=too-many-instance-attributes
     types: List[str]
     license: str
     tags: List
+    apis: list = ()
     nomad_tags: list = None
     query_publication_id: int = None
     notes: str = None

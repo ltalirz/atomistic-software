@@ -5,6 +5,7 @@
       "OpenMP",
       "Cuda"
     ],
+    "apis": [],
     "author_name": "Gonze",
     "benchmarks": [
       "Δ-value"
@@ -37,6 +38,7 @@
     "acceleration": [
       "MPI"
     ],
+    "apis": [],
     "author_name": "Baerends",
     "benchmarks": [],
     "element_coverage": "H..Lu",
@@ -63,6 +65,7 @@
     "acceleration": [
       "MPI"
     ],
+    "apis": [],
     "author_name": "QuantumWise",
     "benchmarks": [
       "Δ-value"
@@ -91,6 +94,7 @@
   },
   "Amber": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Kollman",
     "benchmarks": [],
     "element_coverage": null,
@@ -112,6 +116,7 @@
   },
   "BOSS": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Jorgensen",
     "benchmarks": [],
     "element_coverage": null,
@@ -133,6 +138,7 @@
     "acceleration": [
       "MPI"
     ],
+    "apis": [],
     "author_name": "Needs and López Ríos",
     "benchmarks": [],
     "element_coverage": "H..Hg",
@@ -164,6 +170,7 @@
       "MPI",
       "OpenMP"
     ],
+    "apis": [],
     "author_name": "Payne",
     "benchmarks": [
       "Δ-value"
@@ -194,6 +201,7 @@
   },
   "CFOUR": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Stanton",
     "benchmarks": [],
     "element_coverage": null,
@@ -221,6 +229,7 @@
       "OpenMP",
       "Cuda"
     ],
+    "apis": [],
     "author_name": "Karplus",
     "benchmarks": [],
     "element_coverage": null,
@@ -240,6 +249,7 @@
   },
   "CP2K": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Hutter",
     "benchmarks": [],
     "element_coverage": null,
@@ -268,6 +278,7 @@
   },
   "CPMD": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Hutter",
     "benchmarks": [],
     "element_coverage": null,
@@ -294,6 +305,7 @@
   },
   "CRYSTAL": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Dovesi",
     "benchmarks": [],
     "element_coverage": null,
@@ -321,6 +333,7 @@
   },
   "DFTB+": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Aradi",
     "benchmarks": [],
     "element_coverage": null,
@@ -342,6 +355,7 @@
   },
   "DIRAC": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Saue",
     "benchmarks": [],
     "element_coverage": null,
@@ -369,6 +383,7 @@
       "OpenMP",
       "Cuda"
     ],
+    "apis": [],
     "author_name": "Smith",
     "benchmarks": [],
     "element_coverage": null,
@@ -388,6 +403,7 @@
   },
   "DMol3": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Delley",
     "benchmarks": [],
     "element_coverage": null,
@@ -417,6 +433,7 @@
     "acceleration": [
       "MPI"
     ],
+    "apis": [],
     "author_name": "Ågren",
     "benchmarks": [],
     "element_coverage": "H..Og",
@@ -439,6 +456,7 @@
   },
   "Desmond": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Schrödinger",
     "benchmarks": [],
     "element_coverage": null,
@@ -458,6 +476,7 @@
   },
   "Discovery Studio": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Accelrys",
     "benchmarks": [],
     "element_coverage": null,
@@ -478,6 +497,7 @@
   },
   "EPW": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Giustino",
     "benchmarks": [],
     "element_coverage": null,
@@ -504,6 +524,7 @@
   },
   "ESPResSo": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Holm",
     "benchmarks": [],
     "element_coverage": null,
@@ -525,6 +546,7 @@
   },
   "Elk": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Dewhurst",
     "benchmarks": [
       "Δ-value"
@@ -553,6 +575,7 @@
   },
   "FEFF": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Rehr",
     "benchmarks": [],
     "element_coverage": null,
@@ -578,6 +601,7 @@
       "OpenMP",
       "Cuda"
     ],
+    "apis": [],
     "author_name": "Blum",
     "benchmarks": [
       "Δ-value"
@@ -607,6 +631,7 @@
   },
   "FPLO": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Koepernik",
     "benchmarks": [
       "Δ-value"
@@ -634,6 +659,7 @@
   },
   "Firefly": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Granovsky",
     "benchmarks": [],
     "element_coverage": null,
@@ -658,6 +684,7 @@
   },
   "FoldX": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Serrano",
     "benchmarks": [],
     "element_coverage": null,
@@ -680,6 +707,9 @@
       "MPI",
       "OpenMP",
       "Cuda"
+    ],
+    "apis": [
+      "QCSchema"
     ],
     "author_name": "Gordon",
     "benchmarks": [],
@@ -707,6 +737,7 @@
   },
   "GPAW": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Mortensen",
     "benchmarks": [
       "Δ-value"
@@ -737,6 +768,7 @@
   },
   "GROMOS": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Van Gunsteren",
     "benchmarks": [],
     "element_coverage": null,
@@ -756,6 +788,7 @@
   },
   "GULP": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Gale",
     "benchmarks": [],
     "element_coverage": null,
@@ -779,6 +812,7 @@
       "OpenMP",
       "Cuda"
     ],
+    "apis": [],
     "author_name": "Frisch",
     "benchmarks": [],
     "element_coverage": "H..Rf",
@@ -810,6 +844,7 @@
       "OpenMP",
       "OpenCL"
     ],
+    "apis": [],
     "author_name": "Lindahl",
     "benchmarks": [],
     "element_coverage": null,
@@ -835,6 +870,7 @@
       "OpenMP",
       "Cuda"
     ],
+    "apis": [],
     "author_name": "Anderson",
     "benchmarks": [],
     "element_coverage": null,
@@ -854,6 +890,7 @@
   },
   "Hyperchem": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Hypercube",
     "benchmarks": [],
     "element_coverage": null,
@@ -881,6 +918,7 @@
       "MPI",
       "OpenMP"
     ],
+    "apis": [],
     "author_name": "Schrödinger",
     "benchmarks": [],
     "element_coverage": "H..Pu",
@@ -911,6 +949,7 @@
       "Cuda",
       "HIP"
     ],
+    "apis": [],
     "author_name": "Plimpton",
     "benchmarks": [],
     "element_coverage": null,
@@ -932,6 +971,7 @@
   },
   "MOE": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Chemical Computing Group",
     "benchmarks": [],
     "element_coverage": null,
@@ -954,6 +994,7 @@
     "acceleration": [
       "MPI"
     ],
+    "apis": [],
     "author_name": "Lindh",
     "benchmarks": [],
     "element_coverage": "H..Cm",
@@ -981,6 +1022,7 @@
       "MPI",
       "Cuda"
     ],
+    "apis": [],
     "author_name": "Stewart",
     "benchmarks": [],
     "element_coverage": "H..Bi",
@@ -1005,6 +1047,7 @@
   },
   "MacroModel": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Schrödinger",
     "benchmarks": [],
     "element_coverage": null,
@@ -1027,6 +1070,7 @@
       "MPI",
       "OpenMP"
     ],
+    "apis": [],
     "author_name": "Werner",
     "benchmarks": [],
     "element_coverage": "H..Lr",
@@ -1055,6 +1099,7 @@
       "OpenMP",
       "Cuda"
     ],
+    "apis": [],
     "author_name": "Schulten",
     "benchmarks": [],
     "element_coverage": null,
@@ -1079,6 +1124,9 @@
       "MPI",
       "OpenMP",
       "Cuda"
+    ],
+    "apis": [
+      "QCSchema"
     ],
     "author_name": "Valiev",
     "benchmarks": [],
@@ -1112,6 +1160,7 @@
     "acceleration": [
       "MPI"
     ],
+    "apis": [],
     "author_name": "Neese",
     "benchmarks": [],
     "element_coverage": "H..Lr",
@@ -1143,6 +1192,7 @@
       "OpenMP",
       "OpenCL"
     ],
+    "apis": [],
     "author_name": "Rubio",
     "benchmarks": [
       "Δ-value"
@@ -1176,6 +1226,7 @@
       "Cuda",
       "OpenCL"
     ],
+    "apis": [],
     "author_name": "Eastman",
     "benchmarks": [],
     "element_coverage": "H..Rn",
@@ -1198,6 +1249,7 @@
       "MPI",
       "OpenMP"
     ],
+    "apis": [],
     "author_name": "Ozaki",
     "benchmarks": [
       "Δ-value"
@@ -1225,6 +1277,7 @@
     "acceleration": [
       "MPI"
     ],
+    "apis": [],
     "author_name": "Lindh",
     "benchmarks": [],
     "element_coverage": "H..Cm",
@@ -1251,6 +1304,9 @@
     "acceleration": [
       "MPI"
     ],
+    "apis": [
+      "QCSchema"
+    ],
     "author_name": "Sherrill",
     "benchmarks": [],
     "element_coverage": "H..Cs",
@@ -1274,6 +1330,9 @@
   },
   "PySCF": {
     "acceleration": null,
+    "apis": [
+      "QCSchema"
+    ],
     "author_name": "Chan",
     "benchmarks": [],
     "element_coverage": null,
@@ -1300,6 +1359,9 @@
       "MPI",
       "OpenMP",
       "Cuda"
+    ],
+    "apis": [
+      "QCSchema"
     ],
     "author_name": "Shao",
     "benchmarks": [],
@@ -1329,6 +1391,7 @@
       "OpenMP",
       "Cuda"
     ],
+    "apis": [],
     "author_name": "Giannozzi",
     "benchmarks": [
       "Δ-value"
@@ -1358,6 +1421,7 @@
   },
   "RASPA": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Dubbeldam",
     "benchmarks": [],
     "element_coverage": null,
@@ -1377,6 +1441,7 @@
   },
   "SIESTA": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Soler",
     "benchmarks": [],
     "element_coverage": null,
@@ -1403,6 +1468,7 @@
   },
   "TB-LMTO-ASA": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Andersen",
     "benchmarks": [],
     "element_coverage": null,
@@ -1433,6 +1499,7 @@
       "Cuda",
       "OpenACC"
     ],
+    "apis": [],
     "author_name": "Ponder",
     "benchmarks": [],
     "element_coverage": null,
@@ -1457,6 +1524,7 @@
       "MPI",
       "OpenMP"
     ],
+    "apis": [],
     "author_name": "Ahlrichs",
     "benchmarks": [],
     "element_coverage": "H..Rn",
@@ -1489,6 +1557,7 @@
       "OpenMP",
       "OpenACC"
     ],
+    "apis": [],
     "author_name": "Kresse",
     "benchmarks": [
       "Δ-value"
@@ -1519,6 +1588,7 @@
   },
   "WHAT IF": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Vriend",
     "benchmarks": [],
     "element_coverage": null,
@@ -1538,6 +1608,7 @@
   },
   "WIEN2k": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Blaha",
     "benchmarks": [
       "Δ-value"
@@ -1567,6 +1638,7 @@
   },
   "Wannier90": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Marzari",
     "benchmarks": [],
     "element_coverage": null,
@@ -1593,6 +1665,7 @@
   },
   "YASARA": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Krieger",
     "benchmarks": [],
     "element_coverage": null,
@@ -1612,6 +1685,7 @@
   },
   "Yambo": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Marini",
     "benchmarks": [],
     "element_coverage": null,
@@ -1635,6 +1709,7 @@
   },
   "exciting": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Draxl",
     "benchmarks": [
       "Δ-value"
@@ -1663,6 +1738,7 @@
   },
   "xTB": {
     "acceleration": null,
+    "apis": [],
     "author_name": "Grimme",
     "benchmarks": [],
     "element_coverage": null,

@@ -3,10 +3,7 @@
  */
 import Tooltip from "@material-ui/core/Tooltip";
 import Button from "@material-ui/core/Button";
-import methods from "../data/methods";
-import tags from "../data/abbreviations";
-import acceleration from "../data/acceleration";
-import licenses from "../data/licenses";
+import ABBREVIATIONS from "../data/abbreviations";
 //idea: use search icon for link to google scholar
 import ShowChartIcon from "@material-ui/icons/ShowChart";
 
@@ -63,6 +60,18 @@ function getColumns(data, year) {
       options: { filter: false, sort: true, display: false },
     },
     {
+      name: "types",
+      label: "Methods",
+      options: {
+        filter: true,
+        sort: true,
+        customBodyRenderLite: (dataIndex) => {
+          const types = data[dataIndex]["types"];
+          return types.map((x) => TooltipText(ABBREVIATIONS["methods"][x], x));
+        },
+      },
+    },
+    {
       name: "element_coverage",
       label: "Element coverage",
       options: { filter: false, sort: true, display: false },
@@ -74,20 +83,21 @@ function getColumns(data, year) {
         customBodyRenderLite: (dataIndex) => {
           const types = data[dataIndex]["acceleration"];
           if (!types) { return ""; } else {
-          return types.map((x) => TooltipText(acceleration[x], x)); 
+          return types.map((x) => TooltipText(ABBREVIATIONS["acceleration"][x], x)); 
         }
         },
        },
     },
     {
-      name: "types",
-      label: "Methods",
+      name: "apis",
+      label: "APIs",
       options: {
         filter: true,
         sort: true,
+        display: false,
         customBodyRenderLite: (dataIndex) => {
-          const types = data[dataIndex]["types"];
-          return types.map((x) => TooltipText(methods[x], x));
+          const types = data[dataIndex]["apis"];
+          return types.map((x) => TooltipText(ABBREVIATIONS["apis"][x], x));
         },
       },
     },
@@ -113,7 +123,7 @@ function getColumns(data, year) {
         sort: true,
         customBodyRenderLite: (dataIndex) => {
           const types = data[dataIndex]["tags"];
-          return types.map((x) => TooltipText(tags[x], x));
+          return types.map((x) => TooltipText(ABBREVIATIONS["tags"][x], x));
         },
       },
     },
@@ -125,6 +135,7 @@ function getColumns(data, year) {
         sort: true,
         customBodyRenderLite: (dataIndex) => {
           const x = data[dataIndex]["license"];
+          const licenses = ABBREVIATIONS["licenses"];
           if (["C(S)", "C(C)"].includes(x)) {
             return TooltipText(licenses[x], <AttachMoneyIcon />);
           } else if (["F(A)"].includes(x)) {
@@ -152,6 +163,7 @@ function getColumns(data, year) {
         sort: true,
         customBodyRenderLite: (dataIndex) => {
           const x = data[dataIndex]["license"];
+          const licenses = ABBREVIATIONS["licenses"];
           if (["C(S)", "F(A)"].includes(x)) {
             return TooltipText(licenses[x], <LockOpenIcon color={"action"} />);
           } else if (["C(C)"].includes(x)) {
