@@ -70,7 +70,7 @@
     "benchmarks": [
       "Δ-value"
     ],
-    "element_coverage": null,
+    "element_coverage": "H..Rn",
     "homepage": "https://www.synopsys.com/silicon/quantumatk.html",
     "license": "C(C)",
     "license_annotation": null,
@@ -252,7 +252,7 @@
     "apis": [],
     "author_name": "Hutter",
     "benchmarks": [],
-    "element_coverage": null,
+    "element_coverage": "H..Rn",
     "homepage": "https://www.cp2k.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -281,7 +281,7 @@
     "apis": [],
     "author_name": "Hutter",
     "benchmarks": [],
-    "element_coverage": null,
+    "element_coverage": "H..Pu",
     "homepage": "https://www.cpmd.org/",
     "license": "F(A)",
     "license_annotation": "Early Release Software Program License Agreement For CPMD",
@@ -500,7 +500,7 @@
     "apis": [],
     "author_name": "Giustino",
     "benchmarks": [],
-    "element_coverage": null,
+    "element_coverage": "H..Pu",
     "homepage": "https://epw-code.org",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -742,7 +742,7 @@
     "benchmarks": [
       "Δ-value"
     ],
-    "element_coverage": null,
+    "element_coverage": "H..Rn",
     "homepage": "https://wiki.fysik.dtu.dk/gpaw/",
     "license": "OS(CL)",
     "license_annotation": "GPL-3.0",
@@ -1335,7 +1335,7 @@
     ],
     "author_name": "Chan",
     "benchmarks": [],
-    "element_coverage": null,
+    "element_coverage": "H..Rn",
     "homepage": "https://pyscf.org/",
     "license": "OS(P)",
     "license_annotation": "Apache-2.0",
@@ -1396,7 +1396,7 @@
     "benchmarks": [
       "Δ-value"
     ],
-    "element_coverage": null,
+    "element_coverage": "H..Pu",
     "homepage": "https://www.quantum-espresso.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -1444,7 +1444,7 @@
     "apis": [],
     "author_name": "Soler",
     "benchmarks": [],
-    "element_coverage": null,
+    "element_coverage": "H..Rn",
     "homepage": "https://departments.icmab.es/leem/siesta/",
     "license": "OS(CL)",
     "license_annotation": "GPL-3.0",
@@ -1641,7 +1641,7 @@
     "apis": [],
     "author_name": "Marzari",
     "benchmarks": [],
-    "element_coverage": null,
+    "element_coverage": "H..Pu",
     "homepage": "http://www.wannier.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -1688,7 +1688,7 @@
     "apis": [],
     "author_name": "Marini",
     "benchmarks": [],
-    "element_coverage": null,
+    "element_coverage": "H..Pu",
     "homepage": "http://www.yambo-code.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0",
@@ -1714,7 +1714,7 @@
     "benchmarks": [
       "Δ-value"
     ],
-    "element_coverage": null,
+    "element_coverage": "H..Pu",
     "homepage": "http://exciting-code.org/",
     "license": "OS(CL)",
     "license_annotation": "GPL-2.0-or-later",
