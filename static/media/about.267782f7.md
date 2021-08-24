@@ -39,19 +39,27 @@ Click on a citation count in order to see the exact Google Scholar query that wa
 
 ## Frequently Asked Questions
 
- *  **Q**: The citation count for year XXXX reported here differs somewhat from the same citation count I see on Google Scholar. Why?
+ 1. **Q**: The citation count for year XXXX reported here differs somewhat from the same citation count I see on Google Scholar. Why?
 
     **A**: Citation counts reported by Google Scholar are not static, even for years that lie in the past.
     Reasons may include new sites being indexed, more text being extracted, different citations being disambiguated, or even the heuristic evolving that predicts the total number of results.
     In our experience, citation data for the previous year can be subject to significant (upwards) fluctuation, while citation data for years further in the past are quite stable.
     We record the date of when each data point was collected in the [source code repository](${this.packageJson.repository.url}).
 
-*  **Q**: Why impose a criterion that engines on the list need to have at least one year with 100 citations?
+1.  **Q**: Why impose a criterion that engines on the list need to have at least one year with 100 citations?
 
     **A**: atomistic.software aims to be a comprehensive list of all major atomistic simulation engines.
     Since new engines are created all the time, this goal is almost impossible to achieve without introducing a "relevance cutoff".
     The value of 100 is not set in stone and could be re-evaluated in the future, once the list has had some time to consolidate.
 
+1.  **Q**: A major simulation engine (check relevance criterion above) is missing. How can I add it to the list?
+
+    **A**: Please follow the [instructions](${this.packageJson.repository.url}#contributing) from the source code repository.
+
+1.  **Q**: I have discovered a mistake/inaccuracy in the citation data or in the classification of a simulation engine. How can I report/correct it?
+
+    **A**: Please follow the [instructions](${this.packageJson.repository.url}#contributing) from the source code repository.
+           A to-do list of corrections is maintained [here](${this.packageJson.repository.url}/issues/29).
 ## How to cite
 
 You are welcome to cite [atomistic.software](https://atomistic.software/#/) in your scientific work in the following ways:
