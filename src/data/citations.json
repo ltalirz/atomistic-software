@@ -19,10 +19,6 @@
         "citations": 546,
         "datestamp": "2021-08-24"
       },
-      "CASINO": {
-        "citations": 141,
-        "datestamp": "2021-08-24"
-      },
       "CFOUR": {
         "citations": 212,
         "datestamp": "2021-08-24"
@@ -266,6 +262,10 @@
       "Gaussian": {
         "citations": 13200,
         "datestamp": "2021-08-24"
+      },
+      "CASINO": {
+        "citations": 34,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -407,10 +407,6 @@
       },
       "FoldX": {
         "citations": 216,
-        "datestamp": "2021-01-04"
-      },
-      "CASINO": {
-        "citations": 352,
         "datestamp": "2021-01-04"
       },
       "CFOUR": {
@@ -672,6 +668,10 @@
       "WHAT IF": {
         "citations": 97,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 31,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -813,10 +813,6 @@
       },
       "FoldX": {
         "citations": 175,
-        "datestamp": "2021-01-04"
-      },
-      "CASINO": {
-        "citations": 332,
         "datestamp": "2021-01-04"
       },
       "CFOUR": {
@@ -1078,6 +1074,10 @@
       "WHAT IF": {
         "citations": 108,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 38,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -1219,10 +1219,6 @@
       },
       "FoldX": {
         "citations": 148,
-        "datestamp": "2021-01-07"
-      },
-      "CASINO": {
-        "citations": 397,
         "datestamp": "2021-01-07"
       },
       "CFOUR": {
@@ -1484,6 +1480,10 @@
       "WHAT IF": {
         "citations": 116,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 42,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -1625,10 +1625,6 @@
       },
       "FoldX": {
         "citations": 131,
-        "datestamp": "2021-01-07"
-      },
-      "CASINO": {
-        "citations": 337,
         "datestamp": "2021-01-07"
       },
       "CFOUR": {
@@ -1890,6 +1886,10 @@
       "WHAT IF": {
         "citations": 145,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 36,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -2031,10 +2031,6 @@
       },
       "FoldX": {
         "citations": 132,
-        "datestamp": "2021-01-07"
-      },
-      "CASINO": {
-        "citations": 332,
         "datestamp": "2021-01-07"
       },
       "CFOUR": {
@@ -2296,6 +2292,10 @@
       "WHAT IF": {
         "citations": 159,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 29,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -2333,10 +2333,6 @@
       },
       "BigDFT": {
         "citations": 25,
-        "datestamp": "2021-01-17"
-      },
-      "CASINO": {
-        "citations": 143,
         "datestamp": "2021-01-17"
       },
       "CFOUR": {
@@ -2702,6 +2698,10 @@
       "WHAT IF": {
         "citations": 141,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 35,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -2739,10 +2739,6 @@
       },
       "BigDFT": {
         "citations": 33,
-        "datestamp": "2021-01-17"
-      },
-      "CASINO": {
-        "citations": 124,
         "datestamp": "2021-01-17"
       },
       "CFOUR": {
@@ -3108,6 +3104,10 @@
       "WHAT IF": {
         "citations": 170,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 33,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -3145,10 +3145,6 @@
       },
       "BigDFT": {
         "citations": 18,
-        "datestamp": "2021-01-17"
-      },
-      "CASINO": {
-        "citations": 98,
         "datestamp": "2021-01-17"
       },
       "CFOUR": {
@@ -3514,6 +3510,10 @@
       "WHAT IF": {
         "citations": 200,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 30,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -3551,10 +3551,6 @@
       },
       "BigDFT": {
         "citations": 30,
-        "datestamp": "2021-01-17"
-      },
-      "CASINO": {
-        "citations": 117,
         "datestamp": "2021-01-17"
       },
       "CFOUR": {
@@ -3920,6 +3916,10 @@
       "WHAT IF": {
         "citations": 171,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 38,
+        "datestamp": "2021-08-25"
       }
     }
   },
@@ -3961,10 +3961,6 @@
       },
       "BigDFT": {
         "citations": 17,
-        "datestamp": "2021-04-10"
-      },
-      "CASINO": {
-        "citations": 105,
         "datestamp": "2021-04-10"
       },
       "CFOUR": {
@@ -4314,6 +4310,10 @@
       "WHAT IF": {
         "citations": 162,
         "datestamp": "2021-06-30"
+      },
+      "CASINO": {
+        "citations": 29,
+        "datestamp": "2021-08-25"
       }
     }
   }

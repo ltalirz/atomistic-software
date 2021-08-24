@@ -152,7 +152,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "\"CASINO\" \"Needs\" Rios",
+    "query_string": "\"CASINO\" \"Needs\" \"Quantum Monte Carlo\"",
     "tags": [
       "AE",
       "GTO",
