@@ -26,8 +26,8 @@ function TooltipText(tooltip, text) {
    * Tooltip with nicely spaced text that doesn't become a cursor.
    */
   return (
-    <Tooltip title={tooltip} placement="top-end" key={tooltip}>
-      <span style={{ cursor: "default", marginRight: "0.5em" }}>{text}</span>
+    <Tooltip title={tooltip} placement="top" key={tooltip} arrow>
+      <span className="has-tooltip">{text}</span>
     </Tooltip>
   );
   //return <Tooltip title={tooltip} placement="top-end" key={text} clickable={true}><span><Button disabled >{text}</Button></span></Tooltip>;
