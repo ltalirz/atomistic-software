@@ -18,7 +18,8 @@ If you're not familiar with GitHub or don't have time to add the engine yourself
 
 Edit the [`src/data/codes.json`](src/data/codes.json) file and make a pull request.
 
-Note: There is no need for you to update citation data. If necessary, this will be perfomed by the maintainer of this repository.
+Note: There is no need to update citation data. 
+If necessary, this will be perfomed by the maintainer of this repository using the [scholarly python package](https://github.com/scholarly-python-package/scholarly).
 
 ## How to cite
 
