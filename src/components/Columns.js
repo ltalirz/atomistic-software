@@ -5,6 +5,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Button from "@material-ui/core/Button";
 import methods from "../data/methods";
 import tags from "../data/abbreviations";
+import acceleration from "../data/acceleration";
 import licenses from "../data/licenses";
 //idea: use search icon for link to google scholar
 import ShowChartIcon from "@material-ui/icons/ShowChart";
@@ -62,6 +63,23 @@ function getColumns(data, year) {
       name: "notes",
       label: "Notes",
       options: { filter: false, sort: true, display: false },
+    },
+    {
+      name: "element_coverage",
+      label: "Element coverage",
+      options: { filter: false, sort: true, display: false },
+    },
+    {
+      name: "acceleration",
+      label: "Acceleration",
+      options: { filter: true, sort: true, display: false,
+        customBodyRenderLite: (dataIndex) => {
+          const types = data[dataIndex]["acceleration"];
+          if (!types) { return ""; } else {
+          return types.map((x) => TooltipText(acceleration[x], x)); 
+        }
+        },
+       },
     },
     {
       name: "types",
