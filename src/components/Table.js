@@ -21,6 +21,12 @@ class Table extends React.Component {
         sortOrder: { name: "citations", direction: "desc" },
         rowsPerPage: 100,
         selectableRows: false,
+        setTableProps: () => {
+          return {
+            // material ui v4 only
+            size: 'small',
+          };
+        },
       },
     };
   }
