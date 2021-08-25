@@ -33,6 +33,7 @@ class Code:  # pylint: disable=too-many-instance-attributes
     license: str
     tags: List
     apis: list = ()
+    distribution_channels: list = ("Source", )
     nomad_tags: list = None
     query_publication_id: int = None
     notes: str = None

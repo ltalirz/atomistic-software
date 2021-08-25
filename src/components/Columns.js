@@ -11,7 +11,6 @@ import MoneyOffIcon from "@material-ui/icons/MoneyOff";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import SchoolIcon from "@material-ui/icons/School";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
-
 //import NotInterestedIcon from '@material-ui/icons/NotInterested';
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 //import CopyrightIcon from '@material-ui/icons/Copyright';
@@ -20,13 +19,28 @@ import NoEncryptionIcon from "@material-ui/icons/NoEncryption";
 
 function TooltipText(tooltip, text) {
   /**
-   * Tooltip with nicely spaced text that doesn't become a cursor.
+   * Nicesly styled tooltip.
+   * 
+   * Cursor does not change shape.
    */
   return (
     <Tooltip title={tooltip} placement="top" key={tooltip} arrow >
       <span className="has-tooltip">{text}</span>
     </Tooltip>
   );
+}
+
+function TooltipTexts(values, tooltips) {
+  /**
+   * Multiple tooltips with zero-width breaking spaces in between to allow text wrapping.
+   */
+  if (values && values.length > 0) { 
+    return (values.map((x) => 
+        TooltipText(tooltips[x], x))
+        .reduce((prev, curr) => [prev, <wbr/>, curr]));
+    } else { 
+      return null;
+    }
 }
 
 function getColumns(data, year) {
@@ -66,14 +80,13 @@ function getColumns(data, year) {
         filter: true,
         sort: true,
         customBodyRenderLite: (dataIndex) => {
-          const types = data[dataIndex]["types"];
-          return types.map((x) => TooltipText(ABBREVIATIONS["methods"][x], x));
+          return TooltipTexts(data[dataIndex]["types"], ABBREVIATIONS["methods"]);
         },
       },
     },
     {
       name: "element_coverage",
-      label: "Element coverage",
+      label: "Elements",
       options: { filter: false, sort: true, display: false },
     },
     {
@@ -81,10 +94,7 @@ function getColumns(data, year) {
       label: "Acceleration",
       options: { filter: true, sort: true, display: false,
         customBodyRenderLite: (dataIndex) => {
-          const types = data[dataIndex]["acceleration"];
-          if (!types) { return ""; } else {
-          return types.map((x) => TooltipText(ABBREVIATIONS["acceleration"][x], x)); 
-        }
+          return TooltipTexts(data[dataIndex]["acceleration"], ABBREVIATIONS["acceleration"]);
         },
        },
     },
@@ -96,8 +106,7 @@ function getColumns(data, year) {
         sort: true,
         display: false,
         customBodyRenderLite: (dataIndex) => {
-          const types = data[dataIndex]["apis"];
-          return types.map((x) => TooltipText(ABBREVIATIONS["apis"][x], x));
+          return TooltipTexts(data[dataIndex]["apis"], ABBREVIATIONS["apis"]);
         },
       },
     },
@@ -122,8 +131,18 @@ function getColumns(data, year) {
         filter: true,
         sort: true,
         customBodyRenderLite: (dataIndex) => {
-          const types = data[dataIndex]["tags"];
-          return types.map((x) => TooltipText(ABBREVIATIONS["tags"][x], x));
+          return TooltipTexts(data[dataIndex]["tags"], ABBREVIATIONS["tags"]);
+        },
+      },
+    },
+    {
+      name: "distribution_channels",
+      label: "Installation",
+      options: {
+        filter: true,
+        sort: true,
+        customBodyRenderLite: (dataIndex) => {
+          return TooltipTexts(data[dataIndex]["distribution_channels"], ABBREVIATIONS["distribution_channels"]);
         },
       },
     },
@@ -191,7 +210,6 @@ function getColumns(data, year) {
       label: "License Note",
       options: { filter: false, sort: true, display: false },
     },
-
     {
       name: "citations",
       label: "Citations",

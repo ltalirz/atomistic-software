@@ -42,5 +42,24 @@
   },
   "apis": {
     "QCSchema": "API and schema for Quantum Chemistry calculations"
+  },
+  "distribution_channels": {
+    "Source": "Download source code and compile it yourself",
+    "Binary": "Download pre-compiled executables",
+    "AUR": "Arch User Repository (Arch Linux)",
+    "APT": "Official package manager of Ubuntu Linux, Debian Linux",
+    "DNF": "Official package manager of Fedora Linux",
+    "Homebrew": "Unofficial package manager for MacOS",
+    "DockerHub": "Pull docker image from DockerHub (Linux, MacOS, Windows)",
+    "EasyBuild": "Build framework for high-performance computing (Linux)",
+    "Spack": "Build framework for high-performance computing (Linux, MacOS)",
+    "PyPI": "Install from Python Package Index (Linux, MacOS, Windows)",
+    "conda": "Cross-platform package manager (Linux, MacOS, Windows)",
+    "NGC": "Pull image from Nvidia GPU Cloud (Linux)",
+    "SingularityHub": "Pull singularity image from SingularityHub (Linux)",
+    "Portage": "Official package manager of Gentoo Linux",
+    "ZYpp": "Official package manager of SUSE Linux",
+    "Yum": "Official package manager of CentOS Linux",
+    "Macports": "Unofficial package manager for MacOS"
   }
 }
