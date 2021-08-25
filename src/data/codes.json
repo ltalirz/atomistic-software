@@ -109,7 +109,11 @@
     ]
   },
   "Amber": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Kollman",
     "benchmarks": [],
@@ -197,7 +201,10 @@
     ]
   },
   "CFOUR": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Stanton",
     "benchmarks": [],
@@ -252,7 +259,11 @@
     ]
   },
   "CP2K": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Hutter",
     "benchmarks": [],
@@ -293,7 +304,11 @@
     ]
   },
   "CPMD": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Hutter",
     "benchmarks": [],
@@ -323,7 +338,9 @@
     ]
   },
   "CRYSTAL": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI"
+    ],
     "apis": [],
     "author_name": "Dovesi",
     "benchmarks": [],
@@ -354,7 +371,10 @@
     ]
   },
   "DFTB+": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Aradi",
     "benchmarks": [],
@@ -382,7 +402,10 @@
     ]
   },
   "DIRAC": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Saue",
     "benchmarks": [],
@@ -438,7 +461,9 @@
     ]
   },
   "DMol3": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI"
+    ],
     "apis": [],
     "author_name": "Delley",
     "benchmarks": [],
@@ -499,7 +524,10 @@
     ]
   },
   "Desmond": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Schrödinger",
     "benchmarks": [],
@@ -523,7 +551,9 @@
     ]
   },
   "Discovery Studio": {
-    "acceleration": null,
+    "acceleration": [
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Accelrys",
     "benchmarks": [],
@@ -547,7 +577,10 @@
     ]
   },
   "EPW": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Giustino",
     "benchmarks": [],
@@ -578,7 +611,10 @@
     ]
   },
   "ESPResSo": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Holm",
     "benchmarks": [],
@@ -604,7 +640,10 @@
     ]
   },
   "Elk": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Dewhurst",
     "benchmarks": [
@@ -638,7 +677,9 @@
     ]
   },
   "FEFF": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI"
+    ],
     "apis": [],
     "author_name": "Rehr",
     "benchmarks": [],
@@ -731,7 +772,9 @@
     ]
   },
   "Firefly": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI"
+    ],
     "apis": [],
     "author_name": "Granovsky",
     "benchmarks": [],
@@ -760,7 +803,9 @@
     ]
   },
   "FoldX": {
-    "acceleration": null,
+    "acceleration": [
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Serrano",
     "benchmarks": [],
@@ -822,7 +867,10 @@
     ]
   },
   "GPAW": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Mortensen",
     "benchmarks": [
@@ -862,7 +910,9 @@
     ]
   },
   "GROMOS": {
-    "acceleration": null,
+    "acceleration": [
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Van Gunsteren",
     "benchmarks": [],
@@ -885,7 +935,9 @@
     ]
   },
   "GULP": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI"
+    ],
     "apis": [],
     "author_name": "Gale",
     "benchmarks": [],
@@ -1548,7 +1600,10 @@
     ]
   },
   "PySCF": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "apis": [
       "QCSchema"
     ],
@@ -1689,7 +1744,10 @@
     ]
   },
   "SIESTA": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Soler",
     "benchmarks": [],
@@ -1883,7 +1941,10 @@
     ]
   },
   "WIEN2k": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Blaha",
     "benchmarks": [
@@ -1916,7 +1977,9 @@
     ]
   },
   "Wannier90": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI"
+    ],
     "apis": [],
     "author_name": "Marzari",
     "benchmarks": [],
@@ -1951,7 +2014,10 @@
     ]
   },
   "YASARA": {
-    "acceleration": null,
+    "acceleration": [
+      "Threads",
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Krieger",
     "benchmarks": [],
@@ -1974,7 +2040,11 @@
     ]
   },
   "Yambo": {
-    "acceleration": null,
+    "acceleration": [
+      "MPI",
+      "OpenMP",
+      "Cuda"
+    ],
     "apis": [],
     "author_name": "Marini",
     "benchmarks": [],
@@ -2004,7 +2074,9 @@
     ]
   },
   "exciting": {
-    "acceleration": null,
+    "acceleration": [
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Draxl",
     "benchmarks": [
@@ -2037,7 +2109,9 @@
     ]
   },
   "xTB": {
-    "acceleration": null,
+    "acceleration": [
+      "OpenMP"
+    ],
     "apis": [],
     "author_name": "Grimme",
     "benchmarks": [],

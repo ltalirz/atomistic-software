@@ -27,6 +27,7 @@
   "acceleration": {
     "MPI": "Distributed memory parallelization on CPUs",
     "OpenMP": "Shared memory parallelization on CPUs",
+    "Threads": "Custom shared memory parallelization on CPUs",
     "HIP": "Supports AMD and NVidia GPUs",
     "Cuda": "Supports Nvidia GPUs",
     "OpenACC": "Standard by Cray, CAPS, Nvidia and PGI",
