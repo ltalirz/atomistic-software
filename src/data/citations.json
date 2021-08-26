@@ -15,10 +15,6 @@
         "citations": 489,
         "datestamp": "2021-08-24"
       },
-      "BOSS": {
-        "citations": 546,
-        "datestamp": "2021-08-24"
-      },
       "CFOUR": {
         "citations": 212,
         "datestamp": "2021-08-24"
@@ -266,6 +262,10 @@
       "exciting": {
         "citations": 52,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 36,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -335,10 +335,6 @@
       },
       "ADF": {
         "citations": 596,
-        "datestamp": "2021-01-04"
-      },
-      "BOSS": {
-        "citations": 636,
         "datestamp": "2021-01-04"
       },
       "Q-Chem": {
@@ -672,6 +668,10 @@
       "exciting": {
         "citations": 41,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 23,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -741,10 +741,6 @@
       },
       "ADF": {
         "citations": 563,
-        "datestamp": "2021-01-04"
-      },
-      "BOSS": {
-        "citations": 600,
         "datestamp": "2021-01-04"
       },
       "Q-Chem": {
@@ -1078,6 +1074,10 @@
       "exciting": {
         "citations": 32,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 25,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -1147,10 +1147,6 @@
       },
       "ADF": {
         "citations": 570,
-        "datestamp": "2021-01-07"
-      },
-      "BOSS": {
-        "citations": 541,
         "datestamp": "2021-01-07"
       },
       "Q-Chem": {
@@ -1484,6 +1480,10 @@
       "exciting": {
         "citations": 33,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 20,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -1553,10 +1553,6 @@
       },
       "ADF": {
         "citations": 607,
-        "datestamp": "2021-01-07"
-      },
-      "BOSS": {
-        "citations": 562,
         "datestamp": "2021-01-07"
       },
       "Q-Chem": {
@@ -1890,6 +1886,10 @@
       "exciting": {
         "citations": 28,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 18,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -1959,10 +1959,6 @@
       },
       "ADF": {
         "citations": 574,
-        "datestamp": "2021-01-07"
-      },
-      "BOSS": {
-        "citations": 546,
         "datestamp": "2021-01-07"
       },
       "Q-Chem": {
@@ -2296,6 +2292,10 @@
       "exciting": {
         "citations": 19,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 30,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -2321,10 +2321,6 @@
       },
       "BAGEL": {
         "citations": 4,
-        "datestamp": "2021-01-17"
-      },
-      "BOSS": {
-        "citations": 503,
         "datestamp": "2021-01-17"
       },
       "BerkeleyGW": {
@@ -2702,6 +2698,10 @@
       "exciting": {
         "citations": 7,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 32,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -2727,10 +2727,6 @@
       },
       "BAGEL": {
         "citations": 6,
-        "datestamp": "2021-01-17"
-      },
-      "BOSS": {
-        "citations": 451,
         "datestamp": "2021-01-17"
       },
       "BerkeleyGW": {
@@ -3108,6 +3104,10 @@
       "exciting": {
         "citations": 12,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 28,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -3133,10 +3133,6 @@
       },
       "BAGEL": {
         "citations": 0,
-        "datestamp": "2021-01-17"
-      },
-      "BOSS": {
-        "citations": 409,
         "datestamp": "2021-01-17"
       },
       "BerkeleyGW": {
@@ -3514,6 +3510,10 @@
       "exciting": {
         "citations": 6,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 24,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -3539,10 +3539,6 @@
       },
       "BAGEL": {
         "citations": 1,
-        "datestamp": "2021-01-17"
-      },
-      "BOSS": {
-        "citations": 391,
         "datestamp": "2021-01-17"
       },
       "BerkeleyGW": {
@@ -3920,6 +3916,10 @@
       "exciting": {
         "citations": 8,
         "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 30,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -3949,10 +3949,6 @@
       },
       "BAGEL": {
         "citations": 0,
-        "datestamp": "2021-04-10"
-      },
-      "BOSS": {
-        "citations": 373,
         "datestamp": "2021-04-10"
       },
       "BerkeleyGW": {
@@ -4313,6 +4309,10 @@
       },
       "exciting": {
         "citations": 5,
+        "datestamp": "2021-08-26"
+      },
+      "BOSS": {
+        "citations": 21,
         "datestamp": "2021-08-26"
       }
     }
