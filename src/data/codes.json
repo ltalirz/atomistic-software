@@ -2073,41 +2073,6 @@
       "S"
     ]
   },
-  "exciting": {
-    "acceleration": [
-      "OpenMP"
-    ],
-    "apis": [],
-    "author_name": "Draxl",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Source",
-      "Spack"
-    ],
-    "element_coverage": "H..Pu",
-    "homepage": "http://exciting-code.org/",
-    "license": "OS(CL)",
-    "license_annotation": "GPL-2.0-or-later",
-    "name": "exciting",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
-    "notes": null,
-    "query_method": "search term",
-    "query_publication_id": "1156082755018988671",
-    "query_string": "\"exciting\" \"Draxl\" \"Gulans\" OR \"exciting-code\" OR \"exciting software\"",
-    "tags": [
-      "PBC",
-      "AE",
-      "LAPW"
-    ],
-    "types": [
-      "DFT"
-    ]
-  },
   "xTB": {
     "acceleration": [
       "OpenMP"
