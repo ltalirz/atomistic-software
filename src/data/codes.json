@@ -138,30 +138,6 @@
       "FF"
     ]
   },
-  "BOSS": {
-    "acceleration": null,
-    "apis": [],
-    "author_name": "Jorgensen",
-    "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
-    "element_coverage": null,
-    "homepage": "http://zarbi.chem.yale.edu/software.html#boss",
-    "license": "F(A)",
-    "license_annotation": null,
-    "name": "BOSS",
-    "nomad_tags": [],
-    "notes": null,
-    "query_method": "search term",
-    "query_publication_id": null,
-    "query_string": "\"Jorgensen\" \"BOSS\" \"BOSS program\" OR \"BOSS software\" OR \"MCPRO\" OR \"Tirado-Rives\"",
-    "tags": [],
-    "types": [
-      "FF"
-    ]
-  },
   "CASTEP": {
     "acceleration": [
       "MPI",
