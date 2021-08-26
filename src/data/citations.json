@@ -103,10 +103,6 @@
         "citations": 215,
         "datestamp": "2021-08-24"
       },
-      "GULP": {
-        "citations": 254,
-        "datestamp": "2021-08-24"
-      },
       "HOOMD-blue": {
         "citations": 131,
         "datestamp": "2021-08-24"
@@ -266,6 +262,10 @@
       "CASINO": {
         "citations": 34,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 193,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -359,10 +359,6 @@
       },
       "ABINIT": {
         "citations": 397,
-        "datestamp": "2021-01-04"
-      },
-      "GULP": {
-        "citations": 318,
         "datestamp": "2021-01-04"
       },
       "NWChem": {
@@ -672,6 +668,10 @@
       "CASINO": {
         "citations": 31,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 233,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -765,10 +765,6 @@
       },
       "ABINIT": {
         "citations": 340,
-        "datestamp": "2021-01-04"
-      },
-      "GULP": {
-        "citations": 368,
         "datestamp": "2021-01-04"
       },
       "NWChem": {
@@ -1078,6 +1074,10 @@
       "CASINO": {
         "citations": 38,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 262,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -1171,10 +1171,6 @@
       },
       "ABINIT": {
         "citations": 360,
-        "datestamp": "2021-01-07"
-      },
-      "GULP": {
-        "citations": 366,
         "datestamp": "2021-01-07"
       },
       "NWChem": {
@@ -1484,6 +1480,10 @@
       "CASINO": {
         "citations": 42,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 259,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -1577,10 +1577,6 @@
       },
       "ABINIT": {
         "citations": 401,
-        "datestamp": "2021-01-07"
-      },
-      "GULP": {
-        "citations": 385,
         "datestamp": "2021-01-07"
       },
       "NWChem": {
@@ -1890,6 +1886,10 @@
       "CASINO": {
         "citations": 36,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 259,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -1983,10 +1983,6 @@
       },
       "ABINIT": {
         "citations": 366,
-        "datestamp": "2021-01-07"
-      },
-      "GULP": {
-        "citations": 381,
         "datestamp": "2021-01-07"
       },
       "NWChem": {
@@ -2296,6 +2292,10 @@
       "CASINO": {
         "citations": 29,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 271,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -2413,10 +2413,6 @@
       },
       "GROMOS": {
         "citations": 1240,
-        "datestamp": "2021-01-17"
-      },
-      "GULP": {
-        "citations": 431,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -2702,6 +2698,10 @@
       "CASINO": {
         "citations": 35,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 292,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -2819,10 +2819,6 @@
       },
       "GROMOS": {
         "citations": 1130,
-        "datestamp": "2021-01-17"
-      },
-      "GULP": {
-        "citations": 453,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -3108,6 +3104,10 @@
       "CASINO": {
         "citations": 33,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 298,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -3225,10 +3225,6 @@
       },
       "GROMOS": {
         "citations": 1050,
-        "datestamp": "2021-01-17"
-      },
-      "GULP": {
-        "citations": 421,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -3514,6 +3510,10 @@
       "CASINO": {
         "citations": 30,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 267,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -3631,10 +3631,6 @@
       },
       "GROMOS": {
         "citations": 825,
-        "datestamp": "2021-01-17"
-      },
-      "GULP": {
-        "citations": 449,
         "datestamp": "2021-01-17"
       },
       "HOOMD-blue": {
@@ -3920,6 +3916,10 @@
       "CASINO": {
         "citations": 38,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 254,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -4045,10 +4045,6 @@
       },
       "GROMOS": {
         "citations": 777,
-        "datestamp": "2021-04-10"
-      },
-      "GULP": {
-        "citations": 398,
         "datestamp": "2021-04-10"
       },
       "HOOMD-blue": {
@@ -4314,6 +4310,10 @@
       "CASINO": {
         "citations": 29,
         "datestamp": "2021-08-25"
+      },
+      "GULP": {
+        "citations": 267,
+        "datestamp": "2021-08-26"
       }
     }
   }

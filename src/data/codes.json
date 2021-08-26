@@ -953,7 +953,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "GULP Gale",
+    "query_string": "\"GULP\" \"Gale\" \"Program\" OR \"Software\" OR \"Rohl\"",
     "tags": [],
     "types": [
       "FF"
