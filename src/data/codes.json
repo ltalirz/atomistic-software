@@ -2097,8 +2097,8 @@
     ],
     "notes": null,
     "query_method": "search term",
-    "query_publication_id": null,
-    "query_string": "\"exciting\" code Draxl",
+    "query_publication_id": "1156082755018988671",
+    "query_string": "\"exciting\" \"Draxl\" \"Gulans\" OR \"exciting-code\" OR \"exciting software\"",
     "tags": [
       "PBC",
       "AE",

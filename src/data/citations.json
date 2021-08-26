@@ -199,10 +199,6 @@
         "citations": 100,
         "datestamp": "2021-08-24"
       },
-      "exciting": {
-        "citations": 84,
-        "datestamp": "2021-08-24"
-      },
       "xTB": {
         "citations": 267,
         "datestamp": "2021-08-24"
@@ -265,6 +261,10 @@
       },
       "GULP": {
         "citations": 193,
+        "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 52,
         "datestamp": "2021-08-26"
       }
     }
@@ -447,10 +447,6 @@
       },
       "TeraChem": {
         "citations": 89,
-        "datestamp": "2021-01-04"
-      },
-      "exciting": {
-        "citations": 138,
         "datestamp": "2021-01-04"
       },
       "ACEMD": {
@@ -672,6 +668,10 @@
       "GULP": {
         "citations": 233,
         "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 41,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -853,10 +853,6 @@
       },
       "TeraChem": {
         "citations": 64,
-        "datestamp": "2021-01-04"
-      },
-      "exciting": {
-        "citations": 156,
         "datestamp": "2021-01-04"
       },
       "ACEMD": {
@@ -1078,6 +1074,10 @@
       "GULP": {
         "citations": 262,
         "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 32,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -1259,10 +1259,6 @@
       },
       "TeraChem": {
         "citations": 65,
-        "datestamp": "2021-01-07"
-      },
-      "exciting": {
-        "citations": 134,
         "datestamp": "2021-01-07"
       },
       "ACEMD": {
@@ -1484,6 +1480,10 @@
       "GULP": {
         "citations": 259,
         "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 33,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -1665,10 +1665,6 @@
       },
       "TeraChem": {
         "citations": 46,
-        "datestamp": "2021-01-07"
-      },
-      "exciting": {
-        "citations": 102,
         "datestamp": "2021-01-07"
       },
       "ACEMD": {
@@ -1890,6 +1886,10 @@
       "GULP": {
         "citations": 259,
         "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 28,
+        "datestamp": "2021-08-26"
       }
     }
   },
@@ -2071,10 +2071,6 @@
       },
       "TeraChem": {
         "citations": 49,
-        "datestamp": "2021-01-07"
-      },
-      "exciting": {
-        "citations": 95,
         "datestamp": "2021-01-07"
       },
       "ACEMD": {
@@ -2295,6 +2291,10 @@
       },
       "GULP": {
         "citations": 271,
+        "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 19,
         "datestamp": "2021-08-26"
       }
     }
@@ -2575,10 +2575,6 @@
         "citations": 41,
         "datestamp": "2021-01-17"
       },
-      "exciting": {
-        "citations": 29,
-        "datestamp": "2021-01-17"
-      },
       "gSAFT": {
         "citations": 8,
         "datestamp": "2021-01-17"
@@ -2701,6 +2697,10 @@
       },
       "GULP": {
         "citations": 292,
+        "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 7,
         "datestamp": "2021-08-26"
       }
     }
@@ -2981,10 +2981,6 @@
         "citations": 44,
         "datestamp": "2021-01-17"
       },
-      "exciting": {
-        "citations": 32,
-        "datestamp": "2021-01-17"
-      },
       "gSAFT": {
         "citations": 4,
         "datestamp": "2021-01-17"
@@ -3107,6 +3103,10 @@
       },
       "GULP": {
         "citations": 298,
+        "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 12,
         "datestamp": "2021-08-26"
       }
     }
@@ -3387,10 +3387,6 @@
         "citations": 38,
         "datestamp": "2021-01-17"
       },
-      "exciting": {
-        "citations": 23,
-        "datestamp": "2021-01-17"
-      },
       "gSAFT": {
         "citations": 1,
         "datestamp": "2021-01-17"
@@ -3513,6 +3509,10 @@
       },
       "GULP": {
         "citations": 267,
+        "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 6,
         "datestamp": "2021-08-26"
       }
     }
@@ -3793,10 +3793,6 @@
         "citations": 30,
         "datestamp": "2021-01-17"
       },
-      "exciting": {
-        "citations": 17,
-        "datestamp": "2021-01-17"
-      },
       "gSAFT": {
         "citations": 0,
         "datestamp": "2021-01-17"
@@ -3919,6 +3915,10 @@
       },
       "GULP": {
         "citations": 254,
+        "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 8,
         "datestamp": "2021-08-26"
       }
     }
@@ -4203,10 +4203,6 @@
         "citations": 27,
         "datestamp": "2021-04-10"
       },
-      "exciting": {
-        "citations": 11,
-        "datestamp": "2021-04-10"
-      },
       "gSAFT": {
         "citations": 1,
         "datestamp": "2021-04-10"
@@ -4313,6 +4309,10 @@
       },
       "GULP": {
         "citations": 267,
+        "datestamp": "2021-08-26"
+      },
+      "exciting": {
+        "citations": 5,
         "datestamp": "2021-08-26"
       }
     }
