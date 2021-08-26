@@ -12,7 +12,6 @@ import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import SchoolIcon from "@material-ui/icons/School";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 //import NotInterestedIcon from '@material-ui/icons/NotInterested';
-import ContactMailIcon from "@material-ui/icons/ContactMail";
 //import CopyrightIcon from '@material-ui/icons/Copyright';
 import LockIcon from "@material-ui/icons/Lock";
 import NoEncryptionIcon from "@material-ui/icons/NoEncryption";
@@ -147,68 +146,79 @@ function getColumns(data, year) {
       },
     },
     {
-      name: "license",
+      name: "cost",
       label: "Cost",
       options: {
         filter: true,
         sort: true,
         customBodyRenderLite: (dataIndex) => {
-          const x = data[dataIndex]["license"];
-          const licenses = ABBREVIATIONS["licenses"];
-          if (["C(S)", "C(C)"].includes(x)) {
-            return TooltipText(licenses[x], <AttachMoneyIcon />);
-          } else if (["F(A)"].includes(x)) {
+          const x = data[dataIndex]["cost"];
+          const cost = ABBREVIATIONS["cost"];
+          if (["commercial"].includes(x)) {
+            return TooltipText(cost[x], <AttachMoneyIcon />);
+          } else if (["free (academia)"].includes(x)) {
             return TooltipText(
-              licenses[x],
+              cost[x],
               <span>
                 <MoneyOffIcon />
                 <SchoolIcon />
               </span>
             );
-          } else if (["I"].includes(x)) {
-            return TooltipText(licenses[x], <ContactMailIcon />);
-          } else {
-            return TooltipText(licenses[x], <MoneyOffIcon />);
+            } else {
+            return TooltipText(cost[x], <MoneyOffIcon />);
           }
-          //return TooltipText(licenses[x], x);  import ContactMailIcon from '@material-ui/icons/ContactMail';
+        },
+      },
+    },
+    {
+      name: "source",
+      label: "Source",
+      options: {
+        filter: true,
+        sort: true,
+        customBodyRenderLite: (dataIndex) => {
+          const x = data[dataIndex]["source"];
+          const source = ABBREVIATIONS["source"];
+          if (["available"].includes(x)) {
+            return TooltipText(source[x], <LockOpenIcon color={"action"} />);
+          } else if (["closed"].includes(x)) {
+            return TooltipText(source[x], <LockIcon color={"action"} />);
+          } else if (["copyleft", "permissive"].includes(x)) {
+            const license = data[dataIndex]["license"];
+            let text = "";
+            if (license) { 
+              text = source[x] + " (" + license + ")";
+            } else {
+              text = source[x];
+            }
+            return TooltipText(
+              text,
+              <NoEncryptionIcon color={"action"} />
+            );
+          };
         },
       },
     },
     {
       name: "license",
-      label: "Source",
-      options: {
-        filter: false,
-        sort: true,
+      label: "License",
+      options: { filter: false, sort: true, display: false,
         customBodyRenderLite: (dataIndex) => {
-          const x = data[dataIndex]["license"];
-          const licenses = ABBREVIATIONS["licenses"];
-          if (["C(S)", "F(A)"].includes(x)) {
-            return TooltipText(licenses[x], <LockOpenIcon color={"action"} />);
-          } else if (["C(C)"].includes(x)) {
-            return TooltipText(licenses[x], <LockIcon color={"action"} />);
-          } else if (["OS(P)", "OS(CL)"].includes(x)) {
-            return TooltipText(
-              licenses[x],
-              <NoEncryptionIcon color={"action"} />
+          const license = data[dataIndex]["license"];
+          if (!license) { return null; }
+          const type = data[dataIndex]["source"];
+          if (["copyleft", "permissive"].includes(type)) {
+            const spdxUrl = `https://spdx.org/licenses/${license}.html`;
+            return (
+              <a href={spdxUrl} target="_blank" rel="noreferrer">
+                {license}
+              </a>
             );
-          } else if (["F"].includes(x)) {
-            return TooltipText(
-              licenses[x],
-              <span>
-                <NoEncryptionIcon color={"action"} />
-              </span>
-            );
-          } else {
-            return TooltipText(licenses[x], x);
-          }
+            } else {
+              return license;
+            };
         },
       },
-    },
-    {
-      name: "license_annotation",
-      label: "License Note",
-      options: { filter: false, sort: true, display: false },
     },
     {
       name: "citations",

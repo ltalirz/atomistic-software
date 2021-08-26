@@ -82,15 +82,15 @@ function costGraph() {
 
   // Careful: it seems the legend coloring does not match the one of the graph automatically
   let groups = {
-    "Free (general)": ["F", "OS(CL)", "OS(P)"],
-    "Free (academic)": [ "F(A)"],
-    "Free (sum)": ["F", "F(A)", "OS(CL)", "OS(P)"],
-    Commercial: ["C(C)", "C(S)"],
+    "Free (general)": ["free"],
+    "free (academia)": [ "free (academia)"],
+    "Free (sum)": ["free", "free (academia)"],
+    Commercial: ["commercial"],
   };
 
   let lines = [];
   for (const group in groups) {
-    const codeNames = filterCodeNames({ license: groups[group] });
+    const codeNames = filterCodeNames({ cost: groups[group] });
     lines.push({ id: group, data: getCodeCitations(codeNames) });
   }
   return nivoChart(lines, "");
@@ -103,14 +103,14 @@ function sourceGraph() {
 
   // Careful: it seems the legend coloring does not match the one of the graph automatically
   let groups = {
-    "Closed source": ["C(C)"],
-    "Open-source": ["OS(CL)", "OS(P)"],
-    "Source available": ["C(S)", "F", "F(A)", "OS(CL)", "OS(P)"],
+    "Closed source": ["closed"],
+    "Open-source": ["copyleft", "permissive"],
+    "Source available": ["copyleft", "permissive", "available"],
   };
 
   let lines = [];
   for (const group in groups) {
-    const codeNames = filterCodeNames({ license: groups[group] });
+    const codeNames = filterCodeNames({ source: groups[group] });
     lines.push({ id: group, data: getCodeCitations(codeNames) });
   }
   return nivoChart(lines, "");

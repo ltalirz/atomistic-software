@@ -30,16 +30,17 @@ class Code:  # pylint: disable=too-many-instance-attributes
     query_method: str
     query_string: str
     types: List[str]
-    license: str
+    cost: str
+    source: str
     tags: List
     apis: list = ()
     distribution_channels: list = ("Source", )
-    nomad_tags: list = None
+    nomad_tags: list = ()
     query_publication_id: str = None  # has to be str since >32bit
     notes: str = None
     license_annotation: str = None
     element_coverage: str = None
-    acceleration: list = None
+    acceleration: list = ()
 
 def read_codes_json(path: Path = DATA_DIR / 'codes.json') -> Dict[str, Code]:
     """Read codes.json file and return dictionary."""

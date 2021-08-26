@@ -15,14 +15,16 @@
     "STO": "Slater-type orbitals",
     "WLT": "Wavelet basis"
   },
-  "licenses": {
-    "OS(CL)": "Free, copyleft open-source license (GPL, LGPL, ...)",
-    "OS(P)": "Free, permissive open-source license (MIT, BSD, Apache, ECL, ...)",
-    "F": "Free, custom license",
-    "F(A)": "Free for academic use, custom license",
-    "C(S)": "Commercial, source available",
-    "C(C)": "Commercial, closed source",
-    "I":  "Individual-basis license via contacting the authors"
+  "cost": {
+    "free": "Free, may require registration",
+    "free (academia)": "Free for academic use",
+    "commercial": "Payment required"
+  },
+  "source": {
+    "copyleft": "Copyleft open-source license",
+    "permissive": "Permissive open-source license",
+    "available": "Source available for free or against payment",
+    "closed": "Closed source"
   },
   "acceleration": {
     "MPI": "Distributed memory parallelization on CPUs",
