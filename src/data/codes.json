@@ -332,7 +332,7 @@
     "distribution_channels": [
       "Binary"
     ],
-    "element_coverage": "Free demo limited to 10 atoms per primitive cell",
+    "element_coverage": null,
     "homepage": "https://www.crystal.unito.it/index.php",
     "cost": "commercial",
     "source": "closed",
@@ -341,7 +341,7 @@
     "nomad_tags": [
       "PI_member"
     ],
-    "notes": null,
+    "notes": "Free demo limited to 10 atoms per primitive cell",
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"CRYSTAL code\" OR \"CRYSTAL17\" OR \"CRYSTAL14\" OR \"CRYSTAL09\" OR \"CRYSTAL06\" Dovesi",
@@ -2051,7 +2051,7 @@
   },
   "YASARA": {
     "acceleration": [
-      "Threads",
+      "OpenMP",
       "Cuda"
     ],
     "apis": [],

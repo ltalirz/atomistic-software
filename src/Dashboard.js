@@ -121,15 +121,13 @@ export default function Dashboard() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-        <Container maxWidth="lg" className={classes.container}>
+        <Container maxWidth="xl" className={classes.container}>
           <Router basename="/">
-            {/* { <Container maxWidth={'lg'} style={{'textAlign': 'center'}}>} */}
             <Route exact path="/" component={Table} />
             <Route exact path="/table" component={Table} />
             <Route exact path="/charts/:code" component={SingleChart} />
             <Route exact path="/about" component={About} />
             <Route exact path="/stats" component={Statistics} />
-            {/* { </Container>} */}
           </Router>
           <Box pt={4}>
             <Copyright />

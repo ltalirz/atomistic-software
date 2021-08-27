@@ -18,6 +18,7 @@ class Table extends React.Component {
       options: {
         print: false,
         filterType: "checkbox",
+        filterArrayFullMatch: false,
         sortOrder: { name: "citations", direction: "desc" },
         rowsPerPage: 100,
         selectableRows: false,

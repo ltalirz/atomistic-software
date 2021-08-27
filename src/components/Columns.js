@@ -15,6 +15,7 @@ import LockOpenIcon from "@material-ui/icons/LockOpen";
 //import CopyrightIcon from '@material-ui/icons/Copyright';
 import LockIcon from "@material-ui/icons/Lock";
 import NoEncryptionIcon from "@material-ui/icons/NoEncryption";
+// import { FlashOnOutlined } from "@material-ui/icons";
 
 function TooltipText(tooltip, text) {
   /**
@@ -77,7 +78,7 @@ function getColumns(data, year) {
       label: "Methods",
       options: {
         filter: true,
-        sort: true,
+        sort: false,
         customBodyRenderLite: (dataIndex) => {
           return TooltipTexts(data[dataIndex]["types"], ABBREVIATIONS["methods"]);
         },
@@ -89,9 +90,31 @@ function getColumns(data, year) {
       options: { filter: false, sort: true, display: false },
     },
     {
+      name: "tags",
+      label: "Tags",
+      options: {
+        filter: true,
+        sort: false,
+        customBodyRenderLite: (dataIndex) => {
+          return TooltipTexts(data[dataIndex]["tags"], ABBREVIATIONS["tags"]);
+        },
+      },
+    },
+    {
+      name: "distribution_channels",
+      label: "Installation",
+      options: {
+        filter: true,
+        sort: false,
+        customBodyRenderLite: (dataIndex) => {
+          return TooltipTexts(data[dataIndex]["distribution_channels"], ABBREVIATIONS["distribution_channels"]);
+        },
+      },
+    },
+    {
       name: "acceleration",
       label: "Acceleration",
-      options: { filter: true, sort: true, display: false,
+      options: { filter: true, sort: false, display: false,
         customBodyRenderLite: (dataIndex) => {
           return TooltipTexts(data[dataIndex]["acceleration"], ABBREVIATIONS["acceleration"]);
         },
@@ -119,29 +142,6 @@ function getColumns(data, year) {
         customBodyRenderLite: (dataIndex) => {
           const types = data[dataIndex]["benchmarks"];
           return types.map((x) => <a href={'https://molmod.ugent.be/deltacodesdft'} target="_blank" rel="noreferrer">{x}</a>);
-        },
-      },
-
-    },
-    {
-      name: "tags",
-      label: "Tags",
-      options: {
-        filter: true,
-        sort: true,
-        customBodyRenderLite: (dataIndex) => {
-          return TooltipTexts(data[dataIndex]["tags"], ABBREVIATIONS["tags"]);
-        },
-      },
-    },
-    {
-      name: "distribution_channels",
-      label: "Installation",
-      options: {
-        filter: true,
-        sort: true,
-        customBodyRenderLite: (dataIndex) => {
-          return TooltipTexts(data[dataIndex]["distribution_channels"], ABBREVIATIONS["distribution_channels"]);
         },
       },
     },
@@ -254,7 +254,7 @@ function getColumns(data, year) {
       label: "Trend",
       options: {
         filter: false,
-        sort: true,
+        sort: false,
         // add google scholar link to number of citations
         customBodyRenderLite: (dataIndex) => {
           const row = data[dataIndex];
