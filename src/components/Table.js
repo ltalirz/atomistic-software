@@ -25,7 +25,7 @@ class Table extends React.Component {
         setTableProps: () => {
           return {
             // material ui v4 only
-            size: 'small',
+            size: "small",
           };
         },
       },

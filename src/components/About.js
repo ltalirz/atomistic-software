@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
@@ -8,17 +8,17 @@ import useStyles from "./Dashboard/Styles";
 import Title from "./Dashboard/Title";
 import packageJson from "../../package.json";
 
-import aboutMD from '../text/about.md';
+import aboutMD from "../text/about.md";
 
-const fillTemplate = function(templateString, templateVars){
-  /** 
+const fillTemplate = function (templateString, templateVars) {
+  /**
    * Replace JS variables in markdown strings.
-   * 
+   *
    * See https://stackoverflow.com/a/37217166/1069467
    */
-  // eslint-disable-next-line 
-    return new Function("return `"+templateString +"`;").call(templateVars);
-}
+  // eslint-disable-next-line
+  return new Function("return `" + templateString + "`;").call(templateVars);
+};
 
 class MarkdownPane extends React.Component {
   /**
@@ -32,33 +32,40 @@ class MarkdownPane extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       title: props.title,
       markdownFile: props.markdownFile,
-      markdown: props.markdown || '',
+      markdown: props.markdown || "",
       classes: props.classes,
     };
   }
 
   componentWillMount() {
     // Get contents from Markdown file and put them in the React state, so we can reference it in render() below.
-    if(!this.state.markdown && this.state.markdownFile) {
-    fetch(this.state.markdownFile).then(res => res.text()).then(text => this.setState({ markdown: fillTemplate(text,{'packageJson': packageJson} ) }));
+    if (!this.state.markdown && this.state.markdownFile) {
+      fetch(this.state.markdownFile)
+        .then((res) => res.text())
+        .then((text) =>
+          this.setState({
+            markdown: fillTemplate(text, { packageJson: packageJson }),
+          })
+        );
     }
   }
 
   render() {
-    return  (   <Grid item xs={12}>
-    <Paper className={this.state.classes.paper}>
-      <React.Fragment>
-        <Title>{this.state.title}</Title>
-        <Typography component="div" variant="body1" className="markdown">
-          <ReactMarkdown source={this.state.markdown} />
-        </Typography>
-      </React.Fragment>
-    </Paper>
-  </Grid> );
-    
+    return (
+      <Grid item xs={12}>
+        <Paper className={this.state.classes.paper}>
+          <React.Fragment>
+            <Title>{this.state.title}</Title>
+            <Typography component="div" variant="body1" className="markdown">
+              <ReactMarkdown source={this.state.markdown} />
+            </Typography>
+          </React.Fragment>
+        </Paper>
+      </Grid>
+    );
   }
 }
 

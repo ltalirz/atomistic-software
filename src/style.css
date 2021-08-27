@@ -1,11 +1,9 @@
-  
 .chart {
- height:70vh;
- max-height: 600px;
- /*width:60vw;
+  height: 70vh;
+  max-height: 600px;
+  /*width:60vw;
  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s; */
-  
 }
 
 .chart:hover {
@@ -28,7 +26,12 @@ main.makeStyles-content-12 {
   height: 100%;
 }
 
-div.markdown h1, h2, h3, h4, h5, h6{
+div.markdown h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 1.2em;
 }
 

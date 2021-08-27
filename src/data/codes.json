@@ -1,15 +1,9 @@
 {
   "ABINIT": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Gonze",
-    "benchmarks": [
-      "Δ-value"
-    ],
+    "benchmarks": ["Δ-value"],
     "distribution_channels": [
       "Source",
       "conda",
@@ -25,36 +19,20 @@
     "source": "copyleft",
     "license": "GPL-3.0",
     "name": "ABINIT",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "ABINIT Gonze",
-    "tags": [
-      "PBC",
-      "PP",
-      "PW",
-      "WLT"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["PBC", "PP", "PW", "WLT"],
+    "types": ["DFT", "WFM"]
   },
   "ADF": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Baerends",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": "H..Lu",
     "homepage": "https://www.scm.com/product/adf/",
     "cost": "commercial",
@@ -66,133 +44,75 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "ADF Baerends",
-    "tags": [
-      "PBC",
-      "AE",
-      "STO"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["PBC", "AE", "STO"],
+    "types": ["DFT", "WFM"]
   },
   "ATK/QuantumATK": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "QuantumWise",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Binary"],
     "element_coverage": "H..Rn",
     "homepage": "https://www.synopsys.com/silicon/quantumatk.html",
     "cost": "commercial",
     "source": "closed",
     "license": null,
     "name": "ATK/QuantumATK",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": "See VASP, ABINIT, FHI-aims, Quantum ESPRESSO",
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"Atomistix ToolKit\" OR QuantumATK",
-    "tags": [
-      "PBC"
-    ],
-    "types": [
-      "DFT",
-      "TB",
-      "FF"
-    ]
+    "tags": ["PBC"],
+    "types": ["DFT", "TB", "FF"]
   },
   "Amber": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Kollman",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": null,
     "homepage": "https://ambermd.org/",
     "cost": "commercial",
     "source": "available",
     "license": "Amber Software License",
     "name": "Amber",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": "Free serial version (AmberTools)",
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "Amber program Kollman",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "CASTEP": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Payne",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": null,
     "homepage": "http://www.castep.org",
     "cost": "free (academia)",
     "source": "available",
     "license": "CASTEP Academic Licence",
     "name": "CASTEP",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"CASTEP\" \"Payne\" OR \"Materials Studio\" OR \"Material Studio\"",
-    "tags": [
-      "PBC",
-      "PAW",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["PBC", "PAW", "PP", "PW"],
+    "types": ["DFT", "WFM"]
   },
   "CFOUR": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Stanton",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": null,
     "homepage": "http://www.cfour.de/",
     "cost": "free (academia)",
@@ -204,27 +124,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"CFOUR\" Stanton",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM"
-    ]
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM"]
   },
   "CHARMM": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Karplus",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source"
-    ],
+    "distribution_channels": ["Source"],
     "element_coverage": null,
     "homepage": "https://www.charmm.org/",
     "cost": "commercial",
@@ -237,16 +145,10 @@
     "query_publication_id": null,
     "query_string": "CHARMM program Karplus",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "CP2K": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Hutter",
     "benchmarks": [],
@@ -268,138 +170,80 @@
     "source": "copyleft",
     "license": "GPL-2.0",
     "name": "CP2K",
-    "nomad_tags": [
-      "data_collaboration"
-    ],
+    "nomad_tags": ["data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"CP2K\" \"Hutter\" OR \"www.cp2k.org\"",
-    "tags": [
-      "PBC",
-      "AE",
-      "GTO",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["PBC", "AE", "GTO", "PP", "PW"],
+    "types": ["DFT", "WFM"]
   },
   "CPMD": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Hutter",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source"
-    ],
+    "distribution_channels": ["Source"],
     "element_coverage": "H..Pu",
     "homepage": "https://www.cpmd.org/",
     "cost": "free (academia)",
     "source": "available",
     "license": "Early Release Software Program License Agreement For CPMD",
     "name": "CPMD",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "CPMD Hutter",
-    "tags": [
-      "PBC",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT"
-    ]
+    "tags": ["PBC", "PP", "PW"],
+    "types": ["DFT"]
   },
   "CRYSTAL": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Dovesi",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": null,
     "homepage": "https://www.crystal.unito.it/index.php",
     "cost": "commercial",
     "source": "closed",
     "license": null,
     "name": "CRYSTAL",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": "Free demo limited to 10 atoms per primitive cell",
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"CRYSTAL code\" OR \"CRYSTAL17\" OR \"CRYSTAL14\" OR \"CRYSTAL09\" OR \"CRYSTAL06\" Dovesi",
-    "tags": [
-      "PBC",
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["PBC", "AE", "GTO", "PP"],
+    "types": ["DFT", "WFM"]
   },
   "DFTB+": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Aradi",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "conda",
-      "Binary",
-      "EasyBuild"
-    ],
+    "distribution_channels": ["Source", "conda", "Binary", "EasyBuild"],
     "element_coverage": null,
     "homepage": "https://www.dftb-plus.info",
     "cost": "free",
     "source": "copyleft",
     "license": "LGPL-3.0-or-later",
     "name": "DFTB+",
-    "nomad_tags": [
-      "data_collaboration"
-    ],
+    "nomad_tags": ["data_collaboration"],
     "notes": null,
     "query_method": "publication",
     "query_publication_id": "11397957054615082073",
     "query_string": "B. Aradi, B. Hourahine, and Th. Frauenheim. JPC A 2007 111 (26), 5678-5684",
     "tags": [],
-    "types": [
-      "TB"
-    ]
+    "types": ["TB"]
   },
   "DIRAC": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Saue",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "EasyBuild"
-    ],
+    "distribution_channels": ["Source", "EasyBuild"],
     "element_coverage": null,
     "homepage": "http://www.diracprogram.org/doku.php",
     "cost": "free",
@@ -411,28 +255,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "DIRAC \"Saue\"",
-    "tags": [
-      "AE",
-      "LAO"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["AE", "LAO"],
+    "types": ["DFT", "WFM"]
   },
   "DL_POLY": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Smith",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "EasyBuild"
-    ],
+    "distribution_channels": ["Source", "EasyBuild"],
     "element_coverage": null,
     "homepage": "https://www.scd.stfc.ac.uk/Pages/DL_POLY.aspx",
     "cost": "free (academia)",
@@ -445,56 +276,34 @@
     "query_publication_id": null,
     "query_string": "\"DL_POLY\" Smith",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "DMol3": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Delley",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": null,
     "homepage": "https://www.3ds.com/fileadmin/PRODUCTS-SERVICES/BIOVIA/PDF/biovia-material-studio-dmol3.pdf",
     "cost": "commercial",
     "source": "closed",
     "license": null,
     "name": "DMol3",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "DMol3 OR \"DMol^3\" Delley",
-    "tags": [
-      "PBC",
-      "AE",
-      "NAO",
-      "PP"
-    ],
-    "types": [
-      "DFT"
-    ]
+    "tags": ["PBC", "AE", "NAO", "PP"],
+    "types": ["DFT"]
   },
   "Dalton": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Ågren",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "EasyBuild",
-      "Spack"
-    ],
+    "distribution_channels": ["Source", "EasyBuild", "Spack"],
     "element_coverage": "H..Og",
     "homepage": "https://daltonprogram.org/",
     "cost": "free",
@@ -506,26 +315,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "Dalton Ågren",
-    "tags": [
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM"
-    ]
+    "tags": ["GTO", "PP"],
+    "types": ["WFM"]
   },
   "Desmond": {
-    "acceleration": [
-      "MPI",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "Cuda"],
     "apis": [],
     "author_name": "Schrödinger",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": null,
     "homepage": "https://www.schrodinger.com/products/desmond",
     "cost": "free (academia)",
@@ -538,20 +336,14 @@
     "query_publication_id": null,
     "query_string": "desmond schrödinger",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "Discovery Studio": {
-    "acceleration": [
-      "Cuda"
-    ],
+    "acceleration": ["Cuda"],
     "apis": [],
     "author_name": "Accelrys",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": null,
     "homepage": "https://en.wikipedia.org/wiki/Discovery_Studio",
     "cost": "commercial",
@@ -564,223 +356,134 @@
     "query_publication_id": null,
     "query_string": "\"Discovery Studio\" Accelrys",
     "tags": [],
-    "types": [
-      "FF",
-      "DFT"
-    ]
+    "types": ["FF", "DFT"]
   },
   "EPW": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Giustino",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "conda"
-    ],
+    "distribution_channels": ["Source", "conda"],
     "element_coverage": "H..Pu",
     "homepage": "https://epw-code.org",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-2.0",
     "name": "EPW",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"EPW\" Giustino",
-    "tags": [
-      "PBC",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "S"
-    ]
+    "tags": ["PBC", "PP", "PW"],
+    "types": ["S"]
   },
   "ESPResSo": {
-    "acceleration": [
-      "MPI",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "Cuda"],
     "apis": [],
     "author_name": "Holm",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "EasyBuild"
-    ],
+    "distribution_channels": ["Source", "EasyBuild"],
     "element_coverage": null,
     "homepage": "https://espressomd.org/",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-3.0",
     "name": "ESPResSo",
-    "nomad_tags": [
-      "data_collaboration"
-    ],
+    "nomad_tags": ["data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"molecular dynamics\" OR \"soft matter\" espresso holm",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "Elk": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Dewhurst",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Source",
-      "EasyBuild",
-      "Spack"
-    ],
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source", "EasyBuild", "Spack"],
     "element_coverage": null,
     "homepage": "http://elk.sourceforge.net/",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-3.0-or-later",
     "name": "Elk",
-    "nomad_tags": [
-      "data_collaboration"
-    ],
+    "nomad_tags": ["data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"elk.sourceforge.net\"",
-    "tags": [
-      "PBC",
-      "AE",
-      "LAPW"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["PBC", "AE", "LAPW"],
+    "types": ["DFT", "WFM"]
   },
   "FEFF": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Rehr",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source"
-    ],
+    "distribution_channels": ["Source"],
     "element_coverage": null,
     "homepage": "https://github.com/times-software/feff10",
     "cost": "free",
     "source": "available",
     "license": "FEFF10 license",
     "name": "FEFF",
-    "nomad_tags": [
-      "data_collaboration"
-    ],
+    "nomad_tags": ["data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"FEFF\" Rehr",
     "tags": [],
-    "types": [
-      "S"
-    ]
+    "types": ["S"]
   },
   "FHI-aims": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Blum",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Source"
-    ],
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source"],
     "element_coverage": "H..Md",
     "homepage": "http://www.fhi-berlin.mpg.de/aims/",
     "cost": "commercial",
     "source": "available",
     "license": null,
     "name": "FHI-aims",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "FHI-aims Blum",
-    "tags": [
-      "PBC",
-      "AE",
-      "NAO"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["PBC", "AE", "NAO"],
+    "types": ["DFT", "WFM"]
   },
   "FPLO": {
     "acceleration": [],
     "apis": [],
     "author_name": "Koepernik",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Source"
-    ],
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source"],
     "element_coverage": null,
     "homepage": "https://www.fplo.de/",
     "cost": "commercial",
     "source": "available",
     "license": null,
     "name": "FPLO",
-    "nomad_tags": [
-      "data_collaboration"
-    ],
+    "nomad_tags": ["data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "FPLO Koepernik",
-    "tags": [
-      "PBC",
-      "AE",
-      "NAO"
-    ],
-    "types": [
-      "DFT"
-    ]
+    "tags": ["PBC", "AE", "NAO"],
+    "types": ["DFT"]
   },
   "Firefly": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Granovsky",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": null,
     "homepage": "http://classic.chem.msu.su/gran/gamess/index.html",
     "cost": "free",
@@ -792,26 +495,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "firefly \"Granovsky\"",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
   },
   "FoldX": {
-    "acceleration": [
-      "Cuda"
-    ],
+    "acceleration": ["Cuda"],
     "apis": [],
     "author_name": "Serrano",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": null,
     "homepage": "http://foldx.crg.es/",
     "cost": "free (academia)",
@@ -824,60 +516,33 @@
     "query_publication_id": null,
     "query_string": "FoldX Serrano",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "GAMESS": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
-    "apis": [
-      "QCSchema"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
+    "apis": ["QCSchema"],
     "author_name": "Gordon",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary",
-      "EasyBuild",
-      "NGC"
-    ],
+    "distribution_channels": ["Source", "Binary", "EasyBuild", "NGC"],
     "element_coverage": "H..Rn",
     "homepage": "https://www.msg.chem.iastate.edu/",
     "cost": "free",
     "source": "available",
     "license": "GAMESS User License Agreement",
     "name": "GAMESS",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": "Registration required for academic and industrial users.",
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "GAMESS Gordon",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
   },
   "GPAW": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Mortensen",
-    "benchmarks": [
-      "Δ-value"
-    ],
+    "benchmarks": ["Δ-value"],
     "distribution_channels": [
       "Source",
       "PyPI",
@@ -893,35 +558,20 @@
     "source": "copyleft",
     "license": "GPL-3.0",
     "name": "GPAW",
-    "nomad_tags": [
-      "data_collaboration"
-    ],
+    "nomad_tags": ["data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "GPAW Mortensen",
-    "tags": [
-      "PBC",
-      "NAO",
-      "PAW",
-      "PP",
-      "PW",
-      "RS"
-    ],
-    "types": [
-      "DFT"
-    ]
+    "tags": ["PBC", "NAO", "PAW", "PP", "PW", "RS"],
+    "types": ["DFT"]
   },
   "GROMOS": {
-    "acceleration": [
-      "Cuda"
-    ],
+    "acceleration": ["Cuda"],
     "apis": [],
     "author_name": "Van Gunsteren",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source"
-    ],
+    "distribution_channels": ["Source"],
     "element_coverage": null,
     "homepage": "http://www.gromos.net/",
     "cost": "commercial",
@@ -934,20 +584,14 @@
     "query_publication_id": null,
     "query_string": "GROMOS van Gunsteren",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "GULP": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Gale",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source"
-    ],
+    "distribution_channels": ["Source"],
     "element_coverage": null,
     "homepage": "https://gulp.curtin.edu.au/gulp/",
     "cost": "free (academia)",
@@ -960,53 +604,30 @@
     "query_publication_id": null,
     "query_string": "\"GULP\" \"Gale\" \"Program\" OR \"Software\" OR \"Rohl\"",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "Gaussian": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Frisch",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": "H..Rf",
     "homepage": "https://www.gaussian.com/",
     "cost": "commercial",
     "source": "available",
     "license": null,
     "name": "Gaussian",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "Frisch \"Gaussian 70\" OR \"Gaussian 76\" OR \"Gaussian 80\" OR \"Gaussian 82\" OR \"Gaussian 86\" OR \"Gaussian 88\" OR \"Gaussian 90\" OR \"Gaussian 92\" OR \"Gaussian 94\" OR \"Gaussian 98\" OR \"Gaussian 03\" OR \"Gaussian 09\" OR \"Gaussian 16\"",
-    "tags": [
-      "PBC",
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["PBC", "AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
   },
   "Gromacs": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "OpenCL"
-    ],
+    "acceleration": ["MPI", "OpenMP", "OpenCL"],
     "apis": [],
     "author_name": "Lindahl",
     "benchmarks": [],
@@ -1028,24 +649,16 @@
     "source": "copyleft",
     "license": "LGPL-2.1-or-later",
     "name": "Gromacs",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"GROMACS\" Lindahl OR Berendsen",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "HOOMD-blue": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Anderson",
     "benchmarks": [],
@@ -1068,18 +681,14 @@
     "query_publication_id": null,
     "query_string": "HOOMD-blue Anderson",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "Hyperchem": {
     "acceleration": [],
     "apis": [],
     "author_name": "Hypercube",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": null,
     "homepage": "http://www.hypercubeusa.com/",
     "cost": "commercial",
@@ -1091,27 +700,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "hyperchem hypercube",
-    "tags": [
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "FF",
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["GTO", "PP"],
+    "types": ["FF", "WFM", "DFT"]
   },
   "Jaguar": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Schrödinger",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": "H..Pu",
     "homepage": "https://www.schrodinger.com/Jaguar/",
     "cost": "commercial",
@@ -1123,24 +720,11 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "Jaguar Schrödinger",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP",
-      "STO"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["AE", "GTO", "PP", "STO"],
+    "types": ["DFT", "WFM"]
   },
   "LAMMPS": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda",
-      "HIP"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda", "HIP"],
     "apis": [],
     "author_name": "Plimpton",
     "benchmarks": [],
@@ -1166,26 +750,20 @@
     "source": "copyleft",
     "license": "GPL-2.0",
     "name": "LAMMPS",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "LAMMPS Plimpton",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "MOE": {
     "acceleration": [],
     "apis": [],
     "author_name": "Chemical Computing Group",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": null,
     "homepage": "https://www.chemcomp.com/",
     "cost": "commercial",
@@ -1198,22 +776,14 @@
     "query_publication_id": null,
     "query_string": "MOE \"Chemical Computing Group\"",
     "tags": [],
-    "types": [
-      "FF",
-      "WFM"
-    ]
+    "types": ["FF", "WFM"]
   },
   "MOLCAS": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Lindh",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary",
-      "Source"
-    ],
+    "distribution_channels": ["Binary", "Source"],
     "element_coverage": "H..Cm",
     "homepage": "http://www.molcas.org/",
     "cost": "commercial",
@@ -1225,28 +795,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "MOLCAS Lindh",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
   },
   "MOPAC": {
-    "acceleration": [
-      "MPI",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "Cuda"],
     "apis": [],
     "author_name": "Stewart",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": "H..Bi",
     "homepage": "http://openmopac.net/",
     "cost": "free (academia)",
@@ -1258,24 +815,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "MOPAC Stewart",
-    "tags": [
-      "PBC",
-      "PP",
-      "STO"
-    ],
-    "types": [
-      "FF",
-      "WFM"
-    ]
+    "tags": ["PBC", "PP", "STO"],
+    "types": ["FF", "WFM"]
   },
   "MacroModel": {
     "acceleration": [],
     "apis": [],
     "author_name": "Schrödinger",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": null,
     "homepage": "https://www.schrodinger.com/MacroModel/",
     "cost": "commercial",
@@ -1288,22 +836,14 @@
     "query_publication_id": null,
     "query_string": "MacroModel Schrödinger",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "Molpro": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Werner",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": "H..Lr",
     "homepage": "https://www.molpro.net/",
     "cost": "commercial",
@@ -1315,59 +855,32 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "Molpro Werner",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["DFT", "WFM"]
   },
   "NAMD": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Schulten",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary",
-      "NGC",
-      "Spack",
-      "EasyBuild"
-    ],
+    "distribution_channels": ["Source", "Binary", "NGC", "Spack", "EasyBuild"],
     "element_coverage": null,
     "homepage": "https://www.ks.uiuc.edu/Research/namd/",
     "cost": "free (academia)",
     "source": "available",
     "license": null,
     "name": "NAMD",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"NAMD\" Schulten",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "NWChem": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
-    "apis": [
-      "QCSchema"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
+    "apis": ["QCSchema"],
     "author_name": "Valiev",
     "benchmarks": [],
     "distribution_channels": [
@@ -1388,107 +901,56 @@
     "source": "permissive",
     "license": "ECL-2.0",
     "name": "NWChem",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "NWChem Valiev",
-    "tags": [
-      "PBC",
-      "AE",
-      "GTO",
-      "PAW",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT",
-      "WFM",
-      "FF"
-    ]
+    "tags": ["PBC", "AE", "GTO", "PAW", "PP", "PW"],
+    "types": ["DFT", "WFM", "FF"]
   },
   "ORCA": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Neese",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": "H..Lr",
     "homepage": "https://orcaforum.kofo.mpg.de/app.php/portal",
     "cost": "free (academia)",
     "source": "closed",
     "license": null,
     "name": "ORCA",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "ORCA Neese",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
   },
   "Octopus": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "OpenCL"
-    ],
+    "acceleration": ["MPI", "OpenMP", "OpenCL"],
     "apis": [],
     "author_name": "Rubio",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Source",
-      "Spack",
-      "EasyBuild"
-    ],
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source", "Spack", "EasyBuild"],
     "element_coverage": "H..Lr",
     "homepage": "https://www.tddft.org/programs/octopus/wiki/index.php/Main_Page",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-2.0",
     "name": "Octopus",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "octopus Rubio",
-    "tags": [
-      "PBC",
-      "PP",
-      "RS"
-    ],
-    "types": [
-      "DFT"
-    ]
+    "tags": ["PBC", "PP", "RS"],
+    "types": ["DFT"]
   },
   "OpenMM": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda",
-      "OpenCL"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda", "OpenCL"],
     "apis": [],
     "author_name": "Eastman",
     "benchmarks": [],
@@ -1512,24 +974,14 @@
     "query_publication_id": null,
     "query_string": "openmm Eastman",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "OpenMX": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Ozaki",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Source",
-      "Spack"
-    ],
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source", "Spack"],
     "element_coverage": "H..Rn",
     "homepage": "http://www.openmx-square.org/",
     "cost": "free",
@@ -1541,19 +993,11 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "OpenMX Ozaki",
-    "tags": [
-      "PBC",
-      "NAO",
-      "PP"
-    ],
-    "types": [
-      "DFT"
-    ]
+    "tags": ["PBC", "NAO", "PP"],
+    "types": ["DFT"]
   },
   "OpenMolcas": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Lindh",
     "benchmarks": [],
@@ -1576,23 +1020,12 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"Openmolcas\" Lindh",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
   },
   "Psi4": {
-    "acceleration": [
-      "MPI"
-    ],
-    "apis": [
-      "QCSchema"
-    ],
+    "acceleration": ["MPI"],
+    "apis": ["QCSchema"],
     "author_name": "Sherrill",
     "benchmarks": [],
     "distribution_channels": [
@@ -1614,23 +1047,12 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "Psi4 Sherrill",
-    "tags": [
-      "AE",
-      "GTO"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["AE", "GTO"],
+    "types": ["WFM", "DFT"]
   },
   "PySCF": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
-    "apis": [
-      "QCSchema"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
+    "apis": ["QCSchema"],
     "author_name": "Chan",
     "benchmarks": [],
     "distribution_channels": [
@@ -1653,29 +1075,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "pyscf \"chan\"",
-    "tags": [
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["GTO", "PP"],
+    "types": ["WFM", "DFT"]
   },
   "Q-Chem": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
-    "apis": [
-      "QCSchema"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
+    "apis": ["QCSchema"],
     "author_name": "Shao",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": "H..Og",
     "homepage": "https://www.q-chem.com/",
     "cost": "commercial",
@@ -1687,27 +1095,14 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"Q-Chem\" Shao",
-    "tags": [
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
   },
   "Quantum ESPRESSO": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Giannozzi",
-    "benchmarks": [
-      "Δ-value"
-    ],
+    "benchmarks": ["Δ-value"],
     "distribution_channels": [
       "Source",
       "NGC",
@@ -1727,34 +1122,20 @@
     "source": "copyleft",
     "license": "GPL-2.0",
     "name": "Quantum ESPRESSO",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"Quantum ESPRESSO\" Giannozzi",
-    "tags": [
-      "PBC",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT",
-      "S"
-    ]
+    "tags": ["PBC", "PP", "PW"],
+    "types": ["DFT", "S"]
   },
   "RASPA": {
     "acceleration": [],
     "apis": [],
     "author_name": "Dubbeldam",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "conda",
-      "EasyBuild"
-    ],
+    "distribution_channels": ["Source", "conda", "EasyBuild"],
     "element_coverage": null,
     "homepage": "https://github.com/iRASPA/RASPA2",
     "cost": "free",
@@ -1767,197 +1148,114 @@
     "query_publication_id": null,
     "query_string": "\"RASPA\" OR \"RASPA2\" Dubbeldam",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "SIESTA": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Soler",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "AUR",
-      "conda",
-      "Spack",
-      "EasyBuild"
-    ],
+    "distribution_channels": ["Source", "AUR", "conda", "Spack", "EasyBuild"],
     "element_coverage": "H..Rn",
     "homepage": "https://departments.icmab.es/leem/siesta/",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-3.0",
     "name": "SIESTA",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "SIESTA Soler",
-    "tags": [
-      "PBC",
-      "NAO",
-      "PP"
-    ],
-    "types": [
-      "DFT"
-    ]
+    "tags": ["PBC", "NAO", "PP"],
+    "types": ["DFT"]
   },
   "TB-LMTO-ASA": {
     "acceleration": [],
     "apis": [],
     "author_name": "Andersen",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source"
-    ],
+    "distribution_channels": ["Source"],
     "element_coverage": null,
     "homepage": "https://www2.fkf.mpg.de/andersen/LMTODOC/LMTODOC.html",
     "cost": "free (academia)",
     "source": "available",
     "license": null,
     "name": "TB-LMTO-ASA",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"TB-LMTO-ASA\"",
-    "tags": [
-      "AE",
-      "(L)MTO"
-    ],
-    "types": [
-      "DFT",
-      "TB"
-    ]
+    "tags": ["AE", "(L)MTO"],
+    "types": ["DFT", "TB"]
   },
   "TINKER": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda",
-      "OpenACC"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda", "OpenACC"],
     "apis": [],
     "author_name": "Ponder",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "NGC",
-      "Binary",
-      "Spack",
-      "EasyBuild"
-    ],
+    "distribution_channels": ["Source", "NGC", "Binary", "Spack", "EasyBuild"],
     "element_coverage": null,
     "homepage": "https://dasher.wustl.edu/tinker/",
     "cost": "free (academia)",
     "source": "available",
     "license": "TINKER – Software Tools for Molecular Design",
     "name": "TINKER",
-    "nomad_tags": [
-      "PI_member"
-    ],
+    "nomad_tags": ["PI_member"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "TINKER Ponder",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "TURBOMOLE": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Ahlrichs",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary"
-    ],
+    "distribution_channels": ["Source", "Binary"],
     "element_coverage": "H..Rn",
     "homepage": "https://www.turbomole.com/",
     "cost": "commercial",
     "source": "available",
     "license": null,
     "name": "TURBOMOLE",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "TURBOMOLE Ahlrichs",
-    "tags": [
-      "PBC",
-      "AE",
-      "GTO",
-      "PP"
-    ],
-    "types": [
-      "WFM",
-      "DFT"
-    ]
+    "tags": ["PBC", "AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
   },
   "VASP": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "OpenACC"
-    ],
+    "acceleration": ["MPI", "OpenMP", "OpenACC"],
     "apis": [],
     "author_name": "Kresse",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Source"
-    ],
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source"],
     "element_coverage": "H..Pu",
     "homepage": "https://www.vasp.at/",
     "cost": "commercial",
     "source": "available",
     "license": null,
     "name": "VASP",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": "Free for academic use in Austria",
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "VASP Kresse",
-    "tags": [
-      "PBC",
-      "PAW",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["PBC", "PAW", "PP", "PW"],
+    "types": ["DFT", "WFM"]
   },
   "WHAT IF": {
     "acceleration": [],
     "apis": [],
     "author_name": "Vriend",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": null,
     "homepage": "https://swift.cmbi.umcn.nl/whatif/",
     "cost": "commercial",
@@ -1970,51 +1268,30 @@
     "query_publication_id": null,
     "query_string": "\"WHAT IF\" \"Vriend\" molecular",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "WIEN2k": {
-    "acceleration": [
-      "MPI",
-      "OpenMP"
-    ],
+    "acceleration": ["MPI", "OpenMP"],
     "apis": [],
     "author_name": "Blaha",
-    "benchmarks": [
-      "Δ-value"
-    ],
-    "distribution_channels": [
-      "Source"
-    ],
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source"],
     "element_coverage": null,
     "homepage": "http://www.wien2k.at/",
     "cost": "commercial",
     "source": "available",
     "license": null,
     "name": "WIEN2k",
-    "nomad_tags": [
-      "PI_member",
-      "data_collaboration"
-    ],
+    "nomad_tags": ["PI_member", "data_collaboration"],
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "WIEN2k Blaha",
-    "tags": [
-      "PBC",
-      "AE",
-      "LAPW"
-    ],
-    "types": [
-      "DFT",
-      "WFM"
-    ]
+    "tags": ["PBC", "AE", "LAPW"],
+    "types": ["DFT", "WFM"]
   },
   "Wannier90": {
-    "acceleration": [
-      "MPI"
-    ],
+    "acceleration": ["MPI"],
     "apis": [],
     "author_name": "Marzari",
     "benchmarks": [],
@@ -2037,29 +1314,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"Wannier90\" Marzari",
-    "tags": [
-      "PP",
-      "PW",
-      "PBC",
-      "GTO",
-      "AE",
-      "PAW"
-    ],
-    "types": [
-      "S"
-    ]
+    "tags": ["PP", "PW", "PBC", "GTO", "AE", "PAW"],
+    "types": ["S"]
   },
   "YASARA": {
-    "acceleration": [
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Krieger",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": null,
     "homepage": "http://yasara.org/",
     "cost": "commercial",
@@ -2072,25 +1335,14 @@
     "query_publication_id": null,
     "query_string": "YASARA Krieger",
     "tags": [],
-    "types": [
-      "FF"
-    ]
+    "types": ["FF"]
   },
   "Yambo": {
-    "acceleration": [
-      "MPI",
-      "OpenMP",
-      "Cuda"
-    ],
+    "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
     "author_name": "Marini",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Spack",
-      "EasyBuild",
-      "conda"
-    ],
+    "distribution_channels": ["Source", "Spack", "EasyBuild", "conda"],
     "element_coverage": "H..Pu",
     "homepage": "http://www.yambo-code.org/",
     "cost": "free",
@@ -2102,29 +1354,15 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "Yambo Marini",
-    "tags": [
-      "PBC",
-      "PP",
-      "PW"
-    ],
-    "types": [
-      "S"
-    ]
+    "tags": ["PBC", "PP", "PW"],
+    "types": ["S"]
   },
   "xTB": {
-    "acceleration": [
-      "OpenMP"
-    ],
+    "acceleration": ["OpenMP"],
     "apis": [],
     "author_name": "Grimme",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source",
-      "Binary",
-      "EasyBuild",
-      "conda",
-      "DNF"
-    ],
+    "distribution_channels": ["Source", "Binary", "EasyBuild", "conda", "DNF"],
     "element_coverage": null,
     "homepage": "https://xtb-docs.readthedocs.io/",
     "cost": "free",
@@ -2137,8 +1375,6 @@
     "query_publication_id": null,
     "query_string": "xtb \"Grimme\"",
     "tags": [],
-    "types": [
-      "TB"
-    ]
+    "types": ["TB"]
   }
 }

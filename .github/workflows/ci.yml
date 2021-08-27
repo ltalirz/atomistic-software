@@ -3,30 +3,29 @@ name: ci
 on: [push, pull_request]
 
 jobs:
-
   check-links:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v2
-    # link checker ignores json files
-    - name: Extract links from codes.json
-      run: |
-        grep homepage src/data/codes.json > codes.md
+      - uses: actions/checkout@v2
+      # link checker ignores json files
+      - name: Extract links from codes.json
+        run: |
+          grep homepage src/data/codes.json > codes.md
 
-    - name: Link Checker
-      id: lc
-      uses: lycheeverse/lychee-action@v1.0.8
-      with:
-        # See cli args at https://github.com/lycheeverse/lychee#commandline-parameters
-        # for excluded URLs, the checker seems to be stricter than Chrome
-        args: >-
-          --verbose --timeout 40 --insecure 
-          --exclude "https://www.msg.chem.iastate.edu/" "https://openmopac.net/"
-          -- codes.md
+      - name: Link Checker
+        id: lc
+        uses: lycheeverse/lychee-action@v1.0.8
+        with:
+          # See cli args at https://github.com/lycheeverse/lychee#commandline-parameters
+          # for excluded URLs, the checker seems to be stricter than Chrome
+          args: >-
+            --verbose --timeout 40 --insecure 
+            --exclude "https://www.msg.chem.iastate.edu/" "https://openmopac.net/"
+            -- codes.md
 
-    - name: Fail if there were link errors
-      run: exit ${{ steps.lc.outputs.exit_code }}
+      - name: Fail if there were link errors
+        run: exit ${{ steps.lc.outputs.exit_code }}
 
   lint:
     runs-on: ubuntu-latest

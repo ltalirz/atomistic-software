@@ -83,7 +83,7 @@ function costGraph() {
   // Careful: it seems the legend coloring does not match the one of the graph automatically
   let groups = {
     "Free (general)": ["free"],
-    "free (academia)": [ "free (academia)"],
+    "free (academia)": ["free (academia)"],
     "Free (sum)": ["free", "free (academia)"],
     Commercial: ["commercial"],
   };
@@ -178,10 +178,10 @@ function relativeGrowthList(data) {
 //     );
 // }
 
-function Card(title, message, footnote = "", widthSmall, widthLarge= null) {
+function Card(title, message, footnote = "", widthSmall, widthLarge = null) {
   /**
    * Returns Grid component wrapped in Paper.
-   * 
+   *
    * @param title - Title of card
    * @param message - Content of the card
    * @param footnote - Display below content
@@ -189,7 +189,7 @@ function Card(title, message, footnote = "", widthSmall, widthLarge= null) {
    * @param widthLarge - Width of card when viewpoint is large
    */
   const classes = useStyles();
-  if (! widthSmall) {
+  if (!widthSmall) {
     widthSmall = widthLarge;
   }
   return [
@@ -218,31 +218,29 @@ export default function Home() {
         "Highly cited in " + CURRENT_YEAR,
         totalList(GROWTH["total"].slice(0, 10)),
         "",
-        12, 4
+        12,
+        4
       )}
       {Card(
         "High citation growth " + CURRENT_YEAR,
         absoluteGrowthList(GROWTH["absoluteGrowth"].slice(0, 10)),
         "With respect to " + (CURRENT_YEAR - 1) + ".",
-        12,4
+        12,
+        4
       )}
       {Card(
         "High relative citation growth " + CURRENT_YEAR,
         relativeGrowthList(GROWTH["relativeGrowth"].slice(0, 10)),
         "With respect to " + (CURRENT_YEAR - 1) + ".",
-        12,4
+        12,
+        4
       )}
-      {Card(
-        "Citations commercial vs free",
-        costGraph(),
-        "",
-        12
-      )}
+      {Card("Citations commercial vs free", costGraph(), "", 12)}
       {Card(
         "Citations by source code availability",
         sourceGraph(),
-        "\"Source available\" includes engines whose source code can be obtained for free or for a fee. " +
-          "\"Open-source\" engines are the subset of source-available engines with OSI-approved licenses.",
+        '"Source available" includes engines whose source code can be obtained for free or for a fee. ' +
+          '"Open-source" engines are the subset of source-available engines with OSI-approved licenses.',
         12
       )}
     </Grid>

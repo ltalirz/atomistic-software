@@ -5,19 +5,17 @@ import useStyles from "../Dashboard/Styles";
 
 import { ResponsiveLine } from "@nivo/line";
 
-
 import { getCodeCitations } from "../Config";
 import { useParams } from "react-router-dom";
 
 const THEME = {
   axis: {
-    legend:{
+    legend: {
       text: {
-        fontSize: '14px',
-      }
-    }
-    
-  }
+        fontSize: "14px",
+      },
+    },
+  },
 };
 
 function getTitle(codeName, citations) {
@@ -69,20 +67,18 @@ function SingleChart() {
   const data = { id: codeName, data: citations };
 
   return (
-    <Paper className={classes.paper}>
-      {nivoChart([data], title, false)}
-    </Paper>
+    <Paper className={classes.paper}>{nivoChart([data], title, false)}</Paper>
   );
 }
 
-function nivoChart(data, title, legend=true) {
+function nivoChart(data, title, legend = true) {
   /**
    * Return nivo line-chart with default formatting for given data and title.
    */
   let legend_list = [];
   let margin_right = 50;
-  if (legend){
-    legend_list=[
+  if (legend) {
+    legend_list = [
       {
         anchor: "bottom-right",
         direction: "column",
@@ -109,13 +105,12 @@ function nivoChart(data, title, legend=true) {
       },
     ];
     margin_right = 130;
-  };
-
+  }
 
   return (
     <React.Fragment>
-        <Title>{title}</Title>
-        <div className="chart" >
+      <Title>{title}</Title>
+      <div className="chart">
         <ResponsiveLine
           title={title}
           data={data}
@@ -153,8 +148,8 @@ function nivoChart(data, title, legend=true) {
           animate={false}
           theme={THEME}
         />
-        </div>
-      </React.Fragment>
+      </div>
+    </React.Fragment>
   );
 }
 

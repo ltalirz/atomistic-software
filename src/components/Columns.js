@@ -20,11 +20,11 @@ import NoEncryptionIcon from "@material-ui/icons/NoEncryption";
 function TooltipText(tooltip, text) {
   /**
    * Nicesly styled tooltip.
-   * 
+   *
    * Cursor does not change shape.
    */
   return (
-    <Tooltip title={tooltip} placement="top" key={tooltip} arrow >
+    <Tooltip title={tooltip} placement="top" key={tooltip} arrow>
       <span className="has-tooltip">{text}</span>
     </Tooltip>
   );
@@ -34,13 +34,13 @@ function TooltipTexts(values, tooltips) {
   /**
    * Multiple tooltips with zero-width breaking spaces in between to allow text wrapping.
    */
-  if (values && values.length > 0) { 
-    return (values.map((x) => 
-        TooltipText(tooltips[x], x))
-        .reduce((prev, curr) => [prev, <wbr/>, curr]));
-    } else { 
-      return null;
-    }
+  if (values && values.length > 0) {
+    return values
+      .map((x) => TooltipText(tooltips[x], x))
+      .reduce((prev, curr) => [prev, <wbr />, curr]);
+  } else {
+    return null;
+  }
 }
 
 function getColumns(data, year) {
@@ -80,7 +80,10 @@ function getColumns(data, year) {
         filter: true,
         sort: false,
         customBodyRenderLite: (dataIndex) => {
-          return TooltipTexts(data[dataIndex]["types"], ABBREVIATIONS["methods"]);
+          return TooltipTexts(
+            data[dataIndex]["types"],
+            ABBREVIATIONS["methods"]
+          );
         },
       },
     },
@@ -107,18 +110,27 @@ function getColumns(data, year) {
         filter: true,
         sort: false,
         customBodyRenderLite: (dataIndex) => {
-          return TooltipTexts(data[dataIndex]["distribution_channels"], ABBREVIATIONS["distribution_channels"]);
+          return TooltipTexts(
+            data[dataIndex]["distribution_channels"],
+            ABBREVIATIONS["distribution_channels"]
+          );
         },
       },
     },
     {
       name: "acceleration",
       label: "Acceleration",
-      options: { filter: true, sort: false, display: false,
+      options: {
+        filter: true,
+        sort: false,
+        display: false,
         customBodyRenderLite: (dataIndex) => {
-          return TooltipTexts(data[dataIndex]["acceleration"], ABBREVIATIONS["acceleration"]);
+          return TooltipTexts(
+            data[dataIndex]["acceleration"],
+            ABBREVIATIONS["acceleration"]
+          );
         },
-       },
+      },
     },
     {
       name: "apis",
@@ -141,7 +153,15 @@ function getColumns(data, year) {
         display: false,
         customBodyRenderLite: (dataIndex) => {
           const types = data[dataIndex]["benchmarks"];
-          return types.map((x) => <a href={'https://molmod.ugent.be/deltacodesdft'} target="_blank" rel="noreferrer">{x}</a>);
+          return types.map((x) => (
+            <a
+              href={"https://molmod.ugent.be/deltacodesdft"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {x}
+            </a>
+          ));
         },
       },
     },
@@ -164,7 +184,7 @@ function getColumns(data, year) {
                 <SchoolIcon />
               </span>
             );
-            } else {
+          } else {
             return TooltipText(cost[x], <MoneyOffIcon />);
           }
         },
@@ -186,26 +206,28 @@ function getColumns(data, year) {
           } else if (["copyleft", "permissive"].includes(x)) {
             const license = data[dataIndex]["license"];
             let text = "";
-            if (license) { 
+            if (license) {
               text = source[x] + " (" + license + ")";
             } else {
               text = source[x];
             }
-            return TooltipText(
-              text,
-              <NoEncryptionIcon color={"action"} />
-            );
-          };
+            return TooltipText(text, <NoEncryptionIcon color={"action"} />);
+          }
         },
       },
     },
     {
       name: "license",
       label: "License",
-      options: { filter: false, sort: true, display: false,
+      options: {
+        filter: false,
+        sort: true,
+        display: false,
         customBodyRenderLite: (dataIndex) => {
           const license = data[dataIndex]["license"];
-          if (!license) { return null; }
+          if (!license) {
+            return null;
+          }
           const type = data[dataIndex]["source"];
           if (["copyleft", "permissive"].includes(type)) {
             const spdxUrl = `https://spdx.org/licenses/${license}.html`;
@@ -214,9 +236,9 @@ function getColumns(data, year) {
                 {license}
               </a>
             );
-            } else {
-              return license;
-            };
+          } else {
+            return license;
+          }
         },
       },
     },
