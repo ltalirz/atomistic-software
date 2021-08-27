@@ -24,6 +24,11 @@ Softwares in the \`Spectroscopy\` category are not necessarily simulation engine
 
 **Relevance criterion**: In order to keep the length of the list manageable, atomistic simulation engines need to have had at least **one year with 100 citations** or more in order to be added to the list.
 
+Besides citation counts, _${this.packageJson.name}_ collects further metadata, such as the homepage, license, and other relevant information.
+Metadata on _${this.packageJson.name}_ should
+  1. add value for filtering/selecting codes
+  2. change slowly (time scale 1 year or longer)
+  3. be easy to collect (2 work days per year should suffice for updating the complete collection)
 ## Methodology
 
 **Disclaimer**: Owing to the [lack of standardization in today's software citation practices](http://doi.org/10.5281/zenodo.4263762), the citation counts reported here are _approximate_ and their significance should not be overrated.

@@ -38,7 +38,7 @@ class Code:  # pylint: disable=too-many-instance-attributes
     nomad_tags: list = ()
     query_publication_id: str = None  # has to be str since >32bit
     notes: str = None
-    license_annotation: str = None
+    license: str = None
     element_coverage: str = None
     acceleration: list = ()
 
