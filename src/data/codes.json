@@ -905,7 +905,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "NWChem Valiev",
+    "query_string": "\"NWChem\" \"Valiev\" OR \"Apra\" OR \"Kendall\"",
     "tags": ["PBC", "AE", "GTO", "PAW", "PP", "PW"],
     "types": ["DFT", "WFM", "FF"]
   },

@@ -127,10 +127,6 @@
         "citations": 819,
         "datestamp": "2021-08-24"
       },
-      "NWChem": {
-        "citations": 353,
-        "datestamp": "2021-08-24"
-      },
       "Octopus": {
         "citations": 279,
         "datestamp": "2021-08-24"
@@ -266,6 +262,10 @@
       "BOSS": {
         "citations": 36,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 384,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -355,10 +355,6 @@
       },
       "ABINIT": {
         "citations": 397,
-        "datestamp": "2021-01-04"
-      },
-      "NWChem": {
-        "citations": 368,
         "datestamp": "2021-01-04"
       },
       "MOPAC": {
@@ -672,6 +668,10 @@
       "BOSS": {
         "citations": 23,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 371,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -761,10 +761,6 @@
       },
       "ABINIT": {
         "citations": 340,
-        "datestamp": "2021-01-04"
-      },
-      "NWChem": {
-        "citations": 354,
         "datestamp": "2021-01-04"
       },
       "MOPAC": {
@@ -1078,6 +1074,10 @@
       "BOSS": {
         "citations": 25,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 377,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -1166,10 +1166,6 @@
         "datestamp": "2021-01-07"
       },
       "ABINIT": {
-        "citations": 360,
-        "datestamp": "2021-01-07"
-      },
-      "NWChem": {
         "citations": 360,
         "datestamp": "2021-01-07"
       },
@@ -1484,6 +1480,10 @@
       "BOSS": {
         "citations": 20,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 405,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -1573,10 +1573,6 @@
       },
       "ABINIT": {
         "citations": 401,
-        "datestamp": "2021-01-07"
-      },
-      "NWChem": {
-        "citations": 355,
         "datestamp": "2021-01-07"
       },
       "MOPAC": {
@@ -1890,6 +1886,10 @@
       "BOSS": {
         "citations": 18,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 377,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -1979,10 +1979,6 @@
       },
       "ABINIT": {
         "citations": 366,
-        "datestamp": "2021-01-07"
-      },
-      "NWChem": {
-        "citations": 346,
         "datestamp": "2021-01-07"
       },
       "MOPAC": {
@@ -2296,6 +2292,10 @@
       "BOSS": {
         "citations": 30,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 372,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -2469,10 +2469,6 @@
       },
       "NRLMOL": {
         "citations": 16,
-        "datestamp": "2021-01-17"
-      },
-      "NWChem": {
-        "citations": 324,
         "datestamp": "2021-01-17"
       },
       "ONETEP": {
@@ -2702,6 +2698,10 @@
       "BOSS": {
         "citations": 32,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 350,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -2875,10 +2875,6 @@
       },
       "NRLMOL": {
         "citations": 23,
-        "datestamp": "2021-01-17"
-      },
-      "NWChem": {
-        "citations": 314,
         "datestamp": "2021-01-17"
       },
       "ONETEP": {
@@ -3108,6 +3104,10 @@
       "BOSS": {
         "citations": 28,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 345,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -3281,10 +3281,6 @@
       },
       "NRLMOL": {
         "citations": 25,
-        "datestamp": "2021-01-17"
-      },
-      "NWChem": {
-        "citations": 229,
         "datestamp": "2021-01-17"
       },
       "ONETEP": {
@@ -3514,6 +3510,10 @@
       "BOSS": {
         "citations": 24,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 276,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -3687,10 +3687,6 @@
       },
       "NRLMOL": {
         "citations": 15,
-        "datestamp": "2021-01-17"
-      },
-      "NWChem": {
-        "citations": 180,
         "datestamp": "2021-01-17"
       },
       "ONETEP": {
@@ -3920,6 +3916,10 @@
       "BOSS": {
         "citations": 30,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 235,
+        "datestamp": "2021-08-31"
       }
     }
   },
@@ -4101,10 +4101,6 @@
       },
       "NRLMOL": {
         "citations": 17,
-        "datestamp": "2021-04-10"
-      },
-      "NWChem": {
-        "citations": 154,
         "datestamp": "2021-04-10"
       },
       "ONETEP": {
@@ -4314,6 +4310,10 @@
       "BOSS": {
         "citations": 21,
         "datestamp": "2021-08-26"
+      },
+      "NWChem": {
+        "citations": 216,
+        "datestamp": "2021-08-31"
       }
     }
   }
