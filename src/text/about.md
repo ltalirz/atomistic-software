@@ -68,10 +68,21 @@ Click on a citation count in order to see the exact Google Scholar query that wa
 
 ## How to cite
 
-You are welcome to cite [atomistic.software](https://atomistic.software/#/) in your scientific work in the following ways:
+Please cite [atomistic.software](https://atomistic.software/#/) in your scientific work in one or both of the following ways:
 
-- **Variant 1**: Cite the DOI corresponding to the latest website release by copying the "Cite as" information from [https://doi.org/10.5281/zenodo.4639414](https://doi.org/10.5281/zenodo.4639414)
-- **Variant 2**: Talirz, L. _Trends in atomistic simulation engines._ [https://atomistic.software](https://atomistic.software/#/) (2021)
+- **Web site**: Cite the DOI corresponding to the latest website release by copying the "Cite as" information from [https://doi.org/10.5281/zenodo.4639414](https://doi.org/10.5281/zenodo.4639414)
+- **Preprint**: Talirz, L.; Ghiringhelli, L. M.; Smit, B. _Trends in Atomistic Simulation Software Usage._ arXiv:2108.12350 2021.
+
+## Acknowledgements
+This project was inspired by and built upon the ["Major codes in electronic-structure theory, quantum chemistry, and molecular-dynamics"](https://www.nomad-coe.eu/old-pages/externals/codes) collection maintained by the [NOMAD Center of Excellence](https://www.nomad-coe.eu) from 2017-2019.
+Thanks go to Luca Ghiringhelli for being supportive of this effort to transform the static list into an interactive app and a collaborative project.
+
+The project draws upon further great resources, including:
+ * The [Google Scholar](https://scholar.google.com/) search engine for citation counts
+ * Wikipedia's [List of quantum chemistry and solid-state physics software](https://en.wikipedia.org/wiki/List_of_quantum_chemistry_and_solid-state_physics_software)
+ * Wikipedia's [Comparison of software for molecular mechanics modelling](https://en.wikipedia.org/wiki/Comparison_of_software_for_molecular_mechanics_modeling)
+ * SklogWiki's [Materials modelling and computer simulation codes](http://www.sklogwiki.org/SklogWiki/index.php/Materials_modelling_and_computer_simulation_codes)
+
 
 ## Contact
 
