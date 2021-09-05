@@ -45,6 +45,7 @@ function getData(year) {
 
   for (const codename in data) {
     data[codename]["citations"] = citations_data[codename]["citations"];
+    data[codename]["datestamp"] = citations_data[codename]["datestamp"];
   }
 
   let dataArray = [];

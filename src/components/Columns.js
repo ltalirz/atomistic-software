@@ -264,7 +264,7 @@ function getColumns(data, year) {
           }
           searchUrl += "&hl=en&as_sdt=0%2C5&as_ylo=" + year + "&as_yhi=" + year;
           return (
-            <a href={searchUrl} target="_blank" rel="noreferrer">
+            <a href={searchUrl} target="_blank" rel="noreferrer" title={"Recorded " + row["datestamp"]}>
               {row["citations"]}
             </a>
           );
