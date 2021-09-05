@@ -80,11 +80,11 @@ function nivoChart(data, title, legend = true) {
   if (legend) {
     legend_list = [
       {
-        anchor: "bottom-right",
+        anchor: "top-left",
         direction: "column",
         justify: false,
-        translateX: 100,
-        translateY: 0,
+        translateX: 10,
+        translateY: 10,
         itemsSpacing: 0,
         itemDirection: "left-to-right",
         itemWidth: 80,
@@ -104,7 +104,6 @@ function nivoChart(data, title, legend = true) {
         ],
       },
     ];
-    margin_right = 130;
   }
 
   return (

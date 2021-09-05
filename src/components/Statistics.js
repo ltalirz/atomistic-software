@@ -168,15 +168,8 @@ function relativeGrowthList(data) {
   );
 }
 
-// function typeList(data) {
-//     return (
-//         <Typography component="div" variant="subtitle1">
-//         <ul>
-//         {Object.entries(data).map(( [k,v]) => <li>{k + ": " + v + "\n"}</li>)}
-//         </ul>
-//         </Typography>
-//     );
-// }
+
+// Breakpoint sizes: xs, sm, md, lg, xl and xxl
 
 function Card(title, message, footnote = "", widthSmall, widthLarge = null) {
   /**
@@ -193,7 +186,7 @@ function Card(title, message, footnote = "", widthSmall, widthLarge = null) {
     widthSmall = widthLarge;
   }
   return [
-    <Grid item sm={widthSmall} md={widthLarge}>
+    <Grid item xs={widthSmall} sm={widthSmall} md={widthLarge}>
       <Paper className={classes.paper}>
         <React.Fragment>
           <Title>{title}</Title>
@@ -218,30 +211,30 @@ export default function Home() {
         "Highly cited in " + CURRENT_YEAR,
         totalList(GROWTH["total"].slice(0, 10)),
         "",
-        12,
+        10,
         4
       )}
       {Card(
         "High citation growth " + CURRENT_YEAR,
         absoluteGrowthList(GROWTH["absoluteGrowth"].slice(0, 10)),
         "With respect to " + (CURRENT_YEAR - 1) + ".",
-        12,
+        10,
         4
       )}
       {Card(
         "High relative citation growth " + CURRENT_YEAR,
         relativeGrowthList(GROWTH["relativeGrowth"].slice(0, 10)),
         "With respect to " + (CURRENT_YEAR - 1) + ".",
-        12,
+        10,
         4
       )}
-      {Card("Citations commercial vs free", costGraph(), "", 12)}
+      {Card("Citations commercial vs free", costGraph(), "", 12, 10)}
       {Card(
         "Citations by source code availability",
         sourceGraph(),
         '"Source available" includes engines whose source code can be obtained for free or for a fee. ' +
           '"Open-source" engines are the subset of source-available engines with OSI-approved licenses.',
-        12
+        12, 10
       )}
     </Grid>
   );
