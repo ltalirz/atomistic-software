@@ -1196,6 +1196,26 @@
     "tags": ["AE", "(L)MTO"],
     "types": ["DFT", "TB"]
   },
+  "TeraChem": {
+    "acceleration": ["Cuda"],
+    "apis": [],
+    "author_name": "Marti­nez",
+    "benchmarks": [],
+    "distribution_channels": ["Binary"],
+    "element_coverage": null,
+    "homepage": "http://petachem.com/",
+    "cost": "commercial",
+    "source": "closed",
+    "license": null,
+    "name": "TeraChem",
+    "nomad_tags": null,
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "TeraChem Marti­nez",
+    "tags": [],
+    "types": ["DFT"]
+  },
   "TINKER": {
     "acceleration": ["MPI", "OpenMP", "Cuda", "OpenACC"],
     "apis": [],
