@@ -23,6 +23,7 @@ This covers the \`DFT\`, \`WFM\`, \`QMC\`, \`TB\`, and \`FF\` categories.
 Softwares in the \`Spectroscopy\` category are not necessarily simulation engines in the above sense, but compute the response of a given atomic structure to an external excitation (via photons, electrons, ...).
 
 **Relevance criterion**: In order to keep the length of the list manageable, atomistic simulation engines need to have had at least **one year with 100 citations** or more in order to be added to the list.
+Simulation engines that do not yet meet the criterion are tracked on a [watchlist](${this.packageJson.repository.url}/wiki/Watchlist).
 
 Besides citation counts, _${this.packageJson.name}_ collects further metadata, such as the homepage, license, and other relevant information.
 Metadata on _${this.packageJson.name}_ should
