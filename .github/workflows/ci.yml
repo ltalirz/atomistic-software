@@ -22,7 +22,7 @@ jobs:
           args: >-
             --verbose --timeout 40 --insecure 
             --exclude "https://www.msg.chem.iastate.edu/"
-            --exclude "https://openmopac.net/"
+            --exclude "http://openmopac.net/"
             -- codes.md
 
       - name: Fail if there were link errors
