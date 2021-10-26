@@ -56,6 +56,8 @@
     "DockerHub": "Pull docker image from DockerHub (Linux, MacOS, Windows)",
     "EasyBuild": "Build framework for high-performance computing (Linux)",
     "Spack": "Build framework for high-performance computing (Linux, MacOS)",
+    "Nix": "Cross-platform package manager (Linux, MacOS)",
+    "Guix": "Official package manager of GNU Guix system (Linux)",
     "PyPI": "Install from Python Package Index (Linux, MacOS, Windows)",
     "conda": "Cross-platform package manager (Linux, MacOS, Windows)",
     "NGC": "Pull image from Nvidia GPU Cloud (Linux)",

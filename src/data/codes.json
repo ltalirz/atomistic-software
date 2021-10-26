@@ -641,6 +641,8 @@
       "DockerHub",
       "conda",
       "NGC",
+      "Nix",
+      "Guix",
       "SingularityHub"
     ],
     "element_coverage": null,
@@ -667,7 +669,8 @@
       "conda",
       "SingularityHub",
       "Spack",
-      "NGC"
+      "NGC",
+      "Nix"
     ],
     "element_coverage": null,
     "homepage": "https://codeblue.umich.edu/hoomd-blue/index.html",
@@ -741,6 +744,7 @@
       "Homebrew",
       "conda",
       "DockerHub",
+      "Nix",
       "EasyBuild",
       "Spack"
     ],
@@ -1007,7 +1011,8 @@
       "Spack",
       "APT",
       "DNF",
-      "Yum"
+      "Yum",
+      "Nix"
     ],
     "element_coverage": "H..Cm",
     "homepage": "https://molcas.gitlab.io/OpenMolcas/sphinx/",
@@ -1112,6 +1117,7 @@
       "APT",
       "SingularityHub",
       "AUR",
+      "Nix",
       "Spack",
       "EasyBuild",
       "Yum"
@@ -1155,7 +1161,7 @@
     "apis": [],
     "author_name": "Soler",
     "benchmarks": [],
-    "distribution_channels": ["Source", "AUR", "conda", "Spack", "EasyBuild"],
+    "distribution_channels": ["Source", "AUR", "conda", "Spack", "EasyBuild", "Nix"],
     "element_coverage": "H..Rn",
     "homepage": "https://departments.icmab.es/leem/siesta/",
     "cost": "free",
