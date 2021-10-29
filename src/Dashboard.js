@@ -32,7 +32,7 @@ function Copyright() {
       {"Copyright © "}
       <Link
         color="inherit"
-        href="https://sites.google.com/site/leotalirz"
+        href={packageJson.author.url}
         target="_blank"
       >
         {packageJson.author.name}
@@ -40,7 +40,7 @@ function Copyright() {
       {new Date().getFullYear()}
       {". "}
       <Link
-        href="https://github.com/ltalirz/atomistic-software/commits/master"
+        href={packageJson.repository.url + "/commits/master"}
         target="_blank"
       >
         Changelog

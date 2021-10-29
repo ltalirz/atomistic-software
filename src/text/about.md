@@ -50,7 +50,7 @@ Click on a citation count in order to see the exact Google Scholar query that wa
     **A**: Citation counts reported by Google Scholar are not static, even for years that lie in the past.
     Reasons may include new sites being indexed, more text being extracted, different citations being disambiguated, or even the heuristic evolving that predicts the total number of results.
     In our experience, citation data for the previous year can be subject to significant (upwards) fluctuation, while citation data for years further in the past are quite stable.
-    We record the date of when each data point was collected in the [source code repository](${this.packageJson.repository.url}).
+    Hover with the mouse pointer over a citation count in the overview table in order to see when this data point was collected.
 
 1.  **Q**: Why impose a criterion that engines on the list need to have at least one year with 100 citations?
 
