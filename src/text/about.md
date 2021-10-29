@@ -71,8 +71,9 @@ Click on a citation count in order to see the exact Google Scholar query that wa
 
 Please cite [atomistic.software](https://atomistic.software/#/) in your scientific work in one or both of the following ways:
 
+- **Article**: Talirz, L., Ghiringhelli, L. M., & Smit, B. (2021). Trends in Atomistic Simulation Software Usage [Article v1.0]. Living Journal of Computational Molecular Science, 3(1), 1483. [https://doi.org/10.33011/livecoms.3.1.1483](https://doi.org/10.33011/livecoms.3.1.1483)
 - **Web site**: Cite the DOI corresponding to the latest website release by copying the "Cite as" information from [https://doi.org/10.5281/zenodo.4639414](https://doi.org/10.5281/zenodo.4639414)
-- **Preprint**: Talirz, L.; Ghiringhelli, L. M.; Smit, B. _Trends in Atomistic Simulation Software Usage._ arXiv:2108.12350 2021.
+
 
 ## Acknowledgements
 This project was inspired by and built upon the ["Major codes in electronic-structure theory, quantum chemistry, and molecular-dynamics"](https://www.nomad-coe.eu/old-pages/externals/codes) collection maintained by the [NOMAD Center of Excellence](https://www.nomad-coe.eu) from 2017-2019.
