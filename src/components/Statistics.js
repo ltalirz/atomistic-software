@@ -83,7 +83,7 @@ function costGraph() {
   // Careful: it seems the legend coloring does not match the one of the graph automatically
   let groups = {
     "Free (general)": ["free"],
-    "free (academia)": ["free (academia)"],
+    "Free (academia)": ["free (academia)"],
     "Free (sum)": ["free", "free (academia)"],
     Commercial: ["commercial"],
   };
