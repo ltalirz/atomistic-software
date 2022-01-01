@@ -1,4 +1,262 @@
 {
+  "2021-2021": {
+    "year_low": 2021,
+    "year_high": 2021,
+    "citations": {
+      "ABINIT": {
+        "citations": 410,
+        "datestamp": "2022-01-01"
+      },
+      "ADF": {
+        "citations": 681,
+        "datestamp": "2022-01-01"
+      },
+      "ATK/QuantumATK": {
+        "citations": 600,
+        "datestamp": "2022-01-01"
+      },
+      "Amber": {
+        "citations": 2610,
+        "datestamp": "2022-01-01"
+      },
+      "CASTEP": {
+        "citations": 2240,
+        "datestamp": "2022-01-01"
+      },
+      "CFOUR": {
+        "citations": 192,
+        "datestamp": "2022-01-01"
+      },
+      "CHARMM": {
+        "citations": 932,
+        "datestamp": "2022-01-01"
+      },
+      "CP2K": {
+        "citations": 833,
+        "datestamp": "2022-01-01"
+      },
+      "CPMD": {
+        "citations": 93,
+        "datestamp": "2022-01-01"
+      },
+      "CRYSTAL": {
+        "citations": 434,
+        "datestamp": "2022-01-01"
+      },
+      "DFTB+": {
+        "citations": 166,
+        "datestamp": "2022-01-01"
+      },
+      "DIRAC": {
+        "citations": 169,
+        "datestamp": "2022-01-01"
+      },
+      "DL_POLY": {
+        "citations": 181,
+        "datestamp": "2022-01-01"
+      },
+      "DMol3": {
+        "citations": 870,
+        "datestamp": "2022-01-01"
+      },
+      "Dalton": {
+        "citations": 489,
+        "datestamp": "2022-01-01"
+      },
+      "Desmond": {
+        "citations": 1170,
+        "datestamp": "2022-01-01"
+      },
+      "Discovery Studio": {
+        "citations": 1250,
+        "datestamp": "2022-01-01"
+      },
+      "EPW": {
+        "citations": 182,
+        "datestamp": "2022-01-01"
+      },
+      "ESPResSo": {
+        "citations": 100,
+        "datestamp": "2022-01-01"
+      },
+      "Elk": {
+        "citations": 114,
+        "datestamp": "2022-01-01"
+      },
+      "FEFF": {
+        "citations": 323,
+        "datestamp": "2022-01-01"
+      },
+      "FHI-aims": {
+        "citations": 254,
+        "datestamp": "2022-01-01"
+      },
+      "FPLO": {
+        "citations": 141,
+        "datestamp": "2022-01-01"
+      },
+      "Firefly": {
+        "citations": 131,
+        "datestamp": "2022-01-01"
+      },
+      "FoldX": {
+        "citations": 351,
+        "datestamp": "2022-01-01"
+      },
+      "GAMESS": {
+        "citations": 890,
+        "datestamp": "2022-01-01"
+      },
+      "GPAW": {
+        "citations": 228,
+        "datestamp": "2022-01-01"
+      },
+      "GROMOS": {
+        "citations": 1980,
+        "datestamp": "2022-01-01"
+      },
+      "GULP": {
+        "citations": 250,
+        "datestamp": "2022-01-01"
+      },
+      "Gaussian": {
+        "citations": 8770,
+        "datestamp": "2022-01-01"
+      },
+      "Gromacs": {
+        "citations": 5280,
+        "datestamp": "2022-01-01"
+      },
+      "HOOMD-blue": {
+        "citations": 146,
+        "datestamp": "2022-01-01"
+      },
+      "Hyperchem": {
+        "citations": 308,
+        "datestamp": "2022-01-01"
+      },
+      "Jaguar": {
+        "citations": 386,
+        "datestamp": "2022-01-01"
+      },
+      "LAMMPS": {
+        "citations": 4440,
+        "datestamp": "2022-01-01"
+      },
+      "MOE": {
+        "citations": 1190,
+        "datestamp": "2022-01-01"
+      },
+      "MOLCAS": {
+        "citations": 214,
+        "datestamp": "2022-01-01"
+      },
+      "MOPAC": {
+        "citations": 374,
+        "datestamp": "2022-01-01"
+      },
+      "MacroModel": {
+        "citations": 493,
+        "datestamp": "2022-01-01"
+      },
+      "Molpro": {
+        "citations": 815,
+        "datestamp": "2022-01-01"
+      },
+      "NAMD": {
+        "citations": 1580,
+        "datestamp": "2022-01-01"
+      },
+      "NWChem": {
+        "citations": 377,
+        "datestamp": "2022-01-01"
+      },
+      "ORCA": {
+        "citations": 2060,
+        "datestamp": "2022-01-01"
+      },
+      "Octopus": {
+        "citations": 344,
+        "datestamp": "2022-01-01"
+      },
+      "OpenMM": {
+        "citations": 625,
+        "datestamp": "2022-01-01"
+      },
+      "OpenMX": {
+        "citations": 135,
+        "datestamp": "2022-01-01"
+      },
+      "OpenMolcas": {
+        "citations": 166,
+        "datestamp": "2022-01-01"
+      },
+      "Psi4": {
+        "citations": 258,
+        "datestamp": "2022-01-01"
+      },
+      "PySCF": {
+        "citations": 239,
+        "datestamp": "2022-01-01"
+      },
+      "Q-Chem": {
+        "citations": 637,
+        "datestamp": "2022-01-01"
+      },
+      "Quantum ESPRESSO": {
+        "citations": 3180,
+        "datestamp": "2022-01-01"
+      },
+      "RASPA": {
+        "citations": 212,
+        "datestamp": "2022-01-01"
+      },
+      "SIESTA": {
+        "citations": 808,
+        "datestamp": "2022-01-01"
+      },
+      "TB-LMTO-ASA": {
+        "citations": 61,
+        "datestamp": "2022-01-01"
+      },
+      "TINKER": {
+        "citations": 383,
+        "datestamp": "2022-01-01"
+      },
+      "TURBOMOLE": {
+        "citations": 618,
+        "datestamp": "2022-01-01"
+      },
+      "VASP": {
+        "citations": 10100,
+        "datestamp": "2022-01-01"
+      },
+      "WHAT IF": {
+        "citations": 106,
+        "datestamp": "2022-01-01"
+      },
+      "WIEN2k": {
+        "citations": 1430,
+        "datestamp": "2022-01-01"
+      },
+      "Wannier90": {
+        "citations": 620,
+        "datestamp": "2022-01-01"
+      },
+      "YASARA": {
+        "citations": 542,
+        "datestamp": "2022-01-01"
+      },
+      "Yambo": {
+        "citations": 137,
+        "datestamp": "2022-01-01"
+      },
+      "xTB": {
+        "citations": 530,
+        "datestamp": "2022-01-01"
+      }
+    }
+  },
   "2020-2020": {
     "year_low": 2020,
     "year_high": 2020,

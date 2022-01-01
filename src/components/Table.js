@@ -8,12 +8,14 @@ import MUIDataTable from "mui-datatables";
 import { YEARS, getData } from "./Config";
 import { getColumns } from "./Columns";
 
+let lastYear = YEARS[YEARS.length-1];
+
 class Table extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      year: "2020",
-      data: getData("2020"),
+      year: lastYear,
+      data: getData(lastYear),
       columns: null,
       options: {
         print: false,
