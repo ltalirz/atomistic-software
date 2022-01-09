@@ -1199,7 +1199,7 @@
   "TeraChem": {
     "acceleration": ["Cuda"],
     "apis": [],
-    "author_name": "Marti­nez",
+    "author_name": "Martinez",
     "benchmarks": [],
     "distribution_channels": ["Binary"],
     "element_coverage": null,
@@ -1212,7 +1212,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "TeraChem Marti­nez",
+    "query_string": "\"terachem\" Martinez OR \"PetaChem\"",
     "tags": [],
     "types": ["DFT"]
   },
