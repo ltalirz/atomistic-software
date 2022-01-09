@@ -254,6 +254,10 @@
       "xTB": {
         "citations": 530,
         "datestamp": "2022-01-01"
+      },
+      "TeraChem": {
+        "citations": 102,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -524,6 +528,10 @@
       "NWChem": {
         "citations": 384,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 83,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -693,10 +701,6 @@
       },
       "ONETEP": {
         "citations": 65,
-        "datestamp": "2021-01-04"
-      },
-      "TeraChem": {
-        "citations": 89,
         "datestamp": "2021-01-04"
       },
       "ACEMD": {
@@ -930,6 +934,10 @@
       "NWChem": {
         "citations": 371,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 81,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -1099,10 +1107,6 @@
       },
       "ONETEP": {
         "citations": 58,
-        "datestamp": "2021-01-04"
-      },
-      "TeraChem": {
-        "citations": 64,
         "datestamp": "2021-01-04"
       },
       "ACEMD": {
@@ -1336,6 +1340,10 @@
       "NWChem": {
         "citations": 377,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 52,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -1505,10 +1513,6 @@
       },
       "ONETEP": {
         "citations": 68,
-        "datestamp": "2021-01-07"
-      },
-      "TeraChem": {
-        "citations": 65,
         "datestamp": "2021-01-07"
       },
       "ACEMD": {
@@ -1742,6 +1746,10 @@
       "NWChem": {
         "citations": 405,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 62,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -1911,10 +1919,6 @@
       },
       "ONETEP": {
         "citations": 65,
-        "datestamp": "2021-01-07"
-      },
-      "TeraChem": {
-        "citations": 46,
         "datestamp": "2021-01-07"
       },
       "ACEMD": {
@@ -2148,6 +2152,10 @@
       "NWChem": {
         "citations": 377,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 48,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -2317,10 +2325,6 @@
       },
       "ONETEP": {
         "citations": 64,
-        "datestamp": "2021-01-07"
-      },
-      "TeraChem": {
-        "citations": 49,
         "datestamp": "2021-01-07"
       },
       "ACEMD": {
@@ -2554,6 +2558,10 @@
       "NWChem": {
         "citations": 372,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 47,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -2801,10 +2809,6 @@
         "citations": 692,
         "datestamp": "2021-01-17"
       },
-      "TeraChem": {
-        "citations": 29,
-        "datestamp": "2021-01-17"
-      },
       "VASP": {
         "citations": 4920,
         "datestamp": "2021-01-17"
@@ -2960,6 +2964,10 @@
       "NWChem": {
         "citations": 350,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 27,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -3207,10 +3215,6 @@
         "citations": 602,
         "datestamp": "2021-01-17"
       },
-      "TeraChem": {
-        "citations": 21,
-        "datestamp": "2021-01-17"
-      },
       "VASP": {
         "citations": 4240,
         "datestamp": "2021-01-17"
@@ -3366,6 +3370,10 @@
       "NWChem": {
         "citations": 345,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 26,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -3613,10 +3621,6 @@
         "citations": 585,
         "datestamp": "2021-01-17"
       },
-      "TeraChem": {
-        "citations": 15,
-        "datestamp": "2021-01-17"
-      },
       "VASP": {
         "citations": 3730,
         "datestamp": "2021-01-17"
@@ -3772,6 +3776,10 @@
       "NWChem": {
         "citations": 276,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 15,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -4019,10 +4027,6 @@
         "citations": 630,
         "datestamp": "2021-01-17"
       },
-      "TeraChem": {
-        "citations": 15,
-        "datestamp": "2021-01-17"
-      },
       "VASP": {
         "citations": 3370,
         "datestamp": "2021-01-17"
@@ -4178,6 +4182,10 @@
       "NWChem": {
         "citations": 235,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 15,
+        "datestamp": "2022-01-10"
       }
     }
   },
@@ -4429,10 +4437,6 @@
         "citations": 545,
         "datestamp": "2021-04-10"
       },
-      "TeraChem": {
-        "citations": 2,
-        "datestamp": "2021-04-10"
-      },
       "VASP": {
         "citations": 2810,
         "datestamp": "2021-04-10"
@@ -4572,6 +4576,10 @@
       "NWChem": {
         "citations": 216,
         "datestamp": "2021-08-31"
+      },
+      "TeraChem": {
+        "citations": 3,
+        "datestamp": "2022-01-10"
       }
     }
   }
