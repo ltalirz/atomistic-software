@@ -20,7 +20,7 @@ import useStyles from "./components/Dashboard/Styles";
 import Table from "./components/Table";
 import About from "./components/About";
 import Statistics from "./components/Statistics";
-import { SingleChart } from "./components/Chart/single";
+import { SingleChart } from "./components/Chart";
 import packageJson from "../package.json";
 import { useTheme } from '@material-ui/core/styles';
 import Hidden from '@material-ui/core/Hidden';

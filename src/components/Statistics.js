@@ -12,7 +12,7 @@ import {
   filterCodeNames,
   getCodeCitations,
 } from "./Config";
-import { nivoChart } from "./Chart/single";
+import { nivoChart } from "./Chart";
 // import { Card } from '@material-ui/core';
 
 function citationGrowth(year) {

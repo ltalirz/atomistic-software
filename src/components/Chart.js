@@ -1,11 +1,11 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
-import Title from "../Dashboard/Title";
-import useStyles from "../Dashboard/Styles";
+import Title from "./Dashboard/Title";
+import useStyles from "./Dashboard/Styles";
 
 import { ResponsiveLine } from "@nivo/line";
 
-import { getCodeCitations } from "../Config";
+import { getCodeCitations } from "./Config";
 import { useParams } from "react-router-dom";
 
 const THEME = {
