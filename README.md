@@ -37,6 +37,12 @@ and makes use of the great [mui-datatable](https://github.com/gregnb/mui-datatab
 - `npm run build` builds the app for production to the `build` folder (bundles React and optimizes for performance).
 - `npm run deploy` deploys the app to GitHub pages.
 
+Tip: You don't need the (large & growing) `gh-pages` branch. Clone only the `master` branch via
+```
+git clone -b master --single-branch git@github.com:ltalirz/atomistic-software.git
+```
+
+
 ## License
 
 The web application is licensed under the [Affero General Public License version 3 (AGPL-3.0-only)](./LICENSE).

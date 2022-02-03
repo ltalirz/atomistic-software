@@ -214,8 +214,8 @@
         "datestamp": "2021-04-10"
       },
       "MOLCAS": {
-        "citations": 0,
-        "datestamp": "2021-04-10"
+        "citations": 172,
+        "datestamp": "2022-02-03"
       },
       "MOPAC": {
         "citations": 378,
@@ -4404,7 +4404,7 @@
         "datestamp": "2022-02-03"
       },
       "FEFF": {
-        "citations": 0,
+        "citations": 317,
         "datestamp": "2022-02-03"
       },
       "FHI-aims": {
