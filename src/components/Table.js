@@ -8,9 +8,7 @@ import MUIDataTable from "mui-datatables";
 import { YEARS, getData } from "./Config";
 import { getColumns } from "./Columns";
 
-// let lastYear = YEARS[YEARS.length-1];
-// Remove this after further checks
-let lastYear = 2020;
+const lastYear = YEARS[YEARS.length-1];
 
 class Table extends React.Component {
   constructor(props) {
@@ -59,8 +57,6 @@ class Table extends React.Component {
                     <option key={x}>{x}</option>
                   ))}
                 </select>
-
-                { this.state.year === "2021" ? <font color="red">&nbsp;&nbsp;2021 citation data for Gaussian <a href="https://github.com/ltalirz/atomistic-software/issues/103">may be unreliable</a></font> : null }
               </h2>
             }
             columns={getColumns(this.state.data, this.state.year)}
