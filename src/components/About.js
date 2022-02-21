@@ -60,7 +60,7 @@ class MarkdownPane extends React.Component {
           <React.Fragment>
             <Title>{this.state.title}</Title>
             <Typography component="div" variant="body1" className="markdown">
-              <ReactMarkdown source={this.state.markdown} />
+              <ReactMarkdown children={this.state.markdown} />
             </Typography>
           </React.Fragment>
         </Paper>
