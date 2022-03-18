@@ -84,6 +84,7 @@ The project draws upon further great resources, including:
  * Wikipedia's [List of quantum chemistry and solid-state physics software](https://en.wikipedia.org/wiki/List_of_quantum_chemistry_and_solid-state_physics_software)
  * Wikipedia's [Comparison of software for molecular mechanics modelling](https://en.wikipedia.org/wiki/Comparison_of_software_for_molecular_mechanics_modeling)
  * SklogWiki's [Materials modelling and computer simulation codes](http://www.sklogwiki.org/SklogWiki/index.php/Materials_modelling_and_computer_simulation_codes)
+ * MolSSI's [Molecular Software Database](https://molssi.org/software-search/)
 
 
 ## Contact
