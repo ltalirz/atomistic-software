@@ -218,8 +218,8 @@
         "datestamp": "2021-04-10"
       },
       "MOLCAS": {
-        "citations": 172,
-        "datestamp": "2022-02-03"
+        "citations": 179,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 378,
@@ -271,7 +271,7 @@
       },
       "OpenMolcas": {
         "citations": 0,
-        "datestamp": "2021-04-11"
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 28,
@@ -620,8 +620,8 @@
         "datestamp": "2021-01-17"
       },
       "MOLCAS": {
-        "citations": 204,
-        "datestamp": "2021-01-17"
+        "citations": 216,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 379,
@@ -673,7 +673,7 @@
       },
       "OpenMolcas": {
         "citations": 0,
-        "datestamp": "2021-04-11"
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 20,
@@ -1030,8 +1030,8 @@
         "datestamp": "2021-01-17"
       },
       "MOLCAS": {
-        "citations": 190,
-        "datestamp": "2021-01-17"
+        "citations": 204,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 403,
@@ -1083,7 +1083,7 @@
       },
       "OpenMolcas": {
         "citations": 0,
-        "datestamp": "2021-04-11"
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 28,
@@ -1440,8 +1440,8 @@
         "datestamp": "2021-01-17"
       },
       "MOLCAS": {
-        "citations": 210,
-        "datestamp": "2021-01-17"
+        "citations": 226,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 375,
@@ -1493,7 +1493,7 @@
       },
       "OpenMolcas": {
         "citations": 0,
-        "datestamp": "2021-04-11"
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 24,
@@ -1850,8 +1850,8 @@
         "datestamp": "2021-01-17"
       },
       "MOLCAS": {
-        "citations": 225,
-        "datestamp": "2021-01-17"
+        "citations": 243,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 331,
@@ -1903,7 +1903,7 @@
       },
       "OpenMolcas": {
         "citations": 0,
-        "datestamp": "2021-04-11"
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 31,
@@ -2260,8 +2260,8 @@
         "datestamp": "2021-01-07"
       },
       "MOLCAS": {
-        "citations": 236,
-        "datestamp": "2021-01-07"
+        "citations": 262,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 351,
@@ -2313,7 +2313,7 @@
       },
       "OpenMolcas": {
         "citations": 0,
-        "datestamp": "2021-04-11"
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 35,
@@ -2670,8 +2670,8 @@
         "datestamp": "2021-01-07"
       },
       "MOLCAS": {
-        "citations": 261,
-        "datestamp": "2021-01-07"
+        "citations": 292,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 388,
@@ -2723,7 +2723,7 @@
       },
       "OpenMolcas": {
         "citations": 0,
-        "datestamp": "2021-04-11"
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 52,
@@ -3080,8 +3080,8 @@
         "datestamp": "2021-01-07"
       },
       "MOLCAS": {
-        "citations": 250,
-        "datestamp": "2021-01-07"
+        "citations": 293,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 320,
@@ -3133,7 +3133,7 @@
       },
       "OpenMolcas": {
         "citations": 2,
-        "datestamp": "2021-04-11"
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 34,
@@ -3490,8 +3490,8 @@
         "datestamp": "2021-01-04"
       },
       "MOLCAS": {
-        "citations": 273,
-        "datestamp": "2021-01-04"
+        "citations": 323,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 334,
@@ -3543,7 +3543,7 @@
       },
       "OpenMolcas": {
         "citations": 15,
-        "datestamp": "2021-04-11"
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 42,
@@ -3900,8 +3900,8 @@
         "datestamp": "2021-01-04"
       },
       "MOLCAS": {
-        "citations": 268,
-        "datestamp": "2021-01-04"
+        "citations": 300,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 357,
@@ -3952,8 +3952,8 @@
         "datestamp": "2021-01-04"
       },
       "OpenMolcas": {
-        "citations": 59,
-        "datestamp": "2021-04-11"
+        "citations": 55,
+        "datestamp": "2022-03-20"
       },
       "PARSEC": {
         "citations": 34,
@@ -4246,8 +4246,8 @@
         "datestamp": "2021-08-24"
       },
       "MOLCAS": {
-        "citations": 255,
-        "datestamp": "2021-08-24"
+        "citations": 294,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 345,
@@ -4286,8 +4286,8 @@
         "datestamp": "2021-08-24"
       },
       "OpenMolcas": {
-        "citations": 101,
-        "datestamp": "2021-08-24"
+        "citations": 102,
+        "datestamp": "2022-03-20"
       },
       "Psi4": {
         "citations": 233,
@@ -4516,8 +4516,8 @@
         "datestamp": "2022-02-03"
       },
       "MOLCAS": {
-        "citations": 211,
-        "datestamp": "2022-02-03"
+        "citations": 264,
+        "datestamp": "2022-03-20"
       },
       "MOPAC": {
         "citations": 363,
@@ -4556,8 +4556,8 @@
         "datestamp": "2022-02-03"
       },
       "OpenMolcas": {
-        "citations": 166,
-        "datestamp": "2022-02-03"
+        "citations": 157,
+        "datestamp": "2022-03-20"
       },
       "Psi4": {
         "citations": 261,
