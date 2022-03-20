@@ -818,7 +818,7 @@
     "notes": "See OpenMolcas for open-source core.",
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "MOLCAS Lindh",
+    "query_string": "\"MOLCAS\" \"Lindh\" OR \"Aquilante\" OR \"Karlström\" OR \"Veryazov\" OR \"Galvan\"",
     "tags": ["AE", "GTO", "PP"],
     "types": ["WFM", "DFT"]
   },
@@ -1044,7 +1044,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "\"Openmolcas\" Lindh",
+    "query_string": "\"Openmolcas\" \"Lindh\" OR \"Galvan\"",
     "tags": ["AE", "GTO", "PP"],
     "types": ["WFM", "DFT"]
   },
