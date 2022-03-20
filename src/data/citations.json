@@ -45,6 +45,10 @@
         "citations": 17,
         "datestamp": "2021-04-10"
       },
+      "BoltzTrap": {
+        "citations": 32,
+        "datestamp": "2022-03-19"
+      },
       "CASINO": {
         "citations": 29,
         "datestamp": "2021-08-25"
@@ -438,6 +442,10 @@
       "BigDFT": {
         "citations": 30,
         "datestamp": "2021-01-17"
+      },
+      "BoltzTrap": {
+        "citations": 44,
+        "datestamp": "2022-03-19"
       },
       "CASINO": {
         "citations": 38,
@@ -845,6 +853,10 @@
         "citations": 18,
         "datestamp": "2021-01-17"
       },
+      "BoltzTrap": {
+        "citations": 57,
+        "datestamp": "2022-03-19"
+      },
       "CASINO": {
         "citations": 30,
         "datestamp": "2021-08-25"
@@ -1250,6 +1262,10 @@
       "BigDFT": {
         "citations": 33,
         "datestamp": "2021-01-17"
+      },
+      "BoltzTrap": {
+        "citations": 70,
+        "datestamp": "2022-03-19"
       },
       "CASINO": {
         "citations": 33,
@@ -1657,6 +1673,10 @@
         "citations": 25,
         "datestamp": "2021-01-17"
       },
+      "BoltzTrap": {
+        "citations": 118,
+        "datestamp": "2022-03-19"
+      },
       "CASINO": {
         "citations": 35,
         "datestamp": "2021-08-25"
@@ -2062,6 +2082,10 @@
       "BigDFT": {
         "citations": 33,
         "datestamp": "2021-01-07"
+      },
+      "BoltzTrap": {
+        "citations": 164,
+        "datestamp": "2022-03-19"
       },
       "CASINO": {
         "citations": 29,
@@ -2469,6 +2493,10 @@
         "citations": 30,
         "datestamp": "2021-01-07"
       },
+      "BoltzTrap": {
+        "citations": 251,
+        "datestamp": "2022-03-19"
+      },
       "CASINO": {
         "citations": 36,
         "datestamp": "2021-08-25"
@@ -2874,6 +2902,10 @@
       "BigDFT": {
         "citations": 39,
         "datestamp": "2021-01-07"
+      },
+      "BoltzTrap": {
+        "citations": 288,
+        "datestamp": "2022-03-19"
       },
       "CASINO": {
         "citations": 42,
@@ -3281,6 +3313,10 @@
         "citations": 31,
         "datestamp": "2021-01-04"
       },
+      "BoltzTrap": {
+        "citations": 364,
+        "datestamp": "2022-03-19"
+      },
       "CASINO": {
         "citations": 38,
         "datestamp": "2021-08-25"
@@ -3687,6 +3723,10 @@
         "citations": 40,
         "datestamp": "2021-01-04"
       },
+      "BoltzTrap": {
+        "citations": 440,
+        "datestamp": "2022-03-19"
+      },
       "CASINO": {
         "citations": 31,
         "datestamp": "2021-08-25"
@@ -4069,6 +4109,10 @@
         "citations": 36,
         "datestamp": "2021-08-26"
       },
+      "BoltzTrap": {
+        "citations": 508,
+        "datestamp": "2022-03-19"
+      },
       "CASINO": {
         "citations": 34,
         "datestamp": "2021-08-25"
@@ -4338,6 +4382,10 @@
       "Amber": {
         "citations": 2610,
         "datestamp": "2022-02-03"
+      },
+      "BoltzTrap": {
+        "citations": 712,
+        "datestamp": "2022-03-19"
       },
       "CASTEP": {
         "citations": 2460,

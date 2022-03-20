@@ -87,6 +87,26 @@
     "tags": [],
     "types": ["FF"]
   },
+  "BoltzTrap": {
+    "acceleration": [],
+    "apis": [],
+    "author_name": "Madsen",
+    "benchmarks": [],
+    "distribution_channels": ["Source","PyPI"],
+    "element_coverage": null,
+    "homepage": "https://www.imc.tuwien.ac.at/index.php?id=21094",
+    "cost": "free",
+    "source": "copyleft",
+    "license": "GPL-3.0",
+    "name": "BoltzTrap",
+    "nomad_tags": [],
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"BoltzTrap\" OR \"BoltzTrap2\" \"Madsen\"",
+    "tags": [],
+    "types": ["Spectroscopy"]
+  },
   "CASTEP": {
     "acceleration": ["MPI", "OpenMP"],
     "apis": [],
