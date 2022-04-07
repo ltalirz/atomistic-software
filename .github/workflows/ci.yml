@@ -58,3 +58,12 @@ jobs:
         run: pip install -r .github/requirements.txt
       - name: Validate code metadata
         run: python .github/codes.py
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
