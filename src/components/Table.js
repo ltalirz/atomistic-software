@@ -3,7 +3,9 @@
  */
 import React from "react";
 import MUIDataTable from "mui-datatables";
+import packageJson from "../../package.json";
 //import RangeSlider from './RangeSlider'
+import Typography from "@material-ui/core/Typography";
 
 import { YEARS, getData } from "./Config";
 import { getColumns } from "./Columns";
@@ -63,6 +65,11 @@ class Table extends React.Component {
             data={this.state.data}
             options={this.state.options}
           />
+
+        <Typography variant="subtitle1" align='center' noWrap>
+          Further engines are tracked on the <a href={packageJson.repository.url + '/wiki/Watchlist'}>Watchlist</a>.
+        </Typography>
+
         </header>
       </div>
     );
