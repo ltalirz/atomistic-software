@@ -76,7 +76,7 @@ function nivoChart(data, title, legend = true) {
    * Return nivo line-chart with default formatting for given data and title.
    */
   let legend_list = [];
-  let margin_right = 0;
+  let margin_right = 50;
   if (legend) {
     legend_list = [
       {
