@@ -838,7 +838,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "MOPAC Stewart",
+    "query_string": "MOPAC OR \"MOPAC93\" OR \"MOPAC97\" OR \"MOPAC2000\" OR \"MOPAC2007\" OR \"MOPAC2009\" OR \"MOPAC2012\" OR \"MOPAC2016\" -expressway -policing -\"Missouri Pacific\" -\"motif finding\" -\"primed amplification\" -\"MOPAC Blvd\" -\"MOPAC Boulevard\" -\"North MOPAC\" -\"Mopac Expy\"",
     "tags": ["PBC", "PP", "STO"],
     "types": ["FF", "WFM"]
   },
