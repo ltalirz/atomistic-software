@@ -17,11 +17,14 @@ jobs:
       # link checker ignores json files
       - name: Extract links from codes.json
         run: |
-          grep homepage src/data/codes.json > codes.md
+          echo "{" >> codes.json
+          grep homepage src/data/codes.json > codes.json
+          # make json valid
+          echo "\"dummy\": \"dummy\"}" >> codes.json
 
       - name: Link Checker
         id: lc
-        uses: lycheeverse/lychee-action@v1.0.8
+        uses: lycheeverse/lychee-action@v1.5.1
         with:
           # See cli args at https://github.com/lycheeverse/lychee#commandline-parameters
           # for excluded URLs, the checker seems to be stricter than Chrome
@@ -29,10 +32,8 @@ jobs:
             --verbose --timeout 40 --insecure 
             --exclude "https://www.msg.chem.iastate.edu/"
             --exclude "http://openmopac.net/"
-            -- codes.md
-
-      - name: Fail if there were link errors
-        run: exit ${{ steps.lc.outputs.exit_code }}
+            -- codes.json
+          fail: true
 
   lint:
     runs-on: ubuntu-latest
