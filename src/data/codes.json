@@ -94,7 +94,7 @@
     "benchmarks": [],
     "distribution_channels": ["Source","PyPI"],
     "element_coverage": null,
-    "homepage": "https://www.imc.tuwien.ac.at/index.php?id=21094",
+    "homepage": "https://gitlab.com/sousaw/BoltzTraP2/",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-3.0",
@@ -693,7 +693,7 @@
       "Nix"
     ],
     "element_coverage": null,
-    "homepage": "https://codeblue.umich.edu/hoomd-blue/index.html",
+    "homepage": "https://glotzerlab.engin.umich.edu/hoomd-blue",
     "cost": "free",
     "source": "copyleft",
     "license": "BSD-3-Clause",
