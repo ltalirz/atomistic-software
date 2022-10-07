@@ -196,7 +196,7 @@
     "query_publication_id": null,
     "query_string": "\"CP2K\" \"Hutter\" OR \"www.cp2k.org\"",
     "tags": ["PBC", "AE", "GTO", "PP", "PW"],
-    "types": ["DFT", "WFM"]
+    "types": ["DFT", "WFM", "FF"]
   },
   "CPMD": {
     "acceleration": ["MPI", "OpenMP", "Cuda"],
