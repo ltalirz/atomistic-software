@@ -24,7 +24,7 @@ jobs:
 
       - name: Link Checker
         id: lc
-        uses: lycheeverse/lychee-action@v1.5.1
+        uses: lycheeverse/lychee-action@v1.5.4
         with:
           # See cli args at https://github.com/lycheeverse/lychee#commandline-parameters
           # for excluded URLs, the checker seems to be stricter than Chrome
