@@ -554,7 +554,7 @@
     "notes": "Registration required for academic and industrial users.",
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "GAMESS Gordon",
+    "query_string": "\"GAMESS\" \"Gordon\"",
     "tags": ["AE", "GTO", "PP"],
     "types": ["WFM", "DFT"]
   },
@@ -742,7 +742,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "Jaguar Schrödinger",
+    "query_string": "\"Jaguar\" \"Schrödinger\"",
     "tags": ["AE", "GTO", "PP", "STO"],
     "types": ["DFT", "WFM"]
   },
@@ -1252,7 +1252,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "TINKER Ponder",
+    "query_string": "\"TINKER\" \"Ponder\"",
     "tags": [],
     "types": ["FF"]
   },
