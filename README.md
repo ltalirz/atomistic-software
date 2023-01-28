@@ -39,6 +39,13 @@ Tip: You don't need the (large & growing) `gh-pages` branch. Clone only the `mas
 git clone -b master --single-branch git@github.com:ltalirz/atomistic-software.git
 ```
 
+You will need `nodejs`, e.g. from `conda-forge`:
+```
+conda install -c conda-forge nodejs
+```
+
+Finally, install the dependencies and run the app:
+
 - `npm install` installs dependencies for running the app locally.
 - `npm start` runs the app in the development mode.
 - `npm test` launches the test runner in the interactive watch mode, see [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
