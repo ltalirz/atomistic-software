@@ -262,7 +262,7 @@ function getColumns(data, year) {
               "https://scholar.google.com/scholar?q=" +
               encodeURIComponent(row["query_string"]);
           }
-          searchUrl += "&hl=en&as_sdt=0%2C5&as_ylo=" + year + "&as_yhi=" + year;
+          searchUrl += "&hl=en&as_vis=1&as_sdt=0%2C5&as_ylo=" + year + "&as_yhi=" + year;
           return (
             <a href={searchUrl} target="_blank" rel="noreferrer" title={"Recorded " + row["datestamp"]}>
               {row["citations"]}
