@@ -105,7 +105,27 @@
     "query_publication_id": null,
     "query_string": "\"BoltzTrap\" OR \"BoltzTrap2\" \"Madsen\"",
     "tags": [],
-    "types": ["Spectroscopy"]
+    "types": ["S"]
+  },
+  "BerkeleyGW": {
+    "acceleration": ["MPI","OpenMP","OpenACC"],
+    "apis": [],
+    "author_name": "Louie",
+    "benchmarks": [],
+    "distribution_channels": ["Source","Spack","EasyBuild","DockerHub"],
+    "element_coverage": null,
+    "homepage": "https://www.berkeleygw.org",
+    "cost": "free",
+    "source": "permissive",
+    "license": "BSD-3-Clause",
+    "name": "BerkeleyGW",
+    "nomad_tags": [],
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"BerkeleyGW\"",
+    "tags": ["PBC", "PP", "PW"],
+    "types": ["S"]
   },
   "CASTEP": {
     "acceleration": ["MPI", "OpenMP"],
