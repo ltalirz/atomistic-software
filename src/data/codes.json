@@ -622,7 +622,7 @@
     "notes": "A GROMOS96 license is required in order to be able to run QM/MM simulations with CPMD.",
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "GROMOS van Gunsteren",
+    "query_string": "\"GROMOS\" \"van Gunsteren\"",
     "tags": [],
     "types": ["FF"]
   },
