@@ -23,8 +23,6 @@ If necessary, this will be perfomed by the maintainer of this repository using t
 
 If you're not familiar with GitHub or don't have time to add the engine yourself, feel free provide your suggestion via [email to the author](mailto:leopold.talirz@gmail.com) or by [commenting on this GitHub issue](https://github.com/ltalirz/atomistic-software/issues/21).
 
-
-
 ## How to cite
 
 See [atomistic.software/#/about](https://atomistic.software/#/about).
@@ -35,12 +33,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 and makes use of the great [mui-datatable](https://github.com/gregnb/mui-datatables) and [nivo](https://github.com/plouc/nivo) visualization library.
 
 Tip: You don't need the (large & growing) `gh-pages` branch. Clone only the `master` branch via
-```
+
+```terminal
 git clone -b master --single-branch git@github.com:ltalirz/atomistic-software.git
 ```
 
 You will need `nodejs`, e.g. from `conda-forge`:
-```
+
+```terminal
 conda install -c conda-forge nodejs
 ```
 
@@ -51,7 +51,6 @@ Finally, install the dependencies and run the app:
 - `npm test` launches the test runner in the interactive watch mode, see [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 - `npm run build` builds the app for production to the `build` folder (bundles React and optimizes for performance).
 - `npm run deploy` deploys the app to GitHub pages.
-
 
 ## License
 
