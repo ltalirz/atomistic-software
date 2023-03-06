@@ -485,7 +485,7 @@
     "benchmarks": ["Δ-value"],
     "distribution_channels": ["Source"],
     "element_coverage": "H..Md",
-    "homepage": "http://www.fhi-berlin.mpg.de/aims/",
+    "homepage": "https://fhi-aims.org/",
     "cost": "commercial",
     "source": "available",
     "license": null,
