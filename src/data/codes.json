@@ -980,7 +980,7 @@
     "benchmarks": ["Δ-value"],
     "distribution_channels": ["Source", "Spack", "EasyBuild"],
     "element_coverage": "H..Lr",
-    "homepage": "https://www.tddft.org/programs/octopus/wiki/index.php/Main_Page",
+    "homepage": "https://octopus-code.org",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-2.0",
