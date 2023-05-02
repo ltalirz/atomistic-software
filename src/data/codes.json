@@ -789,7 +789,7 @@
       "Spack"
     ],
     "element_coverage": null,
-    "homepage": "https://lammps.sandia.gov/",
+    "homepage": "https://www.lammps.org",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-2.0",
