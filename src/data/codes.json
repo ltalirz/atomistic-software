@@ -1410,7 +1410,7 @@
     "benchmarks": [],
     "distribution_channels": ["Source", "Spack", "EasyBuild", "conda"],
     "element_coverage": "H..Pu",
-    "homepage": "http://www.yambo-code.org/",
+    "homepage": "https://www.yambo-code.eu/",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-2.0",
