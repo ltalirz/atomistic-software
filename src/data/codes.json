@@ -64,7 +64,7 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"Atomistix ToolKit\" OR QuantumATK",
-    "tags": ["PBC"],
+    "tags": ["PP", "PAW", "NAO", "PW", "PBC"],
     "types": ["DFT", "TB", "FF"]
   },
   "Amber": {
