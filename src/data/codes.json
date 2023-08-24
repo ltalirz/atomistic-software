@@ -75,7 +75,7 @@
     "distribution_channels": ["Source", "Binary"],
     "element_coverage": null,
     "homepage": "https://ambermd.org/",
-    "cost": "commercial",
+    "cost": "free (academia)",
     "source": "available",
     "license": "Amber Software License",
     "name": "Amber",
