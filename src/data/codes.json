@@ -265,7 +265,7 @@
     "benchmarks": [],
     "distribution_channels": ["Source", "conda", "Binary", "EasyBuild"],
     "element_coverage": null,
-    "homepage": "https://www.dftb-plus.info",
+    "homepage": "https://dftbplus.org",
     "cost": "free",
     "source": "copyleft",
     "license": "LGPL-3.0-or-later",
