@@ -515,6 +515,25 @@
     "tags": ["PBC", "AE", "NAO"],
     "types": ["DFT", "WFM"]
   },
+  "FLEUR": {
+    "acceleration": ["MPI", "OpenMP"],
+    "apis": [],
+    "author_name": "Blügel",
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source", "EasyBuild", "Spack", "conda", "DockerHub"],
+    "element_coverage": null,
+    "homepage": "https://www.flapw.de/",
+    "cost": "free",
+    "source": "permissive",
+    "license": "MIT",
+    "name": "FLEUR",
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"FLEUR\" \"Blügel\"",
+    "tags": ["PBC", "AE", "LAPW"],
+    "types": ["DFT", "WFM"]
+  },
   "FPLO": {
     "acceleration": [],
     "apis": [],
