@@ -22,7 +22,7 @@ _${this.packageJson.name}_ uses the following working definition of an _atomisti
 This covers the \`DFT\`, \`WFM\`, \`QMC\`, \`TB\`, and \`FF\` categories.
 Softwares in the \`Spectroscopy\` category are not necessarily simulation engines in the above sense, but compute the response of a given atomic structure to an external excitation (via photons, electrons, ...).
 
-**Relevance criterion**: In order to keep the length of the list manageable, atomistic simulation engines need to have had at least **one year with 100 citations** or more in order to be added to the list.
+**Relevance criterion**: In order to keep the length of the list manageable, atomistic simulation engines need to have had at least **one year with 50 citations** or more in order to be added to the list.
 Simulation engines that do not yet meet the criterion are tracked on a [watchlist](${this.packageJson.repository.url}/wiki/Watchlist).
 Simulation engines that are no longer maintained (website down for more than 1 month) are removed from the list.
 
@@ -53,11 +53,11 @@ Click on a citation count in order to see the exact Google Scholar query that wa
     In our experience, citation data for the previous year can be subject to significant (upwards) fluctuation, while citation data for years further in the past are quite stable.
     Hover with the mouse pointer over a citation count in the overview table in order to see when this data point was collected.
 
-1.  **Q**: Why impose a criterion that engines on the list need to have at least one year with 100 citations?
+1.  **Q**: Why impose a criterion that engines on the list need to have at least one year with 50 citations?
 
     **A**: atomistic.software aims to be a comprehensive list of all major atomistic simulation engines.
     Since new engines are created all the time, this goal is almost impossible to achieve without introducing a "relevance cutoff".
-    The value of 100 is not set in stone and could be re-evaluated in the future, once the list has had some time to consolidate.
+    A cutoff of 50 citations per year (roughly one citation per week) was found to keep the work required to maintain the list manageable.
 
 1.  **Q**: A major simulation engine (check relevance criterion above) is missing. How can I add it to the list?
 
