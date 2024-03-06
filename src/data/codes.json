@@ -420,6 +420,25 @@
     "tags": [],
     "types": ["FF", "DFT"]
   },
+  "Elk": {
+    "acceleration": ["MPI", "OpenMP"],
+    "apis": [],
+    "author_name": "Dewhurst",
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source", "EasyBuild", "Spack", "APT"],
+    "element_coverage": null,
+    "homepage": "http://elk.sourceforge.net/",
+    "cost": "free",
+    "source": "copyleft",
+    "license": "GPL-3.0-or-later",
+    "name": "Elk",
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"elk.sourceforge.net\"",
+    "tags": ["PBC", "AE", "LAPW"],
+    "types": ["DFT", "WFM"]
+  },
   "EPW": {
     "acceleration": ["MPI", "OpenMP"],
     "apis": [],
@@ -458,25 +477,6 @@
     "tags": [],
     "types": ["FF"]
   },
-  "Elk": {
-    "acceleration": ["MPI", "OpenMP"],
-    "apis": [],
-    "author_name": "Dewhurst",
-    "benchmarks": ["Δ-value"],
-    "distribution_channels": ["Source", "EasyBuild", "Spack", "APT"],
-    "element_coverage": null,
-    "homepage": "http://elk.sourceforge.net/",
-    "cost": "free",
-    "source": "copyleft",
-    "license": "GPL-3.0-or-later",
-    "name": "Elk",
-    "notes": null,
-    "query_method": "search term",
-    "query_publication_id": null,
-    "query_string": "\"elk.sourceforge.net\"",
-    "tags": ["PBC", "AE", "LAPW"],
-    "types": ["DFT", "WFM"]
-  },
   "FEFF": {
     "acceleration": ["MPI"],
     "apis": [],
@@ -514,6 +514,25 @@
     "query_string": "FHI-aims Blum",
     "tags": ["PBC", "AE", "NAO"],
     "types": ["DFT", "WFM"]
+  },
+  "exciting": {
+    "acceleration": ["MPI", "OpenMP"],
+    "apis": [],
+    "author_name": "Draxl",
+    "benchmarks": ["Δ-value"],
+    "distribution_channels": ["Source"],
+    "element_coverage": null,
+    "homepage": "https://exciting-code.org/",
+    "cost": "free",
+    "source": "copyleft",
+    "license": "GPL-2.0-or-later",
+    "name": "exciting",
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"exciting\" \"Draxl\" \"Gulans\" OR \"exciting-code\" OR \"exciting software\"",
+    "tags": ["PBC", "AE", "LAPW"],
+    "types": ["DFT", "WFM", "S"]
   },
   "FLEUR": {
     "acceleration": ["MPI", "OpenMP"],
