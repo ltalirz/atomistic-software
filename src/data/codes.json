@@ -828,7 +828,7 @@
     "query_method": "search term",
     "query_publication_id": null,
     "query_string": "\"JDFTx\" Sundararaman",
-    "tags": ["PBC", "PP", "PW"],
+    "tags": ["PBC", "PP", "PW", "AE"],
     "types": ["DFT"]
   },
   "LAMMPS": {
