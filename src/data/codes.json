@@ -518,26 +518,6 @@
     "tags": ["PBC", "AE", "NAO"],
     "types": ["DFT"]
   },
-  "Firefly": {
-    "acceleration": ["MPI"],
-    "apis": [],
-    "author_name": "Granovsky",
-    "benchmarks": [],
-    "distribution_channels": ["Source", "Binary"],
-    "element_coverage": null,
-    "homepage": "http://classic.chem.msu.su/gran/gamess/index.html",
-    "cost": "free",
-    "source": "available",
-    "license": "Firefly Quantum Chemistry Package License Agreement",
-    "name": "Firefly",
-    "nomad_tags": [],
-    "notes": null,
-    "query_method": "search term",
-    "query_publication_id": null,
-    "query_string": "firefly \"Granovsky\"",
-    "tags": ["AE", "GTO", "PP"],
-    "types": ["WFM", "DFT"]
-  },
   "FoldX": {
     "acceleration": ["Cuda"],
     "apis": [],
