@@ -1096,6 +1096,28 @@
     "tags": ["AE", "GTO"],
     "types": ["WFM", "DFT"]
   },
+  "PWmat": {
+    "acceleration": ["MPI", "Cuda"],
+    "apis": [],
+    "author_name": "Wang",
+    "benchmarks": [],
+    "distribution_channels": [
+      "Binary"
+    ],
+    "element_coverage": "H..Pu",
+    "homepage": "https://www.PWmat.com",
+    "cost": "commercial",
+    "source": "closed",
+    "license": null,
+    "name": "PWmat",
+    "nomad_tags": null,
+    "notes": [],
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"PWmat\" \"Wang\"",
+    "tags": ["PBC", "PP", "PW", "GTO"],
+    "types": ["DFT", "S"]
+  },
   "PySCF": {
     "acceleration": ["MPI", "OpenMP"],
     "apis": ["QCSchema"],

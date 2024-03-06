@@ -281,6 +281,10 @@
         "citations": 3,
         "datestamp": "2021-04-10"
       },
+      "PWmat": {
+        "citations": 1,
+        "datestamp": "2024-03-06"
+      },
       "PWPAW / ATOMPAW": {
         "citations": 13,
         "datestamp": "2021-04-10"
@@ -682,6 +686,10 @@
       "PLATO": {
         "citations": 10,
         "datestamp": "2021-01-17"
+      },
+      "PWmat": {
+        "citations": 0,
+        "datestamp": "2024-03-06"
       },
       "PWPAW / ATOMPAW": {
         "citations": 12,
@@ -1093,6 +1101,10 @@
         "citations": 5,
         "datestamp": "2021-01-17"
       },
+      "PWmat": {
+        "citations": 0,
+        "datestamp": "2024-03-06"
+      },
       "PWPAW / ATOMPAW": {
         "citations": 22,
         "datestamp": "2021-01-17"
@@ -1502,6 +1514,10 @@
       "PLATO": {
         "citations": 3,
         "datestamp": "2021-01-17"
+      },
+      "PWmat": {
+        "citations": 0,
+        "datestamp": "2024-03-06"
       },
       "PWPAW / ATOMPAW": {
         "citations": 23,
@@ -1913,6 +1929,10 @@
         "citations": 3,
         "datestamp": "2021-01-17"
       },
+      "PWmat": {
+        "citations": 0,
+        "datestamp": "2024-03-06"
+      },
       "PWPAW / ATOMPAW": {
         "citations": 26,
         "datestamp": "2021-01-17"
@@ -2322,6 +2342,10 @@
       "PLATO": {
         "citations": 1,
         "datestamp": "2021-01-07"
+      },
+      "PWmat": {
+        "citations": 0,
+        "datestamp": "2024-03-06"
       },
       "PWPAW / ATOMPAW": {
         "citations": 24,
@@ -2733,6 +2757,10 @@
         "citations": 2,
         "datestamp": "2021-01-07"
       },
+      "PWmat": {
+        "citations": 3,
+        "datestamp": "2024-03-06"
+      },
       "PWPAW / ATOMPAW": {
         "citations": 36,
         "datestamp": "2021-01-07"
@@ -3142,6 +3170,10 @@
       "PLATO": {
         "citations": 8,
         "datestamp": "2021-01-07"
+      },
+      "PWmat": {
+        "citations": 6,
+        "datestamp": "2024-03-06"
       },
       "PWPAW / ATOMPAW": {
         "citations": 29,
@@ -3553,6 +3585,10 @@
         "citations": 4,
         "datestamp": "2021-01-04"
       },
+      "PWmat": {
+        "citations": 13,
+        "datestamp": "2024-03-06"
+      },
       "PWPAW / ATOMPAW": {
         "citations": 26,
         "datestamp": "2021-01-04"
@@ -3963,6 +3999,10 @@
         "citations": 5,
         "datestamp": "2021-01-04"
       },
+      "PWmat": {
+        "citations": 35,
+        "datestamp": "2024-03-06"
+      },
       "PWPAW / ATOMPAW": {
         "citations": 32,
         "datestamp": "2021-01-04"
@@ -4293,6 +4333,10 @@
         "citations": 102,
         "datestamp": "2022-03-20"
       },
+      "PWmat": {
+        "citations": 43,
+        "datestamp": "2024-03-06"
+      },
       "Psi4": {
         "citations": 233,
         "datestamp": "2021-08-24"
@@ -4567,6 +4611,10 @@
         "citations": 159,
         "datestamp": "2023-01-30"
       },
+      "PWmat": {
+        "citations": 61,
+        "datestamp": "2024-03-06"
+      },
       "Psi4": {
         "citations": 254,
         "datestamp": "2023-01-30"
@@ -4836,6 +4884,10 @@
       "OpenMolcas": {
         "citations": 176,
         "datestamp": "2023-01-28"
+      },
+      "PWmat": {
+        "citations": 82,
+        "datestamp": "2024-03-06"
       },
       "Psi4": {
         "citations": 284,
