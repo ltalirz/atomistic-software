@@ -189,6 +189,10 @@
         "citations": 588,
         "datestamp": "2021-04-10"
       },
+      "JDFTx": {
+        "citations": 0,
+        "datestamp": "2024-03-06"
+      },
       "Jaguar": {
         "citations": 213,
         "datestamp": "2024-03-06"
@@ -393,10 +397,6 @@
         "citations": 1,
         "datestamp": "2021-04-10"
       },
-      "jDFTX": {
-        "citations": 0,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 1,
         "datestamp": "2021-04-10"
@@ -598,6 +598,10 @@
       "Hyperchem": {
         "citations": 622,
         "datestamp": "2021-01-17"
+      },
+      "JDFTx": {
+        "citations": 0,
+        "datestamp": "2024-03-06"
       },
       "Jaguar": {
         "citations": 256,
@@ -811,10 +815,6 @@
         "citations": 0,
         "datestamp": "2021-01-17"
       },
-      "jDFTX": {
-        "citations": 0,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 1,
         "datestamp": "2021-01-17"
@@ -1016,6 +1016,10 @@
       "Hyperchem": {
         "citations": 623,
         "datestamp": "2021-01-17"
+      },
+      "JDFTx": {
+        "citations": 6,
+        "datestamp": "2024-03-06"
       },
       "Jaguar": {
         "citations": 284,
@@ -1229,10 +1233,6 @@
         "citations": 1,
         "datestamp": "2021-01-17"
       },
-      "jDFTX": {
-        "citations": 6,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 1,
         "datestamp": "2021-01-17"
@@ -1434,6 +1434,10 @@
       "Hyperchem": {
         "citations": 597,
         "datestamp": "2021-01-17"
+      },
+      "JDFTx": {
+        "citations": 7,
+        "datestamp": "2024-03-06"
       },
       "Jaguar": {
         "citations": 273,
@@ -1647,10 +1651,6 @@
         "citations": 4,
         "datestamp": "2021-01-17"
       },
-      "jDFTX": {
-        "citations": 7,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 2,
         "datestamp": "2021-01-17"
@@ -1852,6 +1852,10 @@
       "Hyperchem": {
         "citations": 534,
         "datestamp": "2021-01-17"
+      },
+      "JDFTx": {
+        "citations": 13,
+        "datestamp": "2024-03-06"
       },
       "Jaguar": {
         "citations": 276,
@@ -2065,10 +2069,6 @@
         "citations": 8,
         "datestamp": "2021-01-17"
       },
-      "jDFTX": {
-        "citations": 13,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 1,
         "datestamp": "2021-01-17"
@@ -2270,6 +2270,10 @@
       "Hyperchem": {
         "citations": 484,
         "datestamp": "2021-01-17"
+      },
+      "JDFTx": {
+        "citations": 14,
+        "datestamp": "2024-03-06"
       },
       "Jaguar": {
         "citations": 276,
@@ -2483,10 +2487,6 @@
         "citations": 10,
         "datestamp": "2021-01-07"
       },
-      "jDFTX": {
-        "citations": 14,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 4,
         "datestamp": "2021-01-17"
@@ -2688,6 +2688,10 @@
       "Hyperchem": {
         "citations": 463,
         "datestamp": "2021-01-17"
+      },
+      "JDFTx": {
+        "citations": 17,
+        "datestamp": "2024-03-06"
       },
       "Jaguar": {
         "citations": 287,
@@ -2901,10 +2905,6 @@
         "citations": 10,
         "datestamp": "2021-01-07"
       },
-      "jDFTX": {
-        "citations": 17,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 6,
         "datestamp": "2021-01-17"
@@ -3106,6 +3106,10 @@
       "Hyperchem": {
         "citations": 390,
         "datestamp": "2021-01-17"
+      },
+      "JDFTx": {
+        "citations": 30,
+        "datestamp": "2024-03-06"
       },
       "Jaguar": {
         "citations": 315,
@@ -3319,10 +3323,6 @@
         "citations": 13,
         "datestamp": "2021-01-07"
       },
-      "jDFTX": {
-        "citations": 30,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 21,
         "datestamp": "2021-01-17"
@@ -3524,6 +3524,10 @@
       "Hyperchem": {
         "citations": 329,
         "datestamp": "2021-01-17"
+      },
+      "JDFTx": {
+        "citations": 25,
+        "datestamp": "2024-03-06"
       },
       "Jaguar": {
         "citations": 296,
@@ -3737,10 +3741,6 @@
         "citations": 12,
         "datestamp": "2021-01-04"
       },
-      "jDFTX": {
-        "citations": 25,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 52,
         "datestamp": "2021-01-17"
@@ -3942,6 +3942,10 @@
       "Hyperchem": {
         "citations": 314,
         "datestamp": "2021-01-17"
+      },
+      "JDFTx": {
+        "citations": 24,
+        "datestamp": "2024-03-06"
       },
       "Jaguar": {
         "citations": 299,
@@ -4155,10 +4159,6 @@
         "citations": 13,
         "datestamp": "2021-01-04"
       },
-      "jDFTX": {
-        "citations": 24,
-        "datestamp": "2024-03-06"
-      },
       "xTB": {
         "citations": 126,
         "datestamp": "2021-01-17"
@@ -4321,6 +4321,10 @@
         "citations": 314,
         "datestamp": "2021-08-24"
       },
+      "JDFTx": {
+        "citations": 48,
+        "datestamp": "2024-03-06"
+      },
       "Jaguar": {
         "citations": 297,
         "datestamp": "2024-03-06"
@@ -4452,10 +4456,6 @@
       "exciting": {
         "citations": 52,
         "datestamp": "2021-08-26"
-      },
-      "jDFTX": {
-        "citations": 48,
-        "datestamp": "2024-03-06"
       },
       "xTB": {
         "citations": 267,
@@ -4611,6 +4611,10 @@
         "citations": 319,
         "datestamp": "2023-01-30"
       },
+      "JDFTx": {
+        "citations": 61,
+        "datestamp": "2024-03-06"
+      },
       "Jaguar": {
         "citations": 334,
         "datestamp": "2024-03-06"
@@ -4737,10 +4741,6 @@
       },
       "deMon2k": {
         "citations": 80,
-        "datestamp": "2024-03-06"
-      },
-      "jDFTX": {
-        "citations": 61,
         "datestamp": "2024-03-06"
       },
       "xTB": {
@@ -4897,6 +4897,10 @@
         "citations": 291,
         "datestamp": "2023-01-28"
       },
+      "JDFTx": {
+        "citations": 75,
+        "datestamp": "2024-03-06"
+      },
       "Jaguar": {
         "citations": 261,
         "datestamp": "2024-03-06"
@@ -5023,10 +5027,6 @@
       },
       "deMon2k": {
         "citations": 74,
-        "datestamp": "2024-03-06"
-      },
-      "jDFTX": {
-        "citations": 75,
         "datestamp": "2024-03-06"
       },
       "xTB": {
