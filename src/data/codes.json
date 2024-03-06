@@ -822,7 +822,7 @@
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-3.0",
-    "name": "jDFTX",
+    "name": "JDFTx",
     "nomad_tags": [],
     "notes": null,
     "query_method": "search term",
