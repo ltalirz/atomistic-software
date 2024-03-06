@@ -762,7 +762,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "\"Jaguar\" \"Schrödinger\"",
+    "query_string": "\"Jaguar\" OR \"QSite\" \"Schrödinger\"",
     "tags": ["AE", "GTO", "PP", "STO"],
     "types": ["DFT", "WFM"]
   },
