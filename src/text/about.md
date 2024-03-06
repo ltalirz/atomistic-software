@@ -24,6 +24,7 @@ Softwares in the \`Spectroscopy\` category are not necessarily simulation engine
 
 **Relevance criterion**: In order to keep the length of the list manageable, atomistic simulation engines need to have had at least **one year with 100 citations** or more in order to be added to the list.
 Simulation engines that do not yet meet the criterion are tracked on a [watchlist](${this.packageJson.repository.url}/wiki/Watchlist).
+Simulation engines that are no longer maintained (website down for more than 1 month) are removed from the list.
 
 Besides citation counts, _${this.packageJson.name}_ collects further metadata, such as the homepage, license, and other relevant information.
 Metadata on _${this.packageJson.name}_ should
