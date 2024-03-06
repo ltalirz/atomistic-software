@@ -27,6 +27,29 @@
     "tags": ["PBC", "PP", "PW", "WLT"],
     "types": ["DFT", "WFM"]
   },
+  "ACEMD": {
+    "acceleration": ["Cuda", "OpenCL"],
+    "apis": [],
+    "author_name": "Fabritiis",
+    "benchmarks": [],
+    "distribution_channels": [
+      "Binary",
+      "conda"
+    ],
+    "element_coverage": null,
+    "homepage": "https://www.acellera.com/acemd",
+    "cost": "free (academia)",
+    "source": "copyleft",
+    "license": "ACEMD licence",
+    "name": "ACEMD",
+    "nomad_tags": [],
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"ACEMD\" \"Fabritiis\"",
+    "tags": [],
+    "types": ["FF"]
+  },
   "ADF": {
     "acceleration": ["MPI"],
     "apis": [],
