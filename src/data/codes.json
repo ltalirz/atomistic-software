@@ -789,6 +789,28 @@
     "tags": ["AE", "GTO", "PP", "STO"],
     "types": ["DFT", "WFM"]
   },
+  "JDFTx": {
+    "acceleration": ["MPI", "Cuda"],
+    "apis": [],
+    "author_name": "Sundararaman",
+    "benchmarks": [],
+    "distribution_channels": [
+      "Source"
+    ],
+    "element_coverage": "H..Pu",
+    "homepage": "https://jdftx.org/",
+    "cost": "free",
+    "source": "copyleft",
+    "license": "GPL-3.0",
+    "name": "jDFTX",
+    "nomad_tags": [],
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"JDFTx\" Sundararaman",
+    "tags": ["PBC", "PP", "PW"],
+    "types": ["DFT"]
+  },
   "LAMMPS": {
     "acceleration": ["MPI", "OpenMP", "Cuda", "HIP"],
     "apis": [],

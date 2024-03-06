@@ -389,6 +389,10 @@
         "citations": 1,
         "datestamp": "2021-04-10"
       },
+      "jDFTX": {
+        "citations": 0,
+        "datestamp": "2024-03-06"
+      },
       "jDFTx / DFT++": {
         "citations": 0,
         "datestamp": "2021-04-10"
@@ -802,6 +806,10 @@
       "gSAFT": {
         "citations": 0,
         "datestamp": "2021-01-17"
+      },
+      "jDFTX": {
+        "citations": 0,
+        "datestamp": "2024-03-06"
       },
       "jDFTx / DFT++": {
         "citations": 0,
@@ -1217,6 +1225,10 @@
         "citations": 1,
         "datestamp": "2021-01-17"
       },
+      "jDFTX": {
+        "citations": 6,
+        "datestamp": "2024-03-06"
+      },
       "jDFTx / DFT++": {
         "citations": 6,
         "datestamp": "2021-01-17"
@@ -1630,6 +1642,10 @@
       "gSAFT": {
         "citations": 4,
         "datestamp": "2021-01-17"
+      },
+      "jDFTX": {
+        "citations": 7,
+        "datestamp": "2024-03-06"
       },
       "jDFTx / DFT++": {
         "citations": 7,
@@ -2045,6 +2061,10 @@
         "citations": 8,
         "datestamp": "2021-01-17"
       },
+      "jDFTX": {
+        "citations": 13,
+        "datestamp": "2024-03-06"
+      },
       "jDFTx / DFT++": {
         "citations": 13,
         "datestamp": "2021-01-17"
@@ -2458,6 +2478,10 @@
       "gSAFT": {
         "citations": 10,
         "datestamp": "2021-01-07"
+      },
+      "jDFTX": {
+        "citations": 14,
+        "datestamp": "2024-03-06"
       },
       "jDFTx / DFT++": {
         "citations": 14,
@@ -2873,6 +2897,10 @@
         "citations": 10,
         "datestamp": "2021-01-07"
       },
+      "jDFTX": {
+        "citations": 17,
+        "datestamp": "2024-03-06"
+      },
       "jDFTx / DFT++": {
         "citations": 14,
         "datestamp": "2021-01-07"
@@ -3286,6 +3314,10 @@
       "gSAFT": {
         "citations": 13,
         "datestamp": "2021-01-07"
+      },
+      "jDFTX": {
+        "citations": 30,
+        "datestamp": "2024-03-06"
       },
       "jDFTx / DFT++": {
         "citations": 29,
@@ -3701,6 +3733,10 @@
         "citations": 12,
         "datestamp": "2021-01-04"
       },
+      "jDFTX": {
+        "citations": 25,
+        "datestamp": "2024-03-06"
+      },
       "jDFTx / DFT++": {
         "citations": 28,
         "datestamp": "2021-01-04"
@@ -4115,6 +4151,10 @@
         "citations": 13,
         "datestamp": "2021-01-04"
       },
+      "jDFTX": {
+        "citations": 24,
+        "datestamp": "2024-03-06"
+      },
       "jDFTx / DFT++": {
         "citations": 24,
         "datestamp": "2021-01-04"
@@ -4409,6 +4449,10 @@
         "citations": 52,
         "datestamp": "2021-08-26"
       },
+      "jDFTX": {
+        "citations": 48,
+        "datestamp": "2024-03-06"
+      },
       "xTB": {
         "citations": 267,
         "datestamp": "2021-08-24"
@@ -4687,6 +4731,10 @@
         "citations": 129,
         "datestamp": "2023-01-30"
       },
+      "jDFTX": {
+        "citations": 61,
+        "datestamp": "2024-03-06"
+      },
       "xTB": {
         "citations": 470,
         "datestamp": "2023-01-30"
@@ -4964,6 +5012,10 @@
       "Yambo": {
         "citations": 124,
         "datestamp": "2023-01-28"
+      },
+      "jDFTX": {
+        "citations": 75,
+        "datestamp": "2024-03-06"
       },
       "xTB": {
         "citations": 727,
