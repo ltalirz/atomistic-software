@@ -281,6 +281,26 @@
     "tags": ["PBC", "AE", "GTO", "PP"],
     "types": ["DFT", "WFM"]
   },
+  "deMon2k": {
+    "acceleration": ["MPI"],
+    "apis": [],
+    "author_name": "Salahub",
+    "benchmarks": [],
+    "distribution_channels": ["Source", "Binary"],
+    "element_coverage": "H..Rn",
+    "homepage": "http://www.demon-software.com/",
+    "cost": "free (academia)",
+    "source": "available",
+    "license": "deMon2k license agreement",
+    "name": "deMon2k",
+    "nomad_tags": [],
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"deMon2k\"",
+    "tags": ["GTO", "PP"],
+    "types": ["DFT", "S"]
+  },
   "DFTB+": {
     "acceleration": ["MPI", "OpenMP"],
     "apis": [],
