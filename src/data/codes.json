@@ -1047,6 +1047,25 @@
     "tags": ["PBC", "PP", "RS"],
     "types": ["DFT"]
   },
+  "ONETEP": {
+    "acceleration": ["MPI", "OpenMP"],
+    "apis": [],
+    "author_name": "Skylaris",
+    "benchmarks": [""],
+    "distribution_channels": ["Source", "Binary"],
+    "element_coverage": null,
+    "homepage": "https://onetep.org/",
+    "cost": "free (academia)",
+    "source": "available",
+    "license": "ONETEP Academic Licence",
+    "name": "ONETEP",
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"ONETEP\" \"Skylaris\"",
+    "tags": ["PBC", "PAW", "PP", "PW"],
+    "types": ["DFT", "WFM"]
+  },
   "OpenMM": {
     "acceleration": ["MPI", "OpenMP", "Cuda", "OpenCL"],
     "apis": [],
