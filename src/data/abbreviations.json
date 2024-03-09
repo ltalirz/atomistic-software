@@ -28,6 +28,7 @@
   },
   "acceleration": {
     "MPI": "Distributed memory parallelization on CPUs",
+    "Global Arrays": "Shared-memory programming on distributed-memory computers for multidimensional arrays",
     "OpenMP": "Shared memory parallelization on CPUs",
     "Threads": "Custom shared memory parallelization on CPUs",
     "HIP": "Supports AMD and NVidia GPUs",
