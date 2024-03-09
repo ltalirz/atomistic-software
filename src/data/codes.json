@@ -1232,6 +1232,27 @@
     "tags": ["AE", "GTO", "PP"],
     "types": ["WFM", "DFT"]
   },
+  "QMCPACK": {
+    "acceleration": ["MPI", "OpenMP"],
+    "apis": [],
+    "author_name": "Kim",
+    "benchmarks": [""],
+    "distribution_channels": [
+      "Source"
+    ],
+    "element_coverage": "H..Pu",
+    "homepage": "https://qmcpack.org/",
+    "cost": "free",
+    "source": "permissive",
+    "license": "NCSA",
+    "name": "QMCPACK",
+    "notes": "Interface for wavefunctions from Quantum ESPRESSO, GAMESS, PySCF, QP2",
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"QMCPACK\" \"Kim\"",
+    "tags": ["PBC", "PP", "PW", "GTO"],
+    "types": ["QMC"]
+  },
   "Quantum ESPRESSO": {
     "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],

@@ -310,8 +310,8 @@
         "datestamp": "2021-04-10"
       },
       "QMCPACK": {
-        "citations": 8,
-        "datestamp": "2021-04-10"
+        "citations": 9,
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 18,
@@ -720,8 +720,8 @@
         "datestamp": "2021-01-17"
       },
       "QMCPACK": {
-        "citations": 16,
-        "datestamp": "2021-01-17"
+        "citations": 18,
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 24,
@@ -1139,7 +1139,7 @@
       },
       "QMCPACK": {
         "citations": 11,
-        "datestamp": "2021-01-17"
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 19,
@@ -1557,7 +1557,7 @@
       },
       "QMCPACK": {
         "citations": 17,
-        "datestamp": "2021-01-17"
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 16,
@@ -1974,8 +1974,8 @@
         "datestamp": "2021-01-17"
       },
       "QMCPACK": {
-        "citations": 27,
-        "datestamp": "2021-01-17"
+        "citations": 25,
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 19,
@@ -2392,8 +2392,8 @@
         "datestamp": "2021-01-07"
       },
       "QMCPACK": {
-        "citations": 21,
-        "datestamp": "2021-01-17"
+        "citations": 19,
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 27,
@@ -2810,8 +2810,8 @@
         "datestamp": "2021-01-07"
       },
       "QMCPACK": {
-        "citations": 23,
-        "datestamp": "2021-01-17"
+        "citations": 21,
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 21,
@@ -3228,8 +3228,8 @@
         "datestamp": "2021-01-07"
       },
       "QMCPACK": {
-        "citations": 38,
-        "datestamp": "2021-01-17"
+        "citations": 37,
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 31,
@@ -3646,8 +3646,8 @@
         "datestamp": "2021-01-04"
       },
       "QMCPACK": {
-        "citations": 39,
-        "datestamp": "2021-01-17"
+        "citations": 40,
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 36,
@@ -4064,8 +4064,8 @@
         "datestamp": "2021-01-04"
       },
       "QMCPACK": {
-        "citations": 50,
-        "datestamp": "2021-01-17"
+        "citations": 54,
+        "datestamp": "2024-03-09"
       },
       "Qbox": {
         "citations": 32,
@@ -4405,6 +4405,10 @@
         "citations": 565,
         "datestamp": "2021-08-24"
       },
+      "QMCPACK": {
+        "citations": 70,
+        "datestamp": "2024-03-09"
+      },
       "Quantum ESPRESSO": {
         "citations": 2540,
         "datestamp": "2021-08-24"
@@ -4703,6 +4707,10 @@
         "citations": 701,
         "datestamp": "2023-01-30"
       },
+      "QMCPACK": {
+        "citations": 44,
+        "datestamp": "2024-03-09"
+      },
       "Quantum ESPRESSO": {
         "citations": 3010,
         "datestamp": "2023-01-30"
@@ -5000,6 +5008,10 @@
       "Q-Chem": {
         "citations": 603,
         "datestamp": "2023-01-28"
+      },
+      "QMCPACK": {
+        "citations": 50,
+        "datestamp": "2024-03-09"
       },
       "Quantum ESPRESSO": {
         "citations": 3380,
