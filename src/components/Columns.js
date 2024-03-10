@@ -109,6 +109,7 @@ function getColumns(data, year) {
       options: {
         filter: true,
         sort: false,
+        display: false,
         customBodyRenderLite: (dataIndex) => {
           return TooltipTexts(
             data[dataIndex]["distribution_channels"],
