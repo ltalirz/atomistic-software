@@ -66,8 +66,8 @@
         "datestamp": "2021-04-10"
       },
       "COLUMBUS": {
-        "citations": 53,
-        "datestamp": "2021-04-10"
+        "citations": 50,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 10,
@@ -472,8 +472,8 @@
         "datestamp": "2021-01-17"
       },
       "COLUMBUS": {
-        "citations": 55,
-        "datestamp": "2021-01-17"
+        "citations": 46,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 11,
@@ -890,8 +890,8 @@
         "datestamp": "2021-01-17"
       },
       "COLUMBUS": {
-        "citations": 70,
-        "datestamp": "2021-01-17"
+        "citations": 65,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 18,
@@ -1308,8 +1308,8 @@
         "datestamp": "2021-01-17"
       },
       "COLUMBUS": {
-        "citations": 51,
-        "datestamp": "2021-01-17"
+        "citations": 53,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 18,
@@ -1726,8 +1726,8 @@
         "datestamp": "2021-01-17"
       },
       "COLUMBUS": {
-        "citations": 60,
-        "datestamp": "2021-01-17"
+        "citations": 56,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 27,
@@ -2144,8 +2144,8 @@
         "datestamp": "2021-01-07"
       },
       "COLUMBUS": {
-        "citations": 59,
-        "datestamp": "2021-01-07"
+        "citations": 58,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 33,
@@ -2562,8 +2562,8 @@
         "datestamp": "2021-01-07"
       },
       "COLUMBUS": {
-        "citations": 53,
-        "datestamp": "2021-01-07"
+        "citations": 55,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 37,
@@ -2980,8 +2980,8 @@
         "datestamp": "2021-01-07"
       },
       "COLUMBUS": {
-        "citations": 40,
-        "datestamp": "2021-01-07"
+        "citations": 42,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 30,
@@ -3398,8 +3398,8 @@
         "datestamp": "2021-01-04"
       },
       "COLUMBUS": {
-        "citations": 44,
-        "datestamp": "2021-01-04"
+        "citations": 47,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 38,
@@ -3816,8 +3816,8 @@
         "datestamp": "2021-01-04"
       },
       "COLUMBUS": {
-        "citations": 46,
-        "datestamp": "2021-01-04"
+        "citations": 45,
+        "datestamp": "2024-03-09"
       },
       "CONQUEST O(N)": {
         "citations": 31,
@@ -4217,6 +4217,10 @@
         "citations": 785,
         "datestamp": "2021-08-24"
       },
+      "COLUMBUS": {
+        "citations": 53,
+        "datestamp": "2024-03-09"
+      },
       "CP2K": {
         "citations": 755,
         "datestamp": "2021-08-24"
@@ -4519,6 +4523,10 @@
         "citations": 946,
         "datestamp": "2023-01-28"
       },
+      "COLUMBUS": {
+        "citations": 55,
+        "datestamp": "2024-03-09"
+      },
       "CP2K": {
         "citations": 812,
         "datestamp": "2023-01-28"
@@ -4820,6 +4828,10 @@
       "CHARMM": {
         "citations": 896,
         "datestamp": "2023-01-28"
+      },
+      "COLUMBUS": {
+        "citations": 53,
+        "datestamp": "2024-03-09"
       },
       "CP2K": {
         "citations": 908,

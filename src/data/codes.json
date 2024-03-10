@@ -200,6 +200,25 @@
     "tags": [],
     "types": ["FF"]
   },
+  "COLUMBUS": {
+    "acceleration": ["Global Arrays"],
+    "apis": [],
+    "author_name": "Lischka",
+    "benchmarks": [],
+    "distribution_channels": ["Source", "Binary"],
+    "element_coverage": "H..Og",
+    "homepage": "https://columbus-program-system.gitlab.io/columbus/",
+    "cost": "free",
+    "source": "copyleft",
+    "license": "LGPL-3.0",
+    "name": "COLUMBUS",
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"COLUMBUS\" \"Lischka\"",
+    "tags": ["GTO", "PP"],
+    "types": ["DFT", "WFM"]
+  },
   "CP2K": {
     "acceleration": ["MPI", "OpenMP", "Cuda"],
     "apis": [],
@@ -980,7 +999,7 @@
     "types": ["FF"]
   },
   "NWChem": {
-    "acceleration": ["MPI", "OpenMP", "Cuda"],
+    "acceleration": ["MPI", "OpenMP", "Cuda", "Global Arrays"],
     "apis": ["QCSchema"],
     "author_name": "Valiev",
     "benchmarks": [],
