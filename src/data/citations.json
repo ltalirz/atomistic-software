@@ -4790,304 +4790,304 @@
   "2022-2022": {
     "citations": {
       "ABINIT": {
-        "citations": 369,
-        "datestamp": "2023-01-28"
+        "citations": 334,
+        "datestamp": "2024-03-29"
       },
       "ACEMD": {
-        "citations": 66,
-        "datestamp": "2024-03-06"
+        "citations": 68,
+        "datestamp": "2024-03-29"
       },
       "ADF": {
-        "citations": 627,
-        "datestamp": "2023-01-28"
+        "citations": 575,
+        "datestamp": "2024-03-29"
       },
       "ATK/QuantumATK": {
-        "citations": 707,
-        "datestamp": "2023-01-28"
+        "citations": 706,
+        "datestamp": "2024-03-29"
       },
       "Amber": {
-        "citations": 2760,
-        "datestamp": "2023-01-28"
+        "citations": 2590,
+        "datestamp": "2024-03-29"
       },
       "BerkeleyGW": {
-        "citations": 113,
-        "datestamp": "2023-01-30"
+        "citations": 107,
+        "datestamp": "2024-03-29"
       },
       "BoltzTrap": {
-        "citations": 781,
-        "datestamp": "2023-01-28"
+        "citations": 744,
+        "datestamp": "2024-03-29"
       },
       "CASTEP": {
-        "citations": 2820,
-        "datestamp": "2023-01-28"
+        "citations": 2670,
+        "datestamp": "2024-03-29"
       },
       "CFOUR": {
-        "citations": 191,
-        "datestamp": "2023-01-28"
+        "citations": 179,
+        "datestamp": "2024-03-29"
       },
       "CHARMM": {
-        "citations": 896,
-        "datestamp": "2023-01-28"
+        "citations": 866,
+        "datestamp": "2024-03-29"
       },
       "COLUMBUS": {
         "citations": 53,
-        "datestamp": "2024-03-09"
+        "datestamp": "2024-03-29"
       },
       "CP2K": {
-        "citations": 908,
-        "datestamp": "2023-01-28"
+        "citations": 874,
+        "datestamp": "2024-03-29"
       },
       "CPMD": {
-        "citations": 216,
-        "datestamp": "2023-01-28"
+        "citations": 218,
+        "datestamp": "2024-03-29"
       },
       "CRYSTAL": {
-        "citations": 423,
-        "datestamp": "2023-01-28"
+        "citations": 397,
+        "datestamp": "2024-03-29"
       },
       "DFTB+": {
-        "citations": 129,
-        "datestamp": "2023-01-28"
+        "citations": 127,
+        "datestamp": "2024-03-29"
       },
       "DIRAC": {
-        "citations": 194,
-        "datestamp": "2023-01-28"
+        "citations": 170,
+        "datestamp": "2024-03-29"
       },
       "DL_POLY": {
-        "citations": 185,
-        "datestamp": "2023-01-28"
+        "citations": 187,
+        "datestamp": "2024-03-29"
       },
       "DMol3": {
-        "citations": 1020,
-        "datestamp": "2023-01-28"
+        "citations": 935,
+        "datestamp": "2024-03-29"
       },
       "Dalton": {
-        "citations": 555,
-        "datestamp": "2023-01-28"
+        "citations": 508,
+        "datestamp": "2024-03-29"
       },
       "Desmond": {
-        "citations": 1610,
-        "datestamp": "2023-01-28"
+        "citations": 1500,
+        "datestamp": "2024-03-29"
       },
       "Discovery Studio": {
-        "citations": 1220,
-        "datestamp": "2023-01-28"
+        "citations": 1190,
+        "datestamp": "2024-03-29"
       },
       "EPW": {
-        "citations": 202,
-        "datestamp": "2023-01-28"
+        "citations": 184,
+        "datestamp": "2024-03-29"
       },
       "ESPResSo": {
-        "citations": 79,
-        "datestamp": "2023-01-28"
+        "citations": 85,
+        "datestamp": "2024-03-29"
       },
       "Elk": {
-        "citations": 121,
-        "datestamp": "2023-01-28"
+        "citations": 109,
+        "datestamp": "2024-03-29"
       },
       "FEFF": {
-        "citations": 279,
-        "datestamp": "2023-01-28"
+        "citations": 265,
+        "datestamp": "2024-03-29"
       },
       "FHI-aims": {
-        "citations": 266,
-        "datestamp": "2023-01-28"
+        "citations": 233,
+        "datestamp": "2024-03-29"
       },
       "FLEUR": {
-        "citations": 48,
-        "datestamp": "2024-03-06"
+        "citations": 50,
+        "datestamp": "2024-03-29"
       },
       "FPLO": {
-        "citations": 128,
-        "datestamp": "2023-01-28"
+        "citations": 98,
+        "datestamp": "2024-03-29"
       },
       "Firefly": {
-        "citations": 135,
-        "datestamp": "2023-01-28"
+        "citations": 145,
+        "datestamp": "2024-03-29"
       },
       "FoldX": {
-        "citations": 319,
-        "datestamp": "2023-01-28"
+        "citations": 284,
+        "datestamp": "2024-03-29"
       },
       "GAMESS": {
-        "citations": 817,
-        "datestamp": "2023-01-28"
+        "citations": 767,
+        "datestamp": "2024-03-29"
       },
       "GPAW": {
-        "citations": 277,
-        "datestamp": "2023-01-28"
+        "citations": 250,
+        "datestamp": "2024-03-29"
       },
       "GROMOS": {
-        "citations": 771,
-        "datestamp": "2023-02-28"
+        "citations": 710,
+        "datestamp": "2024-03-29"
       },
       "GULP": {
-        "citations": 214,
-        "datestamp": "2023-01-28"
+        "citations": 213,
+        "datestamp": "2024-03-29"
       },
       "Gaussian": {
-        "citations": 14700,
-        "datestamp": "2023-01-28"
+        "citations": 14200,
+        "datestamp": "2024-03-29"
       },
       "Gromacs": {
-        "citations": 6450,
-        "datestamp": "2023-01-28"
+        "citations": 6030,
+        "datestamp": "2024-03-29"
       },
       "HOOMD-blue": {
-        "citations": 144,
-        "datestamp": "2023-01-28"
+        "citations": 135,
+        "datestamp": "2024-03-29"
       },
       "Hyperchem": {
-        "citations": 291,
-        "datestamp": "2023-01-28"
+        "citations": 287,
+        "datestamp": "2024-03-29"
       },
       "JDFTx": {
-        "citations": 75,
-        "datestamp": "2024-03-06"
+        "citations": 71,
+        "datestamp": "2024-03-29"
       },
       "Jaguar": {
-        "citations": 261,
-        "datestamp": "2024-03-06"
+        "citations": 303,
+        "datestamp": "2024-03-29"
       },
       "LAMMPS": {
-        "citations": 4920,
-        "datestamp": "2023-01-28"
+        "citations": 4620,
+        "datestamp": "2024-03-29"
       },
       "MOE": {
-        "citations": 1210,
-        "datestamp": "2023-01-28"
+        "citations": 1170,
+        "datestamp": "2024-03-29"
       },
       "MOLCAS": {
-        "citations": 248,
-        "datestamp": "2023-01-28"
+        "citations": 215,
+        "datestamp": "2024-03-29"
       },
       "MOPAC": {
-        "citations": 886,
-        "datestamp": "2023-01-28"
+        "citations": 911,
+        "datestamp": "2024-03-29"
       },
       "MacroModel": {
-        "citations": 497,
-        "datestamp": "2023-01-28"
+        "citations": 477,
+        "datestamp": "2024-03-29"
       },
       "Molpro": {
-        "citations": 836,
-        "datestamp": "2023-01-28"
+        "citations": 773,
+        "datestamp": "2024-03-29"
       },
       "NAMD": {
-        "citations": 1600,
-        "datestamp": "2023-01-28"
+        "citations": 1500,
+        "datestamp": "2024-03-29"
       },
       "NWChem": {
-        "citations": 323,
-        "datestamp": "2023-01-28"
+        "citations": 295,
+        "datestamp": "2024-03-29"
       },
       "ONETEP": {
         "citations": 51,
-        "datestamp": "2024-03-09"
+        "datestamp": "2024-03-29"
       },
       "ORCA": {
-        "citations": 2570,
-        "datestamp": "2023-01-28"
+        "citations": 2280,
+        "datestamp": "2024-03-29"
       },
       "Octopus": {
-        "citations": 353,
-        "datestamp": "2023-01-28"
+        "citations": 359,
+        "datestamp": "2024-03-29"
       },
       "OpenMM": {
-        "citations": 782,
-        "datestamp": "2023-01-28"
+        "citations": 693,
+        "datestamp": "2024-03-29"
       },
       "OpenMX": {
-        "citations": 157,
-        "datestamp": "2023-01-28"
+        "citations": 145,
+        "datestamp": "2024-03-29"
       },
       "OpenMolcas": {
-        "citations": 176,
-        "datestamp": "2023-01-28"
+        "citations": 163,
+        "datestamp": "2024-03-29"
       },
       "PWmat": {
-        "citations": 82,
-        "datestamp": "2024-03-06"
+        "citations": 80,
+        "datestamp": "2024-03-29"
       },
       "Psi4": {
-        "citations": 284,
-        "datestamp": "2023-01-28"
+        "citations": 259,
+        "datestamp": "2024-03-29"
       },
       "PySCF": {
-        "citations": 285,
-        "datestamp": "2023-01-28"
+        "citations": 231,
+        "datestamp": "2024-03-29"
       },
       "Q-Chem": {
-        "citations": 603,
-        "datestamp": "2023-01-28"
+        "citations": 517,
+        "datestamp": "2024-03-29"
       },
       "QMCPACK": {
         "citations": 50,
-        "datestamp": "2024-03-09"
+        "datestamp": "2024-03-29"
       },
       "Quantum ESPRESSO": {
-        "citations": 3380,
-        "datestamp": "2023-01-28"
+        "citations": 3200,
+        "datestamp": "2024-03-29"
       },
       "RASPA": {
-        "citations": 242,
-        "datestamp": "2023-01-28"
+        "citations": 225,
+        "datestamp": "2024-03-29"
       },
       "SIESTA": {
-        "citations": 852,
-        "datestamp": "2023-01-28"
+        "citations": 841,
+        "datestamp": "2024-03-29"
       },
       "TB-LMTO-ASA": {
-        "citations": 65,
-        "datestamp": "2023-01-28"
+        "citations": 62,
+        "datestamp": "2024-03-29"
       },
       "TINKER": {
-        "citations": 387,
-        "datestamp": "2023-01-28"
+        "citations": 388,
+        "datestamp": "2024-03-29"
       },
       "TURBOMOLE": {
-        "citations": 608,
-        "datestamp": "2023-01-28"
+        "citations": 513,
+        "datestamp": "2024-03-29"
       },
       "TeraChem": {
-        "citations": 113,
-        "datestamp": "2023-01-28"
+        "citations": 98,
+        "datestamp": "2024-03-29"
       },
       "VASP": {
         "citations": 12100,
         "datestamp": "2024-03-29"
       },
       "WHAT IF": {
-        "citations": 74,
-        "datestamp": "2023-01-28"
+        "citations": 83,
+        "datestamp": "2024-03-29"
       },
       "WIEN2k": {
-        "citations": 1460,
-        "datestamp": "2023-01-28"
+        "citations": 1400,
+        "datestamp": "2024-03-29"
       },
       "Wannier90": {
-        "citations": 713,
-        "datestamp": "2023-01-28"
+        "citations": 620,
+        "datestamp": "2024-03-29"
       },
       "YASARA": {
-        "citations": 549,
-        "datestamp": "2023-01-28"
+        "citations": 514,
+        "datestamp": "2024-03-29"
       },
       "Yambo": {
-        "citations": 124,
-        "datestamp": "2023-01-28"
+        "citations": 114,
+        "datestamp": "2024-03-29"
       },
       "deMon2k": {
-        "citations": 74,
-        "datestamp": "2024-03-06"
+        "citations": 71,
+        "datestamp": "2024-03-29"
       },
       "exciting": {
-        "citations": 54,
-        "datestamp": "2024-03-06"
+        "citations": 56,
+        "datestamp": "2024-03-29"
       },
       "xTB": {
-        "citations": 727,
-        "datestamp": "2023-01-28"
+        "citations": 681,
+        "datestamp": "2024-03-29"
       }
     },
     "year_high": 2022,
