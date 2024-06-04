@@ -1273,7 +1273,7 @@
     "types": ["QMC"]
   },
   "Quantum ESPRESSO": {
-    "acceleration": ["MPI", "OpenMP", "Cuda"],
+    "acceleration": ["MPI", "OpenMP", "Cuda", "OpenACC"],
     "apis": [],
     "author_name": "Giannozzi",
     "benchmarks": ["Δ-value"],
