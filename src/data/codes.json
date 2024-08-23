@@ -675,6 +675,25 @@
     "tags": ["PBC", "NAO", "PAW", "PP", "PW", "RS"],
     "types": ["DFT"]
   },
+  "GPUMD": {
+    "acceleration": ["Cuda"],
+    "apis": [],
+    "author_name": "Fan",
+    "benchmarks": [],
+    "distribution_channels": ["Source"],
+    "element_coverage": null,
+    "homepage": "https://gpumd.org/",
+    "cost": "free",
+    "source": "copyleft",
+    "license": "GPL-3.0",
+    "name": "GPUMD",
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "GPUMD",
+    "tags": [],
+    "types": ["FF"]
+  },
   "GROMOS": {
     "acceleration": ["Cuda"],
     "apis": [],
