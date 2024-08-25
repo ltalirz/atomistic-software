@@ -690,7 +690,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "GPUMD",
+    "query_string": "\"GPUMD\"",
     "tags": [],
     "types": ["FF"]
   },
