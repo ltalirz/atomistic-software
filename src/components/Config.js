@@ -1,8 +1,8 @@
 import citations from "../data/citations.json";
 import codes from "../data/codes.json";
 
-// Citation cutoff
-const CUTOFF = 100;
+// Citation cutoff per year (~1 citation per week)
+const CUTOFF = 50;
 
 function yearToRange(year) {
   /**
