@@ -1456,25 +1456,6 @@
     "tags": ["PBC", "PAW", "PP", "PW"],
     "types": ["DFT", "WFM"]
   },
-  "WHAT IF": {
-    "acceleration": [],
-    "apis": [],
-    "author_name": "Vriend",
-    "benchmarks": [],
-    "distribution_channels": ["Binary"],
-    "element_coverage": null,
-    "homepage": "https://swift.cmbi.umcn.nl/whatif/",
-    "cost": "commercial",
-    "source": "closed",
-    "license": null,
-    "name": "WHAT IF",
-    "notes": "Discontinued.",
-    "query_method": "search term",
-    "query_publication_id": null,
-    "query_string": "\"WHAT IF\" \"Vriend\" molecular",
-    "tags": [],
-    "types": ["FF"]
-  },
   "WIEN2k": {
     "acceleration": ["MPI", "OpenMP"],
     "apis": [],
