@@ -228,11 +228,11 @@ export default function Home() {
         10,
         4
       )}
-      {Card("Citations commercial vs free", costGraph(), "", 12, 10)}
+      {Card("Cost: commercial vs free engines", costGraph(), "", 12, 10)}
       {Card(
-        "Citations by source code availability",
+        "Source availability: closed, \"available\", and open",
         sourceGraph(),
-        '"Source available" includes engines whose source code can be obtained for free or for a fee. ' +
+        '"Source available" includes all engines whose source code can be obtained for free or for a fee. ' +
           '"Open-source" engines are the subset of source-available engines with OSI-approved licenses.',
         12, 10
       )}
