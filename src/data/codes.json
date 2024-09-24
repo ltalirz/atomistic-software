@@ -1349,7 +1349,7 @@
     "benchmarks": [],
     "distribution_channels": ["Source", "AUR", "conda", "Spack", "EasyBuild", "Nix"],
     "element_coverage": "H..Rn",
-    "homepage": "https://departments.icmab.es/leem/siesta/",
+    "homepage": "https://siesta-project.org/siesta/index.html",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-3.0",
