@@ -143,6 +143,36 @@
     "tags": ["PBC", "PP", "PW"],
     "types": ["S"]
   },
+  "CASINO": {
+      "acceleration": [
+        "MPI"
+      ],
+      "apis": [],
+      "author_name": "Needs and López Ríos",
+      "benchmarks": [],
+    "distribution_channels": ["Source"],
+      "element_coverage": "H..Hg",
+      "homepage": "https://vallico.net/casinoqmc/",
+      "cost": "free (academia)",
+      "source": "available",
+      "license": "F(A)",
+      "name": "CASINO",
+      "notes": null,
+      "query_method": "search term",
+      "query_publication_id": null,
+      "query_string": "\"CASINO\" \"Quantum Monte Carlo\"",
+      "tags": [
+        "AE",
+        "GTO",
+        "NAO",
+        "PP",
+        "PW",
+        "STO"
+      ],
+      "types": [
+        "QMC"
+      ]
+  },
   "CASTEP": {
     "acceleration": ["MPI", "OpenMP"],
     "apis": [],
