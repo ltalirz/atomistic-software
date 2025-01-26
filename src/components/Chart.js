@@ -1,4 +1,5 @@
 import React from "react";
+import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 import Title from "./Dashboard/Title";
 import useStyles from "./Dashboard/Styles";
@@ -67,7 +68,13 @@ function SingleChart() {
   const data = { id: codeName, data: citations };
 
   return (
-    <Paper className={classes.paper}>{nivoChart([data], title, false)}</Paper>
+    <Box
+      // note: for some reason, 100% has no effect
+      sx={{ width: "clamp(520px, 99%, 800px)" }}>
+      <Paper className={classes.paper}>
+        {nivoChart([data], title, false)}
+      </Paper>
+    </Box>
   );
 }
 
