@@ -78,13 +78,16 @@ function SingleChart() {
   );
 }
 
-function nivoChart(data, title, legend = true) {
+function nivoChart(data, title, legend = true, logScale = false) {
   /**
    * Return nivo line-chart with default formatting for given data and title.
    */
   let legend_list = [];
   let margin_right = 50;
-  if (legend) {
+  
+  // For the MultiCodeChart page, we'll drop the legend even if legend=true is passed
+  // This is detected based on the logScale parameter which is only used for the trends page
+  if (legend && !logScale) {
     legend_list = [
       {
         anchor: "top-left",
@@ -113,22 +116,101 @@ function nivoChart(data, title, legend = true) {
     ];
   }
 
+  // Validate data to ensure it contains points with valid coordinates
+  const validData = data.map(series => {
+    if (!series.data || !Array.isArray(series.data)) {
+      return { ...series, data: [] };
+    }
+    // Filter out any data points with missing or invalid x or y values
+    const validPoints = series.data.filter(
+      point => point && typeof point.x !== 'undefined' && 
+               (logScale ? point.y >= 50 : typeof point.y !== 'undefined')
+    ).sort((a, b) => {
+      const ax = typeof a.x === 'string' ? parseInt(a.x, 10) : a.x;
+      const bx = typeof b.x === 'string' ? parseInt(b.x, 10) : b.x;
+      return ax - bx;
+    });
+    return { ...series, data: validPoints };
+  }).filter(series => series.data.length > 0);
+
+  // Calculate max value for setting y-axis ticks and add 10% padding
+  const maxYValue = validData.reduce((max, series) => {
+    const seriesMax = series.data.reduce((m, point) => Math.max(m, point.y), 0);
+    return Math.max(max, seriesMax);
+  }, 0);
+  
+  // Add 10% padding to max value to prevent cutting off
+  const maxWithPadding = maxYValue * 1.1;
+
+  // Configure Y scale based on logScale parameter
+  const yScale = logScale
+    ? {
+        type: "log",
+        base: 10,
+        min: 50,  // Set minimum to 50 for log scale
+        max: maxWithPadding,
+        stacked: false,
+        reverse: false,
+      }
+    : {
+        type: "linear",
+        min: 0,
+        max: maxWithPadding,
+        stacked: false,
+        reverse: false,
+      };
+
+  // Function to format numbers with apostrophes (e.g., 10'000)
+  const formatNumber = value => {
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+  };
+
+  // Custom tick values for log scale to only show decades
+  const getLogTickValues = (min, max) => {
+    const tickValues = [];
+    const minExp = Math.floor(Math.log10(min));
+    const maxExp = Math.ceil(Math.log10(max));
+    
+    for (let i = minExp; i <= maxExp; i++) {
+      const value = Math.pow(10, i);
+      if (value >= min) {
+        tickValues.push(value);
+      }
+    }
+    
+    // Add 50 as the first tick if it's our min value
+    if (min === 50 && !tickValues.includes(50)) {
+      tickValues.unshift(50);
+    }
+    
+    return tickValues;
+  };
+
+  // If no valid data, display a message instead of an empty chart
+  if (validData.length === 0) {
+    return (
+      <React.Fragment>
+        <Title>{title}</Title>
+        <div className="chart" style={{ height: "400px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <p>No valid data available for the selected options</p>
+        </div>
+      </React.Fragment>
+    );
+  }
+
+  // Get tick values for log scale
+  const tickValues = logScale ? getLogTickValues(50, maxWithPadding) : undefined;
+
   return (
     <React.Fragment>
       <Title>{title}</Title>
-      <div className="chart">
+      <div className="chart" style={{ height: "500px" }}>
         <ResponsiveLine
           title={title}
-          data={data}
+          data={validData}
           margin={{ top: 20, right: margin_right, bottom: 50, left: 70 }}
-          xScale={{ type: "point" }}
-          yScale={{
-            type: "linear",
-            min: 0,
-            max: "auto",
-            stacked: false,
-            reverse: false,
-          }}
+          xScale={{ type: "linear", min: "auto", max: "auto" }}
+          yScale={yScale}
           axisTop={null}
           axisRight={null}
           axisBottom={{
@@ -136,20 +218,43 @@ function nivoChart(data, title, legend = true) {
             legend: "Year",
             legendOffset: 36,
             legendPosition: "middle",
+            format: "d",
           }}
           axisLeft={{
             orient: "left",
             legend: "Citations per year (Google Scholar)",
             legendOffset: -55,
             legendPosition: "middle",
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            format: value => formatNumber(value),
+            tickValues: tickValues
           }}
-          pointSize={10}
+          pointSize={8}
           pointColor={{ theme: "background" }}
           pointBorderWidth={2}
           pointBorderColor={{ from: "serieColor" }}
           pointLabelYOffset={-12}
           enableCrosshair={true}
           useMesh={true}
+          tooltip={({ point }) => (
+            <div style={{
+              background: 'white',
+              padding: '9px 12px',
+              border: '1px solid #ccc',
+              boxShadow: '0 1px 2px rgba(0,0,0,0.25)',
+              color: '#222',
+              fontSize: '0.8em'
+            }}>
+              <strong>{point.serieId}</strong>
+              <br />
+              Year: {point.data.x}
+              <br />
+              Citations: {formatNumber(point.data.y)}
+            </div>
+          )}
+          crosshairType="cross"
           legends={legend_list}
           animate={false}
           theme={THEME}

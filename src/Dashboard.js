@@ -10,7 +10,6 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import Container from "@material-ui/core/Container";
 
-
 import Link from "@material-ui/core/Link";
 import MenuIcon from "@material-ui/icons/Menu";
 import { mainListItems } from "./components/Dashboard/listItems";
@@ -21,10 +20,10 @@ import Table from "./components/Table";
 import About from "./components/About";
 import Statistics from "./components/Statistics";
 import { SingleChart } from "./components/Chart";
+import MultiCodeChart from "./components/MultiCodeChart";
 import packageJson from "../package.json";
 import { useTheme } from '@material-ui/core/styles';
-import Hidden from '@material-ui/core/Hidden';
-
+import Hidden from "@material-ui/core/Hidden";
 
 function Copyright() {
   return (
@@ -75,7 +74,6 @@ export default function Dashboard() {
   );
 
   // const container = window !== undefined ? () => window().document.body : undefined;
-
 
   return (
     <div className={classes.root}>
@@ -134,6 +132,7 @@ export default function Dashboard() {
             <Route exact path="/" component={Table} />
             <Route exact path="/table" component={Table} />
             <Route exact path="/charts/:code" component={SingleChart} />
+            <Route exact path="/trends" component={MultiCodeChart} />
             <Route exact path="/about" component={About} />
             <Route exact path="/stats" component={Statistics} />
           </Router>
