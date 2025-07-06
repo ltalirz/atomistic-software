@@ -375,7 +375,7 @@
       },
       "WEST": {
         "citations": 0,
-        "datestamp": "2021-04-10"
+        "datestamp": "2025-07-06"
       },
       "WHAT IF": {
         "citations": 162,
@@ -805,7 +805,7 @@
       },
       "WEST": {
         "citations": 0,
-        "datestamp": "2021-01-17"
+        "datestamp": "2025-07-06"
       },
       "WHAT IF": {
         "citations": 171,
@@ -1235,7 +1235,7 @@
       },
       "WEST": {
         "citations": 0,
-        "datestamp": "2021-01-17"
+        "datestamp": "2025-07-06"
       },
       "WHAT IF": {
         "citations": 200,
@@ -1665,7 +1665,7 @@
       },
       "WEST": {
         "citations": 0,
-        "datestamp": "2021-01-17"
+        "datestamp": "2025-07-06"
       },
       "WHAT IF": {
         "citations": 170,
@@ -2095,7 +2095,7 @@
       },
       "WEST": {
         "citations": 0,
-        "datestamp": "2021-01-17"
+        "datestamp": "2025-07-06"
       },
       "WHAT IF": {
         "citations": 141,
@@ -2525,7 +2525,7 @@
       },
       "WEST": {
         "citations": 5,
-        "datestamp": "2021-01-07"
+        "datestamp": "2025-07-06"
       },
       "WHAT IF": {
         "citations": 159,
@@ -2853,6 +2853,10 @@
         "citations": 6240,
         "datestamp": "2025-03-04"
       },
+      "WEST": {
+        "citations": 41,
+        "datestamp": "2025-07-06"
+      },
       "WIEN2k": {
         "citations": 1190,
         "datestamp": "2025-03-04"
@@ -3170,6 +3174,10 @@
       "VASP": {
         "citations": 6570,
         "datestamp": "2025-03-04"
+      },
+      "WEST": {
+        "citations": 38,
+        "datestamp": "2025-07-06"
       },
       "WIEN2k": {
         "citations": 1160,
@@ -3489,6 +3497,10 @@
         "citations": 7230,
         "datestamp": "2025-03-02"
       },
+      "WEST": {
+        "citations": 37,
+        "datestamp": "2025-07-06"
+      },
       "WIEN2k": {
         "citations": 1170,
         "datestamp": "2025-03-02"
@@ -3806,6 +3818,10 @@
       "VASP": {
         "citations": 7960,
         "datestamp": "2025-03-02"
+      },
+      "WEST": {
+        "citations": 34,
+        "datestamp": "2025-07-06"
       },
       "WIEN2k": {
         "citations": 1220,
@@ -4125,6 +4141,10 @@
         "citations": 8620,
         "datestamp": "2025-02-26"
       },
+      "WEST": {
+        "citations": 35,
+        "datestamp": "2025-07-06"
+      },
       "WIEN2k": {
         "citations": 1280,
         "datestamp": "2025-02-26"
@@ -4442,6 +4462,10 @@
       "VASP": {
         "citations": 9420,
         "datestamp": "2025-02-26"
+      },
+      "WEST": {
+        "citations": 45,
+        "datestamp": "2025-07-06"
       },
       "WIEN2k": {
         "citations": 1270,
@@ -4761,6 +4785,10 @@
         "citations": 11500,
         "datestamp": "2025-03-07"
       },
+      "WEST": {
+        "citations": 35,
+        "datestamp": "2025-07-06"
+      },
       "WIEN2k": {
         "citations": 1340,
         "datestamp": "2025-03-07"
@@ -5079,6 +5107,10 @@
         "citations": 11600,
         "datestamp": "2025-03-06"
       },
+      "WEST": {
+        "citations": 34,
+        "datestamp": "2025-07-06"
+      },
       "WIEN2k": {
         "citations": 1230,
         "datestamp": "2025-03-06"
@@ -5396,6 +5428,10 @@
       "VASP": {
         "citations": 12700,
         "datestamp": "2025-04-20"
+      },
+      "WEST": {
+        "citations": 62,
+        "datestamp": "2025-07-06"
       },
       "WIEN2k": {
         "citations": 1680,

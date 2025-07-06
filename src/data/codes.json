@@ -1543,6 +1543,25 @@
     "tags": ["PBC", "AE", "LAPW"],
     "types": ["DFT", "WFM"]
   },
+  "WEST": {
+    "acceleration": ["MPI", "OpenMP"],
+    "apis": [],
+    "author_name": "Govoni",
+    "benchmarks": [],
+    "distribution_channels": ["Source"],
+    "element_coverage": null,
+    "homepage": "https://west-code.org/",
+    "cost": "free",
+    "source": "copyleft",
+    "license": "GPL-3.0",
+    "name": "WEST",
+    "notes": "Massively parallel software for large-scale electronic structure calculations within many-body perturbation theory",
+    "query_method": "publication",
+    "query_publication_id": "10135319195087919820",
+    "query_string": "M. Govoni and G. Galli, J. Chem. Theory Comput. 11, 2680 (2015)",
+    "tags": ["PBC", "PP", "PW"],
+    "types": ["WFM"]
+  },
   "Wannier90": {
     "acceleration": ["MPI"],
     "apis": [],
