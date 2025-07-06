@@ -365,6 +365,10 @@
         "citations": 3,
         "datestamp": "2022-01-10"
       },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "VASP": {
         "citations": 2810,
         "datestamp": "2024-03-29"
@@ -790,6 +794,10 @@
       "TeraChem": {
         "citations": 15,
         "datestamp": "2022-01-10"
+      },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
       },
       "VASP": {
         "citations": 3370,
@@ -1217,6 +1225,10 @@
         "citations": 15,
         "datestamp": "2022-01-10"
       },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "VASP": {
         "citations": 3730,
         "datestamp": "2024-03-29"
@@ -1642,6 +1654,10 @@
       "TeraChem": {
         "citations": 26,
         "datestamp": "2022-01-10"
+      },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
       },
       "VASP": {
         "citations": 4220,
@@ -2069,6 +2085,10 @@
         "citations": 27,
         "datestamp": "2022-01-10"
       },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "VASP": {
         "citations": 4900,
         "datestamp": "2024-03-29"
@@ -2495,6 +2515,10 @@
         "citations": 47,
         "datestamp": "2022-01-10"
       },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "VASP": {
         "citations": 5520,
         "datestamp": "2024-03-29"
@@ -2821,6 +2845,10 @@
         "citations": 45,
         "datestamp": "2025-03-04"
       },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "VASP": {
         "citations": 6240,
         "datestamp": "2025-03-04"
@@ -3134,6 +3162,10 @@
       "TeraChem": {
         "citations": 67,
         "datestamp": "2025-03-04"
+      },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
       },
       "VASP": {
         "citations": 6570,
@@ -3449,6 +3481,10 @@
         "citations": 52,
         "datestamp": "2025-03-02"
       },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "VASP": {
         "citations": 7230,
         "datestamp": "2025-03-02"
@@ -3762,6 +3798,10 @@
       "TeraChem": {
         "citations": 78,
         "datestamp": "2025-03-02"
+      },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
       },
       "VASP": {
         "citations": 7960,
@@ -4077,6 +4117,10 @@
         "citations": 77,
         "datestamp": "2025-02-26"
       },
+      "TorchMD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "VASP": {
         "citations": 8620,
         "datestamp": "2025-02-26"
@@ -4390,6 +4434,10 @@
       "TeraChem": {
         "citations": 95,
         "datestamp": "2025-02-26"
+      },
+      "TorchMD": {
+        "citations": 12,
+        "datestamp": "2025-07-06"
       },
       "VASP": {
         "citations": 9420,
@@ -4705,6 +4753,10 @@
         "citations": 95,
         "datestamp": "2025-03-07"
       },
+      "TorchMD": {
+        "citations": 20,
+        "datestamp": "2025-07-06"
+      },
       "VASP": {
         "citations": 11500,
         "datestamp": "2025-03-07"
@@ -5019,6 +5071,10 @@
         "citations": 86,
         "datestamp": "2025-03-06"
       },
+      "TorchMD": {
+        "citations": 61,
+        "datestamp": "2025-07-06"
+      },
       "VASP": {
         "citations": 11600,
         "datestamp": "2025-03-06"
@@ -5332,6 +5388,10 @@
       "TeraChem": {
         "citations": 93,
         "datestamp": "2025-04-20"
+      },
+      "TorchMD": {
+        "citations": 68,
+        "datestamp": "2025-07-06"
       },
       "VASP": {
         "citations": 12700,

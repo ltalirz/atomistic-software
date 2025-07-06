@@ -1467,6 +1467,25 @@
     "tags": [],
     "types": ["FF"]
   },
+  "TorchMD": {
+    "acceleration": ["Cuda"],
+    "apis": [],
+    "author_name": "Doerr",
+    "benchmarks": [],
+    "distribution_channels": ["Source", "PyPI", "conda"],
+    "element_coverage": null,
+    "homepage": "https://github.com/torchmd/torchmd",
+    "cost": "free",
+    "source": "permissive",
+    "license": "MIT",
+    "name": "TorchMD",
+    "notes": "PyTorch-based molecular dynamics with neural network potential integration",
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"TorchMD\" Doerr",
+    "tags": [],
+    "types": ["FF"]
+  },
   "TURBOMOLE": {
     "acceleration": ["MPI", "OpenMP"],
     "apis": [],
