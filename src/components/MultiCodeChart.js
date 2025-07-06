@@ -5,6 +5,9 @@ import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import Chip from "@material-ui/core/Chip";
+import Grid from "@material-ui/core/Grid";
 import useStyles from "./Dashboard/Styles";
 
 import { getCodeCitations } from "./Config";
@@ -14,21 +17,38 @@ import { nivoChart } from "./Chart";
 function MultiCodeChart() {
   const classes = useStyles();
   const [selectedTypes, setSelectedTypes] = useState({});
+  const [selectedCosts, setSelectedCosts] = useState({});
+  const [selectedSources, setSelectedSources] = useState({});
   const [chartData, setChartData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [activeCodeNames, setActiveCodeNames] = useState([]);
   
-  // Get all available types from code data
-  const allTypes = React.useMemo(() => {
+  // Get all available types, costs and sources from code data
+  const { allTypes, allCosts, allSources } = React.useMemo(() => {
     const types = new Set();
+    const costs = new Set();
+    const sources = new Set();
+    
     Object.values(codesData).forEach(code => {
       if (code.types) {
         code.types.forEach(type => types.add(type));
       }
+      if (code.cost) {
+        costs.add(code.cost);
+      }
+      if (code.source) {
+        sources.add(code.source);
+      }
     });
-    return Array.from(types).sort();
+    
+    return {
+      allTypes: Array.from(types).sort(),
+      allCosts: Array.from(costs).sort(),
+      allSources: Array.from(sources).sort()
+    };
   }, []);
 
-  // Initialize selected types
+  // Initialize selected types, costs, and sources
   useEffect(() => {
     const initialTypes = {};
     allTypes.forEach(type => {
@@ -39,9 +59,21 @@ function MultiCodeChart() {
       initialTypes.DFT = true;
     }
     setSelectedTypes(initialTypes);
-  }, [allTypes]);
+    
+    const initialCosts = {};
+    allCosts.forEach(cost => {
+      initialCosts[cost] = false;
+    });
+    setSelectedCosts(initialCosts);
+    
+    const initialSources = {};
+    allSources.forEach(source => {
+      initialSources[source] = false;
+    });
+    setSelectedSources(initialSources);
+  }, [allTypes, allCosts, allSources]);
 
-  // Update chart data when selected types change
+  // Update chart data when selected types, costs, or sources change
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
@@ -50,21 +82,47 @@ function MultiCodeChart() {
         type => selectedTypes[type]
       );
       
-      // If no types selected, show empty chart
-      if (typesToInclude.length === 0) {
+      const costsToInclude = Object.keys(selectedCosts).filter(
+        cost => selectedCosts[cost]
+      );
+      
+      const sourcesToInclude = Object.keys(selectedSources).filter(
+        source => selectedSources[source]
+      );
+      
+      // If nothing selected, show empty chart
+      if (typesToInclude.length === 0 && costsToInclude.length === 0 && sourcesToInclude.length === 0) {
         setChartData([]);
+        setActiveCodeNames([]);
         setIsLoading(false);
         return;
       }
       
-      // Filter codes by selected types
+      // Filter codes by selected types, costs, and sources
       const filteredCodes = Object.keys(codesData).filter(codeName => {
         const code = codesData[codeName];
-        return code.types && code.types.some(type => typesToInclude.includes(type));
+        
+        // Type filter
+        const typeMatch = typesToInclude.length === 0 || 
+                         (code.types && code.types.some(type => typesToInclude.includes(type)));
+        
+        // Cost filter
+        const costMatch = costsToInclude.length === 0 || 
+                         (code.cost && costsToInclude.includes(code.cost));
+        
+        // Source filter
+        const sourceMatch = sourcesToInclude.length === 0 || 
+                           (code.source && sourcesToInclude.includes(code.source));
+        
+        return typeMatch && costMatch && sourceMatch;
       });
 
       console.log("Selected types:", typesToInclude);
+      console.log("Selected costs:", costsToInclude);
+      console.log("Selected sources:", sourcesToInclude);
       console.log("Filtered codes:", filteredCodes);
+      
+      setActiveCodeNames(filteredCodes);
       
       try {
         // Get citation data for filtered codes
@@ -115,7 +173,7 @@ function MultiCodeChart() {
     };
     
     fetchData();
-  }, [selectedTypes]);
+  }, [selectedTypes, selectedCosts, selectedSources]);
 
   const handleTypeChange = (event) => {
     setSelectedTypes(prevState => ({
@@ -124,29 +182,219 @@ function MultiCodeChart() {
     }));
   };
 
+  const handleCostChange = (event) => {
+    setSelectedCosts(prevState => ({
+      ...prevState,
+      [event.target.name]: event.target.checked
+    }));
+  };
+
+  const handleSourceChange = (event) => {
+    setSelectedSources(prevState => ({
+      ...prevState,
+      [event.target.name]: event.target.checked
+    }));
+  };
+
+  const handleSelectAll = (category) => {
+    if (category === 'types') {
+      const newSelectedTypes = {};
+      allTypes.forEach(type => {
+        newSelectedTypes[type] = true;
+      });
+      setSelectedTypes(newSelectedTypes);
+    } else if (category === 'costs') {
+      const newSelectedCosts = {};
+      allCosts.forEach(cost => {
+        newSelectedCosts[cost] = true;
+      });
+      setSelectedCosts(newSelectedCosts);
+    } else if (category === 'sources') {
+      const newSelectedSources = {};
+      allSources.forEach(source => {
+        newSelectedSources[source] = true;
+      });
+      setSelectedSources(newSelectedSources);
+    }
+  };
+
+  const handleClearAll = (category) => {
+    if (category === 'types') {
+      const newSelectedTypes = {};
+      allTypes.forEach(type => {
+        newSelectedTypes[type] = false;
+      });
+      setSelectedTypes(newSelectedTypes);
+    } else if (category === 'costs') {
+      const newSelectedCosts = {};
+      allCosts.forEach(cost => {
+        newSelectedCosts[cost] = false;
+      });
+      setSelectedCosts(newSelectedCosts);
+    } else if (category === 'sources') {
+      const newSelectedSources = {};
+      allSources.forEach(source => {
+        newSelectedSources[source] = false;
+      });
+      setSelectedSources(newSelectedSources);
+    }
+  };
+
+  const removeCode = (codeName) => {
+    // First update the active code names list
+    const filteredCodes = activeCodeNames.filter(name => name !== codeName);
+    setActiveCodeNames(filteredCodes);
+    
+    // Then update the chart data to match the updated active codes
+    const updatedChartData = chartData.filter(item => item.id !== codeName);
+    setChartData(updatedChartData);
+  };
+
   return (
     <div>
       <Typography variant="h6" component="h2" gutterBottom>
-        Citation Trends by Code Type
+        Citation Trends by Code Properties
       </Typography>
+      
       <Paper className={classes.paper} style={{ marginBottom: '20px', padding: '16px' }}>
-        <Typography variant="subtitle1">Filter by code type:</Typography>
-        <FormGroup row>
-          {allTypes.map(type => (
-            <FormControlLabel
-              key={type}
-              control={
-                <Checkbox
-                  checked={selectedTypes[type] || false}
-                  onChange={handleTypeChange}
-                  name={type}
-                  color="primary"
+        <Grid container spacing={3}>
+          {/* Type filters */}
+          <Grid item xs={12} md={4}>
+            <Typography variant="subtitle1" gutterBottom>Filter by code type:</Typography>
+            <div style={{ display: 'flex', marginBottom: '8px' }}>
+              <Button 
+                size="small" 
+                variant="outlined" 
+                color="primary" 
+                onClick={() => handleSelectAll('types')}
+                style={{ marginRight: '8px' }}
+              >
+                Select All
+              </Button>
+              <Button 
+                size="small" 
+                variant="outlined" 
+                onClick={() => handleClearAll('types')}
+              >
+                Clear All
+              </Button>
+            </div>
+            <FormGroup>
+              {allTypes.map(type => (
+                <FormControlLabel
+                  key={type}
+                  control={
+                    <Checkbox
+                      checked={selectedTypes[type] || false}
+                      onChange={handleTypeChange}
+                      name={type}
+                      color="primary"
+                    />
+                  }
+                  label={type}
                 />
-              }
-              label={type}
-            />
-          ))}
-        </FormGroup>
+              ))}
+            </FormGroup>
+          </Grid>
+          
+          {/* Cost and Source filters */}
+          <Grid item xs={12} md={4}>
+            <Typography variant="subtitle1" gutterBottom>Filter by cost:</Typography>
+            <div style={{ display: 'flex', marginBottom: '8px' }}>
+              <Button 
+                size="small" 
+                variant="outlined" 
+                color="primary" 
+                onClick={() => handleSelectAll('costs')}
+                style={{ marginRight: '8px' }}
+              >
+                Select All
+              </Button>
+              <Button 
+                size="small" 
+                variant="outlined" 
+                onClick={() => handleClearAll('costs')}
+              >
+                Clear All
+              </Button>
+            </div>
+            <FormGroup>
+              {allCosts.map(cost => (
+                <FormControlLabel
+                  key={cost}
+                  control={
+                    <Checkbox
+                      checked={selectedCosts[cost] || false}
+                      onChange={handleCostChange}
+                      name={cost}
+                      color="primary"
+                    />
+                  }
+                  label={cost}
+                />
+              ))}
+            </FormGroup>
+            
+            <Typography variant="subtitle1" gutterBottom style={{ marginTop: '16px' }}>Filter by source availability:</Typography>
+            <div style={{ display: 'flex', marginBottom: '8px' }}>
+              <Button 
+                size="small" 
+                variant="outlined" 
+                color="primary" 
+                onClick={() => handleSelectAll('sources')}
+                style={{ marginRight: '8px' }}
+              >
+                Select All
+              </Button>
+              <Button 
+                size="small" 
+                variant="outlined" 
+                onClick={() => handleClearAll('sources')}
+              >
+                Clear All
+              </Button>
+            </div>
+            <FormGroup>
+              {allSources.map(source => (
+                <FormControlLabel
+                  key={source}
+                  control={
+                    <Checkbox
+                      checked={selectedSources[source] || false}
+                      onChange={handleSourceChange}
+                      name={source}
+                      color="primary"
+                    />
+                  }
+                  label={source}
+                />
+              ))}
+            </FormGroup>
+          </Grid>
+          
+          {/* Active codes display and removal */}
+          <Grid item xs={12} md={4}>
+            <Typography variant="subtitle1" gutterBottom>Active codes ({activeCodeNames.length}):</Typography>
+            <div style={{ maxHeight: '300px', overflowY: 'auto' }}>
+              {activeCodeNames.length > 0 ? (
+                activeCodeNames.map(codeName => (
+                  <Chip
+                    key={codeName}
+                    label={codeName}
+                    onDelete={() => removeCode(codeName)}
+                    style={{ margin: '3px' }}
+                    color="primary"
+                    variant="outlined"
+                  />
+                ))
+              ) : (
+                <Typography variant="body2" color="textSecondary">
+                  No codes selected. Please select at least one filter option.
+                </Typography>
+              )}
+            </div>
+          </Grid>
+        </Grid>
       </Paper>
 
       <Box sx={{ width: "100%", minHeight: "500px" }}>
@@ -156,12 +404,12 @@ function MultiCodeChart() {
               Loading citation data...
             </Typography>
           ) : chartData.length > 0 ? (
-            nivoChart(chartData, "Citation Trends (log scale)", true, true)
+            nivoChart(chartData, "Citation Trends (log scale)", false, true)
           ) : (
             <Typography variant="body1" align="center" style={{ padding: '100px 0' }}>
-              {Object.values(selectedTypes).some(v => v) 
-                ? "No citation data available for the selected code types" 
-                : "Select at least one code type to view trends"}
+              {Object.values(selectedTypes).some(v => v) || Object.values(selectedCosts).some(v => v) || Object.values(selectedSources).some(v => v)
+                ? "No citation data available for the selected filters"
+                : "Select at least one filter option to view trends"}
             </Typography>
           )}
         </Paper>
