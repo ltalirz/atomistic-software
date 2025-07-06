@@ -199,7 +199,7 @@
     "benchmarks": [],
     "distribution_channels": ["Source", "Binary"],
     "element_coverage": null,
-    "homepage": "http://www.cfour.de/",
+    "homepage": "https://cfour.uni-mainz.de/cfour/",
     "cost": "free (academia)",
     "source": "available",
     "license": "CFOUR Software License Agreement",
