@@ -877,6 +877,25 @@
     "tags": ["AE", "GTO", "PP", "STO"],
     "types": ["DFT", "WFM"]
   },
+  "JAX-MD": {
+    "acceleration": ["Cuda", "OpenCL"],
+    "apis": [],
+    "author_name": "Schoenholz",
+    "benchmarks": [],
+    "distribution_channels": ["Source", "PyPI", "conda"],
+    "element_coverage": null,
+    "homepage": "https://jax-md.readthedocs.io/",
+    "cost": "free",
+    "source": "permissive",
+    "license": "Apache-2.0",
+    "name": "JAX-MD",
+    "notes": "Differentiable molecular dynamics framework built on JAX",
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"JAX-MD\" OR \"JAX MD\" Schoenholz",
+    "tags": [],
+    "types": ["FF"]
+  },
   "JDFTx": {
     "acceleration": ["MPI", "Cuda"],
     "apis": [],

@@ -193,6 +193,10 @@
         "citations": 588,
         "datestamp": "2021-04-10"
       },
+      "JAX-MD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "JDFTx": {
         "citations": 0,
         "datestamp": "2024-03-06"
@@ -606,6 +610,10 @@
       "Hyperchem": {
         "citations": 622,
         "datestamp": "2021-01-17"
+      },
+      "JAX-MD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
       },
       "JDFTx": {
         "citations": 0,
@@ -1029,6 +1037,10 @@
         "citations": 623,
         "datestamp": "2021-01-17"
       },
+      "JAX-MD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "JDFTx": {
         "citations": 6,
         "datestamp": "2024-03-06"
@@ -1450,6 +1462,10 @@
       "Hyperchem": {
         "citations": 597,
         "datestamp": "2021-01-17"
+      },
+      "JAX-MD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
       },
       "JDFTx": {
         "citations": 7,
@@ -1873,6 +1889,10 @@
         "citations": 534,
         "datestamp": "2021-01-17"
       },
+      "JAX-MD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "JDFTx": {
         "citations": 13,
         "datestamp": "2024-03-06"
@@ -2295,6 +2315,10 @@
         "citations": 484,
         "datestamp": "2021-01-17"
       },
+      "JAX-MD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "JDFTx": {
         "citations": 14,
         "datestamp": "2024-03-06"
@@ -2681,6 +2705,10 @@
         "citations": 465,
         "datestamp": "2025-03-04"
       },
+      "JAX-MD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "JDFTx": {
         "citations": 17,
         "datestamp": "2025-03-04"
@@ -2990,6 +3018,10 @@
       "Hyperchem": {
         "citations": 369,
         "datestamp": "2025-03-04"
+      },
+      "JAX-MD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
       },
       "JDFTx": {
         "citations": 29,
@@ -3301,6 +3333,10 @@
         "citations": 316,
         "datestamp": "2025-03-02"
       },
+      "JAX-MD": {
+        "citations": 0,
+        "datestamp": "2025-07-06"
+      },
       "JDFTx": {
         "citations": 26,
         "datestamp": "2025-03-02"
@@ -3610,6 +3646,10 @@
       "Hyperchem": {
         "citations": 324,
         "datestamp": "2025-03-02"
+      },
+      "JAX-MD": {
+        "citations": 3,
+        "datestamp": "2025-07-06"
       },
       "JDFTx": {
         "citations": 21,
@@ -3921,6 +3961,10 @@
         "citations": 281,
         "datestamp": "2025-02-26"
       },
+      "JAX-MD": {
+        "citations": 12,
+        "datestamp": "2025-07-06"
+      },
       "JDFTx": {
         "citations": 48,
         "datestamp": "2025-02-26"
@@ -4230,6 +4274,10 @@
       "Hyperchem": {
         "citations": 308,
         "datestamp": "2025-02-26"
+      },
+      "JAX-MD": {
+        "citations": 32,
+        "datestamp": "2025-07-06"
       },
       "JDFTx": {
         "citations": 59,
@@ -4541,6 +4589,10 @@
         "citations": 285,
         "datestamp": "2025-03-06"
       },
+      "JAX-MD": {
+        "citations": 48,
+        "datestamp": "2025-07-06"
+      },
       "JDFTx": {
         "citations": 68,
         "datestamp": "2025-03-06"
@@ -4851,6 +4903,10 @@
         "citations": 230,
         "datestamp": "2025-03-06"
       },
+      "JAX-MD": {
+        "citations": 76,
+        "datestamp": "2025-07-06"
+      },
       "JDFTx": {
         "citations": 69,
         "datestamp": "2025-03-06"
@@ -5160,6 +5216,10 @@
       "Hyperchem": {
         "citations": 223,
         "datestamp": "2025-04-20"
+      },
+      "JAX-MD": {
+        "citations": 73,
+        "datestamp": "2025-07-06"
       },
       "JDFTx": {
         "citations": 77,
