@@ -1009,6 +1009,25 @@
     "tags": ["PBC", "PP", "STO"],
     "types": ["FF", "WFM"]
   },
+  "MRCC": {
+    "acceleration": ["MPI", "OpenMP"],
+    "apis": [],
+    "author_name": "Kállay",
+    "benchmarks": [],
+    "distribution_channels": ["Source"],
+    "element_coverage": null,
+    "homepage": "https://www.mrcc.hu/",
+    "cost": "free (academia)",
+    "source": "available",
+    "license": "MRCC License Agreement",
+    "name": "MRCC",
+    "notes": "Suite of ab initio and density functional quantum chemistry programs with automated programming tools for tensor manipulation",
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"MRCC\" \"Ganyecz\"",
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
+  },
   "MacroModel": {
     "acceleration": [],
     "apis": [],

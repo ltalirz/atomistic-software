@@ -241,6 +241,10 @@
         "citations": 11,
         "datestamp": "2021-04-10"
       },
+      "MRCC": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
+      },
       "MacroModel": {
         "citations": 284,
         "datestamp": "2021-04-10"
@@ -662,6 +666,10 @@
       "MPQC": {
         "citations": 20,
         "datestamp": "2021-01-17"
+      },
+      "MRCC": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
       },
       "MacroModel": {
         "citations": 346,
@@ -1093,6 +1101,10 @@
         "citations": 13,
         "datestamp": "2021-01-17"
       },
+      "MRCC": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
+      },
       "MacroModel": {
         "citations": 439,
         "datestamp": "2021-01-17"
@@ -1522,6 +1534,10 @@
       "MPQC": {
         "citations": 8,
         "datestamp": "2021-01-17"
+      },
+      "MRCC": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
       },
       "MacroModel": {
         "citations": 445,
@@ -1953,6 +1969,10 @@
         "citations": 9,
         "datestamp": "2021-01-17"
       },
+      "MRCC": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
+      },
       "MacroModel": {
         "citations": 431,
         "datestamp": "2021-01-17"
@@ -2383,6 +2403,10 @@
         "citations": 7,
         "datestamp": "2021-01-07"
       },
+      "MRCC": {
+        "citations": 1,
+        "datestamp": "2025-07-09"
+      },
       "MacroModel": {
         "citations": 404,
         "datestamp": "2021-01-07"
@@ -2757,6 +2781,10 @@
         "citations": 1050,
         "datestamp": "2025-03-04"
       },
+      "MRCC": {
+        "citations": 2,
+        "datestamp": "2025-07-09"
+      },
       "MacroModel": {
         "citations": 427,
         "datestamp": "2025-03-04"
@@ -3078,6 +3106,10 @@
       "MOPAC": {
         "citations": 979,
         "datestamp": "2025-03-04"
+      },
+      "MRCC": {
+        "citations": 2,
+        "datestamp": "2025-07-09"
       },
       "MacroModel": {
         "citations": 468,
@@ -3401,6 +3433,10 @@
         "citations": 994,
         "datestamp": "2025-03-02"
       },
+      "MRCC": {
+        "citations": 1,
+        "datestamp": "2025-07-09"
+      },
       "MacroModel": {
         "citations": 506,
         "datestamp": "2025-03-02"
@@ -3722,6 +3758,10 @@
       "MOPAC": {
         "citations": 937,
         "datestamp": "2025-03-02"
+      },
+      "MRCC": {
+        "citations": 6,
+        "datestamp": "2025-07-09"
       },
       "MacroModel": {
         "citations": 447,
@@ -4045,6 +4085,10 @@
         "citations": 927,
         "datestamp": "2025-02-26"
       },
+      "MRCC": {
+        "citations": 23,
+        "datestamp": "2025-07-09"
+      },
       "MacroModel": {
         "citations": 477,
         "datestamp": "2025-02-26"
@@ -4366,6 +4410,10 @@
       "MOPAC": {
         "citations": 972,
         "datestamp": "2025-02-26"
+      },
+      "MRCC": {
+        "citations": 30,
+        "datestamp": "2025-07-09"
       },
       "MacroModel": {
         "citations": 485,
@@ -4689,6 +4737,10 @@
         "citations": 924,
         "datestamp": "2025-03-06"
       },
+      "MRCC": {
+        "citations": 40,
+        "datestamp": "2025-07-09"
+      },
       "MacroModel": {
         "citations": 499,
         "datestamp": "2025-03-06"
@@ -5011,6 +5063,10 @@
         "citations": 937,
         "datestamp": "2025-03-06"
       },
+      "MRCC": {
+        "citations": 42,
+        "datestamp": "2025-07-09"
+      },
       "MacroModel": {
         "citations": 485,
         "datestamp": "2025-03-06"
@@ -5332,6 +5388,10 @@
       "MOPAC": {
         "citations": 836,
         "datestamp": "2025-04-20"
+      },
+      "MRCC": {
+        "citations": 53,
+        "datestamp": "2025-07-09"
       },
       "MacroModel": {
         "citations": 392,
