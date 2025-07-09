@@ -293,6 +293,10 @@
         "citations": 28,
         "datestamp": "2021-04-10"
       },
+      "PERTURBO": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
+      },
       "PLATO": {
         "citations": 3,
         "datestamp": "2021-04-10"
@@ -718,6 +722,10 @@
       "PARSEC": {
         "citations": 20,
         "datestamp": "2021-01-17"
+      },
+      "PERTURBO": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
       },
       "PLATO": {
         "citations": 10,
@@ -1153,6 +1161,10 @@
         "citations": 28,
         "datestamp": "2021-01-17"
       },
+      "PERTURBO": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
+      },
       "PLATO": {
         "citations": 5,
         "datestamp": "2021-01-17"
@@ -1586,6 +1598,10 @@
       "PARSEC": {
         "citations": 24,
         "datestamp": "2021-01-17"
+      },
+      "PERTURBO": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
       },
       "PLATO": {
         "citations": 3,
@@ -2021,6 +2037,10 @@
         "citations": 31,
         "datestamp": "2021-01-17"
       },
+      "PERTURBO": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
+      },
       "PLATO": {
         "citations": 3,
         "datestamp": "2021-01-17"
@@ -2455,6 +2475,10 @@
         "citations": 35,
         "datestamp": "2021-01-07"
       },
+      "PERTURBO": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
+      },
       "PLATO": {
         "citations": 1,
         "datestamp": "2021-01-07"
@@ -2825,6 +2849,10 @@
         "citations": 0,
         "datestamp": "2025-03-04"
       },
+      "PERTURBO": {
+        "citations": 1,
+        "datestamp": "2025-07-09"
+      },
       "PWmat": {
         "citations": 3,
         "datestamp": "2025-03-04"
@@ -3150,6 +3178,10 @@
       "OpenMolcas": {
         "citations": 2,
         "datestamp": "2025-03-04"
+      },
+      "PERTURBO": {
+        "citations": 0,
+        "datestamp": "2025-07-09"
       },
       "PWmat": {
         "citations": 6,
@@ -3477,6 +3509,10 @@
         "citations": 16,
         "datestamp": "2025-03-02"
       },
+      "PERTURBO": {
+        "citations": 5,
+        "datestamp": "2025-07-09"
+      },
       "PWmat": {
         "citations": 13,
         "datestamp": "2025-03-02"
@@ -3802,6 +3838,10 @@
       "OpenMolcas": {
         "citations": 54,
         "datestamp": "2025-03-02"
+      },
+      "PERTURBO": {
+        "citations": 8,
+        "datestamp": "2025-07-09"
       },
       "PWmat": {
         "citations": 36,
@@ -4129,6 +4169,10 @@
         "citations": 99,
         "datestamp": "2025-02-26"
       },
+      "PERTURBO": {
+        "citations": 12,
+        "datestamp": "2025-07-09"
+      },
       "PWmat": {
         "citations": 44,
         "datestamp": "2025-02-26"
@@ -4454,6 +4498,10 @@
       "OpenMolcas": {
         "citations": 159,
         "datestamp": "2025-02-26"
+      },
+      "PERTURBO": {
+        "citations": 22,
+        "datestamp": "2025-07-09"
       },
       "PWmat": {
         "citations": 58,
@@ -4781,6 +4829,10 @@
         "citations": 169,
         "datestamp": "2025-03-07"
       },
+      "PERTURBO": {
+        "citations": 31,
+        "datestamp": "2025-07-09"
+      },
       "PWmat": {
         "citations": 81,
         "datestamp": "2025-03-07"
@@ -5107,6 +5159,10 @@
         "citations": 179,
         "datestamp": "2025-03-06"
       },
+      "PERTURBO": {
+        "citations": 40,
+        "datestamp": "2025-07-09"
+      },
       "PWmat": {
         "citations": 88,
         "datestamp": "2025-03-06"
@@ -5432,6 +5488,10 @@
       "OpenMolcas": {
         "citations": 179,
         "datestamp": "2025-04-20"
+      },
+      "PERTURBO": {
+        "citations": 51,
+        "datestamp": "2025-07-09"
       },
       "PWmat": {
         "citations": 128,
