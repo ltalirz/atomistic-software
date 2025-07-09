@@ -1244,6 +1244,25 @@
     "tags": ["AE", "GTO", "PP"],
     "types": ["WFM", "DFT"]
   },
+  "PERTURBO": {
+    "acceleration": ["MPI", "OpenMP", "Cuda", "OpenACC"],
+    "apis": [],
+    "author_name": "Bernardi",
+    "benchmarks": [],
+    "distribution_channels": ["Source"],
+    "element_coverage": null,
+    "homepage": "https://perturbo-code.github.io/",
+    "cost": "free",
+    "source": "copyleft",
+    "license": "GPL-3.0",
+    "name": "PERTURBO",
+    "notes": "Open source software for ab initio electron-phonon interactions, charge transport and ultrafast dynamics in materials",
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"PERTURBO\" \"Bernardi\" \"electron-phonon\"",
+    "tags": ["PBC", "PP", "PW"],
+    "types": ["S"]
+  },
   "Psi4": {
     "acceleration": ["MPI"],
     "apis": ["QCSchema"],
