@@ -266,24 +266,45 @@ function nivoChart(
           pointLabelYOffset={-12}
           enableCrosshair={true}
           useMesh={true}
-          tooltip={({ point }) => (
-            <div
-              style={{
-                background: "white",
-                padding: "9px 12px",
-                border: "1px solid #ccc",
-                boxShadow: "0 1px 2px rgba(0,0,0,0.25)",
-                color: "#222",
-                fontSize: "0.8em",
-              }}
-            >
-              <strong>{point.serieId}</strong>
-              <br />
-              Year: {point.data.x}
-              <br />
-              Citations: {formatNumber(point.data.y)}
-            </div>
-          )}
+          tooltip={({ point }) => {
+            const year = point.data.xFormatted ?? point.data.x;
+            const value = point.data.yFormatted ?? point.data.y;
+            return (
+              <div
+                style={{
+                  background: "#fff",
+                  padding: "6px 8px",
+                  border: `2px solid ${point.serieColor}`,
+                  borderRadius: 4,
+                  boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+                  color: "#333",
+                  fontSize: 12,
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 6,
+                    marginBottom: 4,
+                  }}
+                >
+                  <span
+                    style={{
+                      width: 10,
+                      height: 10,
+                      borderRadius: "50%",
+                      background: point.serieColor,
+                      display: "inline-block",
+                    }}
+                  />
+                  <strong>{point.serieId}</strong>
+                </div>
+                <div>Year: {year}</div>
+                <div>Citations: {formatNumber(value)}</div>
+              </div>
+            );
+          }}
           crosshairType="cross"
           legends={legend_list}
           animate={false}
