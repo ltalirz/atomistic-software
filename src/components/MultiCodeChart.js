@@ -252,22 +252,18 @@ function MultiCodeChart() {
 
   return (
     <div>
-      <Typography variant="h6" component="h2" gutterBottom>
-        Citation Trends by Code Properties
-      </Typography>
-      
-      <Paper className={classes.paper} style={{ marginBottom: '20px', padding: '16px' }}>
-        <Grid container spacing={3}>
+    <Paper className={classes.paper} style={{ marginBottom: '16px', padding: '12px' }}>
+        <Grid container spacing={2}>
           {/* Type filters */}
-          <Grid item xs={12} md={4}>
-            <Typography variant="subtitle1" gutterBottom>Filter by code type:</Typography>
-            <div style={{ display: 'flex', marginBottom: '8px' }}>
+          <Grid item xs={12} md={3}>
+      <Typography variant="subtitle2" gutterBottom>Filter by code type:</Typography>
+      <div style={{ display: 'flex', marginBottom: '6px' }}>
               <Button 
                 size="small" 
                 variant="outlined" 
                 color="primary" 
                 onClick={() => handleSelectAll('types')}
-                style={{ marginRight: '8px' }}
+        style={{ marginRight: '6px' }}
               >
                 Select All
               </Button>
@@ -279,34 +275,36 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup>
+      <FormGroup style={{ columnCount: 2, columnGap: '12px' }}>
               {allTypes.map(type => (
                 <FormControlLabel
                   key={type}
                   control={
                     <Checkbox
-                      checked={selectedTypes[type] || false}
+            size="small"
+            checked={selectedTypes[type] || false}
                       onChange={handleTypeChange}
                       name={type}
                       color="primary"
                     />
                   }
-                  label={type}
+          style={{ breakInside: 'avoid', marginBottom: 4, display: 'block' }}
+          label={<span style={{ fontSize: '0.92rem' }}>{type}</span>}
                 />
               ))}
             </FormGroup>
           </Grid>
           
-          {/* Cost and Source filters */}
-          <Grid item xs={12} md={4}>
-            <Typography variant="subtitle1" gutterBottom>Filter by cost:</Typography>
-            <div style={{ display: 'flex', marginBottom: '8px' }}>
+          {/* Cost filters */}
+          <Grid item xs={12} md={3}>
+      <Typography variant="subtitle2" gutterBottom>Filter by cost:</Typography>
+      <div style={{ display: 'flex', marginBottom: '6px' }}>
               <Button 
                 size="small" 
                 variant="outlined" 
                 color="primary" 
                 onClick={() => handleSelectAll('costs')}
-                style={{ marginRight: '8px' }}
+        style={{ marginRight: '6px' }}
               >
                 Select All
               </Button>
@@ -324,25 +322,30 @@ function MultiCodeChart() {
                   key={cost}
                   control={
                     <Checkbox
-                      checked={selectedCosts[cost] || false}
+            size="small"
+            checked={selectedCosts[cost] || false}
                       onChange={handleCostChange}
                       name={cost}
                       color="primary"
                     />
                   }
-                  label={cost}
+          style={{ marginBottom: 4 }}
+          label={<span style={{ fontSize: '0.92rem' }}>{cost}</span>}
                 />
               ))}
             </FormGroup>
-            
-            <Typography variant="subtitle1" gutterBottom style={{ marginTop: '16px' }}>Filter by source availability:</Typography>
-            <div style={{ display: 'flex', marginBottom: '8px' }}>
+          </Grid>
+          
+          {/* Source filters */}
+          <Grid item xs={12} md={3}>
+            <Typography variant="subtitle2" gutterBottom>Filter by source availability:</Typography>
+            <div style={{ display: 'flex', marginBottom: '6px' }}>
               <Button 
                 size="small" 
                 variant="outlined" 
                 color="primary" 
                 onClick={() => handleSelectAll('sources')}
-                style={{ marginRight: '8px' }}
+                style={{ marginRight: '6px' }}
               >
                 Select All
               </Button>
@@ -360,21 +363,23 @@ function MultiCodeChart() {
                   key={source}
                   control={
                     <Checkbox
+                      size="small"
                       checked={selectedSources[source] || false}
                       onChange={handleSourceChange}
                       name={source}
                       color="primary"
                     />
                   }
-                  label={source}
+                  style={{ marginBottom: 4 }}
+                  label={<span style={{ fontSize: '0.92rem' }}>{source}</span>}
                 />
               ))}
             </FormGroup>
           </Grid>
           
           {/* Active codes display and removal */}
-          <Grid item xs={12} md={4}>
-            <Typography variant="subtitle1" gutterBottom>Active codes ({activeCodeNames.length}):</Typography>
+          <Grid item xs={12} md={3}>
+      <Typography variant="subtitle2" gutterBottom>Active codes ({activeCodeNames.length}):</Typography>
             <div style={{ maxHeight: '300px', overflowY: 'auto' }}>
               {activeCodeNames.length > 0 ? (
                 activeCodeNames.map(codeName => (
@@ -382,7 +387,8 @@ function MultiCodeChart() {
                     key={codeName}
                     label={codeName}
                     onDelete={() => removeCode(codeName)}
-                    style={{ margin: '3px' }}
+          style={{ margin: '2px' }}
+          size="small"
                     color="primary"
                     variant="outlined"
                   />
