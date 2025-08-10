@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Paper from "@material-ui/core/Paper";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -28,6 +28,13 @@ function MultiCodeChart() {
   const [chartData, setChartData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [activeCodeNames, setActiveCodeNames] = useState([]);
+  const [maxActiveHeight, setMaxActiveHeight] = useState(null);
+
+  // Refs to measure heights of sibling columns so Active codes list scrolls only when needed
+  const typesRef = useRef(null);
+  const costsRef = useRef(null);
+  const sourcesRef = useRef(null);
+  const activeColRef = useRef(null);
 
   // Get all available types, costs and sources from code data
   const { allTypes, allCosts, allSources } = React.useMemo(() => {
@@ -66,9 +73,44 @@ function MultiCodeChart() {
     }
     setSelectedTypes(initialTypes);
 
-    setSelectedCosts(bulkSelect(allCosts, false));
-    setSelectedSources(bulkSelect(allSources, false));
+    // Initialize costs (none selected by default)
+    const initCosts = bulkSelect(allCosts, false);
+    setSelectedCosts(initCosts);
+
+    // Initialize sources with 'copyleft' and 'permissive' preselected when present
+    const initSources = bulkSelect(allSources, false);
+    ["copyleft", "permissive"].forEach((k) => {
+      if (Object.prototype.hasOwnProperty.call(initSources, k)) {
+        initSources[k] = true;
+      }
+    });
+    setSelectedSources(initSources);
   }, [allTypes, allCosts, allSources]);
+
+  // Compute max height for Active codes list based on tallest of the other filter columns
+  useEffect(() => {
+    const calcMax = () => {
+      const h1 = typesRef.current ? typesRef.current.offsetHeight : 0;
+      const h2 = costsRef.current ? costsRef.current.offsetHeight : 0;
+      const h3 = sourcesRef.current ? sourcesRef.current.offsetHeight : 0;
+      const maxFiltersHeight = Math.max(h1, h2, h3);
+      if (!maxFiltersHeight) {
+        setMaxActiveHeight(null);
+        return;
+      }
+      const headerEl = activeColRef.current
+        ? activeColRef.current.querySelector('h6, [role="heading"]')
+        : null;
+      const headerH = headerEl ? headerEl.offsetHeight : 0;
+      // Subtract a small spacing buffer
+      const allowed = Math.max(0, maxFiltersHeight - headerH - 8);
+      setMaxActiveHeight(allowed || null);
+    };
+
+    calcMax();
+    window.addEventListener("resize", calcMax);
+    return () => window.removeEventListener("resize", calcMax);
+  }, [selectedTypes, selectedCosts, selectedSources, activeCodeNames.length]);
 
   // Helper to know whether any filter is active
   const hasAnySelections = React.useCallback(() => {
@@ -183,21 +225,21 @@ function MultiCodeChart() {
     <div>
       <Paper
         className={classes.paper}
-        style={{ marginBottom: "16px", padding: "12px" }}
+        style={{ marginBottom: "10px", padding: "12px" }}
       >
-        <Grid container spacing={2}>
+        <Grid container spacing={1} alignItems="stretch">
           {/* Type filters */}
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={3} ref={typesRef}>
             <Typography variant="subtitle2" gutterBottom>
               Filter by code type:
             </Typography>
-            <div style={{ display: "flex", marginBottom: "6px" }}>
+            <div style={{ display: "flex", marginBottom: "4px" }}>
               <Button
                 size="small"
                 variant="outlined"
                 color="primary"
                 onClick={() => handleSelectAll("types")}
-                style={{ marginRight: "6px" }}
+                style={{ marginRight: "4px", padding: "3px 8px" }}
               >
                 Select All
               </Button>
@@ -205,11 +247,12 @@ function MultiCodeChart() {
                 size="small"
                 variant="outlined"
                 onClick={() => handleClearAll("types")}
+                style={{ padding: "3px 8px" }}
               >
                 Clear All
               </Button>
             </div>
-            <FormGroup style={{ columnCount: 2, columnGap: "12px" }}>
+            <FormGroup className={classes.filterGroupColumnsAuto}>
               {allTypes.map((type) => (
                 <FormControlLabel
                   key={type}
@@ -222,29 +265,25 @@ function MultiCodeChart() {
                       color="primary"
                     />
                   }
-                  style={{
-                    breakInside: "avoid",
-                    marginBottom: 4,
-                    display: "block",
-                  }}
-                  label={<span style={{ fontSize: "0.92rem" }}>{type}</span>}
+                  className={classes.filterLabelCompact}
+                  label={<span>{type}</span>}
                 />
               ))}
             </FormGroup>
           </Grid>
 
           {/* Cost filters */}
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={3} ref={costsRef}>
             <Typography variant="subtitle2" gutterBottom>
               Filter by cost:
             </Typography>
-            <div style={{ display: "flex", marginBottom: "6px" }}>
+            <div style={{ display: "flex", marginBottom: "4px" }}>
               <Button
                 size="small"
                 variant="outlined"
                 color="primary"
                 onClick={() => handleSelectAll("costs")}
-                style={{ marginRight: "6px" }}
+                style={{ marginRight: "4px", padding: "3px 8px" }}
               >
                 Select All
               </Button>
@@ -252,11 +291,12 @@ function MultiCodeChart() {
                 size="small"
                 variant="outlined"
                 onClick={() => handleClearAll("costs")}
+                style={{ padding: "3px 8px" }}
               >
                 Clear All
               </Button>
             </div>
-            <FormGroup>
+            <FormGroup className={classes.filterGroupTwoCols}>
               {allCosts.map((cost) => (
                 <FormControlLabel
                   key={cost}
@@ -269,25 +309,25 @@ function MultiCodeChart() {
                       color="primary"
                     />
                   }
-                  style={{ marginBottom: 4 }}
-                  label={<span style={{ fontSize: "0.92rem" }}>{cost}</span>}
+                  className={classes.filterLabelCompact}
+                  label={<span>{cost}</span>}
                 />
               ))}
             </FormGroup>
           </Grid>
 
           {/* Source filters */}
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={3} ref={sourcesRef}>
             <Typography variant="subtitle2" gutterBottom>
               Filter by source availability:
             </Typography>
-            <div style={{ display: "flex", marginBottom: "6px" }}>
+            <div style={{ display: "flex", marginBottom: "4px" }}>
               <Button
                 size="small"
                 variant="outlined"
                 color="primary"
                 onClick={() => handleSelectAll("sources")}
-                style={{ marginRight: "6px" }}
+                style={{ marginRight: "4px", padding: "3px 8px" }}
               >
                 Select All
               </Button>
@@ -295,11 +335,12 @@ function MultiCodeChart() {
                 size="small"
                 variant="outlined"
                 onClick={() => handleClearAll("sources")}
+                style={{ padding: "3px 8px" }}
               >
                 Clear All
               </Button>
             </div>
-            <FormGroup>
+            <FormGroup className={classes.filterGroupTwoCols}>
               {allSources.map((source) => (
                 <FormControlLabel
                   key={source}
@@ -312,25 +353,26 @@ function MultiCodeChart() {
                       color="primary"
                     />
                   }
-                  style={{ marginBottom: 4 }}
-                  label={<span style={{ fontSize: "0.92rem" }}>{source}</span>}
+                  className={classes.filterLabelCompact}
+                  label={<span>{source}</span>}
                 />
               ))}
             </FormGroup>
           </Grid>
 
           {/* Active codes display and removal */}
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={3} ref={activeColRef}>
             <Typography variant="subtitle2" gutterBottom>
               Active codes ({activeCodeNames.length}):
             </Typography>
             <div
               style={{
-                maxHeight: "40vh",
+                maxHeight: maxActiveHeight || undefined,
                 overflowY: "auto",
                 display: "flex",
                 flexWrap: "wrap",
-                gap: "4px",
+                columnGap: "2px",
+                rowGap: 0,
               }}
             >
               {activeCodeNames.length > 0 ? (
@@ -339,7 +381,7 @@ function MultiCodeChart() {
                     key={codeName}
                     label={codeName}
                     onDelete={() => removeCode(codeName)}
-                    style={{ margin: 0 }}
+                    className={classes.activeChipCompact}
                     size="small"
                     color="primary"
                     variant="outlined"
