@@ -51,6 +51,47 @@ const useStyles = makeStyles((theme) => ({
   chip: {
     margin: 2,
   },
+  // Compact filters styling for MultiCodeChart
+  filterGroupColumnsAuto: {
+    columnGap: 6,
+    columnCount: 3,
+    [theme.breakpoints.up("md")]: {
+      columnCount: 4,
+    },
+  },
+  filterGroupTwoCols: {
+    columnGap: 6,
+    columnCount: 2,
+  },
+  filterLabelCompact: {
+    breakInside: "avoid",
+    marginBottom: 2,
+    display: "block",
+    minHeight: "auto",
+    "& .MuiIconButton-root": {
+      padding: 6,
+    },
+    "& .MuiCheckbox-root": {
+      padding: 6,
+    },
+    "& .MuiFormControlLabel-label": {
+      fontSize: "0.8rem",
+      lineHeight: 1.2,
+    },
+  },
+  // Compact chips for Active codes list
+  activeChipCompact: {
+    margin: "2px 2px 0 0",
+    height: 20,
+    "& .MuiChip-label": {
+      paddingLeft: 6,
+      paddingRight: 6,
+      paddingTop: 2,
+      paddingBottom: 2,
+      fontSize: "0.78rem",
+      lineHeight: 1.2,
+    },
+  },
 }));
 
 export default useStyles;
