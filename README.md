@@ -17,7 +17,7 @@ Before contributing a new simulation engine, please check that your engine fits 
 Edit the [`src/data/codes.json`](src/data/codes.json) file and make a pull request.
 
 Note: There is no need to update citation counts.
-If necessary, this will be perfomed by the maintainer of this repository using the [scholarly python package](https://github.com/scholarly-python-package/scholarly).
+If necessary, this will be performed by the maintainer of this repository using the [scholarly python package](https://github.com/scholarly-python-package/scholarly).
 
 #### Option 2: Suggest addition/correction
 
@@ -29,8 +29,7 @@ See [atomistic.software/#/about](https://atomistic.software/#/about).
 
 ## Developing the app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
-and makes use of the great [mui-datatable](https://github.com/gregnb/mui-datatables) and [nivo](https://github.com/plouc/nivo) visualization library.
+This project uses [Vite](https://vitejs.dev/) for the development/build toolchain and makes use of [Material UI v6](https://mui.com/) with [material-react-table](https://www.material-react-table.com/) as well as the [nivo](https://github.com/plouc/nivo) visualization library.
 
 Tip: You don't need the (large & growing) `gh-pages` branch. Clone only the `master` branch via
 
@@ -38,7 +37,7 @@ Tip: You don't need the (large & growing) `gh-pages` branch. Clone only the `mas
 git clone -b master --single-branch git@github.com:ltalirz/atomistic-software.git
 ```
 
-You will need `nodejs`, e.g. from `conda-forge`:
+You will need Node.js 20 or newer (see `"engines"` in `package.json`), e.g. from `conda-forge`:
 
 ```terminal
 conda install -c conda-forge nodejs
@@ -47,10 +46,10 @@ conda install -c conda-forge nodejs
 Finally, install the dependencies and run the app:
 
 - `npm install` installs dependencies for running the app locally.
-- `npm start` runs the app in the development mode.
-- `npm test` launches the test runner in the interactive watch mode, see [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
-- `npm run build` builds the app for production to the `build` folder (bundles React and optimizes for performance).
-- `npm run deploy` deploys the app to GitHub pages.
+- `npm start` starts the Vite development server.
+- `npm test` runs the test suite once using Vitest; use `npm run test:watch` to watch tests.
+- `npm run build` builds the app for production to the `dist` folder.
+- Deployment to GitHub Pages is handled by GitHub Actions; for a manual deploy, run `npm run deploy` to publish the `dist` folder.
 
 ## License
 
