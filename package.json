@@ -15,11 +15,8 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^6.0.0",
     "@mui/material": "^6.0.0",
-    "@mui/x-date-pickers": "^7.0.0",
-    "@nivo/core": "^0.99.0",
     "@nivo/line": "^0.99.0",
     "@tanstack/react-table": "^8.13.0",
-    "dayjs": "^1.11.13",
     "material-react-table": "^3.0.0",
     "prettier": "^2.5.1",
     "react": "^18.2.0",
@@ -29,6 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "eslint": "^9.9.0",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.3.1",
     "@testing-library/user-event": "^14.5.2",
@@ -43,7 +41,7 @@
     "vitest": "^2.0.5"
   },
   "scripts": {
-    "start": "vite --force",
+    "start": "vite",
     "build": "vite build && mkdir -p dist && echo 'atomistic.software' > ./dist/CNAME",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
@@ -54,13 +52,6 @@
     "format:check": "prettier --check .",
     "analyze": "source-map-explorer 'dist/assets/*.js'",
     "prepare": "husky install"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "prettier"
-    ]
   },
   "browserslist": {
     "production": [
