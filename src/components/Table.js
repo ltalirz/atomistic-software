@@ -4,7 +4,6 @@
 import React from "react";
 import MUIDataTable from "mui-datatables";
 import packageJson from "../../package.json";
-//import RangeSlider from './RangeSlider'
 import Typography from "@material-ui/core/Typography";
 
 import { YEARS, getData } from "./Config";
@@ -73,7 +72,6 @@ class Table extends React.Component {
         </header>
       </div>
     );
-    //title={<RangeSlider year={this.state.year} />
   }
 }
 
