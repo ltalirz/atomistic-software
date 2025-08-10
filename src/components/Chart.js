@@ -65,7 +65,8 @@ function SingleChart() {
 
   let codeName = decodeURIComponent(useParams()["code"]);
   const series = getCodeCitations([codeName]);
-  const points = Array.isArray(series) && series.length > 0 ? series[0].data : [];
+  const points =
+    Array.isArray(series) && series.length > 0 ? series[0].data : [];
   const title = getTitle(codeName, points);
   const classes = useStyles();
 
@@ -74,21 +75,28 @@ function SingleChart() {
   return (
     <Box
       // note: for some reason, 100% has no effect
-      sx={{ width: "clamp(520px, 99%, 800px)" }}>
+      sx={{ width: "clamp(520px, 99%, 800px)" }}
+    >
       <Paper className={classes.paper}>
-  {nivoChart([data], title, false, false, true)}
+        {nivoChart([data], title, false, false, true)}
       </Paper>
     </Box>
   );
 }
 
-function nivoChart(data, title, legend = true, logScale = false, clickable = false) {
+function nivoChart(
+  data,
+  title,
+  legend = true,
+  logScale = false,
+  clickable = false
+) {
   /**
    * Return nivo line-chart with default formatting for given data and title.
    */
   let legend_list = [];
   let margin_right = 50;
-  
+
   // For the MultiCodeChart page, we'll drop the legend even if legend=true is passed
   // This is detected based on the logScale parameter which is only used for the trends page
   if (legend && !logScale) {
@@ -121,28 +129,34 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
   }
 
   // Validate data to ensure it contains points with valid coordinates
-  const validData = data.map(series => {
-    if (!series.data || !Array.isArray(series.data)) {
-      return { ...series, data: [] };
-    }
-    // Filter out any data points with missing or invalid x or y values
-    const validPoints = series.data.filter(
-      point => point && typeof point.x !== 'undefined' && 
-               (logScale ? point.y >= LOG_Y_MIN : typeof point.y !== 'undefined')
-    ).sort((a, b) => {
-      const ax = typeof a.x === 'string' ? parseInt(a.x, 10) : a.x;
-      const bx = typeof b.x === 'string' ? parseInt(b.x, 10) : b.x;
-      return ax - bx;
-    });
-    return { ...series, data: validPoints };
-  }).filter(series => series.data.length > 0);
+  const validData = data
+    .map((series) => {
+      if (!series.data || !Array.isArray(series.data)) {
+        return { ...series, data: [] };
+      }
+      // Filter out any data points with missing or invalid x or y values
+      const validPoints = series.data
+        .filter(
+          (point) =>
+            point &&
+            typeof point.x !== "undefined" &&
+            (logScale ? point.y >= LOG_Y_MIN : typeof point.y !== "undefined")
+        )
+        .sort((a, b) => {
+          const ax = typeof a.x === "string" ? parseInt(a.x, 10) : a.x;
+          const bx = typeof b.x === "string" ? parseInt(b.x, 10) : b.x;
+          return ax - bx;
+        });
+      return { ...series, data: validPoints };
+    })
+    .filter((series) => series.data.length > 0);
 
   // Calculate max value for setting y-axis ticks and add 10% padding
   const maxYValue = validData.reduce((max, series) => {
     const seriesMax = series.data.reduce((m, point) => Math.max(m, point.y), 0);
     return Math.max(max, seriesMax);
   }, 0);
-  
+
   // Add 10% padding to max value to prevent cutting off
   const maxWithPadding = maxYValue * 1.1;
 
@@ -151,7 +165,7 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
     ? {
         type: "log",
         base: 10,
-        min: LOG_Y_MIN,  // Named constant for log scale minimum
+        min: LOG_Y_MIN, // Named constant for log scale minimum
         max: maxWithPadding,
         stacked: false,
         reverse: false,
@@ -165,7 +179,7 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
       };
 
   // Function to format numbers with apostrophes (e.g., 10'000)
-  const formatNumber = value => {
+  const formatNumber = (value) => {
     return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "'");
   };
 
@@ -174,19 +188,19 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
     const tickValues = [];
     const minExp = Math.floor(Math.log10(min));
     const maxExp = Math.ceil(Math.log10(max));
-    
+
     for (let i = minExp; i <= maxExp; i++) {
       const value = Math.pow(10, i);
       if (value >= min) {
         tickValues.push(value);
       }
     }
-    
+
     // Add LOG_Y_MIN as the first tick if it's our min value
     if (min === LOG_Y_MIN && !tickValues.includes(LOG_Y_MIN)) {
       tickValues.unshift(LOG_Y_MIN);
     }
-    
+
     return tickValues;
   };
 
@@ -195,7 +209,15 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
     return (
       <React.Fragment>
         <Title>{title}</Title>
-        <div className="chart" style={{ height: "400px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div
+          className="chart"
+          style={{
+            height: "400px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <p>No valid data available for the selected options</p>
         </div>
       </React.Fragment>
@@ -203,12 +225,14 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
   }
 
   // Get tick values for log scale
-  const tickValues = logScale ? getLogTickValues(LOG_Y_MIN, maxWithPadding) : undefined;
+  const tickValues = logScale
+    ? getLogTickValues(LOG_Y_MIN, maxWithPadding)
+    : undefined;
 
   return (
     <React.Fragment>
       <Title>{title}</Title>
-  <div className={"chart" + (clickable ? " clickable-chart" : "")}>
+      <div className={"chart" + (clickable ? " clickable-chart" : "")}>
         <ResponsiveLine
           title={title}
           data={validData}
@@ -232,8 +256,8 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
-            format: value => formatNumber(value),
-            tickValues: tickValues
+            format: (value) => formatNumber(value),
+            tickValues: tickValues,
           }}
           pointSize={8}
           pointColor={{ theme: "background" }}
@@ -243,14 +267,16 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
           enableCrosshair={true}
           useMesh={true}
           tooltip={({ point }) => (
-            <div style={{
-              background: 'white',
-              padding: '9px 12px',
-              border: '1px solid #ccc',
-              boxShadow: '0 1px 2px rgba(0,0,0,0.25)',
-              color: '#222',
-              fontSize: '0.8em'
-            }}>
+            <div
+              style={{
+                background: "white",
+                padding: "9px 12px",
+                border: "1px solid #ccc",
+                boxShadow: "0 1px 2px rgba(0,0,0,0.25)",
+                color: "#222",
+                fontSize: "0.8em",
+              }}
+            >
               <strong>{point.serieId}</strong>
               <br />
               Year: {point.data.x}
@@ -264,7 +290,10 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
           theme={THEME}
           onClick={(point) => {
             if (!point || !point.data) return;
-            const year = typeof point.data.x === "string" ? parseInt(point.data.x, 10) : point.data.x;
+            const year =
+              typeof point.data.x === "string"
+                ? parseInt(point.data.x, 10)
+                : point.data.x;
             const codeName = point.serieId;
             const meta = codes[codeName];
             const url = buildScholarUrl(meta, year);

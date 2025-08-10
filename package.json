@@ -35,6 +35,9 @@
     "build": "react-scripts build && echo 'atomistic.software' > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "eject": "react-scripts eject",
     "prepare": "husky install"
@@ -59,6 +62,12 @@
     ]
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss,md,json,yml,yaml}": [
+      "prettier --write"
+    ]
   }
 }

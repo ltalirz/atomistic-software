@@ -6,15 +6,17 @@
  * Returns null if insufficient data.
  */
 export function buildScholarUrl(meta, year) {
-  if (!meta || typeof year === 'undefined' || year === null) return null;
+  if (!meta || typeof year === "undefined" || year === null) return null;
 
-  let searchUrl = '';
+  let searchUrl = "";
   if (meta["query_method"] === "publication" && meta["query_publication_id"]) {
     searchUrl =
-      "https://scholar.google.com/scholar?cites=" + String(meta["query_publication_id"]);
+      "https://scholar.google.com/scholar?cites=" +
+      String(meta["query_publication_id"]);
   } else if (meta["query_string"]) {
     searchUrl =
-      "https://scholar.google.com/scholar?q=" + encodeURIComponent(meta["query_string"]);
+      "https://scholar.google.com/scholar?q=" +
+      encodeURIComponent(meta["query_string"]);
   } else {
     return null;
   }

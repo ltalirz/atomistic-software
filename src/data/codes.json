@@ -31,10 +31,7 @@
     "apis": [],
     "author_name": "Fabritiis",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary",
-      "conda"
-    ],
+    "distribution_channels": ["Binary", "conda"],
     "element_coverage": null,
     "homepage": "https://www.acellera.com/acemd",
     "cost": "free (academia)",
@@ -110,7 +107,7 @@
     "apis": [],
     "author_name": "Madsen",
     "benchmarks": [],
-    "distribution_channels": ["Source","PyPI"],
+    "distribution_channels": ["Source", "PyPI"],
     "element_coverage": null,
     "homepage": "https://gitlab.com/sousaw/BoltzTraP2/",
     "cost": "free",
@@ -125,11 +122,11 @@
     "types": ["S"]
   },
   "BerkeleyGW": {
-    "acceleration": ["MPI","OpenMP","OpenACC"],
+    "acceleration": ["MPI", "OpenMP", "OpenACC"],
     "apis": [],
     "author_name": "Louie",
     "benchmarks": [],
-    "distribution_channels": ["Source","Spack","EasyBuild","DockerHub"],
+    "distribution_channels": ["Source", "Spack", "EasyBuild", "DockerHub"],
     "element_coverage": null,
     "homepage": "https://www.berkeleygw.org",
     "cost": "free",
@@ -144,34 +141,23 @@
     "types": ["S"]
   },
   "CASINO": {
-      "acceleration": [
-        "MPI"
-      ],
-      "apis": [],
-      "author_name": "Needs and López Ríos",
-      "benchmarks": [],
+    "acceleration": ["MPI"],
+    "apis": [],
+    "author_name": "Needs and López Ríos",
+    "benchmarks": [],
     "distribution_channels": ["Source"],
-      "element_coverage": "H..Hg",
-      "homepage": "https://vallico.net/casinoqmc/",
-      "cost": "free (academia)",
-      "source": "available",
-      "license": "F(A)",
-      "name": "CASINO",
-      "notes": null,
-      "query_method": "search term",
-      "query_publication_id": null,
-      "query_string": "\"CASINO\" \"Quantum Monte Carlo\"",
-      "tags": [
-        "AE",
-        "GTO",
-        "NAO",
-        "PP",
-        "PW",
-        "STO"
-      ],
-      "types": [
-        "QMC"
-      ]
+    "element_coverage": "H..Hg",
+    "homepage": "https://vallico.net/casinoqmc/",
+    "cost": "free (academia)",
+    "source": "available",
+    "license": "F(A)",
+    "name": "CASINO",
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"CASINO\" \"Quantum Monte Carlo\"",
+    "tags": ["AE", "GTO", "NAO", "PP", "PW", "STO"],
+    "types": ["QMC"]
   },
   "CASTEP": {
     "acceleration": ["MPI", "OpenMP"],
@@ -588,7 +574,13 @@
     "apis": [],
     "author_name": "Blügel",
     "benchmarks": ["Δ-value"],
-    "distribution_channels": ["Source", "EasyBuild", "Spack", "conda", "DockerHub"],
+    "distribution_channels": [
+      "Source",
+      "EasyBuild",
+      "Spack",
+      "conda",
+      "DockerHub"
+    ],
     "element_coverage": null,
     "homepage": "https://www.flapw.de/",
     "cost": "free",
@@ -901,9 +893,7 @@
     "apis": [],
     "author_name": "Sundararaman",
     "benchmarks": [],
-    "distribution_channels": [
-      "Source"
-    ],
+    "distribution_channels": ["Source"],
     "element_coverage": "H..Pu",
     "homepage": "https://jdftx.org/",
     "cost": "free",
@@ -1295,9 +1285,7 @@
     "apis": [],
     "author_name": "Wang",
     "benchmarks": [],
-    "distribution_channels": [
-      "Binary"
-    ],
+    "distribution_channels": ["Binary"],
     "element_coverage": "H..Pu",
     "homepage": "https://www.PWmat.com",
     "cost": "commercial",
@@ -1362,9 +1350,7 @@
     "apis": [],
     "author_name": "Kim",
     "benchmarks": [""],
-    "distribution_channels": [
-      "Source"
-    ],
+    "distribution_channels": ["Source"],
     "element_coverage": "H..Pu",
     "homepage": "https://qmcpack.org/",
     "cost": "free",
@@ -1434,7 +1420,14 @@
     "apis": [],
     "author_name": "Soler",
     "benchmarks": [],
-    "distribution_channels": ["Source", "AUR", "conda", "Spack", "EasyBuild", "Nix"],
+    "distribution_channels": [
+      "Source",
+      "AUR",
+      "conda",
+      "Spack",
+      "EasyBuild",
+      "Nix"
+    ],
     "element_coverage": "H..Rn",
     "homepage": "https://siesta-project.org/siesta/index.html",
     "cost": "free",
@@ -1669,7 +1662,14 @@
     "apis": [],
     "author_name": "Grimme",
     "benchmarks": [],
-    "distribution_channels": ["Source", "Binary", "EasyBuild", "conda", "DNF", "APT"],
+    "distribution_channels": [
+      "Source",
+      "Binary",
+      "EasyBuild",
+      "conda",
+      "DNF",
+      "APT"
+    ],
     "element_coverage": null,
     "homepage": "https://xtb-docs.readthedocs.io/",
     "cost": "free",

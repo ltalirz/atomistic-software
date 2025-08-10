@@ -7,7 +7,8 @@
 }
 
 /* Indicate clickability only for charts marked as clickable */
-.clickable-chart, .clickable-chart * {
+.clickable-chart,
+.clickable-chart * {
   cursor: pointer !important;
 }
 

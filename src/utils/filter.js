@@ -28,11 +28,17 @@ export function updateToggle(prev = {}, name, checked) {
 /**
  * Filter code names from codesData using selected types, costs, and sources arrays.
  */
-export function filterCodesBySelections(codesData = {}, { types = [], costs = [], sources = [] } = {}) {
+export function filterCodesBySelections(
+  codesData = {},
+  { types = [], costs = [], sources = [] } = {}
+) {
   const typeMatch = (code) =>
-    types.length === 0 || (code.types && code.types.some((t) => types.includes(t)));
-  const costMatch = (code) => costs.length === 0 || (code.cost && costs.includes(code.cost));
-  const sourceMatch = (code) => sources.length === 0 || (code.source && sources.includes(code.source));
+    types.length === 0 ||
+    (code.types && code.types.some((t) => types.includes(t)));
+  const costMatch = (code) =>
+    costs.length === 0 || (code.cost && costs.includes(code.cost));
+  const sourceMatch = (code) =>
+    sources.length === 0 || (code.source && sources.includes(code.source));
 
   return Object.keys(codesData).filter((codeName) => {
     const code = codesData[codeName];
