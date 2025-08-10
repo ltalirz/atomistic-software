@@ -8,40 +8,77 @@ import EqualizerIcon from "@material-ui/icons/Equalizer";
 import TableChartIcon from "@material-ui/icons/TableChart";
 import TimelineIcon from "@material-ui/icons/Timeline";
 
-export const mainListItems = (
-  <div>
-    {/* {      <ListItem button component={"a"} href={'#/'}>
-      <ListItemIcon>
-        <HomeIcon />
-      </ListItemIcon>
-      <ListItemText primary="Home" />
-    </ListItem>} */}
-    <ListItem button component={"a"} href={"#/table"}>
-      <ListItemIcon>
-        <TableChartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Table" />
-    </ListItem>
-    <ListItem button component={"a"} href={"#/trends"}>
-      <ListItemIcon>
-        <TimelineIcon />
-      </ListItemIcon>
-      <ListItemText primary="Trends" />
-    </ListItem>
-    <ListItem button component={"a"} href={"#/stats"}>
-      <ListItemIcon>
-        <EqualizerIcon />
-      </ListItemIcon>
-      <ListItemText primary="Statistics" />
-    </ListItem>
-    <ListItem button component={"a"} href={"#/about"}>
-      <ListItemIcon>
-        <InfoIcon />
-      </ListItemIcon>
-      <ListItemText primary="About" />
-    </ListItem>
-  </div>
-);
+export function MainListItems() {
+  const [hash, setHash] = React.useState(
+    typeof window !== "undefined"
+      ? window.location.hash || "#/table"
+      : "#/table"
+  );
+
+  React.useEffect(() => {
+    const handler = () => setHash(window.location.hash || "#/table");
+    window.addEventListener("hashchange", handler);
+    return () => window.removeEventListener("hashchange", handler);
+  }, []);
+
+  const isActive = (path) => {
+    // path like '/table', '/trends', '/stats', '/about'
+    if (path === "/table") {
+      return hash === "#/" || hash.startsWith("#/table");
+    }
+    return hash.startsWith(`#${path}`);
+  };
+
+  return (
+    <div>
+      {/* Optional Home entry could map to table */}
+      <ListItem
+        button
+        component={"a"}
+        href={"#/table"}
+        selected={isActive("/table")}
+      >
+        <ListItemIcon>
+          <TableChartIcon />
+        </ListItemIcon>
+        <ListItemText primary="Table" />
+      </ListItem>
+      <ListItem
+        button
+        component={"a"}
+        href={"#/trends"}
+        selected={isActive("/trends")}
+      >
+        <ListItemIcon>
+          <TimelineIcon />
+        </ListItemIcon>
+        <ListItemText primary="Trends" />
+      </ListItem>
+      <ListItem
+        button
+        component={"a"}
+        href={"#/stats"}
+        selected={isActive("/stats")}
+      >
+        <ListItemIcon>
+          <EqualizerIcon />
+        </ListItemIcon>
+        <ListItemText primary="Statistics" />
+      </ListItem>
+      <ListItem
+        button
+        component={"a"}
+        href={"#/about"}
+        selected={isActive("/about")}
+      >
+        <ListItemIcon>
+          <InfoIcon />
+        </ListItemIcon>
+        <ListItemText primary="About" />
+      </ListItem>
+    </div>
+  );
+}
 
 // export const secondaryListItems = (
 //   <div>

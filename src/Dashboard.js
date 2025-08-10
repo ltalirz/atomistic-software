@@ -12,7 +12,7 @@ import Container from "@material-ui/core/Container";
 
 import Link from "@material-ui/core/Link";
 import MenuIcon from "@material-ui/icons/Menu";
-import { mainListItems } from "./components/Dashboard/listItems";
+import { MainListItems } from "./components/Dashboard/listItems";
 
 import { HashRouter as Router, Route } from "react-router-dom";
 import useStyles from "./components/Dashboard/Styles";
@@ -64,7 +64,9 @@ export default function Dashboard() {
     <div>
       <div className={classes.toolbar} />
       <Divider />
-      <List>{mainListItems}</List>
+      <List>
+        <MainListItems />
+      </List>
     </div>
   );
 
