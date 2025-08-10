@@ -26,3 +26,8 @@ yarn-error.log*
 .ipynb_checkpoints/
 
 *.sqlite
+
+src/data/*ipynb
+src/data/*py
+src/data/citation-analysis
+src/data/wordcloud
