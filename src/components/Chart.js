@@ -75,13 +75,13 @@ function SingleChart() {
       // note: for some reason, 100% has no effect
       sx={{ width: "clamp(520px, 99%, 800px)" }}>
       <Paper className={classes.paper}>
-        {nivoChart([data], title, false)}
+  {nivoChart([data], title, false, false, true)}
       </Paper>
     </Box>
   );
 }
 
-function nivoChart(data, title, legend = true, logScale = false) {
+function nivoChart(data, title, legend = true, logScale = false, clickable = false) {
   /**
    * Return nivo line-chart with default formatting for given data and title.
    */
@@ -209,7 +209,7 @@ function nivoChart(data, title, legend = true, logScale = false) {
   return (
     <React.Fragment>
       <Title>{title}</Title>
-      <div className="chart" style={{ height: "500px" }}>
+      <div className={"chart" + (clickable ? " clickable-chart" : "")} style={{ height: "500px", cursor: clickable ? "pointer" : "auto" }}>
         <ResponsiveLine
           title={title}
           data={validData}

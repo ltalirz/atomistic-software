@@ -404,7 +404,7 @@ function MultiCodeChart() {
               Loading citation data...
             </Typography>
           ) : chartData.length > 0 ? (
-            nivoChart(chartData, "Citation Trends (log scale)", false, true)
+            nivoChart(chartData, "Citation Trends (log scale)", false, true, true)
           ) : (
             <Typography variant="body1" align="center" style={{ padding: '100px 0' }}>
               {Object.values(selectedTypes).some(v => v) || Object.values(selectedCosts).some(v => v) || Object.values(selectedSources).some(v => v)

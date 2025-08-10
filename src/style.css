@@ -6,6 +6,11 @@
     transition: 0.3s; */
 }
 
+/* Indicate clickability only for charts marked as clickable */
+.clickable-chart, .clickable-chart * {
+  cursor: pointer !important;
+}
+
 /* Placement of cards */
 div.container {
   margin-bottom: 15px;
