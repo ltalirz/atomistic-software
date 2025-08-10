@@ -4,6 +4,8 @@
 import Tooltip from "@material-ui/core/Tooltip";
 import Button from "@material-ui/core/Button";
 import ABBREVIATIONS from "../data/abbreviations";
+import codes from "../data/codes.json";
+import { buildScholarUrl } from "../utils/scholar";
 //idea: use search icon for link to google scholar
 import ShowChartIcon from "@material-ui/icons/ShowChart";
 
@@ -252,18 +254,9 @@ function getColumns(data, year) {
         // add google scholar link to number of citations
         customBodyRenderLite: (dataIndex) => {
           const row = data[dataIndex];
-          let searchUrl = "";
-
-          if (row["query_method"] === "publication") {
-            searchUrl =
-              "https://scholar.google.com/scholar?cites=" +
-              row["query_publication_id"].toString();
-          } else {
-            searchUrl =
-              "https://scholar.google.com/scholar?q=" +
-              encodeURIComponent(row["query_string"]);
-          }
-          searchUrl += "&hl=en&as_vis=1&as_sdt=0%2C5&as_ylo=" + year + "&as_yhi=" + year;
+          // Reuse shared builder on the canonical metadata
+          const meta = codes[row["name"]] || row;
+          const searchUrl = buildScholarUrl(meta, year);
           return (
             <a href={searchUrl} target="_blank" rel="noreferrer" title={"Recorded " + row["datestamp"]}>
               {row["citations"]}

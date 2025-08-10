@@ -7,6 +7,8 @@ import useStyles from "./Dashboard/Styles";
 import { ResponsiveLine } from "@nivo/line";
 
 import { getCodeCitations } from "./Config";
+import codes from "../data/codes.json";
+import { buildScholarUrl } from "../utils/scholar";
 import { useParams } from "react-router-dom";
 
 const THEME = {
@@ -201,6 +203,8 @@ function nivoChart(data, title, legend = true, logScale = false) {
   // Get tick values for log scale
   const tickValues = logScale ? getLogTickValues(50, maxWithPadding) : undefined;
 
+  // Function remains, but uses shared utility
+
   return (
     <React.Fragment>
       <Title>{title}</Title>
@@ -258,6 +262,16 @@ function nivoChart(data, title, legend = true, logScale = false) {
           legends={legend_list}
           animate={false}
           theme={THEME}
+          onClick={(point) => {
+            if (!point || !point.data) return;
+            const year = typeof point.data.x === "string" ? parseInt(point.data.x, 10) : point.data.x;
+            const codeName = point.serieId;
+            const meta = codes[codeName];
+            const url = buildScholarUrl(meta, year);
+            if (url) {
+              window.open(url, "_blank", "noopener,noreferrer");
+            }
+          }}
         />
       </div>
     </React.Fragment>
