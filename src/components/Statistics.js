@@ -88,10 +88,31 @@ function costGraph() {
     Commercial: ["commercial"],
   };
 
+  const aggregateSeries = (seriesList) => {
+    // Sum citations across series for each year
+    const sums = new Map();
+    // initialize with all known years to keep axis stable
+    YEARS.forEach((yr) => sums.set(yr, 0));
+    seriesList.forEach((series) => {
+      (series.data || []).forEach((pt) => {
+        const yr = typeof pt.x === 'string' ? parseInt(pt.x, 10) : pt.x;
+        const y = typeof pt.y === 'number' ? pt.y : 0;
+        if (!Number.isNaN(yr)) {
+          sums.set(yr, (sums.get(yr) || 0) + y);
+        }
+      });
+    });
+    return Array.from(sums.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([x, y]) => ({ x, y }));
+  };
+
   let lines = [];
   for (const group in groups) {
     const codeNames = filterCodeNames({ cost: groups[group] });
-    lines.push({ id: group, data: getCodeCitations(codeNames) });
+    const seriesList = getCodeCitations(codeNames);
+    const aggregated = aggregateSeries(seriesList);
+    lines.push({ id: group, data: aggregated });
   }
   return nivoChart(lines, "");
 }
@@ -108,10 +129,29 @@ function sourceGraph() {
     "Source available": ["copyleft", "permissive", "available"],
   };
 
+  const aggregateSeries = (seriesList) => {
+    const sums = new Map();
+    YEARS.forEach((yr) => sums.set(yr, 0));
+    seriesList.forEach((series) => {
+      (series.data || []).forEach((pt) => {
+        const yr = typeof pt.x === 'string' ? parseInt(pt.x, 10) : pt.x;
+        const y = typeof pt.y === 'number' ? pt.y : 0;
+        if (!Number.isNaN(yr)) {
+          sums.set(yr, (sums.get(yr) || 0) + y);
+        }
+      });
+    });
+    return Array.from(sums.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([x, y]) => ({ x, y }));
+  };
+
   let lines = [];
   for (const group in groups) {
     const codeNames = filterCodeNames({ source: groups[group] });
-    lines.push({ id: group, data: getCodeCitations(codeNames) });
+    const seriesList = getCodeCitations(codeNames);
+    const aggregated = aggregateSeries(seriesList);
+    lines.push({ id: group, data: aggregated });
   }
   return nivoChart(lines, "");
 }

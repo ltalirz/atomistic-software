@@ -63,11 +63,12 @@ function SingleChart() {
    */
 
   let codeName = decodeURIComponent(useParams()["code"]);
-  const citations = getCodeCitations([codeName]);
-  const title = getTitle(codeName, citations);
+  const series = getCodeCitations([codeName]);
+  const points = Array.isArray(series) && series.length > 0 ? series[0].data : [];
+  const title = getTitle(codeName, points);
   const classes = useStyles();
 
-  const data = { id: codeName, data: citations };
+  const data = { id: codeName, data: points };
 
   return (
     <Box
