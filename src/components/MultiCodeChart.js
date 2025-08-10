@@ -116,21 +116,14 @@ function MultiCodeChart() {
         return typeMatch && costMatch && sourceMatch;
       });
 
-      console.log("Selected types:", typesToInclude);
-      console.log("Selected costs:", costsToInclude);
-      console.log("Selected sources:", sourcesToInclude);
-      console.log("Filtered codes:", filteredCodes);
-      
       setActiveCodeNames(filteredCodes);
       
       try {
         // Get citation data for filtered codes
         const citationsData = getCodeCitations(filteredCodes);
-        console.log("Raw citations data:", citationsData);
         
         // Make sure we have valid citation data
         if (!citationsData || !Array.isArray(citationsData)) {
-          console.error("Citation data is not valid:", citationsData);
           setChartData([]);
           setIsLoading(false);
           return;
