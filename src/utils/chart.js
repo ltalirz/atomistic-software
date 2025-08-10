@@ -25,3 +25,30 @@ export function aggregateSeries(seriesList, years = []) {
     .sort((a, b) => a[0] - b[0])
     .map(([x, y]) => ({ x, y }));
 }
+
+/**
+ * Normalize raw citations data for log-scale display by:
+ * - ensuring items have id and data array
+ * - filtering out points with non-positive or invalid values
+ */
+export function normalizeCitationsForLogScale(citationsData = []) {
+  if (!Array.isArray(citationsData)) return [];
+  return citationsData
+    .map((item) => {
+      if (!item || !item.id || !Array.isArray(item.data)) {
+        return null;
+      }
+      const validData = item.data.filter(
+        (point) =>
+          point &&
+          typeof point.x !== 'undefined' &&
+          typeof point.y === 'number' &&
+          point.y > 0
+      );
+      if (validData.length > 0) {
+        return { id: item.id, data: validData };
+      }
+      return null;
+    })
+    .filter(Boolean);
+}

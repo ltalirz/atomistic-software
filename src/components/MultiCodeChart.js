@@ -13,6 +13,7 @@ import { getCodeCitations } from "./Config";
 import codesData from "../data/codes.json";
 import { nivoChart } from "./Chart";
 import { getSelectedKeys, bulkSelect, updateToggle, filterCodesBySelections } from "../utils/filter";
+import { normalizeCitationsForLogScale } from "../utils/chart";
 
 function MultiCodeChart() {
   const classes = useStyles();
@@ -64,6 +65,29 @@ function MultiCodeChart() {
   setSelectedSources(bulkSelect(allSources, false));
   }, [allTypes, allCosts, allSources]);
 
+  // Helper to know whether any filter is active
+  const hasAnySelections = React.useCallback(() => {
+    return (
+      Object.values(selectedTypes).some(Boolean) ||
+      Object.values(selectedCosts).some(Boolean) ||
+      Object.values(selectedSources).some(Boolean)
+    );
+  }, [selectedTypes, selectedCosts, selectedSources]);
+
+  // Extracted citation data processing
+  const processCitationData = React.useCallback((codeNames) => {
+    try {
+      const citationsData = getCodeCitations(codeNames);
+      if (!citationsData || !Array.isArray(citationsData)) {
+        return [];
+      }
+      return normalizeCitationsForLogScale(citationsData);
+    } catch (error) {
+      console.error("Error processing citation data:", error);
+      return [];
+    }
+  }, []);
+
   // Update chart data when selected types, costs, or sources change
   useEffect(() => {
     const fetchData = async () => {
@@ -74,7 +98,7 @@ function MultiCodeChart() {
   const sourcesToInclude = getSelectedKeys(selectedSources);
       
       // If nothing selected, show empty chart
-      if (typesToInclude.length === 0 && costsToInclude.length === 0 && sourcesToInclude.length === 0) {
+  if (typesToInclude.length === 0 && costsToInclude.length === 0 && sourcesToInclude.length === 0) {
         setChartData([]);
         setActiveCodeNames([]);
         setIsLoading(false);
@@ -90,53 +114,13 @@ function MultiCodeChart() {
 
       setActiveCodeNames(filteredCodes);
       
-      try {
-        // Get citation data for filtered codes
-        const citationsData = getCodeCitations(filteredCodes);
-        
-        // Make sure we have valid citation data
-        if (!citationsData || !Array.isArray(citationsData)) {
-          setChartData([]);
-          setIsLoading(false);
-          return;
-        }
-        
-        // Process the data to ensure it's valid for the chart (no zero values for log scale)
-        const processedData = citationsData.map(item => {
-          if (!item || !item.id || !item.data || !Array.isArray(item.data)) {
-            console.error("Invalid citation item:", item);
-            return null;
-          }
-          
-          // For log scale, we need to ensure no zero or negative values
-          const validData = item.data.filter(point => 
-            point && 
-            typeof point.x !== 'undefined' && 
-            typeof point.y === 'number' && 
-            point.y > 0
-          );
-          
-          // Only include codes that have at least one valid data point
-          if (validData.length > 0) {
-            return {
-              id: item.id,
-              data: validData
-            };
-          }
-          return null;
-        }).filter(Boolean); // Remove any null entries
-        
-        setChartData(processedData);
-      } catch (error) {
-        console.error("Error processing citation data:", error);
-        setChartData([]);
-      } finally {
-        setIsLoading(false);
-      }
+  const processedData = processCitationData(filteredCodes);
+  setChartData(processedData);
+  setIsLoading(false);
     };
     
     fetchData();
-  }, [selectedTypes, selectedCosts, selectedSources]);
+  }, [selectedTypes, selectedCosts, selectedSources, processCitationData]);
 
   const handleTypeChange = (event) => {
     setSelectedTypes(prev => updateToggle(prev, event.target.name, event.target.checked));
@@ -340,9 +324,9 @@ function MultiCodeChart() {
           </Typography>
         ) : chartData.length > 0 ? (
           nivoChart(chartData, "Citation Trends (log scale)", false, true, true)
-        ) : (
+    ) : (
           <Typography variant="body1" align="center" style={{ padding: '100px 0' }}>
-            {Object.values(selectedTypes).some(v => v) || Object.values(selectedCosts).some(v => v) || Object.values(selectedSources).some(v => v)
+      {hasAnySelections()
               ? "No citation data available for the selected filters"
               : "Select at least one filter option to view trends"}
           </Typography>

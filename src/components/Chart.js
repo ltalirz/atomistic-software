@@ -205,8 +205,6 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
   // Get tick values for log scale
   const tickValues = logScale ? getLogTickValues(LOG_Y_MIN, maxWithPadding) : undefined;
 
-  // Function remains, but uses shared utility
-
   return (
     <React.Fragment>
       <Title>{title}</Title>

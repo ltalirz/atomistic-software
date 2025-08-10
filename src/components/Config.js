@@ -118,8 +118,8 @@ function getCodeCitations(codeNames) {
     return result;
   }
   
-  // Log which codes we're fetching citations for
-  console.log("Fetching citations for codes:", codeNames);
+  // Debug: which codes are being processed (disabled in production)
+  // console.debug("Fetching citations for codes:", codeNames);
   
   for (const name of codeNames) {
     try {
@@ -137,8 +137,8 @@ function getCodeCitations(codeNames) {
     }
   }
   
-  // Debug the final result
-  console.log("Citation data result:", result);
+  // Debug: final citation data result (disabled in production)
+  // console.debug("Citation data result:", result);
   
   return result;
 }
