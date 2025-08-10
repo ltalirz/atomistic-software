@@ -11,7 +11,6 @@ export default defineConfig({
   ],
   optimizeDeps: {
     include: ["react-router-dom"],
-    force: true,
   },
   // Treat Markdown files as static assets so they can be fetched at runtime
   assetsInclude: ["**/*.md"],
