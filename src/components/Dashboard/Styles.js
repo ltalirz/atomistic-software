@@ -81,13 +81,13 @@ const useStyles = makeStyles((theme) => ({
   },
   // Compact chips for Active codes list
   activeChipCompact: {
-    margin: "0 2px 0 0",
+    margin: "2px 2px 0 0",
     height: 20,
     "& .MuiChip-label": {
       paddingLeft: 6,
       paddingRight: 6,
-      paddingTop: 0,
-      paddingBottom: 0,
+      paddingTop: 2,
+      paddingBottom: 2,
       fontSize: "0.78rem",
       lineHeight: 1.2,
     },
