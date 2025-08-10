@@ -365,16 +365,7 @@ function MultiCodeChart() {
             <Typography variant="subtitle2" gutterBottom>
               Active codes ({activeCodeNames.length}):
             </Typography>
-            <div
-              style={{
-                maxHeight: maxActiveHeight || undefined,
-                overflowY: "auto",
-                display: "flex",
-                flexWrap: "wrap",
-                columnGap: "2px",
-                rowGap: 0,
-              }}
-            >
+            <div className={classes.activeCodesContainer} style={{ maxHeight: maxActiveHeight || undefined }}>
               {activeCodeNames.length > 0 ? (
                 activeCodeNames.map((codeName) => (
                   <Chip
