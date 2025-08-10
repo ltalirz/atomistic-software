@@ -13,6 +13,7 @@ import {
   getCodeCitations,
 } from "./Config";
 import { nivoChart } from "./Chart";
+import { aggregateSeries } from "../utils/chart";
 // import { Card } from '@material-ui/core';
 
 function citationGrowth(year) {
@@ -88,10 +89,14 @@ function costGraph() {
     Commercial: ["commercial"],
   };
 
+  // use shared aggregator
+
   let lines = [];
   for (const group in groups) {
     const codeNames = filterCodeNames({ cost: groups[group] });
-    lines.push({ id: group, data: getCodeCitations(codeNames) });
+    const seriesList = getCodeCitations(codeNames);
+  const aggregated = aggregateSeries(seriesList, YEARS);
+    lines.push({ id: group, data: aggregated });
   }
   return nivoChart(lines, "");
 }
@@ -108,10 +113,14 @@ function sourceGraph() {
     "Source available": ["copyleft", "permissive", "available"],
   };
 
+  // use shared aggregator
+
   let lines = [];
   for (const group in groups) {
     const codeNames = filterCodeNames({ source: groups[group] });
-    lines.push({ id: group, data: getCodeCitations(codeNames) });
+    const seriesList = getCodeCitations(codeNames);
+  const aggregated = aggregateSeries(seriesList, YEARS);
+    lines.push({ id: group, data: aggregated });
   }
   return nivoChart(lines, "");
 }

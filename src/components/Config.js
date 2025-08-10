@@ -61,7 +61,7 @@ function getDataChart() {
    */
   let lines = [];
   for (const codeName of CODES.slice(0, 50)) {
-    lines.push({ id: codeName, data: getCodeCitations(codeName) });
+    lines.push({ id: codeName, data: getCiteYears(codeName) });
   }
   return lines;
 }
@@ -83,11 +83,9 @@ function filterCodeNames(filters) {
   return codeNames;
 }
 
-function getCodeCitations(codeNames) {
+function getCiteYears(codeName) {
   /**
-   * Return citations of requested codes vs years.
-   *
-   * Sums citations of all codes in codeNames.
+   * Return citations of requested code vs years.
    */
   let line_data = [];
   for (const year of YEARS) {
@@ -95,18 +93,54 @@ function getCodeCitations(codeNames) {
     let range_key = yearToRange(year);
 
     data["x"] = parseInt(year);
-    data["y"] = 0;
-    for (const codeName of codeNames) {
-      data["y"] += parseInt(
-        citations[range_key]["citations"][codeName]["citations"]
-      );
-    }
+    data["y"] = parseInt(
+      citations[range_key]["citations"][codeName]["citations"]
+    );
     if (isNaN(data["y"]) || data["y"] <= 0) {
       data["y"] = 0;
     }
     line_data.push(data);
   }
   return line_data;
+}
+
+function getCodeCitations(codeNames) {
+  /**
+   * Return data with citations for all code names.
+   *
+   * Each item has:
+   *  {id: name, data: [{x: year1, y: cites1}, {x: year2, y: cites2}, ...]}
+   */
+  const result = [];
+  
+  if (!codeNames || !Array.isArray(codeNames) || codeNames.length === 0) {
+    console.warn("getCodeCitations: No code names provided");
+    return result;
+  }
+  
+  // Debug: which codes are being processed (disabled in production)
+  // console.debug("Fetching citations for codes:", codeNames);
+  
+  for (const name of codeNames) {
+    try {
+      const citationData = getCiteYears(name);
+      if (citationData && citationData.length > 0) {
+        result.push({
+          id: name,
+          data: citationData
+        });
+      } else {
+        console.warn(`No citation data found for ${name}`);
+      }
+    } catch (error) {
+      console.error(`Error getting citations for ${name}:`, error);
+    }
+  }
+  
+  // Debug: final citation data result (disabled in production)
+  // console.debug("Citation data result:", result);
+  
+  return result;
 }
 
 export {
@@ -116,7 +150,7 @@ export {
   CODES,
   getData,
   getDataChart,
-  getCodeCitations,
   filterCodeNames,
+  getCodeCitations,
   CUTOFF,
 };

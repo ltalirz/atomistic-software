@@ -39,6 +39,18 @@ const useStyles = makeStyles((theme) => ({
    overflow: "auto",
    flexDirection: "column",
  },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+    width: '100%',
+  },
+  chips: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  chip: {
+    margin: 2,
+  },
 }));
 
 export default useStyles;
