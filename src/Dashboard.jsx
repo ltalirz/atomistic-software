@@ -70,7 +70,7 @@ export default function Dashboard() {
   );
 
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
         <AppBar

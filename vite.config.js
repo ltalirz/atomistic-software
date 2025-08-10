@@ -17,4 +17,10 @@ export default defineConfig({
   assetsInclude: ["**/*.md"],
   // For GitHub Pages with a custom domain (CNAME), base can remain '/'
   base: "/",
+  test: {
+    environment: "jsdom",
+    setupFiles: ["./src/setupTests.js"],
+    globals: true,
+    css: true,
+  },
 });

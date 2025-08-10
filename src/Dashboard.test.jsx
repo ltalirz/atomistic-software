@@ -1,6 +1,8 @@
+import React from "react";
 import { render, screen } from "@testing-library/react";
+import { vi } from "vitest";
 import Dashboard from "./Dashboard";
-jest.mock("react-markdown", () => ({
+vi.mock("react-markdown", () => ({
   __esModule: true,
   default: (props) => {
     return <div data-testid="react-markdown-mock">{props.children}</div>;
