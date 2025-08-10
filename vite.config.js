@@ -9,6 +9,10 @@ export default defineConfig({
       include: [/\.jsx?$/, /\.tsx?$/],
     }),
   ],
+  optimizeDeps: {
+    include: ["react-router-dom"],
+    force: true,
+  },
   // Treat Markdown files as static assets so they can be fetched at runtime
   assetsInclude: ["**/*.md"],
   // For GitHub Pages with a custom domain (CNAME), base can remain '/'

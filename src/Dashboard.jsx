@@ -14,12 +14,7 @@ import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import { MainListItems } from "./components/Dashboard/listItems";
 
-import {
-  HashRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Table from "./components/Table.jsx";
 import About from "./components/About.jsx";
 import Statistics from "./components/Statistics";
@@ -142,14 +137,15 @@ export default function Dashboard() {
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <ToolbarSpacer />
           <Container maxWidth="xl" sx={{ mb: 2 }}>
-            <Switch>
-              <Route exact path="/table" component={Table} />
-              <Route exact path="/charts/:code" component={SingleChart} />
-              <Route exact path="/trends" component={MultiCodeChart} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/stats" component={Statistics} />
-              <Redirect exact from="/" to="/table" />
-            </Switch>
+            <Routes>
+              <Route path="/" element={<Table />} />
+              <Route path="/table" element={<Table />} />
+              <Route path="/charts/:code" element={<SingleChart />} />
+              <Route path="/trends" element={<MultiCodeChart />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/stats" element={<Statistics />} />
+              <Route path="*" element={<Table />} />
+            </Routes>
             <Box pt={4}>
               <Copyright />
             </Box>

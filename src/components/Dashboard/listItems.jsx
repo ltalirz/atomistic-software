@@ -7,34 +7,22 @@ import InfoIcon from "@mui/icons-material/Info";
 import EqualizerIcon from "@mui/icons-material/Equalizer";
 import TableChartIcon from "@mui/icons-material/TableChart";
 import TimelineIcon from "@mui/icons-material/Timeline";
+import { NavLink, useLocation } from "react-router-dom";
 
 export function MainListItems() {
-  const [hash, setHash] = React.useState(
-    typeof window !== "undefined"
-      ? window.location.hash || "#/table"
-      : "#/table"
-  );
-
-  React.useEffect(() => {
-    const handler = () => setHash(window.location.hash || "#/table");
-    window.addEventListener("hashchange", handler);
-    return () => window.removeEventListener("hashchange", handler);
-  }, []);
-
+  const { pathname } = useLocation();
   const isActive = (path) => {
-    // path like '/table', '/trends', '/stats', '/about'
-    if (path === "/table") {
-      return hash === "#/" || hash.startsWith("#/table");
-    }
-    return hash.startsWith(`#${path}`);
+    if (path === "/table")
+      return pathname === "/" || pathname.startsWith("/table");
+    return pathname.startsWith(path);
   };
 
   return (
     <div>
       <ListItem disablePadding>
         <ListItemButton
-          component="a"
-          href={"#/table"}
+          component={NavLink}
+          to="/table"
           selected={isActive("/table")}
         >
           <ListItemIcon>
@@ -43,10 +31,11 @@ export function MainListItems() {
           <ListItemText primary="Table" />
         </ListItemButton>
       </ListItem>
+
       <ListItem disablePadding>
         <ListItemButton
-          component="a"
-          href={"#/trends"}
+          component={NavLink}
+          to="/trends"
           selected={isActive("/trends")}
         >
           <ListItemIcon>
@@ -55,10 +44,11 @@ export function MainListItems() {
           <ListItemText primary="Trends" />
         </ListItemButton>
       </ListItem>
+
       <ListItem disablePadding>
         <ListItemButton
-          component="a"
-          href={"#/stats"}
+          component={NavLink}
+          to="/stats"
           selected={isActive("/stats")}
         >
           <ListItemIcon>
@@ -67,10 +57,11 @@ export function MainListItems() {
           <ListItemText primary="Statistics" />
         </ListItemButton>
       </ListItem>
+
       <ListItem disablePadding>
         <ListItemButton
-          component="a"
-          href={"#/about"}
+          component={NavLink}
+          to="/about"
           selected={isActive("/about")}
         >
           <ListItemIcon>
@@ -82,27 +73,3 @@ export function MainListItems() {
     </div>
   );
 }
-
-// export const secondaryListItems = (
-//   <div>
-//     <ListSubheader inset>Saved reports</ListSubheader>
-//     <ListItem button>
-//       <ListItemIcon>
-//         <AssignmentIcon />
-//       </ListItemIcon>
-//       <ListItemText primary="Current month" />
-//     </ListItem>
-//     <ListItem button>
-//       <ListItemIcon>
-//         <AssignmentIcon />
-//       </ListItemIcon>
-//       <ListItemText primary="Last quarter" />
-//     </ListItem>
-//     <ListItem button>
-//       <ListItemIcon>
-//         <AssignmentIcon />
-//       </ListItemIcon>
-//       <ListItemText primary="Year-end sale" />
-//     </ListItem>
-//   </div>
-// );
