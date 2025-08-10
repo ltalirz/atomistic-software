@@ -37,7 +37,7 @@ jobs:
             --verbose --timeout 40 --insecure 
             --exclude "https://www.msg.chem.iastate.edu/"
             --exclude "http://openmopac.net/"
-            --input urls.txt
+            urls.txt
           fail: true
 
   test:
