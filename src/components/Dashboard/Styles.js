@@ -1,4 +1,5 @@
-import { makeStyles } from "@material-ui/core/styles";
+// Temporary: keep makeStyles via @mui/styles during migration
+import { makeStyles } from "@mui/styles";
 
 const drawerWidth = 170;
 const useStyles = makeStyles((theme) => ({

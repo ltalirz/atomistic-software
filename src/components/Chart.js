@@ -1,8 +1,7 @@
 import React from "react";
-import Box from "@material-ui/core/Box";
-import Paper from "@material-ui/core/Paper";
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
 import Title from "./Dashboard/Title";
-import useStyles from "./Dashboard/Styles";
 
 import { ResponsiveLine } from "@nivo/line";
 
@@ -68,7 +67,6 @@ function SingleChart() {
   const points =
     Array.isArray(series) && series.length > 0 ? series[0].data : [];
   const title = getTitle(codeName, points);
-  const classes = useStyles();
 
   const data = { id: codeName, data: points };
 
@@ -77,7 +75,14 @@ function SingleChart() {
       // note: for some reason, 100% has no effect
       sx={{ width: "clamp(520px, 99%, 800px)" }}
     >
-      <Paper className={classes.paper}>
+      <Paper
+        sx={{
+          p: 2,
+          display: "flex",
+          overflow: "auto",
+          flexDirection: "column",
+        }}
+      >
         {nivoChart([data], title, false, false, true)}
       </Paper>
     </Box>

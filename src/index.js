@@ -1,14 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import reportWebVitals from "./reportWebVitals";
 import Dashboard from "./Dashboard";
 import "./style.css";
 
-ReactDOM.render(
+const container = document.getElementById("root");
+const root = createRoot(container);
+const theme = createTheme();
+root.render(
   <React.StrictMode>
-    <Dashboard />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <ThemeProvider theme={theme}>
+      <Dashboard />
+    </ThemeProvider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

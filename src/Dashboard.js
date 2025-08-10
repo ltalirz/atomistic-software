@@ -1,17 +1,17 @@
 import React from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Drawer from "@material-ui/core/Drawer";
-import Box from "@material-ui/core/Box";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import List from "@material-ui/core/List";
-import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
-import IconButton from "@material-ui/core/IconButton";
-import Container from "@material-ui/core/Container";
+import CssBaseline from "@mui/material/CssBaseline";
+import Drawer from "@mui/material/Drawer";
+import Box from "@mui/material/Box";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import List from "@mui/material/List";
+import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
+import IconButton from "@mui/material/IconButton";
+import Container from "@mui/material/Container";
 
-import Link from "@material-ui/core/Link";
-import MenuIcon from "@material-ui/icons/Menu";
+import Link from "@mui/material/Link";
+import MenuIcon from "@mui/icons-material/Menu";
 import { MainListItems } from "./components/Dashboard/listItems";
 
 import { HashRouter as Router, Route } from "react-router-dom";
@@ -22,8 +22,7 @@ import Statistics from "./components/Statistics";
 import { SingleChart } from "./components/Chart";
 import MultiCodeChart from "./components/MultiCodeChart";
 import packageJson from "../package.json";
-import { useTheme } from "@material-ui/core/styles";
-import Hidden from "@material-ui/core/Hidden";
+import { useTheme } from "@mui/material/styles";
 
 function Copyright() {
   return (
@@ -92,10 +91,9 @@ export default function Dashboard() {
         </Toolbar>
       </AppBar>
       <nav className={classes.drawer} aria-label="mailbox folders">
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Hidden smUp implementation="css">
+        {/* Mobile drawer */}
+        <Box sx={{ display: { xs: "block", sm: "none" } }}>
           <Drawer
-            // container={container}
             variant="temporary"
             anchor={theme.direction === "rtl" ? "right" : "left"}
             open={mobileOpen}
@@ -103,24 +101,21 @@ export default function Dashboard() {
             classes={{
               paper: classes.drawerPaper,
             }}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
+            ModalProps={{ keepMounted: true }}
           >
             {drawer}
           </Drawer>
-        </Hidden>
-        <Hidden xsDown implementation="css">
+        </Box>
+        {/* Desktop drawer */}
+        <Box sx={{ display: { xs: "none", sm: "block" } }}>
           <Drawer
-            classes={{
-              paper: classes.drawerPaper,
-            }}
+            classes={{ paper: classes.drawerPaper }}
             variant="permanent"
             open
           >
             {drawer}
           </Drawer>
-        </Hidden>
+        </Box>
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />

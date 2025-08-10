@@ -1,72 +1,103 @@
 /**
- * Overview table with all codes.
+ * Overview table with all codes using Material React Table v3.
  */
 import React from "react";
-import MUIDataTable from "mui-datatables";
 import packageJson from "../../package.json";
-import Typography from "@material-ui/core/Typography";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import {
+  MaterialReactTable,
+  useMaterialReactTable,
+} from "material-react-table";
 
 import { YEARS, getData } from "./Config";
 import { getColumns } from "./Columns";
 
 const lastYear = YEARS[YEARS.length - 1];
 
-class Table extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      year: lastYear,
-      data: getData(lastYear),
-      columns: null,
-      options: {
-        print: false,
-        filterType: "checkbox",
-        filterArrayFullMatch: false,
-        sortOrder: { name: "citations", direction: "desc" },
-        rowsPerPage: 100,
-        selectableRows: "none",
-        // Persist table state (filters, sorts, etc.) in localStorage so it survives navigation
-        storageKey: "atomistic-software-table-v1",
-        setTableProps: () => {
-          return {
-            // material ui v4 only
-            size: "small",
-          };
-        },
-      },
-    };
-  }
+function Table() {
+  const [year, setYear] = React.useState(lastYear);
+  const [data, setData] = React.useState(() => getData(lastYear));
 
-  handleYearChange(event) {
-    this.setState({
-      year: event.target.value,
-      data: getData(event.target.value),
-    });
-  }
+  const handleYearChange = (event) => {
+    const newYear = event.target.value;
+    setYear(newYear);
+    setData(getData(newYear));
+  };
 
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <MUIDataTable
-            title={
-              <h2>
-                Citation Data &nbsp;
-                <select
-                  defaultValue={this.state.year}
-                  onChange={(event) => this.handleYearChange(event)}
-                >
-                  {YEARS.map((x) => (
-                    <option key={x}>{x}</option>
-                  ))}
-                </select>
-              </h2>
-            }
-            columns={getColumns(this.state.data, this.state.year)}
-            data={this.state.data}
-            options={this.state.options}
-          />
+  // Map legacy column definitions to MRT column shape
+  // getColumns relies on data for custom renders; keep using it for label and cell content
+  const legacyColumns = React.useMemo(
+    () => getColumns(data, year),
+    [data, year]
+  );
+  const columns = React.useMemo(
+    () =>
+      legacyColumns.map((col) => ({
+        header: col.label || col.name,
+        accessorKey: col.name,
+        enableSorting: !!col.options?.sort,
+        enableColumnFilter: !!col.options?.filter,
+        // Use MRT's Cell to delegate rendering back to mui-datatables-style renderer
+        Cell: col.options?.customBodyRenderLite
+          ? ({ row }) => col.options.customBodyRenderLite(row.index)
+          : undefined,
+        // Hide columns marked display: false
+        enableHiding: true,
+        size: 120,
+      })),
+    [legacyColumns]
+  );
 
+  const table = useMaterialReactTable({
+    columns,
+    data,
+    initialState: {
+      density: "compact",
+      pagination: { pageIndex: 0, pageSize: 100 },
+      sorting: [{ id: "citations", desc: true }],
+      columnVisibility: Object.fromEntries(
+        legacyColumns.map((c) => [c.name, c.options?.display !== false])
+      ),
+    },
+    enableColumnActions: false,
+    enableRowSelection: false,
+    muiTableBodyProps: { sx: { "& td": { py: 0.5 } } },
+  });
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Stack direction="row" alignItems="center" spacing={2} sx={{ mb: 1 }}>
+          <Typography component="h2" variant="h5">
+            Citation Data
+          </Typography>
+          <FormControl size="small">
+            <InputLabel id="year-select-label">Year</InputLabel>
+            <Select
+              labelId="year-select-label"
+              id="year-select"
+              value={year}
+              label="Year"
+              onChange={handleYearChange}
+            >
+              {YEARS.map((x) => (
+                <MenuItem key={x} value={x}>
+                  {x}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Stack>
+
+        <MaterialReactTable table={table} />
+
+        <Box mt={2}>
           <Typography variant="subtitle1" align="center" noWrap>
             Further engines are tracked on the{" "}
             <a href={packageJson.repository.url + "/wiki/Watchlist"}>
@@ -74,10 +105,10 @@ class Table extends React.Component {
             </a>
             .
           </Typography>
-        </header>
-      </div>
-    );
-  }
+        </Box>
+      </header>
+    </div>
+  );
 }
 
 export default Table;

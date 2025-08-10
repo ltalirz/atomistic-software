@@ -1,22 +1,22 @@
 /**
  * Column definition for table
  */
-import Tooltip from "@material-ui/core/Tooltip";
-import Button from "@material-ui/core/Button";
+import Tooltip from "@mui/material/Tooltip";
+import Button from "@mui/material/Button";
 import ABBREVIATIONS from "../data/abbreviations";
 import codes from "../data/codes.json";
 import { buildScholarUrl } from "../utils/scholar";
 //idea: use search icon for link to google scholar
-import ShowChartIcon from "@material-ui/icons/ShowChart";
+import ShowChartIcon from "@mui/icons-material/ShowChart";
 
-import MoneyOffIcon from "@material-ui/icons/MoneyOff";
-import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
-import SchoolIcon from "@material-ui/icons/School";
-import LockOpenIcon from "@material-ui/icons/LockOpen";
+import MoneyOffIcon from "@mui/icons-material/MoneyOff";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import SchoolIcon from "@mui/icons-material/School";
+import LockOpenIcon from "@mui/icons-material/LockOpen";
 //import NotInterestedIcon from '@material-ui/icons/NotInterested';
 //import CopyrightIcon from '@material-ui/icons/Copyright';
-import LockIcon from "@material-ui/icons/Lock";
-import NoEncryptionIcon from "@material-ui/icons/NoEncryption";
+import LockIcon from "@mui/icons-material/Lock";
+import NoEncryptionIcon from "@mui/icons-material/NoEncryption";
 // import { FlashOnOutlined } from "@material-ui/icons";
 
 function TooltipText(tooltip, text) {

@@ -1,12 +1,12 @@
 import React from "react";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import InfoIcon from "@material-ui/icons/Info";
-// import HomeIcon from '@material-ui/icons/Home';
-import EqualizerIcon from "@material-ui/icons/Equalizer";
-import TableChartIcon from "@material-ui/icons/TableChart";
-import TimelineIcon from "@material-ui/icons/Timeline";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InfoIcon from "@mui/icons-material/Info";
+// import HomeIcon from '@mui/icons-material/Home';
+import EqualizerIcon from "@mui/icons-material/Equalizer";
+import TableChartIcon from "@mui/icons-material/TableChart";
+import TimelineIcon from "@mui/icons-material/Timeline";
 
 export function MainListItems() {
   const [hash, setHash] = React.useState(
