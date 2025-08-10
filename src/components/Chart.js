@@ -9,6 +9,7 @@ import { ResponsiveLine } from "@nivo/line";
 import { getCodeCitations } from "./Config";
 import codes from "../data/codes.json";
 import { buildScholarUrl } from "../utils/scholar";
+import { LOG_Y_MIN } from "../utils/chart";
 import { useParams } from "react-router-dom";
 
 const THEME = {
@@ -127,7 +128,7 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
     // Filter out any data points with missing or invalid x or y values
     const validPoints = series.data.filter(
       point => point && typeof point.x !== 'undefined' && 
-               (logScale ? point.y >= 50 : typeof point.y !== 'undefined')
+               (logScale ? point.y >= LOG_Y_MIN : typeof point.y !== 'undefined')
     ).sort((a, b) => {
       const ax = typeof a.x === 'string' ? parseInt(a.x, 10) : a.x;
       const bx = typeof b.x === 'string' ? parseInt(b.x, 10) : b.x;
@@ -150,7 +151,7 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
     ? {
         type: "log",
         base: 10,
-        min: 50,  // Set minimum to 50 for log scale
+        min: LOG_Y_MIN,  // Named constant for log scale minimum
         max: maxWithPadding,
         stacked: false,
         reverse: false,
@@ -181,9 +182,9 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
       }
     }
     
-    // Add 50 as the first tick if it's our min value
-    if (min === 50 && !tickValues.includes(50)) {
-      tickValues.unshift(50);
+    // Add LOG_Y_MIN as the first tick if it's our min value
+    if (min === LOG_Y_MIN && !tickValues.includes(LOG_Y_MIN)) {
+      tickValues.unshift(LOG_Y_MIN);
     }
     
     return tickValues;
@@ -202,7 +203,7 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
   }
 
   // Get tick values for log scale
-  const tickValues = logScale ? getLogTickValues(50, maxWithPadding) : undefined;
+  const tickValues = logScale ? getLogTickValues(LOG_Y_MIN, maxWithPadding) : undefined;
 
   // Function remains, but uses shared utility
 

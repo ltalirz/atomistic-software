@@ -12,6 +12,7 @@ import useStyles from "./Dashboard/Styles";
 import { getCodeCitations } from "./Config";
 import codesData from "../data/codes.json";
 import { nivoChart } from "./Chart";
+import { getSelectedKeys, bulkSelect, updateToggle, filterCodesBySelections } from "../utils/filter";
 
 function MultiCodeChart() {
   const classes = useStyles();
@@ -59,17 +60,8 @@ function MultiCodeChart() {
     }
     setSelectedTypes(initialTypes);
     
-    const initialCosts = {};
-    allCosts.forEach(cost => {
-      initialCosts[cost] = false;
-    });
-    setSelectedCosts(initialCosts);
-    
-    const initialSources = {};
-    allSources.forEach(source => {
-      initialSources[source] = false;
-    });
-    setSelectedSources(initialSources);
+  setSelectedCosts(bulkSelect(allCosts, false));
+  setSelectedSources(bulkSelect(allSources, false));
   }, [allTypes, allCosts, allSources]);
 
   // Update chart data when selected types, costs, or sources change
@@ -77,17 +69,9 @@ function MultiCodeChart() {
     const fetchData = async () => {
       setIsLoading(true);
       
-      const typesToInclude = Object.keys(selectedTypes).filter(
-        type => selectedTypes[type]
-      );
-      
-      const costsToInclude = Object.keys(selectedCosts).filter(
-        cost => selectedCosts[cost]
-      );
-      
-      const sourcesToInclude = Object.keys(selectedSources).filter(
-        source => selectedSources[source]
-      );
+  const typesToInclude = getSelectedKeys(selectedTypes);
+  const costsToInclude = getSelectedKeys(selectedCosts);
+  const sourcesToInclude = getSelectedKeys(selectedSources);
       
       // If nothing selected, show empty chart
       if (typesToInclude.length === 0 && costsToInclude.length === 0 && sourcesToInclude.length === 0) {
@@ -98,22 +82,10 @@ function MultiCodeChart() {
       }
       
       // Filter codes by selected types, costs, and sources
-      const filteredCodes = Object.keys(codesData).filter(codeName => {
-        const code = codesData[codeName];
-        
-        // Type filter
-        const typeMatch = typesToInclude.length === 0 || 
-                         (code.types && code.types.some(type => typesToInclude.includes(type)));
-        
-        // Cost filter
-        const costMatch = costsToInclude.length === 0 || 
-                         (code.cost && costsToInclude.includes(code.cost));
-        
-        // Source filter
-        const sourceMatch = sourcesToInclude.length === 0 || 
-                           (code.source && sourcesToInclude.includes(code.source));
-        
-        return typeMatch && costMatch && sourceMatch;
+      const filteredCodes = filterCodesBySelections(codesData, {
+        types: typesToInclude,
+        costs: costsToInclude,
+        sources: sourcesToInclude,
       });
 
       setActiveCodeNames(filteredCodes);
@@ -154,7 +126,6 @@ function MultiCodeChart() {
           return null;
         }).filter(Boolean); // Remove any null entries
         
-        console.log("Processed chart data:", processedData);
         setChartData(processedData);
       } catch (error) {
         console.error("Error processing citation data:", error);
@@ -168,67 +139,34 @@ function MultiCodeChart() {
   }, [selectedTypes, selectedCosts, selectedSources]);
 
   const handleTypeChange = (event) => {
-    setSelectedTypes(prevState => ({
-      ...prevState,
-      [event.target.name]: event.target.checked
-    }));
+    setSelectedTypes(prev => updateToggle(prev, event.target.name, event.target.checked));
   };
 
   const handleCostChange = (event) => {
-    setSelectedCosts(prevState => ({
-      ...prevState,
-      [event.target.name]: event.target.checked
-    }));
+    setSelectedCosts(prev => updateToggle(prev, event.target.name, event.target.checked));
   };
 
   const handleSourceChange = (event) => {
-    setSelectedSources(prevState => ({
-      ...prevState,
-      [event.target.name]: event.target.checked
-    }));
+    setSelectedSources(prev => updateToggle(prev, event.target.name, event.target.checked));
   };
 
   const handleSelectAll = (category) => {
     if (category === 'types') {
-      const newSelectedTypes = {};
-      allTypes.forEach(type => {
-        newSelectedTypes[type] = true;
-      });
-      setSelectedTypes(newSelectedTypes);
+      setSelectedTypes(bulkSelect(allTypes, true));
     } else if (category === 'costs') {
-      const newSelectedCosts = {};
-      allCosts.forEach(cost => {
-        newSelectedCosts[cost] = true;
-      });
-      setSelectedCosts(newSelectedCosts);
+      setSelectedCosts(bulkSelect(allCosts, true));
     } else if (category === 'sources') {
-      const newSelectedSources = {};
-      allSources.forEach(source => {
-        newSelectedSources[source] = true;
-      });
-      setSelectedSources(newSelectedSources);
+      setSelectedSources(bulkSelect(allSources, true));
     }
   };
 
   const handleClearAll = (category) => {
     if (category === 'types') {
-      const newSelectedTypes = {};
-      allTypes.forEach(type => {
-        newSelectedTypes[type] = false;
-      });
-      setSelectedTypes(newSelectedTypes);
+      setSelectedTypes(bulkSelect(allTypes, false));
     } else if (category === 'costs') {
-      const newSelectedCosts = {};
-      allCosts.forEach(cost => {
-        newSelectedCosts[cost] = false;
-      });
-      setSelectedCosts(newSelectedCosts);
+      setSelectedCosts(bulkSelect(allCosts, false));
     } else if (category === 'sources') {
-      const newSelectedSources = {};
-      allSources.forEach(source => {
-        newSelectedSources[source] = false;
-      });
-      setSelectedSources(newSelectedSources);
+      setSelectedSources(bulkSelect(allSources, false));
     }
   };
 
