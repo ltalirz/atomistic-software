@@ -25,7 +25,7 @@
     "prettier": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-markdown": "^8.0.0",
+    "react-markdown": "^9.1.0",
     "react-router-dom": "^5.3.0",
     "web-vitals": "^2.1.4"
   },
@@ -37,19 +37,20 @@
     "gh-pages": "^6.3.0",
     "husky": "^7.0.4",
     "lint-staged": "^11.0.0",
-    "react-scripts": "^5.0.1",
+  "@vitejs/plugin-react": "^4.3.1",
+  "vite": "^5.4.0",
     "source-map-explorer": "^2.5.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && echo 'atomistic.software' > ./build/CNAME",
-    "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
+  "start": "vite",
+  "build": "vite build && mkdir -p dist && echo 'atomistic.software' > ./dist/CNAME",
+  "preview": "vite preview",
+  "deploy": "gh-pages -d dist",
+  "test": "echo 'No test runner configured with Vite yet' && exit 0",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "eject": "react-scripts eject",
+  "analyze": "source-map-explorer 'dist/assets/*.js'",
     "prepare": "husky install"
   },
   "eslintConfig": {

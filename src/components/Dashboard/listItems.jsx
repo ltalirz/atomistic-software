@@ -1,9 +1,10 @@
 import React from "react";
 import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import { Link as RouterLink } from "react-router-dom";
 import InfoIcon from "@mui/icons-material/Info";
-// import HomeIcon from '@mui/icons-material/Home';
 import EqualizerIcon from "@mui/icons-material/Equalizer";
 import TableChartIcon from "@mui/icons-material/TableChart";
 import TimelineIcon from "@mui/icons-material/Timeline";
@@ -29,52 +30,56 @@ export function MainListItems() {
     return hash.startsWith(`#${path}`);
   };
 
+
   return (
     <div>
-      {/* Optional Home entry could map to table */}
-      <ListItem
-        button
-        component={"a"}
-        href={"#/table"}
-        selected={isActive("/table")}
-      >
-        <ListItemIcon>
-          <TableChartIcon />
-        </ListItemIcon>
-        <ListItemText primary="Table" />
+      <ListItem disablePadding>
+        <ListItemButton
+          component={RouterLink}
+          to="/table"
+          selected={isActive("/table")}
+        >
+          <ListItemIcon>
+            <TableChartIcon />
+          </ListItemIcon>
+          <ListItemText primary="Table" />
+        </ListItemButton>
       </ListItem>
-      <ListItem
-        button
-        component={"a"}
-        href={"#/trends"}
-        selected={isActive("/trends")}
-      >
-        <ListItemIcon>
-          <TimelineIcon />
-        </ListItemIcon>
-        <ListItemText primary="Trends" />
+      <ListItem disablePadding>
+        <ListItemButton
+          component={RouterLink}
+          to="/trends"
+          selected={isActive("/trends")}
+        >
+          <ListItemIcon>
+            <TimelineIcon />
+          </ListItemIcon>
+          <ListItemText primary="Trends" />
+        </ListItemButton>
       </ListItem>
-      <ListItem
-        button
-        component={"a"}
-        href={"#/stats"}
-        selected={isActive("/stats")}
-      >
-        <ListItemIcon>
-          <EqualizerIcon />
-        </ListItemIcon>
-        <ListItemText primary="Statistics" />
+      <ListItem disablePadding>
+        <ListItemButton
+          component={RouterLink}
+          to="/stats"
+          selected={isActive("/stats")}
+        >
+          <ListItemIcon>
+            <EqualizerIcon />
+          </ListItemIcon>
+          <ListItemText primary="Statistics" />
+        </ListItemButton>
       </ListItem>
-      <ListItem
-        button
-        component={"a"}
-        href={"#/about"}
-        selected={isActive("/about")}
-      >
-        <ListItemIcon>
-          <InfoIcon />
-        </ListItemIcon>
-        <ListItemText primary="About" />
+      <ListItem disablePadding>
+        <ListItemButton
+          component={RouterLink}
+          to="/about"
+          selected={isActive("/about")}
+        >
+          <ListItemIcon>
+            <InfoIcon />
+          </ListItemIcon>
+          <ListItemText primary="About" />
+        </ListItemButton>
       </ListItem>
     </div>
   );
