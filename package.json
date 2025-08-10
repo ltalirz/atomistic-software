@@ -11,43 +11,47 @@
   },
   "private": true,
   "dependencies": {
-    "@nivo/line": "^0.80.0",
-    "mui-datatables": "^3.8.5",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^6.0.0",
+    "@mui/material": "^6.0.0",
+    "@nivo/line": "^0.99.0",
+    "@tanstack/react-table": "^8.13.0",
+    "material-react-table": "^3.0.0",
     "prettier": "^2.5.1",
-    "react-dom": "<18.0.0",
-    "react-markdown": "^8.0.0",
-    "react-router-dom": "^5.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.1.0",
+    "react-router-dom": "^6.26.2",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.8",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
+    "eslint": "^9.9.0",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.3.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@vitejs/plugin-react": "^4.3.1",
     "eslint-config-prettier": "^8.3.0",
     "gh-pages": "^6.3.0",
     "husky": "^7.0.4",
+    "jsdom": "^26.1.0",
     "lint-staged": "^11.0.0",
-    "react-scripts": "^5.0.1",
-    "source-map-explorer": "^2.5.1"
+    "source-map-explorer": "^2.5.1",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && echo 'atomistic.software' > ./build/CNAME",
-    "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
+    "start": "vite",
+    "build": "vite build && mkdir -p dist && echo 'atomistic.software' > ./dist/CNAME",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "eject": "react-scripts eject",
+    "analyze": "source-map-explorer 'dist/assets/*.js'",
     "prepare": "husky install"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "prettier"
-    ]
   },
   "browserslist": {
     "production": [
@@ -69,5 +73,9 @@
     "*.{css,scss,md,json,yml,yaml}": [
       "prettier --write"
     ]
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=9"
   }
 }

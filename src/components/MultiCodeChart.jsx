@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import Paper from "@material-ui/core/Paper";
-import FormGroup from "@material-ui/core/FormGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import Chip from "@material-ui/core/Chip";
-import Grid from "@material-ui/core/Grid";
-import useStyles from "./Dashboard/Styles";
+import Paper from "@mui/material/Paper";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import Chip from "@mui/material/Chip";
+import Grid from "@mui/material/Grid";
 
 import { getCodeCitations } from "./Config";
 import codesData from "../data/codes.json";
@@ -21,7 +20,6 @@ import {
 import { normalizeCitationsForLogScale } from "../utils/chart";
 
 function MultiCodeChart() {
-  const classes = useStyles();
   const [selectedTypes, setSelectedTypes] = useState({});
   const [selectedCosts, setSelectedCosts] = useState({});
   const [selectedSources, setSelectedSources] = useState({});
@@ -224,8 +222,13 @@ function MultiCodeChart() {
   return (
     <div>
       <Paper
-        className={classes.paper}
-        style={{ marginBottom: "10px", padding: "12px" }}
+        sx={{
+          p: 1.5,
+          mb: 1.25,
+          display: "flex",
+          overflow: "auto",
+          flexDirection: "column",
+        }}
       >
         <Grid container spacing={1} alignItems="stretch">
           {/* Type filters */}
@@ -252,7 +255,17 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup className={classes.filterGroupColumnsAuto}>
+            <FormGroup
+              sx={{
+                display: "grid",
+                gridTemplateColumns: {
+                  xs: "repeat(2, 1fr)",
+                  md: "repeat(2, 1fr)",
+                },
+                columnGap: 0.5,
+                rowGap: 0.25,
+              }}
+            >
               {allTypes.map((type) => (
                 <FormControlLabel
                   key={type}
@@ -263,9 +276,18 @@ function MultiCodeChart() {
                       onChange={handleTypeChange}
                       name={type}
                       color="primary"
+                      sx={{ p: 0.25 }}
                     />
                   }
-                  className={classes.filterLabelCompact}
+                  sx={{
+                    mb: 0.25,
+                    display: "flex",
+                    minHeight: "auto",
+                    "& .MuiFormControlLabel-label": {
+                      fontSize: "0.8rem",
+                      lineHeight: 1.2,
+                    },
+                  }}
                   label={<span>{type}</span>}
                 />
               ))}
@@ -296,7 +318,17 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup className={classes.filterGroupTwoCols}>
+            <FormGroup
+              sx={{
+                display: "grid",
+                gridTemplateColumns: {
+                  xs: "repeat(2, 1fr)",
+                  md: "repeat(2, 1fr)",
+                },
+                columnGap: 0.5,
+                rowGap: 0.25,
+              }}
+            >
               {allCosts.map((cost) => (
                 <FormControlLabel
                   key={cost}
@@ -307,9 +339,18 @@ function MultiCodeChart() {
                       onChange={handleCostChange}
                       name={cost}
                       color="primary"
+                      sx={{ p: 0.25 }}
                     />
                   }
-                  className={classes.filterLabelCompact}
+                  sx={{
+                    mb: 0.25,
+                    display: "flex",
+                    minHeight: "auto",
+                    "& .MuiFormControlLabel-label": {
+                      fontSize: "0.8rem",
+                      lineHeight: 1.2,
+                    },
+                  }}
                   label={<span>{cost}</span>}
                 />
               ))}
@@ -340,7 +381,17 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup className={classes.filterGroupTwoCols}>
+            <FormGroup
+              sx={{
+                display: "grid",
+                gridTemplateColumns: {
+                  xs: "repeat(2, 1fr)",
+                  md: "repeat(2, 1fr)",
+                },
+                columnGap: 0.5,
+                rowGap: 0.25,
+              }}
+            >
               {allSources.map((source) => (
                 <FormControlLabel
                   key={source}
@@ -351,9 +402,18 @@ function MultiCodeChart() {
                       onChange={handleSourceChange}
                       name={source}
                       color="primary"
+                      sx={{ p: 0.25 }}
                     />
                   }
-                  className={classes.filterLabelCompact}
+                  sx={{
+                    mb: 0.25,
+                    display: "flex",
+                    minHeight: "auto",
+                    "& .MuiFormControlLabel-label": {
+                      fontSize: "0.8rem",
+                      lineHeight: 1.2,
+                    },
+                  }}
                   label={<span>{source}</span>}
                 />
               ))}
@@ -365,21 +425,39 @@ function MultiCodeChart() {
             <Typography variant="subtitle2" gutterBottom>
               Active codes ({activeCodeNames.length}):
             </Typography>
-            <div className={classes.activeCodesContainer} style={{ maxHeight: maxActiveHeight || undefined }}>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                columnGap: 2,
+                rowGap: 0,
+                overflowY: "auto",
+                maxHeight: maxActiveHeight || undefined,
+              }}
+            >
               {activeCodeNames.length > 0 ? (
                 activeCodeNames.map((codeName) => (
                   <Chip
                     key={codeName}
                     label={codeName}
                     onDelete={() => removeCode(codeName)}
-                    className={classes.activeChipCompact}
+                    sx={{
+                      m: "2px 2px 0 0",
+                      height: 20,
+                      "& .MuiChip-label": {
+                        px: 0.75,
+                        py: 0.25,
+                        fontSize: "0.78rem",
+                        lineHeight: 1.2,
+                      },
+                    }}
                     size="small"
                     color="primary"
                     variant="outlined"
                   />
                 ))
               ) : (
-                <Typography variant="body2" color="textSecondary">
+                <Typography variant="body2" color="text.secondary">
                   No codes selected. Please select at least one filter option.
                 </Typography>
               )}
@@ -388,7 +466,14 @@ function MultiCodeChart() {
         </Grid>
       </Paper>
 
-      <Paper className={classes.paper}>
+      <Paper
+        sx={{
+          p: 2,
+          display: "flex",
+          overflow: "auto",
+          flexDirection: "column",
+        }}
+      >
         {isLoading ? (
           <Typography
             variant="body1"
@@ -398,7 +483,7 @@ function MultiCodeChart() {
             Loading citation data...
           </Typography>
         ) : chartData.length > 0 ? (
-          nivoChart(chartData, "Citation Trends (log scale)", false, true, true)
+          nivoChart(chartData, "Citation Trends", false, true, true)
         ) : (
           <Typography
             variant="body1"
