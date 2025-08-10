@@ -13,8 +13,33 @@ on:
       - main
       - feat/**
       - feature/**
+  schedule:
+    # Run at 03:30 UTC on the 1st of every month
+    - cron: "30 3 1 * *"
 
 jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract homepage URLs from codes.json
+        run: |
+          jq -r 'to_entries[] | .value.homepage // empty' src/data/codes.json | sed '/^$/d' > urls.txt
+          echo "Found $(wc -l < urls.txt) URLs"
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2.4.1
+        with:
+          args: >-
+            --verbose --timeout 40 --insecure 
+            --exclude "https://www.msg.chem.iastate.edu/"
+            --exclude "http://openmopac.net/"
+            --input urls.txt
+          fail: true
+
   test:
     runs-on: ubuntu-latest
     env:
