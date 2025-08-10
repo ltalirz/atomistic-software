@@ -38,19 +38,64 @@ function Table() {
   );
   const columns = React.useMemo(
     () =>
-      legacyColumns.map((col) => ({
-        header: col.label || col.name,
-        accessorKey: col.name,
-        enableSorting: !!col.options?.sort,
-        enableColumnFilter: !!col.options?.filter,
-        // Use MRT's Cell to delegate rendering back to mui-datatables-style renderer
-        Cell: col.options?.customBodyRenderLite
-          ? ({ row }) => col.options.customBodyRenderLite(row.index)
-          : undefined,
-        // Hide columns marked display: false
-        enableHiding: true,
-        size: 120,
-      })),
+      legacyColumns.map((col) => {
+        const isMultiSelect = ["types", "tags", "cost", "source"].includes(
+          col.name
+        );
+        const isName = col.name === "name";
+
+        // Build select options from current data for multi-select filters
+        const filterSelectOptions = (() => {
+          if (!isMultiSelect) return undefined;
+          const vals = new Set();
+          data.forEach((row) => {
+            const v = row[col.name];
+            if (Array.isArray(v)) v.forEach((x) => vals.add(x));
+            else if (v !== undefined && v !== null && v !== "") vals.add(v);
+          });
+          return Array.from(vals).sort();
+        })();
+
+        // Custom filterFns: treat empty selections as no-op
+        const filterFn = isMultiSelect
+          ? col.name === "types" || col.name === "tags"
+            ? (row, id, filterValues) => {
+                if (!Array.isArray(filterValues) || filterValues.length === 0)
+                  return true;
+                const cellVal = row.getValue(id);
+                if (Array.isArray(cellVal))
+                  return cellVal.some((v) => filterValues.includes(v));
+                return false;
+              }
+            : (row, id, filterValues) => {
+                if (!Array.isArray(filterValues) || filterValues.length === 0)
+                  return true;
+                const cellVal = row.getValue(id);
+                return filterValues.includes(cellVal);
+              }
+          : undefined;
+
+        return {
+          header: col.label || col.name,
+          accessorKey: col.name,
+          enableSorting: !!col.options?.sort,
+          enableColumnFilter: isName ? true : !!col.options?.filter,
+          filterVariant: isMultiSelect
+            ? "multi-select"
+            : isName
+            ? "text"
+            : undefined,
+          filterFn,
+          filterSelectOptions,
+          // Use MRT's Cell to delegate rendering back to mui-datatables-style renderer
+          Cell: col.options?.customBodyRenderLite
+            ? ({ row }) => col.options.customBodyRenderLite(row.index)
+            : undefined,
+          // Hide columns marked display: false
+          enableHiding: true,
+          size: 120,
+        };
+      }),
     [legacyColumns]
   );
 
@@ -58,7 +103,8 @@ function Table() {
     columns,
     data,
     initialState: {
-      density: "compact",
+      //density: "compact",
+      showColumnFilters: true,
       pagination: { pageIndex: 0, pageSize: 100 },
       sorting: [{ id: "citations", desc: true }],
       columnVisibility: Object.fromEntries(
@@ -67,6 +113,7 @@ function Table() {
     },
     enableColumnActions: false,
     enableRowSelection: false,
+    enableDensityToggle: false,
     muiTableBodyProps: { sx: { "& td": { py: 0.5 } } },
   });
 
