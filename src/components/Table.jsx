@@ -5,7 +5,6 @@ import React from "react";
 import packageJson from "../../package.json";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
@@ -114,34 +113,44 @@ function Table() {
     enableColumnActions: false,
     enableRowSelection: false,
     enableDensityToggle: false,
+    // Put the page title and Year selector into the table's top toolbar
+    renderTopToolbarCustomActions: () => (
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          gap: 2,
+          width: "100%",
+          px: 1,
+        }}
+      >
+        <Typography component="h2" variant="h5">
+          Citation Data
+        </Typography>
+        <FormControl size="small">
+          <InputLabel id="year-select-label">Year</InputLabel>
+          <Select
+            labelId="year-select-label"
+            id="year-select"
+            value={year}
+            label="Year"
+            onChange={handleYearChange}
+          >
+            {YEARS.map((x) => (
+              <MenuItem key={x} value={x}>
+                {x}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </Box>
+    ),
     muiTableBodyProps: { sx: { "& td": { py: 0.5 } } },
   });
 
   return (
     <div className="App">
       <header className="App-header">
-        <Stack direction="row" alignItems="center" spacing={2} sx={{ mb: 1 }}>
-          <Typography component="h2" variant="h5">
-            Citation Data
-          </Typography>
-          <FormControl size="small">
-            <InputLabel id="year-select-label">Year</InputLabel>
-            <Select
-              labelId="year-select-label"
-              id="year-select"
-              value={year}
-              label="Year"
-              onChange={handleYearChange}
-            >
-              {YEARS.map((x) => (
-                <MenuItem key={x} value={x}>
-                  {x}
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </Stack>
-
         <MaterialReactTable table={table} />
 
         <Box mt={2}>

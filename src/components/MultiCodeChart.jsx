@@ -456,7 +456,7 @@ function MultiCodeChart() {
             Loading citation data...
           </Typography>
         ) : chartData.length > 0 ? (
-          nivoChart(chartData, "Citation Trends (log scale)", false, true, true)
+          nivoChart(chartData, "Citation Trends", false, true, true)
         ) : (
           <Typography
             variant="body1"
