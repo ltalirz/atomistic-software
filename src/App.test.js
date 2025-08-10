@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import Dashboard from "./Dashboard";
-jest.mock('react-markdown', () => ({
+jest.mock("react-markdown", () => ({
   __esModule: true,
   default: (props) => {
     return <div data-testid="react-markdown-mock">{props.children}</div>;
-  }
+  },
 }));
 
 test("renders application title", () => {

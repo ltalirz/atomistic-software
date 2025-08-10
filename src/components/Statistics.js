@@ -95,7 +95,7 @@ function costGraph() {
   for (const group in groups) {
     const codeNames = filterCodeNames({ cost: groups[group] });
     const seriesList = getCodeCitations(codeNames);
-  const aggregated = aggregateSeries(seriesList, YEARS);
+    const aggregated = aggregateSeries(seriesList, YEARS);
     lines.push({ id: group, data: aggregated });
   }
   return nivoChart(lines, "");
@@ -119,7 +119,7 @@ function sourceGraph() {
   for (const group in groups) {
     const codeNames = filterCodeNames({ source: groups[group] });
     const seriesList = getCodeCitations(codeNames);
-  const aggregated = aggregateSeries(seriesList, YEARS);
+    const aggregated = aggregateSeries(seriesList, YEARS);
     lines.push({ id: group, data: aggregated });
   }
   return nivoChart(lines, "");
@@ -176,7 +176,6 @@ function relativeGrowthList(data) {
     </Typography>
   );
 }
-
 
 // Breakpoint sizes: xs, sm, md, lg, xl and xxl
 
@@ -239,11 +238,12 @@ export default function Home() {
       )}
       {Card("Cost: commercial vs free engines", costGraph(), "", 12, 10)}
       {Card(
-        "Source availability: closed, \"available\", and open",
+        'Source availability: closed, "available", and open',
         sourceGraph(),
         '"Source available" includes all engines whose source code can be obtained for free or for a fee. ' +
           '"Open-source" engines are the subset of source-available engines with OSI-approved licenses.',
-        12, 10
+        12,
+        10
       )}
     </Grid>
   );

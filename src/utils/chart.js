@@ -14,8 +14,8 @@ export function aggregateSeries(seriesList, years = []) {
   years.forEach((yr) => sums.set(yr, 0));
   (seriesList || []).forEach((series) => {
     (series?.data || []).forEach((pt) => {
-      const yr = typeof pt.x === 'string' ? parseInt(pt.x, 10) : pt.x;
-      const y = typeof pt.y === 'number' ? pt.y : 0;
+      const yr = typeof pt.x === "string" ? parseInt(pt.x, 10) : pt.x;
+      const y = typeof pt.y === "number" ? pt.y : 0;
       if (!Number.isNaN(yr)) {
         sums.set(yr, (sums.get(yr) || 0) + y);
       }
@@ -41,8 +41,8 @@ export function normalizeCitationsForLogScale(citationsData = []) {
       const validData = item.data.filter(
         (point) =>
           point &&
-          typeof point.x !== 'undefined' &&
-          typeof point.y === 'number' &&
+          typeof point.x !== "undefined" &&
+          typeof point.y === "number" &&
           point.y > 0
       );
       if (validData.length > 0) {

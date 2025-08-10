@@ -22,18 +22,14 @@ import Statistics from "./components/Statistics";
 import { SingleChart } from "./components/Chart";
 import MultiCodeChart from "./components/MultiCodeChart";
 import packageJson from "../package.json";
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from "@material-ui/core/styles";
 import Hidden from "@material-ui/core/Hidden";
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link
-        color="inherit"
-        href={packageJson.author.url}
-        target="_blank"
-      >
+      <Link color="inherit" href={packageJson.author.url} target="_blank">
         {packageJson.author.name}
       </Link>{" "}
       {new Date().getFullYear()}
@@ -68,8 +64,7 @@ export default function Dashboard() {
     <div>
       <div className={classes.toolbar} />
       <Divider />
-      <List>{mainListItems}
-      </List>
+      <List>{mainListItems}</List>
     </div>
   );
 
@@ -90,7 +85,7 @@ export default function Dashboard() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-          Trends in atomistic simulation engines
+            Trends in atomistic simulation engines
           </Typography>
         </Toolbar>
       </AppBar>
@@ -100,7 +95,7 @@ export default function Dashboard() {
           <Drawer
             // container={container}
             variant="temporary"
-            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+            anchor={theme.direction === "rtl" ? "right" : "left"}
             open={mobileOpen}
             onClose={handleDrawerToggle}
             classes={{
@@ -126,7 +121,7 @@ export default function Dashboard() {
         </Hidden>
       </nav>
       <main className={classes.content}>
-      <div className={classes.toolbar} />
+        <div className={classes.toolbar} />
         <Container maxWidth="xl" className={classes.container}>
           <Router basename="/">
             <Route exact path="/" component={Table} />

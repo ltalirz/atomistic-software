@@ -112,22 +112,22 @@ function getCodeCitations(codeNames) {
    *  {id: name, data: [{x: year1, y: cites1}, {x: year2, y: cites2}, ...]}
    */
   const result = [];
-  
+
   if (!codeNames || !Array.isArray(codeNames) || codeNames.length === 0) {
     console.warn("getCodeCitations: No code names provided");
     return result;
   }
-  
+
   // Debug: which codes are being processed (disabled in production)
   // console.debug("Fetching citations for codes:", codeNames);
-  
+
   for (const name of codeNames) {
     try {
       const citationData = getCiteYears(name);
       if (citationData && citationData.length > 0) {
         result.push({
           id: name,
-          data: citationData
+          data: citationData,
         });
       } else {
         console.warn(`No citation data found for ${name}`);
@@ -136,10 +136,10 @@ function getCodeCitations(codeNames) {
       console.error(`Error getting citations for ${name}:`, error);
     }
   }
-  
+
   // Debug: final citation data result (disabled in production)
   // console.debug("Citation data result:", result);
-  
+
   return result;
 }
 

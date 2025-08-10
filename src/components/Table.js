@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { YEARS, getData } from "./Config";
 import { getColumns } from "./Columns";
 
-const lastYear = YEARS[YEARS.length-1];
+const lastYear = YEARS[YEARS.length - 1];
 
 class Table extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class Table extends React.Component {
         filterArrayFullMatch: false,
         sortOrder: { name: "citations", direction: "desc" },
         rowsPerPage: 100,
-        selectableRows: false,
+        selectableRows: "none",
         // Persist table state (filters, sorts, etc.) in localStorage so it survives navigation
         storageKey: "atomistic-software-table-v1",
         setTableProps: () => {
@@ -67,10 +67,13 @@ class Table extends React.Component {
             options={this.state.options}
           />
 
-        <Typography variant="subtitle1" align='center' noWrap>
-          Further engines are tracked on the <a href={packageJson.repository.url + '/wiki/Watchlist'}>Watchlist</a>.
-        </Typography>
-
+          <Typography variant="subtitle1" align="center" noWrap>
+            Further engines are tracked on the{" "}
+            <a href={packageJson.repository.url + "/wiki/Watchlist"}>
+              Watchlist
+            </a>
+            .
+          </Typography>
         </header>
       </div>
     );

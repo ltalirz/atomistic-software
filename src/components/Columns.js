@@ -39,7 +39,7 @@ function TooltipTexts(values, tooltips) {
   if (values && values.length > 0) {
     return values
       .map((x) => TooltipText(tooltips[x], x))
-      .reduce((prev, curr) => [prev, <wbr />, curr]);
+      .reduce((prev, curr, idx) => [prev, <wbr key={`wbr-${idx}`} />, curr]);
   } else {
     return null;
   }
@@ -156,8 +156,9 @@ function getColumns(data, year) {
         display: false,
         customBodyRenderLite: (dataIndex) => {
           const types = data[dataIndex]["benchmarks"];
-          return types.map((x) => (
+          return types.map((x, i) => (
             <a
+              key={`bm-${i}-${x}`}
               href={"https://molmod.ugent.be/deltacodesdft"}
               target="_blank"
               rel="noreferrer"
@@ -258,7 +259,12 @@ function getColumns(data, year) {
           const meta = codes[row["name"]] || row;
           const searchUrl = buildScholarUrl(meta, year);
           return (
-            <a href={searchUrl} target="_blank" rel="noreferrer" title={"Recorded " + row["datestamp"]}>
+            <a
+              href={searchUrl}
+              target="_blank"
+              rel="noreferrer"
+              title={"Recorded " + row["datestamp"]}
+            >
               {row["citations"]}
             </a>
           );
