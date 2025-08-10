@@ -14,8 +14,12 @@ import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import { MainListItems } from "./components/Dashboard/listItems";
 
-import { HashRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import useStyles from "./components/Dashboard/Styles";
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import Table from "./components/Table.jsx";
 import About from "./components/About.jsx";
 import Statistics from "./components/Statistics";
@@ -23,10 +27,11 @@ import { SingleChart } from "./components/Chart";
 import MultiCodeChart from "./components/MultiCodeChart";
 import packageJson from "../package.json";
 import { useTheme } from "@mui/material/styles";
+import ToolbarSpacer from "@mui/material/Toolbar";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href={packageJson.author.url} target="_blank">
         {packageJson.author.name}
@@ -51,9 +56,9 @@ function Copyright() {
 }
 
 export default function Dashboard() {
-  const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const drawerWidth = 170;
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -61,7 +66,7 @@ export default function Dashboard() {
 
   const drawer = (
     <div>
-      <div className={classes.toolbar} />
+      <ToolbarSpacer />
       <Divider />
       <List>
         <MainListItems />
@@ -71,16 +76,22 @@ export default function Dashboard() {
 
   return (
     <Router>
-      <div className={classes.root}>
+      <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar position="fixed" className={classes.appBar}>
+        <AppBar
+          position="fixed"
+          sx={{
+            width: { sm: `calc(100% - ${drawerWidth}px)` },
+            ml: { sm: `${drawerWidth}px` },
+          }}
+        >
           <Toolbar>
             <IconButton
               color="inherit"
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              className={classes.menuButton}
+              sx={{ mr: 2, display: { sm: "none" } }}
             >
               <MenuIcon />
             </IconButton>
@@ -89,30 +100,48 @@ export default function Dashboard() {
             </Typography>
           </Toolbar>
         </AppBar>
-        <nav className={classes.drawer} aria-label="mailbox folders">
+        <Box
+          component="nav"
+          sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+          aria-label="mailbox folders"
+        >
           <Box sx={{ display: { xs: "block", sm: "none" } }}>
             <Drawer
               variant="temporary"
               anchor={theme.direction === "rtl" ? "right" : "left"}
               open={mobileOpen}
               onClose={handleDrawerToggle}
-              classes={{
-                paper: classes.drawerPaper,
-              }}
               ModalProps={{ keepMounted: true }}
+              sx={{
+                display: { xs: "block", sm: "none" },
+                "& .MuiDrawer-paper": {
+                  boxSizing: "border-box",
+                  width: drawerWidth,
+                },
+              }}
             >
               {drawer}
             </Drawer>
           </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Drawer classes={{ paper: classes.drawerPaper }} variant="permanent" open>
+            <Drawer
+              variant="permanent"
+              open
+              sx={{
+                display: { xs: "none", sm: "block" },
+                "& .MuiDrawer-paper": {
+                  boxSizing: "border-box",
+                  width: drawerWidth,
+                },
+              }}
+            >
               {drawer}
             </Drawer>
           </Box>
-        </nav>
-        <main className={classes.content}>
-          <div className={classes.toolbar} />
-          <Container maxWidth="xl" className={classes.container}>
+        </Box>
+        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+          <ToolbarSpacer />
+          <Container maxWidth="xl" sx={{ mb: 2 }}>
             <Switch>
               <Route exact path="/table" component={Table} />
               <Route exact path="/charts/:code" component={SingleChart} />
@@ -125,8 +154,8 @@ export default function Dashboard() {
               <Copyright />
             </Box>
           </Container>
-        </main>
-      </div>
+        </Box>
+      </Box>
     </Router>
   );
 }

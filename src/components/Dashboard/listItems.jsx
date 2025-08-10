@@ -3,7 +3,6 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { Link as RouterLink } from "react-router-dom";
 import InfoIcon from "@mui/icons-material/Info";
 import EqualizerIcon from "@mui/icons-material/Equalizer";
 import TableChartIcon from "@mui/icons-material/TableChart";
@@ -30,13 +29,12 @@ export function MainListItems() {
     return hash.startsWith(`#${path}`);
   };
 
-
   return (
     <div>
       <ListItem disablePadding>
         <ListItemButton
-          component={RouterLink}
-          to="/table"
+          component="a"
+          href={"#/table"}
           selected={isActive("/table")}
         >
           <ListItemIcon>
@@ -47,8 +45,8 @@ export function MainListItems() {
       </ListItem>
       <ListItem disablePadding>
         <ListItemButton
-          component={RouterLink}
-          to="/trends"
+          component="a"
+          href={"#/trends"}
           selected={isActive("/trends")}
         >
           <ListItemIcon>
@@ -59,8 +57,8 @@ export function MainListItems() {
       </ListItem>
       <ListItem disablePadding>
         <ListItemButton
-          component={RouterLink}
-          to="/stats"
+          component="a"
+          href={"#/stats"}
           selected={isActive("/stats")}
         >
           <ListItemIcon>
@@ -71,8 +69,8 @@ export function MainListItems() {
       </ListItem>
       <ListItem disablePadding>
         <ListItemButton
-          component={RouterLink}
-          to="/about"
+          component="a"
+          href={"#/about"}
           selected={isActive("/about")}
         >
           <ListItemIcon>

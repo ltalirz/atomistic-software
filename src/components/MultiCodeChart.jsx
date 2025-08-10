@@ -430,7 +430,7 @@ function MultiCodeChart() {
                   />
                 ))
               ) : (
-                <Typography variant="body2" color="textSecondary">
+                <Typography variant="body2" color="text.secondary">
                   No codes selected. Please select at least one filter option.
                 </Typography>
               )}

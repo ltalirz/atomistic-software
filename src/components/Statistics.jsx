@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
-import useStyles from "./Dashboard/Styles";
 import Title from "./Dashboard/Title";
 import {
   CUTOFF,
@@ -136,8 +135,8 @@ function totalList(data) {
   return (
     <Typography component="div" variant="subtitle1">
       <ol>
-        {data.map((line) => (
-          <li>
+        {data.map((line, idx) => (
+          <li key={`${line[0]}-${line[1]}-${idx}`}>
             {chartLink(line[0])}
             {": " + line[1] + "\n"}
           </li>
@@ -151,8 +150,8 @@ function absoluteGrowthList(data) {
   return (
     <Typography component="div" variant="subtitle1">
       <ol>
-        {data.map((line) => (
-          <li>
+        {data.map((line, idx) => (
+          <li key={`${line[0]}-${line[1]}-${idx}`}>
             {chartLink(line[0])}
             {": +" + line[1] + "\n"}
           </li>
@@ -166,8 +165,8 @@ function relativeGrowthList(data) {
   return (
     <Typography component="div" variant="subtitle1">
       <ol>
-        {data.map((line) => (
-          <li>
+        {data.map((line, idx) => (
+          <li key={`${line[0]}-${line[1]}-${idx}`}>
             {chartLink(line[0])}
             {": +" + parseInt(line[1] * 100) + "%\n"}
           </li>
@@ -189,19 +188,29 @@ function Card(title, message, footnote = "", widthSmall, widthLarge = null) {
    * @param widthSmall - Width of card when viewpoint is small
    * @param widthLarge - Width of card when viewpoint is large
    */
-  const classes = useStyles();
   if (!widthSmall) {
     widthSmall = widthLarge;
   }
   return [
-    <Grid item xs={widthSmall} sm={widthSmall} md={widthLarge}>
-      <Paper className={classes.paper}>
+    <Grid
+      key={`card-${title}`}
+      item
+      xs={widthSmall}
+      sm={widthSmall}
+      md={widthLarge}
+    >
+      <Paper
+        sx={{
+          p: 2,
+          display: "flex",
+          overflow: "auto",
+          flexDirection: "column",
+        }}
+      >
         <React.Fragment>
           <Title>{title}</Title>
           {message}
-          <Typography color="textSecondary" className={classes.depositContext}>
-            {footnote}
-          </Typography>
+          <Typography color="text.secondary">{footnote}</Typography>
         </React.Fragment>
       </Paper>
     </Grid>,
