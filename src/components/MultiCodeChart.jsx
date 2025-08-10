@@ -255,7 +255,7 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup sx={{ columnGap: 0.75, columnCount: { xs: 3, md: 4 } }}>
+            <FormGroup sx={{ columnGap: 0.5, columnCount: { xs: 3, md: 4 } }}>
               {allTypes.map((type) => (
                 <FormControlLabel
                   key={type}
@@ -266,11 +266,12 @@ function MultiCodeChart() {
                       onChange={handleTypeChange}
                       name={type}
                       color="primary"
+                      sx={{ p: 0.25 }}
                     />
                   }
                   sx={{
                     breakInside: "avoid",
-                    mb: 0.5,
+                    mb: 0.25,
                     display: "block",
                     minHeight: "auto",
 
@@ -309,7 +310,7 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup sx={{ columnGap: 0.75, columnCount: 2 }}>
+            <FormGroup sx={{ columnGap: 0.5, columnCount: 2 }}>
               {allCosts.map((cost) => (
                 <FormControlLabel
                   key={cost}
@@ -320,11 +321,12 @@ function MultiCodeChart() {
                       onChange={handleCostChange}
                       name={cost}
                       color="primary"
+                      sx={{ p: 0.25 }}
                     />
                   }
                   sx={{
                     breakInside: "avoid",
-                    mb: 0.5,
+                    mb: 0.25,
                     display: "block",
                     minHeight: "auto",
 
@@ -363,7 +365,7 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup sx={{ columnGap: 0.75, columnCount: 2 }}>
+            <FormGroup sx={{ columnGap: 0.5, columnCount: 2 }}>
               {allSources.map((source) => (
                 <FormControlLabel
                   key={source}
@@ -374,11 +376,12 @@ function MultiCodeChart() {
                       onChange={handleSourceChange}
                       name={source}
                       color="primary"
+                      sx={{ p: 0.25 }}
                     />
                   }
                   sx={{
                     breakInside: "avoid",
-                    mb: 0.5,
+                    mb: 0.25,
                     display: "block",
                     minHeight: "auto",
 
