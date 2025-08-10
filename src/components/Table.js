@@ -25,6 +25,8 @@ class Table extends React.Component {
         sortOrder: { name: "citations", direction: "desc" },
         rowsPerPage: 100,
         selectableRows: false,
+        // Persist table state (filters, sorts, etc.) in localStorage so it survives navigation
+        storageKey: "atomistic-software-table-v1",
         setTableProps: () => {
           return {
             // material ui v4 only
