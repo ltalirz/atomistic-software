@@ -255,7 +255,17 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup sx={{ columnGap: 0.5, columnCount: { xs: 3, md: 4 } }}>
+            <FormGroup
+              sx={{
+                display: "grid",
+                gridTemplateColumns: {
+                  xs: "repeat(2, 1fr)",
+                  md: "repeat(2, 1fr)",
+                },
+                columnGap: 0.5,
+                rowGap: 0.25,
+              }}
+            >
               {allTypes.map((type) => (
                 <FormControlLabel
                   key={type}
@@ -270,11 +280,9 @@ function MultiCodeChart() {
                     />
                   }
                   sx={{
-                    breakInside: "avoid",
                     mb: 0.25,
-                    display: "block",
+                    display: "flex",
                     minHeight: "auto",
-
                     "& .MuiFormControlLabel-label": {
                       fontSize: "0.8rem",
                       lineHeight: 1.2,
@@ -310,7 +318,17 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup sx={{ columnGap: 0.5, columnCount: 2 }}>
+            <FormGroup
+              sx={{
+                display: "grid",
+                gridTemplateColumns: {
+                  xs: "repeat(2, 1fr)",
+                  md: "repeat(2, 1fr)",
+                },
+                columnGap: 0.5,
+                rowGap: 0.25,
+              }}
+            >
               {allCosts.map((cost) => (
                 <FormControlLabel
                   key={cost}
@@ -325,11 +343,9 @@ function MultiCodeChart() {
                     />
                   }
                   sx={{
-                    breakInside: "avoid",
                     mb: 0.25,
-                    display: "block",
+                    display: "flex",
                     minHeight: "auto",
-
                     "& .MuiFormControlLabel-label": {
                       fontSize: "0.8rem",
                       lineHeight: 1.2,
@@ -365,7 +381,17 @@ function MultiCodeChart() {
                 Clear All
               </Button>
             </div>
-            <FormGroup sx={{ columnGap: 0.5, columnCount: 2 }}>
+            <FormGroup
+              sx={{
+                display: "grid",
+                gridTemplateColumns: {
+                  xs: "repeat(2, 1fr)",
+                  md: "repeat(2, 1fr)",
+                },
+                columnGap: 0.5,
+                rowGap: 0.25,
+              }}
+            >
               {allSources.map((source) => (
                 <FormControlLabel
                   key={source}
@@ -380,11 +406,9 @@ function MultiCodeChart() {
                     />
                   }
                   sx={{
-                    breakInside: "avoid",
                     mb: 0.25,
-                    display: "block",
+                    display: "flex",
                     minHeight: "auto",
-
                     "& .MuiFormControlLabel-label": {
                       fontSize: "0.8rem",
                       lineHeight: 1.2,
