@@ -209,7 +209,7 @@ function nivoChart(data, title, legend = true, logScale = false, clickable = fal
   return (
     <React.Fragment>
       <Title>{title}</Title>
-      <div className={"chart" + (clickable ? " clickable-chart" : "")} style={{ height: "500px", cursor: clickable ? "pointer" : "auto" }}>
+  <div className={"chart" + (clickable ? " clickable-chart" : "")}>
         <ResponsiveLine
           title={title}
           data={validData}

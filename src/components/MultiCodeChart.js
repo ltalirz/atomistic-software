@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -255,7 +254,7 @@ function MultiCodeChart() {
     <Paper className={classes.paper} style={{ marginBottom: '16px', padding: '12px' }}>
         <Grid container spacing={2}>
           {/* Type filters */}
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
       <Typography variant="subtitle2" gutterBottom>Filter by code type:</Typography>
       <div style={{ display: 'flex', marginBottom: '6px' }}>
               <Button 
@@ -296,7 +295,7 @@ function MultiCodeChart() {
           </Grid>
           
           {/* Cost filters */}
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
       <Typography variant="subtitle2" gutterBottom>Filter by cost:</Typography>
       <div style={{ display: 'flex', marginBottom: '6px' }}>
               <Button 
@@ -337,7 +336,7 @@ function MultiCodeChart() {
           </Grid>
           
           {/* Source filters */}
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <Typography variant="subtitle2" gutterBottom>Filter by source availability:</Typography>
             <div style={{ display: 'flex', marginBottom: '6px' }}>
               <Button 
@@ -378,17 +377,17 @@ function MultiCodeChart() {
           </Grid>
           
           {/* Active codes display and removal */}
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
       <Typography variant="subtitle2" gutterBottom>Active codes ({activeCodeNames.length}):</Typography>
-            <div style={{ maxHeight: '300px', overflowY: 'auto' }}>
+            <div style={{ maxHeight: '40vh', overflowY: 'auto', display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
               {activeCodeNames.length > 0 ? (
                 activeCodeNames.map(codeName => (
                   <Chip
                     key={codeName}
                     label={codeName}
                     onDelete={() => removeCode(codeName)}
-          style={{ margin: '2px' }}
-          size="small"
+                    style={{ margin: 0 }}
+                    size="small"
                     color="primary"
                     variant="outlined"
                   />
@@ -403,23 +402,21 @@ function MultiCodeChart() {
         </Grid>
       </Paper>
 
-      <Box sx={{ width: "100%", minHeight: "500px" }}>
-        <Paper className={classes.paper}>
-          {isLoading ? (
-            <Typography variant="body1" align="center" style={{ padding: '100px 0' }}>
-              Loading citation data...
-            </Typography>
-          ) : chartData.length > 0 ? (
-            nivoChart(chartData, "Citation Trends (log scale)", false, true, true)
-          ) : (
-            <Typography variant="body1" align="center" style={{ padding: '100px 0' }}>
-              {Object.values(selectedTypes).some(v => v) || Object.values(selectedCosts).some(v => v) || Object.values(selectedSources).some(v => v)
-                ? "No citation data available for the selected filters"
-                : "Select at least one filter option to view trends"}
-            </Typography>
-          )}
-        </Paper>
-      </Box>
+      <Paper className={classes.paper}>
+        {isLoading ? (
+          <Typography variant="body1" align="center" style={{ padding: '100px 0' }}>
+            Loading citation data...
+          </Typography>
+        ) : chartData.length > 0 ? (
+          nivoChart(chartData, "Citation Trends (log scale)", false, true, true)
+        ) : (
+          <Typography variant="body1" align="center" style={{ padding: '100px 0' }}>
+            {Object.values(selectedTypes).some(v => v) || Object.values(selectedCosts).some(v => v) || Object.values(selectedSources).some(v => v)
+              ? "No citation data available for the selected filters"
+              : "Select at least one filter option to view trends"}
+          </Typography>
+        )}
+      </Paper>
     </div>
   );
 }

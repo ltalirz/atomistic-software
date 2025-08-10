@@ -1,6 +1,6 @@
 .chart {
-  height: 70vh;
-  max-height: 600px;
+  height: clamp(360px, 65vh, 620px);
+  max-height: 70vh;
   /*width:60vw;
  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s; */

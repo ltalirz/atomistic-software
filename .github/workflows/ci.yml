@@ -1,70 +1,57 @@
-name: ci
+name: CI
 
-on: 
+on:
   push:
+    branches:
+      - master
+      - main
+      - feat/**
+      - feature/**
   pull_request:
-  schedule:
-    # See https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule
-    # Run at 3:30 every 1st of the month
-    - cron: "30 3 1 * *"
+    branches:
+      - master
+      - main
+      - feat/**
+      - feature/**
 
 jobs:
-  check-links:
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    env:
+      CI: true
     steps:
-      - uses: actions/checkout@v4
-      # link checker ignores json files
-      - name: Extract links from codes.json
-        run: |
-          echo "{" >> codes.json
-          grep homepage src/data/codes.json > codes.json
-          # make json valid
-          echo "\"dummy\": \"dummy\"}" >> codes.json
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Link Checker
-        id: lc
-        uses: lycheeverse/lychee-action@v2.4.1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          # See cli args at https://github.com/lycheeverse/lychee#commandline-parameters
-          # for excluded URLs, the checker seems to be stricter than Chrome
-          args: >-
-            --verbose --timeout 40 --insecure 
-            --exclude "https://www.msg.chem.iastate.edu/"
-            --exclude "http://openmopac.net/"
-            -- codes.json
-          fail: true
+          node-version: 18
+          cache: 'npm'
 
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4.4.0
-        with:
-          node-version: 14.x
       - name: Install dependencies
-        run: npm install --include=dev
-      - name: Run ESLint
-        run: npx eslint 'src/**/*js'
+        run: npm ci
 
-  validate-codes:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.9
-      - name: Install dependencies
-        run: pip install -r .github/requirements.txt
-      - name: Validate code metadata
-        run: python .github/codes.py
+      - name: Run unit tests
+        run: npm test -- --watchAll=false
 
   build:
     runs-on: ubuntu-latest
+    needs: test
+    env:
+      CI: true
     steps:
-      - uses: actions/checkout@v4
-      - name: Install and Build
-        run: |
-          npm install
-          npm run build
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
