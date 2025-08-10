@@ -82,5 +82,9 @@
     "*.{css,scss,md,json,yml,yaml}": [
       "prettier --write"
     ]
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=9"
   }
 }
