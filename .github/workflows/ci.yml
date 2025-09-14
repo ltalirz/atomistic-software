@@ -31,7 +31,7 @@ jobs:
           echo "Found $(wc -l < urls.txt) URLs"
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v2.5.0
+        uses: lycheeverse/lychee-action@v2.6.1
         with:
           args: >-
             --verbose --timeout 40 --insecure 
