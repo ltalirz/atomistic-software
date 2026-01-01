@@ -59,12 +59,12 @@ export function aggregateSeriesTimeAware(
     for (const codeName in codesForYear) {
       const codeMetadata = codesForYear[codeName];
 
-      // Check if this code matches any filter for this year
-      let matches = false;
+      // Check if this code matches all filters for this year
+      let matches = true;
       for (const filterKey in filters) {
         const filterValues = filters[filterKey];
-        if (filterValues.includes(codeMetadata[filterKey])) {
-          matches = true;
+        if (!filterValues.includes(codeMetadata[filterKey])) {
+          matches = false;
           break;
         }
       }
