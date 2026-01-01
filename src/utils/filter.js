@@ -26,10 +26,19 @@ export function updateToggle(prev = {}, name, checked) {
 }
 
 /**
- * Filter code names from codesData using selected types, costs, and sources arrays.
+ * Filter code names using selected types, costs, and sources arrays.
+ * Matches codes that satisfy the filter in ANY year (to account for
+ * license/cost changes over time).
+ *
+ * @param {Object} codesByYear - CODES_BY_YEAR cache for time-aware filtering
+ * @param {Object} options - Filter options
+ * @param {string[]} options.types - Types to include
+ * @param {string[]} options.costs - Costs to include
+ * @param {string[]} options.sources - Sources to include
+ * @returns {string[]} - Array of matching code names
  */
 export function filterCodesBySelections(
-  codesData = {},
+  codesByYear,
   { types = [], costs = [], sources = [] } = {}
 ) {
   const typeMatch = (code) =>
@@ -40,8 +49,28 @@ export function filterCodesBySelections(
   const sourceMatch = (code) =>
     sources.length === 0 || (code.source && sources.includes(code.source));
 
-  return Object.keys(codesData).filter((codeName) => {
-    const code = codesData[codeName];
-    return typeMatch(code) && costMatch(code) && sourceMatch(code);
+  // Collect all unique code names from any year
+  const allCodeNames = new Set();
+  for (const year in codesByYear) {
+    for (const codeName in codesByYear[year]) {
+      allCodeNames.add(codeName);
+    }
+  }
+
+  return Array.from(allCodeNames).filter((codeName) => {
+    // Check if the code matches in ANY year
+    for (const year in codesByYear) {
+      const codeForYear = codesByYear[year][codeName];
+      if (codeForYear) {
+        if (
+          typeMatch(codeForYear) &&
+          costMatch(codeForYear) &&
+          sourceMatch(codeForYear)
+        ) {
+          return true;
+        }
+      }
+    }
+    return false;
   });
 }

@@ -7,12 +7,13 @@ import Title from "./Dashboard/Title";
 import {
   CUTOFF,
   YEARS,
+  CODES_BY_YEAR,
   getData,
-  filterCodeNames,
-  getCodeCitations,
+  yearToRange,
 } from "./Config";
 import { nivoChart } from "./Chart";
-import { aggregateSeries } from "../utils/chart";
+import { aggregateSeriesTimeAware } from "../utils/chart";
+import citations from "../data/citations.json";
 // import { Card } from '@material-ui/core';
 
 function citationGrowth(year) {
@@ -78,6 +79,7 @@ function citationGrowth(year) {
 function costGraph() {
   /**
    * Citation trend by price (free/commercial).
+   * Uses time-aware aggregation to account for cost changes over time.
    */
 
   // Careful: it seems the legend coloring does not match the one of the graph automatically
@@ -88,13 +90,16 @@ function costGraph() {
     Commercial: ["commercial"],
   };
 
-  // use shared aggregator
-
+  // Use time-aware aggregator to correctly handle cost changes over time
   let lines = [];
   for (const group in groups) {
-    const codeNames = filterCodeNames({ cost: groups[group] });
-    const seriesList = getCodeCitations(codeNames);
-    const aggregated = aggregateSeries(seriesList, YEARS);
+    const aggregated = aggregateSeriesTimeAware(
+      CODES_BY_YEAR,
+      citations,
+      { cost: groups[group] },
+      YEARS,
+      yearToRange
+    );
     lines.push({ id: group, data: aggregated });
   }
   return nivoChart(lines, "");
@@ -103,6 +108,7 @@ function costGraph() {
 function sourceGraph() {
   /**
    * Citation trend by source code handling.
+   * Uses time-aware aggregation to account for license changes over time.
    */
 
   // Careful: it seems the legend coloring does not match the one of the graph automatically
@@ -112,13 +118,16 @@ function sourceGraph() {
     "Source available": ["copyleft", "permissive", "available"],
   };
 
-  // use shared aggregator
-
+  // Use time-aware aggregator to correctly handle license changes over time
   let lines = [];
   for (const group in groups) {
-    const codeNames = filterCodeNames({ source: groups[group] });
-    const seriesList = getCodeCitations(codeNames);
-    const aggregated = aggregateSeries(seriesList, YEARS);
+    const aggregated = aggregateSeriesTimeAware(
+      CODES_BY_YEAR,
+      citations,
+      { source: groups[group] },
+      YEARS,
+      yearToRange
+    );
     lines.push({ id: group, data: aggregated });
   }
   return nivoChart(lines, "");
