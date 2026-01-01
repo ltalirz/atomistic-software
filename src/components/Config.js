@@ -4,6 +4,47 @@ import codes from "../data/codes.json";
 // Citation cutoff per year (~1 citation per week)
 const CUTOFF = 50;
 
+/**
+ * Get code metadata resolved for a specific year.
+ *
+ * Applies updates from the 'updates' field in codes.json to get
+ * the correct metadata at the beginning of the specified year.
+ *
+ * Example: if code has updates: { "2020": { "license": "GPL", "source": "copyleft" } }
+ * then getCodeMetadataForYear("code", 2019) returns original metadata,
+ * while getCodeMetadataForYear("code", 2020) returns metadata with GPL license.
+ *
+ * @param {string} codeName - Name of the code
+ * @param {number} year - Year to get metadata for
+ * @returns {Object} Code metadata resolved for the given year
+ */
+function resolveCodeMetadataForYear(codeName, year) {
+  const code = codes[codeName];
+  if (!code) return null;
+
+  // Start with a shallow copy of the base metadata
+  const resolved = { ...code };
+
+  // If no updates, return base metadata
+  if (!code.updates) return resolved;
+
+  // Apply updates for all years up to and including the target year
+  const updateYears = Object.keys(code.updates)
+    .map((y) => parseInt(y, 10))
+    .filter((y) => y <= year)
+    .sort((a, b) => a - b);
+
+  for (const updateYear of updateYears) {
+    const yearUpdates = code.updates[updateYear.toString()];
+    Object.assign(resolved, yearUpdates);
+  }
+
+  // Don't include the updates field in the resolved output
+  delete resolved.updates;
+
+  return resolved;
+}
+
 function yearToRange(year) {
   /**
    * Transform year to year range used in citations.json
@@ -33,6 +74,34 @@ YEARS.sort();
 let CODES = [];
 for (const codename in codes) {
   CODES.push(codename);
+}
+
+/**
+ * Pre-built cache of resolved code metadata for each year.
+ *
+ * Structure: { year: { codeName: resolvedMetadata, ... }, ... }
+ *
+ * This is computed once at module load time for O(1) lookups,
+ * avoiding repeated resolution during graph rendering.
+ */
+const CODES_BY_YEAR = {};
+for (const year of YEARS) {
+  CODES_BY_YEAR[year] = {};
+  for (const codeName of CODES) {
+    CODES_BY_YEAR[year][codeName] = resolveCodeMetadataForYear(codeName, year);
+  }
+}
+
+/**
+ * Get pre-computed code metadata for a specific year.
+ * O(1) lookup from the pre-built cache.
+ *
+ * @param {string} codeName - Name of the code
+ * @param {number} year - Year to get metadata for
+ * @returns {Object} Code metadata resolved for the given year
+ */
+function getCodeMetadataForYear(codeName, year) {
+  return CODES_BY_YEAR[year]?.[codeName] || null;
 }
 
 function getData(year) {
@@ -77,6 +146,28 @@ function filterCodeNames(filters) {
     for (const filter in filters) {
       if (filters[filter].includes(codes[codeName][filter])) {
         codeNames.push(codeName);
+      }
+    }
+  }
+  return codeNames;
+}
+
+function filterCodeNamesForYear(filters, year) {
+  /**
+   * Return list of code names after applying filters, using year-resolved metadata.
+   *
+   * This is the time-aware version of filterCodeNames that accounts for
+   * license/source/cost changes over time.
+   *
+   * E.g. filters = {'source': ['copyleft', 'permissive']}, year = 2015
+   */
+  let codeNames = [];
+  for (const codeName in codes) {
+    const codeMetadata = getCodeMetadataForYear(codeName, year);
+    for (const filter in filters) {
+      if (filters[filter].includes(codeMetadata[filter])) {
+        codeNames.push(codeName);
+        break; // Only add once if any filter matches
       }
     }
   }
@@ -148,9 +239,12 @@ export {
   rangeToYear,
   YEARS,
   CODES,
+  CODES_BY_YEAR,
   getData,
   getDataChart,
   filterCodeNames,
+  filterCodeNamesForYear,
+  getCodeMetadataForYear,
   getCodeCitations,
   CUTOFF,
 };

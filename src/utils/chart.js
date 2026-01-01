@@ -27,6 +27,65 @@ export function aggregateSeries(seriesList, years = []) {
 }
 
 /**
+ * Aggregate citations by year using time-aware filtering.
+ *
+ * For each year, determines which codes match the filter for that specific year
+ * (accounting for license/source/cost changes over time), then sums their citations.
+ *
+ * Uses the pre-built CODES_BY_YEAR cache for O(1) lookups per code/year.
+ *
+ * @param {Object} codesByYear - Pre-built cache: { year: { codeName: metadata, ... }, ... }
+ * @param {Object} citations - The citations data object
+ * @param {Object} filters - Filter criteria, e.g., { source: ['copyleft', 'permissive'] }
+ * @param {number[]} years - List of years to aggregate over
+ * @param {Function} yearToRange - Function to convert year to citation range key
+ * @returns {Array<{x:number, y:number}>}
+ */
+export function aggregateSeriesTimeAware(
+  codesByYear,
+  citations,
+  filters,
+  years,
+  yearToRange
+) {
+  const result = [];
+
+  for (const year of years) {
+    let sum = 0;
+    const codesForYear = codesByYear[year];
+    if (!codesForYear) continue;
+
+    // For each year, find codes matching the filter for that specific year
+    for (const codeName in codesForYear) {
+      const codeMetadata = codesForYear[codeName];
+
+      // Check if this code matches any filter for this year
+      let matches = false;
+      for (const filterKey in filters) {
+        const filterValues = filters[filterKey];
+        if (filterValues.includes(codeMetadata[filterKey])) {
+          matches = true;
+          break;
+        }
+      }
+
+      if (matches) {
+        // Add this code's citations for this year
+        const rangeKey = yearToRange(year);
+        const citationData = citations[rangeKey]?.citations?.[codeName];
+        if (citationData && typeof citationData.citations === "number") {
+          sum += citationData.citations;
+        }
+      }
+    }
+
+    result.push({ x: year, y: sum });
+  }
+
+  return result;
+}
+
+/**
  * Normalize raw citations data for log-scale display by:
  * - ensuring items have id and data array
  * - filtering out points with non-positive or invalid values
