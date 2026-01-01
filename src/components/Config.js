@@ -107,19 +107,19 @@ function getCodeMetadataForYear(codeName, year) {
 function getData(year) {
   /**
    * Get data for code table for a given year.
+   * Uses time-aware metadata resolution to apply historical updates.
    */
   let range_key = yearToRange(year);
   let citations_data = citations[range_key]["citations"];
-  let data = codes; //.slice();
-
-  for (const codename in data) {
-    data[codename]["citations"] = citations_data[codename]["citations"];
-    data[codename]["datestamp"] = citations_data[codename]["datestamp"];
-  }
 
   let dataArray = [];
-  for (const codename in data) {
-    dataArray.push(Object.assign({}, data[codename]));
+  for (const codename in codes) {
+    // Get time-resolved metadata for this year
+    const resolvedMetadata = CODES_BY_YEAR[year]?.[codename] || codes[codename];
+    const codeData = Object.assign({}, resolvedMetadata);
+    codeData["citations"] = citations_data[codename]["citations"];
+    codeData["datestamp"] = citations_data[codename]["datestamp"];
+    dataArray.push(codeData);
   }
   return dataArray;
 }

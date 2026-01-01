@@ -8,8 +8,7 @@ import Button from "@mui/material/Button";
 import Chip from "@mui/material/Chip";
 import Grid from "@mui/material/Grid";
 
-import { getCodeCitations } from "./Config";
-import codesData from "../data/codes.json";
+import { getCodeCitations, CODES_BY_YEAR } from "./Config";
 import { nivoChart } from "./Chart";
 import {
   getSelectedKeys,
@@ -34,23 +33,27 @@ function MultiCodeChart() {
   const sourcesRef = useRef(null);
   const activeColRef = useRef(null);
 
-  // Get all available types, costs and sources from code data
+  // Get all available types, costs and sources from code data across all years
   const { allTypes, allCosts, allSources } = React.useMemo(() => {
     const types = new Set();
     const costs = new Set();
     const sources = new Set();
 
-    Object.values(codesData).forEach((code) => {
-      if (code.types) {
-        code.types.forEach((type) => types.add(type));
+    // Iterate through all years to capture all possible values including updates
+    for (const year in CODES_BY_YEAR) {
+      for (const codeName in CODES_BY_YEAR[year]) {
+        const code = CODES_BY_YEAR[year][codeName];
+        if (code.types) {
+          code.types.forEach((type) => types.add(type));
+        }
+        if (code.cost) {
+          costs.add(code.cost);
+        }
+        if (code.source) {
+          sources.add(code.source);
+        }
       }
-      if (code.cost) {
-        costs.add(code.cost);
-      }
-      if (code.source) {
-        sources.add(code.source);
-      }
-    });
+    }
 
     return {
       allTypes: Array.from(types).sort(),
@@ -155,7 +158,8 @@ function MultiCodeChart() {
       }
 
       // Filter codes by selected types, costs, and sources
-      const filteredCodes = filterCodesBySelections(codesData, {
+      // Uses time-aware filtering to match codes that satisfy the filter in ANY year
+      const filteredCodes = filterCodesBySelections(CODES_BY_YEAR, {
         types: typesToInclude,
         costs: costsToInclude,
         sources: sourcesToInclude,
