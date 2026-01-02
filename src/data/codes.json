@@ -102,6 +102,25 @@
     "tags": [],
     "types": ["FF"]
   },
+  "BDF": {
+    "acceleration": ["MPI", "OpenMP", "OpenCL"],
+    "apis": [],
+    "author_name": "Liu",
+    "benchmarks": [],
+    "distribution_channels": ["Binary"],
+    "element_coverage": "H..Og",
+    "homepage": "https://bdf-manual-en-new.readthedocs.io/en/latest/Introduction.html",
+    "cost": "commercial",
+    "source": "closed",
+    "license": null,
+    "name": "BDF",
+    "notes": null,
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"BDF\" \"Beijing Density Functional\" \"Liu\"",
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
+  },
   "BoltzTrap": {
     "acceleration": [],
     "apis": [],
