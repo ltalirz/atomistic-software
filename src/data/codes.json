@@ -837,6 +837,25 @@
     "tags": [],
     "types": ["FF"]
   },
+  "HORTON": {
+    "acceleration": [],
+    "apis": [],
+    "author_name": "Verstraelen",
+    "benchmarks": [],
+    "distribution_channels": ["Source", "conda"],
+    "element_coverage": null,
+    "homepage": "https://theochem.github.io/horton/",
+    "cost": "free",
+    "source": "copyleft",
+    "license": "GPL-3.0",
+    "name": "HORTON",
+    "notes": "Helpful Open-source Research TOol for N-fermion systems",
+    "query_method": "search term",
+    "query_publication_id": null,
+    "query_string": "\"HORTON\" Verstraelen",
+    "tags": ["GTO"],
+    "types": ["DFT", "WFM"]
+  },
   "Hyperchem": {
     "acceleration": [],
     "apis": [],
