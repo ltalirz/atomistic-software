@@ -102,6 +102,25 @@
     "tags": [],
     "types": ["FF"]
   },
+  "BDF": {
+    "acceleration": ["MPI", "OpenMP", "OpenCL"],
+    "apis": [],
+    "author_name": "Liu",
+    "benchmarks": [],
+    "distribution_channels": ["Binary"],
+    "element_coverage": "H..Og",
+    "homepage": "https://bdf-manual-en-new.readthedocs.io/en/latest/Introduction.html",
+    "cost": "commercial",
+    "source": "closed",
+    "license": null,
+    "name": "BDF",
+    "notes": null,
+    "query_method": "publication",
+    "query_publication_id": "6038157560996688561",
+    "query_string": "Y. Zhang et al., J. Chem. Phys. 152, 064113 (2020)",
+    "tags": ["AE", "GTO", "PP"],
+    "types": ["WFM", "DFT"]
+  },
   "BoltzTrap": {
     "acceleration": [],
     "apis": [],
