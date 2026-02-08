@@ -115,9 +115,9 @@
     "license": null,
     "name": "BDF",
     "notes": null,
-    "query_method": "search term",
-    "query_publication_id": null,
-    "query_string": "\"BDF\" \"Beijing Density Functional\" \"Liu\"",
+    "query_method": "publication",
+    "query_publication_id": "6038157560996688561",
+    "query_string": "Y. Zhang et al., J. Chem. Phys. 152, 064113 (2020)",
     "tags": ["AE", "GTO", "PP"],
     "types": ["WFM", "DFT"]
   },
