@@ -33,6 +33,10 @@
         "citations": 0,
         "datestamp": "2021-04-10"
       },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
+      },
       "BOSS": {
         "citations": 21,
         "datestamp": "2021-08-26"
@@ -458,6 +462,10 @@
       "BAGEL": {
         "citations": 1,
         "datestamp": "2021-01-17"
+      },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
       },
       "BOSS": {
         "citations": 30,
@@ -897,6 +905,10 @@
         "citations": 0,
         "datestamp": "2021-01-17"
       },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
+      },
       "BOSS": {
         "citations": 24,
         "datestamp": "2021-08-26"
@@ -1334,6 +1346,10 @@
       "BAGEL": {
         "citations": 6,
         "datestamp": "2021-01-17"
+      },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
       },
       "BOSS": {
         "citations": 28,
@@ -1773,6 +1789,10 @@
         "citations": 4,
         "datestamp": "2021-01-17"
       },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
+      },
       "BOSS": {
         "citations": 32,
         "datestamp": "2021-08-26"
@@ -2211,6 +2231,10 @@
         "citations": 6,
         "datestamp": "2021-01-07"
       },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
+      },
       "BOSS": {
         "citations": 30,
         "datestamp": "2021-08-26"
@@ -2637,6 +2661,10 @@
         "citations": 1600,
         "datestamp": "2025-03-04"
       },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
+      },
       "BerkeleyGW": {
         "citations": 70,
         "datestamp": "2025-03-04"
@@ -2966,6 +2994,10 @@
       "Amber": {
         "citations": 1610,
         "datestamp": "2025-03-04"
+      },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
       },
       "BerkeleyGW": {
         "citations": 87,
@@ -3297,6 +3329,10 @@
         "citations": 1760,
         "datestamp": "2025-03-02"
       },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
+      },
       "BerkeleyGW": {
         "citations": 84,
         "datestamp": "2025-03-02"
@@ -3626,6 +3662,10 @@
       "Amber": {
         "citations": 1810,
         "datestamp": "2025-09-29"
+      },
+      "BDF": {
+        "citations": 0,
+        "datestamp": "2026-02-08"
       },
       "BerkeleyGW": {
         "citations": 80,
@@ -3957,6 +3997,10 @@
         "citations": 1900,
         "datestamp": "2025-09-22"
       },
+      "BDF": {
+        "citations": 7,
+        "datestamp": "2026-02-08"
+      },
       "BerkeleyGW": {
         "citations": 90,
         "datestamp": "2025-09-22"
@@ -4286,6 +4330,10 @@
       "Amber": {
         "citations": 2170,
         "datestamp": "2025-09-19"
+      },
+      "BDF": {
+        "citations": 14,
+        "datestamp": "2026-02-08"
       },
       "BerkeleyGW": {
         "citations": 98,
@@ -4617,6 +4665,10 @@
         "citations": 2290,
         "datestamp": "2025-09-16"
       },
+      "BDF": {
+        "citations": 23,
+        "datestamp": "2026-02-08"
+      },
       "BerkeleyGW": {
         "citations": 107,
         "datestamp": "2025-09-16"
@@ -4947,6 +4999,10 @@
         "citations": 2070,
         "datestamp": "2025-09-14"
       },
+      "BDF": {
+        "citations": 26,
+        "datestamp": "2026-02-08"
+      },
       "BerkeleyGW": {
         "citations": 111,
         "datestamp": "2025-09-14"
@@ -5276,6 +5332,10 @@
       "Amber": {
         "citations": 2200,
         "datestamp": "2025-10-01"
+      },
+      "BDF": {
+        "citations": 43,
+        "datestamp": "2026-02-08"
       },
       "BerkeleyGW": {
         "citations": 116,
