@@ -3,6 +3,7 @@ import Paper from "@mui/material/Paper";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+import Switch from "@mui/material/Switch";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Chip from "@mui/material/Chip";
@@ -16,7 +17,7 @@ import {
   updateToggle,
   filterCodesBySelections,
 } from "../utils/filter";
-import { normalizeCitationsForLogScale } from "../utils/chart";
+import { normalizeCitationsForLogScale, toCumulative } from "../utils/chart";
 
 function MultiCodeChart() {
   const [selectedTypes, setSelectedTypes] = useState({});
@@ -26,6 +27,7 @@ function MultiCodeChart() {
   const [isLoading, setIsLoading] = useState(false);
   const [activeCodeNames, setActiveCodeNames] = useState([]);
   const [maxActiveHeight, setMaxActiveHeight] = useState(null);
+  const [cumulative, setCumulative] = useState(false);
 
   // Refs to measure heights of sibling columns so Active codes list scrolls only when needed
   const typesRef = useRef(null);
@@ -478,6 +480,17 @@ function MultiCodeChart() {
           flexDirection: "column",
         }}
       >
+        <FormControlLabel
+          control={
+            <Switch
+              size="small"
+              checked={cumulative}
+              onChange={(e) => setCumulative(e.target.checked)}
+            />
+          }
+          label="Cumulative"
+          sx={{ alignSelf: "flex-end", mr: 0 }}
+        />
         {isLoading ? (
           <Typography
             variant="body1"
@@ -487,7 +500,14 @@ function MultiCodeChart() {
             Loading citation data...
           </Typography>
         ) : chartData.length > 0 ? (
-          nivoChart(chartData, "Citation Trends", false, true, true)
+          nivoChart(
+            cumulative ? toCumulative(chartData) : chartData,
+            "Citation Trends",
+            false,
+            cumulative ? false : true,
+            true,
+            cumulative
+          )
         ) : (
           <Typography
             variant="body1"
