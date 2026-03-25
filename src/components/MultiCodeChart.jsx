@@ -480,17 +480,6 @@ function MultiCodeChart() {
           flexDirection: "column",
         }}
       >
-        <FormControlLabel
-          control={
-            <Switch
-              size="small"
-              checked={cumulative}
-              onChange={(e) => setCumulative(e.target.checked)}
-            />
-          }
-          label="Cumulative"
-          sx={{ alignSelf: "flex-end", mr: 0 }}
-        />
         {isLoading ? (
           <Typography
             variant="body1"
@@ -506,7 +495,18 @@ function MultiCodeChart() {
             false,
             cumulative ? false : true,
             true,
-            cumulative
+            cumulative,
+            <FormControlLabel
+              control={
+                <Switch
+                  size="small"
+                  checked={cumulative}
+                  onChange={(e) => setCumulative(e.target.checked)}
+                />
+              }
+              label="Cumulative"
+              sx={{ mr: 0 }}
+            />
           )
         ) : (
           <Typography

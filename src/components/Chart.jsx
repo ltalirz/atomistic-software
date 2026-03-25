@@ -60,6 +60,20 @@ function SingleChart() {
   const rawData = [{ id: codeName, data: points }];
   const chartData = cumulative ? toCumulative(rawData) : rawData;
 
+  const cumulativeToggle = (
+    <FormControlLabel
+      control={
+        <Switch
+          size="small"
+          checked={cumulative}
+          onChange={(e) => setCumulative(e.target.checked)}
+        />
+      }
+      label="Cumulative"
+      sx={{ mr: 0 }}
+    />
+  );
+
   return (
     <Box sx={{ width: "clamp(520px, 99%, 800px)" }}>
       <Paper
@@ -70,18 +84,15 @@ function SingleChart() {
           flexDirection: "column",
         }}
       >
-        <FormControlLabel
-          control={
-            <Switch
-              size="small"
-              checked={cumulative}
-              onChange={(e) => setCumulative(e.target.checked)}
-            />
-          }
-          label="Cumulative"
-          sx={{ alignSelf: "flex-end", mr: 0 }}
-        />
-        {nivoChart(chartData, title, false, false, true, cumulative)}
+        {nivoChart(
+          chartData,
+          title,
+          false,
+          false,
+          true,
+          cumulative,
+          cumulativeToggle
+        )}
       </Paper>
     </Box>
   );
@@ -93,7 +104,8 @@ function nivoChart(
   legend = true,
   logScale = false,
   clickable = false,
-  cumulative = false
+  cumulative = false,
+  titleAction = null
 ) {
   let legend_list = [];
   let margin_right = 50;
@@ -186,7 +198,10 @@ function nivoChart(
   if (validData.length === 0) {
     return (
       <React.Fragment>
-        <Title>{title}</Title>
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Title>{title}</Title>
+          {titleAction && <Box sx={{ ml: "auto" }}>{titleAction}</Box>}
+        </Box>
         <div
           className="chart"
           style={{
@@ -208,7 +223,10 @@ function nivoChart(
 
   return (
     <React.Fragment>
-      <Title>{title}</Title>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Title>{title}</Title>
+        {titleAction && <Box sx={{ ml: "auto" }}>{titleAction}</Box>}
+      </Box>
       <div className={"chart" + (clickable ? " clickable-chart" : "")}>
         <ResponsiveLine
           title={title}
