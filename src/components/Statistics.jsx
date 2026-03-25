@@ -1,18 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Switch from "@mui/material/Switch";
 
 import Title from "./Dashboard/Title";
-import {
-  CUTOFF,
-  YEARS,
-  CODES_BY_YEAR,
-  getData,
-  yearToRange,
-} from "./Config";
+import { CUTOFF, YEARS, CODES_BY_YEAR, getData, yearToRange } from "./Config";
 import { nivoChart } from "./Chart";
-import { aggregateSeriesTimeAware } from "../utils/chart";
+import { aggregateSeriesTimeAware, toCumulative } from "../utils/chart";
 import citations from "../data/citations.json";
 // import { Card } from '@material-ui/core';
 
@@ -76,13 +73,11 @@ function citationGrowth(year) {
   return data;
 }
 
-function costGraph() {
+function costGraphData() {
   /**
-   * Citation trend by price (free/commercial).
+   * Citation trend data by price (free/commercial).
    * Uses time-aware aggregation to account for cost changes over time.
    */
-
-  // Careful: it seems the legend coloring does not match the one of the graph automatically
   let groups = {
     "Free (general)": ["free"],
     "Free (academia)": ["free (academia)"],
@@ -90,7 +85,6 @@ function costGraph() {
     Commercial: ["commercial"],
   };
 
-  // Use time-aware aggregator to correctly handle cost changes over time
   let lines = [];
   for (const group in groups) {
     const aggregated = aggregateSeriesTimeAware(
@@ -102,23 +96,20 @@ function costGraph() {
     );
     lines.push({ id: group, data: aggregated });
   }
-  return nivoChart(lines, "");
+  return lines;
 }
 
-function sourceGraph() {
+function sourceGraphData() {
   /**
-   * Citation trend by source code handling.
+   * Citation trend data by source code handling.
    * Uses time-aware aggregation to account for license changes over time.
    */
-
-  // Careful: it seems the legend coloring does not match the one of the graph automatically
   let groups = {
     "Closed source": ["closed"],
     "Open-source": ["copyleft", "permissive"],
     "Source available": ["copyleft", "permissive", "available"],
   };
 
-  // Use time-aware aggregator to correctly handle license changes over time
   let lines = [];
   for (const group in groups) {
     const aggregated = aggregateSeriesTimeAware(
@@ -130,7 +121,7 @@ function sourceGraph() {
     );
     lines.push({ id: group, data: aggregated });
   }
-  return nivoChart(lines, "");
+  return lines;
 }
 
 function chartLink(codeName) {
@@ -187,7 +178,14 @@ function relativeGrowthList(data) {
 
 // Breakpoint sizes: xs, sm, md, lg, xl and xxl
 
-function Card(title, message, footnote = "", widthSmall, widthLarge = null) {
+function Card(
+  title,
+  message,
+  footnote = "",
+  widthSmall,
+  widthLarge = null,
+  titleAction = null
+) {
   /**
    * Returns Grid component wrapped in Paper.
    *
@@ -196,6 +194,7 @@ function Card(title, message, footnote = "", widthSmall, widthLarge = null) {
    * @param footnote - Display below content
    * @param widthSmall - Width of card when viewpoint is small
    * @param widthLarge - Width of card when viewpoint is large
+   * @param titleAction - Optional element rendered inline with the title
    */
   if (!widthSmall) {
     widthSmall = widthLarge;
@@ -217,7 +216,10 @@ function Card(title, message, footnote = "", widthSmall, widthLarge = null) {
         }}
       >
         <React.Fragment>
-          <Title>{title}</Title>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Title>{title}</Title>
+            {titleAction && <Box sx={{ ml: "auto" }}>{titleAction}</Box>}
+          </Box>
           {message}
           <Typography color="text.secondary">{footnote}</Typography>
         </React.Fragment>
@@ -228,9 +230,29 @@ function Card(title, message, footnote = "", widthSmall, widthLarge = null) {
 
 let CURRENT_YEAR = YEARS.slice(-1)[0];
 let GROWTH = citationGrowth(CURRENT_YEAR);
+const COST_DATA = costGraphData();
+const SOURCE_DATA = sourceGraphData();
 
 export default function Home() {
-  // {Card("Simulation engines", typeList(GROWTH['typeCounts']), "Number of simulation engines per method.", 4)}
+  const [cumulative, setCumulative] = useState(false);
+
+  const costLines = cumulative ? toCumulative(COST_DATA) : COST_DATA;
+  const sourceLines = cumulative ? toCumulative(SOURCE_DATA) : SOURCE_DATA;
+
+  const cumulativeToggle = (
+    <FormControlLabel
+      control={
+        <Switch
+          size="small"
+          checked={cumulative}
+          onChange={(e) => setCumulative(e.target.checked)}
+        />
+      }
+      label="Cumulative"
+      sx={{ mr: 0 }}
+    />
+  );
+
   return (
     <Grid container spacing={3}>
       {Card(
@@ -254,14 +276,22 @@ export default function Home() {
         10,
         4
       )}
-      {Card("Cost: commercial vs free engines", costGraph(), "", 12, 10)}
+      {Card(
+        "Cost: commercial vs free engines",
+        nivoChart(costLines, "", true, false, false, cumulative),
+        "",
+        12,
+        10,
+        cumulativeToggle
+      )}
       {Card(
         'Source availability: closed, "available", and open',
-        sourceGraph(),
+        nivoChart(sourceLines, "", true, false, false, cumulative),
         '"Source available" includes all engines whose source code can be obtained for free or for a fee. ' +
           '"Open-source" engines are the subset of source-available engines with OSI-approved licenses.',
         12,
-        10
+        10,
+        cumulativeToggle
       )}
     </Grid>
   );

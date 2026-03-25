@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Switch from "@mui/material/Switch";
 import Title from "./Dashboard/Title";
 
 import { ResponsiveLine } from "@nivo/line";
@@ -8,7 +10,7 @@ import { ResponsiveLine } from "@nivo/line";
 import { getCodeCitations } from "./Config";
 import codes from "../data/codes.json";
 import { buildScholarUrl } from "../utils/scholar";
-import { LOG_Y_MIN } from "../utils/chart";
+import { LOG_Y_MIN, toCumulative } from "../utils/chart";
 import { useParams } from "react-router-dom";
 
 const THEME = {
@@ -49,12 +51,28 @@ function getTitle(codeName, citations) {
 
 function SingleChart() {
   let codeName = decodeURIComponent(useParams()["code"]);
+  const [cumulative, setCumulative] = useState(false);
   const series = getCodeCitations([codeName]);
   const points =
     Array.isArray(series) && series.length > 0 ? series[0].data : [];
   const title = getTitle(codeName, points);
 
-  const data = { id: codeName, data: points };
+  const rawData = [{ id: codeName, data: points }];
+  const chartData = cumulative ? toCumulative(rawData) : rawData;
+
+  const cumulativeToggle = (
+    <FormControlLabel
+      control={
+        <Switch
+          size="small"
+          checked={cumulative}
+          onChange={(e) => setCumulative(e.target.checked)}
+        />
+      }
+      label="Cumulative"
+      sx={{ mr: 0 }}
+    />
+  );
 
   return (
     <Box sx={{ width: "clamp(520px, 99%, 800px)" }}>
@@ -66,7 +84,15 @@ function SingleChart() {
           flexDirection: "column",
         }}
       >
-        {nivoChart([data], title, false, false, true)}
+        {nivoChart(
+          chartData,
+          title,
+          false,
+          false,
+          true,
+          cumulative,
+          cumulativeToggle
+        )}
       </Paper>
     </Box>
   );
@@ -77,7 +103,9 @@ function nivoChart(
   title,
   legend = true,
   logScale = false,
-  clickable = false
+  clickable = false,
+  cumulative = false,
+  titleAction = null
 ) {
   let legend_list = [];
   let margin_right = 50;
@@ -170,7 +198,10 @@ function nivoChart(
   if (validData.length === 0) {
     return (
       <React.Fragment>
-        <Title>{title}</Title>
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Title>{title}</Title>
+          {titleAction && <Box sx={{ ml: "auto" }}>{titleAction}</Box>}
+        </Box>
         <div
           className="chart"
           style={{
@@ -192,7 +223,10 @@ function nivoChart(
 
   return (
     <React.Fragment>
-      <Title>{title}</Title>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Title>{title}</Title>
+        {titleAction && <Box sx={{ ml: "auto" }}>{titleAction}</Box>}
+      </Box>
       <div className={"chart" + (clickable ? " clickable-chart" : "")}>
         <ResponsiveLine
           title={title}
@@ -211,7 +245,9 @@ function nivoChart(
           }}
           axisLeft={{
             orient: "left",
-            legend: "Citations per year (Google Scholar)",
+            legend: cumulative
+              ? "Cumulative citations (Google Scholar)"
+              : "Citations per year (Google Scholar)",
             legendOffset: -55,
             legendPosition: "middle",
             tickSize: 5,

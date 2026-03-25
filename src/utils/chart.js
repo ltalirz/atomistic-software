@@ -86,6 +86,26 @@ export function aggregateSeriesTimeAware(
 }
 
 /**
+ * Convert annual citation series to cumulative citation series.
+ * Each series' data points are sorted by x (year) and y values are
+ * replaced with running totals.
+ *
+ * @param {Array<{id: string, data: Array<{x: number, y: number}>}>} seriesList
+ * @returns {Array<{id: string, data: Array<{x: number, y: number}>}>}
+ */
+export function toCumulative(seriesList) {
+  return seriesList.map((series) => {
+    const sorted = [...series.data].sort((a, b) => a.x - b.x);
+    let sum = 0;
+    const cumulativeData = sorted.map((point) => {
+      sum += point.y;
+      return { x: point.x, y: sum };
+    });
+    return { ...series, data: cumulativeData };
+  });
+}
+
+/**
  * Normalize raw citations data for log-scale display by:
  * - ensuring items have id and data array
  * - filtering out points with non-positive or invalid values
