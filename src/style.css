@@ -44,6 +44,15 @@ span.has-tooltip {
   -webkit-text-decoration: underline dotted;
 }
 
+span.has-tooltip.filterable {
+  cursor: pointer;
+}
+
+span.has-tooltip.filterable:hover {
+  background-color: rgba(25, 118, 210, 0.08);
+  border-radius: 3px;
+}
+
 span.has-tooltip:hover {
   text-decoration: none;
 }

@@ -22,6 +22,7 @@ const lastYear = YEARS[YEARS.length - 1];
 function Table() {
   const [year, setYear] = React.useState(lastYear);
   const [data, setData] = React.useState(() => getData(lastYear));
+  const [columnFilters, setColumnFilters] = React.useState([]);
 
   const handleYearChange = (event) => {
     const newYear = event.target.value;
@@ -29,11 +30,31 @@ function Table() {
     setData(getData(newYear));
   };
 
+  // Toggle a value in a multi-select column filter
+  const toggleFilter = React.useCallback((columnId, value) => {
+    setColumnFilters((prev) => {
+      const existing = prev.find((f) => f.id === columnId);
+      if (existing) {
+        const current = Array.isArray(existing.value) ? existing.value : [];
+        if (current.includes(value)) {
+          const next = current.filter((v) => v !== value);
+          return next.length === 0
+            ? prev.filter((f) => f.id !== columnId)
+            : prev.map((f) => (f.id === columnId ? { ...f, value: next } : f));
+        }
+        return prev.map((f) =>
+          f.id === columnId ? { ...f, value: [...current, value] } : f
+        );
+      }
+      return [...prev, { id: columnId, value: [value] }];
+    });
+  }, []);
+
   // Map legacy column definitions to MRT column shape
   // getColumns relies on data for custom renders; keep using it for label and cell content
   const legacyColumns = React.useMemo(
-    () => getColumns(data, year),
-    [data, year]
+    () => getColumns(data, year, toggleFilter),
+    [data, year, toggleFilter]
   );
   const columns = React.useMemo(
     () =>
@@ -101,6 +122,8 @@ function Table() {
   const table = useMaterialReactTable({
     columns,
     data,
+    state: { columnFilters },
+    onColumnFiltersChange: setColumnFilters,
     initialState: {
       //density: "compact",
       showColumnFilters: true,
