@@ -19,7 +19,7 @@ import LockIcon from "@mui/icons-material/Lock";
 import NoEncryptionIcon from "@mui/icons-material/NoEncryption";
 // import { FlashOnOutlined } from "@material-ui/icons";
 
-function TooltipText(tooltip, text) {
+function TooltipText(tooltip, text, onClick) {
   /**
    * Nicesly styled tooltip.
    *
@@ -27,30 +27,43 @@ function TooltipText(tooltip, text) {
    */
   return (
     <Tooltip title={tooltip} placement="top" key={tooltip} arrow>
-      <span className="has-tooltip">{text}</span>
+      <span
+        className={onClick ? "has-tooltip filterable" : "has-tooltip"}
+        onClick={onClick}
+      >
+        {text}
+      </span>
     </Tooltip>
   );
 }
 
-function TooltipTexts(values, tooltips) {
+function TooltipTexts(values, tooltips, onValueClick) {
   /**
    * Multiple tooltips with zero-width breaking spaces in between to allow text wrapping.
    */
   if (values && values.length > 0) {
     return values
-      .map((x) => TooltipText(tooltips[x], x))
+      .map((x) =>
+        TooltipText(
+          tooltips[x],
+          x,
+          onValueClick ? () => onValueClick(x) : undefined
+        )
+      )
       .reduce((prev, curr, idx) => [prev, <wbr key={`wbr-${idx}`} />, curr]);
   } else {
     return null;
   }
 }
 
-function getColumns(data, year) {
+function getColumns(data, year, onFilterClick) {
   /**
    * Prepare columns.
    *
    * Since 'customBodyRenderLite' function requires us to fetch the data ourselves, this getColumns function
    * relies on data to already be present (which is rather bad design).
+   *
+   * @param {Function} onFilterClick - Optional callback (columnId, value) => void for click-to-filter.
    */
   let columns = [
     {
@@ -84,7 +97,8 @@ function getColumns(data, year) {
         customBodyRenderLite: (dataIndex) => {
           return TooltipTexts(
             data[dataIndex]["types"],
-            ABBREVIATIONS["methods"]
+            ABBREVIATIONS["methods"],
+            onFilterClick ? (value) => onFilterClick("types", value) : undefined
           );
         },
       },
@@ -101,7 +115,11 @@ function getColumns(data, year) {
         filter: true,
         sort: false,
         customBodyRenderLite: (dataIndex) => {
-          return TooltipTexts(data[dataIndex]["tags"], ABBREVIATIONS["tags"]);
+          return TooltipTexts(
+            data[dataIndex]["tags"],
+            ABBREVIATIONS["tags"],
+            onFilterClick ? (value) => onFilterClick("tags", value) : undefined
+          );
         },
       },
     },
@@ -178,18 +196,22 @@ function getColumns(data, year) {
         customBodyRenderLite: (dataIndex) => {
           const x = data[dataIndex]["cost"];
           const cost = ABBREVIATIONS["cost"];
+          const handleClick = onFilterClick
+            ? () => onFilterClick("cost", x)
+            : undefined;
           if (["commercial"].includes(x)) {
-            return TooltipText(cost[x], <AttachMoneyIcon />);
+            return TooltipText(cost[x], <AttachMoneyIcon />, handleClick);
           } else if (["free (academia)"].includes(x)) {
             return TooltipText(
               cost[x],
               <span>
                 <MoneyOffIcon />
                 <SchoolIcon />
-              </span>
+              </span>,
+              handleClick
             );
           } else {
-            return TooltipText(cost[x], <MoneyOffIcon />);
+            return TooltipText(cost[x], <MoneyOffIcon />, handleClick);
           }
         },
       },
@@ -203,10 +225,21 @@ function getColumns(data, year) {
         customBodyRenderLite: (dataIndex) => {
           const x = data[dataIndex]["source"];
           const source = ABBREVIATIONS["source"];
+          const handleClick = onFilterClick
+            ? () => onFilterClick("source", x)
+            : undefined;
           if (["available"].includes(x)) {
-            return TooltipText(source[x], <LockOpenIcon color={"action"} />);
+            return TooltipText(
+              source[x],
+              <LockOpenIcon color={"action"} />,
+              handleClick
+            );
           } else if (["closed"].includes(x)) {
-            return TooltipText(source[x], <LockIcon color={"action"} />);
+            return TooltipText(
+              source[x],
+              <LockIcon color={"action"} />,
+              handleClick
+            );
           } else if (["copyleft", "permissive"].includes(x)) {
             const license = data[dataIndex]["license"];
             let text = "";
@@ -215,7 +248,11 @@ function getColumns(data, year) {
             } else {
               text = source[x];
             }
-            return TooltipText(text, <NoEncryptionIcon color={"action"} />);
+            return TooltipText(
+              text,
+              <NoEncryptionIcon color={"action"} />,
+              handleClick
+            );
           }
         },
       },
