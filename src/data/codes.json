@@ -321,7 +321,7 @@
     "notes": "Free demo limited to 10 atoms per primitive cell",
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "\"CRYSTAL code\" OR \"CRYSTAL17\" OR \"CRYSTAL14\" OR \"CRYSTAL09\" OR \"CRYSTAL06\" Dovesi",
+    "query_string": "\"CRYSTAL code\" OR \"CRYSTAL program\" OR \"CRYSTAL23\" OR \"CRYSTAL17\" OR \"CRYSTAL14\" OR \"CRYSTAL09\" OR \"CRYSTAL06\"",
     "tags": ["PBC", "AE", "GTO", "PP"],
     "types": ["DFT", "WFM"]
   },
