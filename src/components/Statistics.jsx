@@ -11,6 +11,7 @@ import { CUTOFF, YEARS, CODES_BY_YEAR, getData, yearToRange } from "./Config";
 import { nivoChart } from "./Chart";
 import { aggregateSeriesTimeAware, toCumulative } from "../utils/chart";
 import citations from "../data/citations.json";
+import codes from "../data/codes.json";
 // import { Card } from '@material-ui/core';
 
 function citationGrowth(year) {
@@ -124,6 +125,35 @@ function sourceGraphData() {
   return lines;
 }
 
+function regionsGraphData() {
+  /**
+   * Citation trend data by geographic region (UN M49 geoscheme) of the
+   * location from which each code's development is coordinated.
+   * Uses time-aware aggregation; a code counts towards every region it
+   * lists (codes coordinated from multiple regions are counted once per
+   * region).
+   */
+  const allRegions = new Set();
+  for (const codeName in codes) {
+    (codes[codeName]["regions"] || []).forEach((region) =>
+      allRegions.add(region)
+    );
+  }
+
+  let lines = [];
+  for (const region of Array.from(allRegions).sort()) {
+    const aggregated = aggregateSeriesTimeAware(
+      CODES_BY_YEAR,
+      citations,
+      { regions: [region] },
+      YEARS,
+      yearToRange
+    );
+    lines.push({ id: region, data: aggregated });
+  }
+  return lines;
+}
+
 function chartLink(codeName) {
   /**
    * Return hyperlink to citation chart for given code name.
@@ -232,12 +262,14 @@ let CURRENT_YEAR = YEARS.slice(-1)[0];
 let GROWTH = citationGrowth(CURRENT_YEAR);
 const COST_DATA = costGraphData();
 const SOURCE_DATA = sourceGraphData();
+const REGIONS_DATA = regionsGraphData();
 
 export default function Home() {
   const [cumulative, setCumulative] = useState(false);
 
   const costLines = cumulative ? toCumulative(COST_DATA) : COST_DATA;
   const sourceLines = cumulative ? toCumulative(SOURCE_DATA) : SOURCE_DATA;
+  const regionsLines = cumulative ? toCumulative(REGIONS_DATA) : REGIONS_DATA;
 
   const cumulativeToggle = (
     <FormControlLabel
@@ -289,6 +321,15 @@ export default function Home() {
         nivoChart(sourceLines, "", true, false, false, cumulative),
         '"Source available" includes all engines whose source code can be obtained for free or for a fee. ' +
           '"Open-source" engines are the subset of source-available engines with OSI-approved licenses.',
+        12,
+        10,
+        cumulativeToggle
+      )}
+      {Card(
+        "Citations by region",
+        nivoChart(regionsLines, "", true, false, false, cumulative),
+        "Region is based on the UN M49 geoscheme, determined by where each engine's development is coordinated. " +
+          "Engines coordinated across multiple regions are counted towards each of them.",
         12,
         10,
         cumulativeToggle
