@@ -36,9 +36,7 @@ export function aggregateSeries(seriesList, years = []) {
  *
  * @param {Object} codesByYear - Pre-built cache: { year: { codeName: metadata, ... }, ... }
  * @param {Object} citations - The citations data object
- * @param {Object} filters - Filter criteria, e.g., { source: ['copyleft', 'permissive'] }.
- *   Matches if the code's metadata value for the key (scalar or array, e.g. 'regions')
- *   overlaps with the given list of values.
+ * @param {Object} filters - Filter criteria, e.g., { source: ['copyleft', 'permissive'] }
  * @param {number[]} years - List of years to aggregate over
  * @param {Function} yearToRange - Function to convert year to citation range key
  * @returns {Array<{x:number, y:number}>}
@@ -61,15 +59,11 @@ export function aggregateSeriesTimeAware(
     for (const codeName in codesForYear) {
       const codeMetadata = codesForYear[codeName];
 
-      // Check if this code matches all filters for this year.
-      // Metadata values may be scalars (e.g. cost, source) or arrays
-      // (e.g. regions, tags) - normalize to an array for the check.
+      // Check if this code matches all filters for this year
       let matches = true;
       for (const filterKey in filters) {
         const filterValues = filters[filterKey];
-        const codeValue = codeMetadata[filterKey];
-        const codeValues = Array.isArray(codeValue) ? codeValue : [codeValue];
-        if (!codeValues.some((v) => filterValues.includes(v))) {
+        if (!filterValues.includes(codeMetadata[filterKey])) {
           matches = false;
           break;
         }

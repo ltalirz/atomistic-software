@@ -41,8 +41,8 @@ class Code:  # pylint: disable=too-many-instance-attributes
     license: str = None
     element_coverage: str = None
     acceleration: list = ()
-    countries: list = ()
-    regions: list = ()
+    country: str = None
+    region: str = None
 
 def read_codes_json(path: Path = DATA_DIR / 'codes.json') -> Dict[str, Code]:
     """Read codes.json file and return dictionary."""
