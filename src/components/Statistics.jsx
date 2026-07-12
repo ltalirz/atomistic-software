@@ -128,13 +128,16 @@ function sourceGraphData() {
 function regionsGraphData() {
   /**
    * Citation trend data by geographic region (UN M49 geoscheme) of the
-   * location from which each code's development is coordinated.
-   * Uses time-aware aggregation.
+   * location(s) from which each code's development is coordinated.
+   * Uses time-aware aggregation; a code counts towards every region it
+   * lists (codes coordinated across multiple regions are counted once
+   * per region).
    */
   const allRegions = new Set();
   for (const codeName in codes) {
-    const region = codes[codeName]["region"];
-    if (region) allRegions.add(region);
+    (codes[codeName]["regions"] || []).forEach((region) =>
+      allRegions.add(region)
+    );
   }
 
   let lines = [];
@@ -142,7 +145,7 @@ function regionsGraphData() {
     const aggregated = aggregateSeriesTimeAware(
       CODES_BY_YEAR,
       citations,
-      { region: [region] },
+      { regions: [region] },
       YEARS,
       yearToRange
     );
@@ -325,7 +328,8 @@ export default function Home() {
       {Card(
         "Citations by region",
         nivoChart(regionsLines, "", true, true, false, cumulative),
-        "Region is based on the UN M49 geoscheme, determined by where each engine's development is coordinated.",
+        "Region is based on the UN M49 geoscheme, determined by where each engine's development is coordinated. " +
+          "Engines coordinated across multiple regions are counted towards each of them.",
         12,
         10,
         cumulativeToggle
