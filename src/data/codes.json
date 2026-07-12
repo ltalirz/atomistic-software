@@ -525,7 +525,7 @@
     "benchmarks": [],
     "distribution_channels": ["Source", "EasyBuild"],
     "element_coverage": null,
-    "homepage": "https://espressomd.org/wordpress/",
+    "homepage": "https://espressomd.org/",
     "cost": "free",
     "source": "copyleft",
     "license": "GPL-3.0",
@@ -844,7 +844,7 @@
       "Nix"
     ],
     "element_coverage": null,
-    "homepage": "https://glotzerlab.engin.umich.edu/hoomd-blue",
+    "homepage": "https://hoomd-blue.readthedocs.io/",
     "cost": "free",
     "source": "copyleft",
     "license": "BSD-3-Clause",
