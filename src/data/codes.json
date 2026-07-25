@@ -1145,7 +1145,7 @@
     "notes": null,
     "query_method": "search term",
     "query_publication_id": null,
-    "query_string": "ORCA Neese",
+    "query_string": "DFT \"ORCA\"",
     "tags": ["AE", "GTO", "PP"],
     "types": ["WFM", "DFT"]
   },
