@@ -183,6 +183,8 @@ function Table() {
         </FormControl>
       </Box>
     ),
+    // Shrink the card to the table's width instead of stretching it across wide screens
+    muiTablePaperProps: { sx: { width: "fit-content", maxWidth: "100%" } },
     muiTableBodyProps: { sx: { "& td": { py: 0.5 } } },
   });
 
