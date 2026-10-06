@@ -30,13 +30,18 @@ jobs:
           jq -r 'to_entries[] | .value.homepage // empty' src/data/codes.json | sed '/^$/d' > urls.txt
           echo "Found $(wc -l < urls.txt) URLs"
 
+      # Excluded: sites that block or time out from GitHub runners but load in a browser
+      # (ks.uiuc.edu), or are currently unreachable (Firefly, FoldX).
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2.9.0
         with:
           args: >-
             --verbose --timeout 40 --insecure 
-            --exclude "https://www.msg.chem.iastate.edu/"
             --exclude "http://openmopac.net/"
+            --exclude "https://www.ks.uiuc.edu/Research/namd/"
+            --exclude "http://classic.chem.msu.su/gran/gamess/index.html"
+            --exclude "https://foldxsuite.crg.eu/"
+            --accept 200..=299,403
             urls.txt
           fail: true
 
