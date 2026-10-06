@@ -430,7 +430,7 @@
     "benchmarks": [],
     "distribution_channels": ["Source", "EasyBuild", "Spack"],
     "element_coverage": "H..Og",
-    "homepage": "https://daltonprogram.org/",
+    "homepage": "https://gitlab.com/dalton/dalton",
     "cost": "free",
     "source": "copyleft",
     "license": "LGPL-2.1",
