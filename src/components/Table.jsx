@@ -19,6 +19,17 @@ import { getColumns } from "./Columns";
 
 const lastYear = YEARS[YEARS.length - 1];
 
+// Compact column widths (px); icon-only columns are narrow, others default to 120
+const COLUMN_SIZES = {
+  name: 160,
+  types: 150,
+  tags: 170,
+  cost: 90,
+  source: 110,
+  citations: 110,
+  trend: 80,
+};
+
 function Table() {
   const [year, setYear] = React.useState(lastYear);
   const [data, setData] = React.useState(() => getData(lastYear));
@@ -113,7 +124,8 @@ function Table() {
             : undefined,
           // Hide columns marked display: false
           enableHiding: true,
-          size: 120,
+          size: COLUMN_SIZES[col.name] ?? 120,
+          minSize: 40,
         };
       }),
     [legacyColumns]
@@ -125,14 +137,17 @@ function Table() {
     state: { columnFilters },
     onColumnFiltersChange: setColumnFilters,
     initialState: {
-      //density: "compact",
-      showColumnFilters: true,
+      density: "compact",
       pagination: { pageIndex: 0, pageSize: 100 },
       sorting: [{ id: "citations", desc: true }],
       columnVisibility: Object.fromEntries(
         legacyColumns.map((c) => [c.name, c.options?.display !== false])
       ),
     },
+    // Compact layout: columns keep their configured size instead of stretching,
+    // and filters live in a popover rather than a second header row
+    layoutMode: "grid-no-grow",
+    columnFilterDisplayMode: "popover",
     enableColumnActions: false,
     enableRowSelection: false,
     enableDensityToggle: false,
