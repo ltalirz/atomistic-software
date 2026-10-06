@@ -683,7 +683,7 @@
     "benchmarks": [],
     "distribution_channels": ["Source", "Binary", "EasyBuild", "NGC"],
     "element_coverage": "H..Rn",
-    "homepage": "https://www.msg.chem.iastate.edu/",
+    "homepage": "https://www.msg.chem.iastate.edu/gamess/download.html",
     "cost": "free",
     "source": "available",
     "license": "GAMESS User License Agreement",

@@ -37,7 +37,6 @@ jobs:
         with:
           args: >-
             --verbose --timeout 40 --insecure 
-            --exclude "https://www.msg.chem.iastate.edu/"
             --exclude "http://openmopac.net/"
             --exclude "https://www.ks.uiuc.edu/Research/namd/"
             --exclude "http://classic.chem.msu.su/gran/gamess/index.html"
