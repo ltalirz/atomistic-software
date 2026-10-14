@@ -109,7 +109,7 @@ function nivoChart(
 ) {
   let legend_list = [];
   let margin_right = 50;
-  if (legend && !logScale) {
+  if (legend) {
     legend_list = [
       {
         anchor: "top-left",
